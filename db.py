@@ -2,10 +2,12 @@ import os, json, psycopg
 from dotenv import load_dotenv
 
 load_dotenv()
-DB_URL = os.environ["DATABASE_URL"]
+
+def _connect():
+    return psycopg.connect(os.environ["DATABASE_URL"])
 
 def init_db():
-    with psycopg.connect(DB_URL) as conn:
+    with _connect() as conn:
         conn.execute("CREATE EXTENSION IF NOT EXISTS vector;")   # ready for the RAG project later
         conn.execute("""CREATE TABLE IF NOT EXISTS extractions (
             id SERIAL PRIMARY KEY,
@@ -16,12 +18,12 @@ def init_db():
     print("DB ready.")
 
 def save_extraction(text, result_dict):
-    with psycopg.connect(DB_URL) as conn:
+    with _connect() as conn:
         conn.execute("INSERT INTO extractions (input_text, result) VALUES (%s, %s)",
                      (text, json.dumps(result_dict)))
 
 def recent(limit=10):
-    with psycopg.connect(DB_URL) as conn:
+    with _connect() as conn:
         rows = conn.execute(
             "SELECT input_text, result, created_at FROM extractions ORDER BY id DESC LIMIT %s",
             (limit,)).fetchall()
