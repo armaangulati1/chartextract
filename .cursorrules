@@ -1,0 +1,38 @@
+# ChartExtract — Cursor rules
+
+## Schema is the contract
+
+- `schema.py` defines the oncology data dictionary. `OncologyExtract` and its nested models are the single source of truth.
+- Never invent fields, rename fields, or add extraction output that is not in the schema.
+- LLM prompts and API response models must target `OncologyExtract` (or explicit sub-models from `schema.py`).
+- When the schema changes, update tests, eval fixtures, and `export_json_schema()` consumers in the same change.
+
+## LLM output
+
+- Always validate LLM output against Pydantic (`instructor` + `response_model=OncologyExtract` or explicit `OncologyExtract.model_validate(...)`).
+- Extract only what is stated in the note; use `null` / empty lists for absent fields — do not guess or hallucinate values.
+- Use schema enums (`CancerStage`, `EcogPerformanceStatus`, `BiomarkerStatus`) instead of free-text where a value set exists.
+
+## Python style
+
+- Python 3.11+; type hints on public functions.
+- `snake_case` for modules, functions, and variables; `PascalCase` for Pydantic models and enums.
+- Keep modules focused: `schema.py` (contract), `extractor.py` (LLM extraction), `api.py` (HTTP), `db.py` (persistence).
+- Prefer small, readable functions over deep abstraction. Match existing patterns in this repo.
+- Load secrets from `.env` via `python-dotenv`; never commit `.env`.
+
+## Observability
+
+- Wrap extraction entrypoints with Langfuse `@observe()` and call `get_client().flush()` after request-bound work in `api.py`.
+
+## Tests
+
+- Use `pytest`; test files named `test_*.py` at repo root.
+- Unit tests must not require `OPENAI_API_KEY`, `DATABASE_URL`, or network unless explicitly marked integration tests.
+- Test schema enums, validation edges, and JSON Schema export in `test_schema.py`.
+- Test API smoke (`/health`) and pure logic without live LLM calls.
+
+## CI
+
+- `tests.yml` runs pytest on every push/PR.
+- `evals.yml` is reserved for Phase 1 field-level precision/recall gates — do not weaken eval thresholds without discussion.
