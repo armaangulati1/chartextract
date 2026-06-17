@@ -1,0 +1,12 @@
+name: evals
+on: [push, pull_request]
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # Phase 1: per-field precision/recall + error taxonomy evals go here.
+      - run: echo "evals placeholder — fill in Phase 1"

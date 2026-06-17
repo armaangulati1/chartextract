@@ -1,0 +1,11 @@
+openai>=2.41.0
+instructor>=1.15.0
+pydantic>=2.13.0
+python-dotenv>=1.2.0
+requests>=2.32.0
+eval_type_backport>=0.4.0
+fastapi
+uvicorn[standard]
+psycopg[binary]
+streamlit
+langfuse
