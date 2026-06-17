@@ -34,14 +34,22 @@ class ClinicalExtract(BaseModel):
 
 
 load_dotenv()
-# instructor wraps OpenAI so completions return a Pydantic model instead of raw JSON.
-# If the model output fails schema validation, instructor auto-retries until it parses cleanly.
-client = instructor.from_openai(OpenAI(timeout=60.0, max_retries=3))
+
+_client = None
+
+
+def _get_client():
+    global _client
+    if _client is None:
+        # instructor wraps OpenAI so completions return a Pydantic model instead of raw JSON.
+        # If the model output fails schema validation, instructor auto-retries until it parses cleanly.
+        _client = instructor.from_openai(OpenAI(timeout=60.0, max_retries=3))
+    return _client
 
 
 @observe()
 def extract(text: str) -> ClinicalExtract:
-    return client.chat.completions.create(
+    return _get_client().chat.completions.create(
         model="gpt-4o-mini",
         response_model=ClinicalExtract,  # LLM must fill this schema; instructor validates + retries
         messages=[
