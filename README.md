@@ -6,9 +6,9 @@ Structured oncology variable extraction from clinical notes — with per-field e
 
 | Surface | URL |
 |---|---|
-| API (Render) | https://chartextract-api.onrender.com |
-| API health | https://chartextract-api.onrender.com/health |
-| Streamlit UI | _Deploy pending — link will be added after Streamlit Cloud deploy_ |
+| **Live app (Streamlit)** | https://chartextract-f9wfrftqzygappf2pgi3hts.streamlit.app/ |
+| **API docs (FastAPI)** | https://chartextract.onrender.com/docs |
+| API health | https://chartextract.onrender.com/health |
 | Eval report | [`data/eval/results.md`](data/eval/results.md) |
 | Repo | https://github.com/armaangulati1/chartextract |
 
@@ -197,7 +197,7 @@ uvicorn api:app --reload          # terminal 1 → http://localhost:8000
 streamlit run app.py              # terminal 2 → http://localhost:8501
 ```
 
-The Streamlit app calls the API (`API_URL`, default `http://localhost:8000`). Set `API_URL` to the Render API URL when running the UI against a remote backend.
+The Streamlit app calls the API (`API_URL`, default `http://localhost:8000`). For the [live app](https://chartextract-f9wfrftqzygappf2pgi3hts.streamlit.app/), Streamlit Cloud is configured with `API_URL=https://chartextract.onrender.com`.
 
 ### One-command Docker (API)
 
@@ -234,14 +234,15 @@ python scripts/report_real_eval.py --use-cache    # full dataset metrics in resu
 
 ### Deploy (Render + Streamlit Cloud)
 
-**API** — connect repo to Render using [`render.yaml`](render.yaml). Required secrets: `OPENAI_API_KEY`, `DATABASE_URL` (optional), `LANGFUSE_*` (optional).
+**API** — Docker on Render ([`render.yaml`](render.yaml)). Required env: `OPENAI_API_KEY`, `DATABASE_URL`.
 
 | Endpoint | URL |
 |---|---|
-| API | https://chartextract-api.onrender.com |
-| Health | https://chartextract-api.onrender.com/health |
+| API (Swagger docs) | https://chartextract.onrender.com/docs |
+| Health | https://chartextract.onrender.com/health |
+| Extract | `POST https://chartextract.onrender.com/extract` |
 
-**Streamlit** — deploy `app.py` on Streamlit Cloud with `API_URL=https://chartextract-api.onrender.com`. Add the public Streamlit URL to the links table above once live.
+**Streamlit** — [chartextract on Streamlit Cloud](https://chartextract-f9wfrftqzygappf2pgi3hts.streamlit.app/). Secrets: `API_URL=https://chartextract.onrender.com`.
 
 ## Limitations / what I'd do differently
 
