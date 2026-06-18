@@ -16,7 +16,7 @@ from eval import (
     macro_f1_score,
     metrics_table,
 )
-from extractor import extract
+from extractor import extract_record
 
 SYNTHETIC_DIR = Path("data/eval/ci_gold")
 REAL_DIR = Path("data/real")
@@ -36,7 +36,7 @@ def run_eval_on_dir(data_dir: Path, cache_name: str) -> tuple[list[dict], int]:
     if not pairs:
         raise FileNotFoundError(f"No labeled pairs in {data_dir}")
     cache = Path("data/eval") / cache_name
-    summary = evaluate_dataset(pairs, extract, cache_path=cache, use_cache=False)
+    summary = evaluate_dataset(pairs, extract_record, cache_path=cache, use_cache=False)
     return metrics_table(summary), summary.n_examples
 
 

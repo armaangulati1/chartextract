@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Any, Optional
@@ -17,7 +18,10 @@ from schema import (
     BiomarkerStatus,
     CancerStage,
     EcogPerformanceStatus,
+    ExtractionOutput,
+    FieldMeta,
     OncologyExtract,
+    TokenUsage,
 )
 
 load_dotenv()
@@ -25,6 +29,19 @@ load_dotenv()
 CHAT_MODEL = "gpt-4o-mini"
 VERIFIER_CONFIDENCE_THRESHOLD = 0.7
 DEFAULT_EXTRACTOR_CONFIDENCE = 0.85
+REVIEW_CONFIDENCE_THRESHOLD = float(os.getenv("REVIEW_CONFIDENCE_THRESHOLD", "0.75"))
+FLAG_CONFIDENCE_PENALTY = 0.1
+
+EXTRACT_FIELD_NAMES = (
+    "primary_site",
+    "histology",
+    "stage",
+    "ecog_performance_status",
+    "line_of_therapy",
+    "date_of_diagnosis",
+    "biomarkers",
+    "treatment_regimen",
+)
 
 SINGLE_PASS_PROMPT = (
     "Extract structured oncology variables from the clinical note into an OncologyExtract record. "
@@ -108,6 +125,9 @@ class PipelineState:
     flags: dict[str, list[str]] = field(default_factory=dict)
     result: OncologyExtract | None = None
     steps: list[str] = field(default_factory=list)
+    prompt_tokens: int = 0
+    completion_tokens: int = 0
+    total_tokens: int = 0
 
     def log(self, step: str) -> None:
         self.steps.append(step)
@@ -137,8 +157,23 @@ class RegimenVerification(BaseModel):
     evidence: str = ""
 
 
-def _llm_create(response_model, system: str, user: str, model: str | None = None):
-    return _get_client().chat.completions.create(
+def _accumulate_usage(state: PipelineState, completion: Any) -> None:
+    usage = getattr(completion, "usage", None)
+    if usage is None:
+        return
+    state.prompt_tokens += int(getattr(usage, "prompt_tokens", 0) or 0)
+    state.completion_tokens += int(getattr(usage, "completion_tokens", 0) or 0)
+    state.total_tokens += int(getattr(usage, "total_tokens", 0) or 0)
+
+
+def _llm_create(
+    response_model,
+    system: str,
+    user: str,
+    model: str | None = None,
+    state: PipelineState | None = None,
+):
+    result, completion = _get_client().chat.completions.create_with_completion(
         model=model or CHAT_MODEL,
         response_model=response_model,
         messages=[
@@ -146,6 +181,9 @@ def _llm_create(response_model, system: str, user: str, model: str | None = None
             {"role": "user", "content": user},
         ],
     )
+    if state is not None:
+        _accumulate_usage(state, completion)
+    return result
 
 
 @observe()
@@ -159,6 +197,7 @@ def router(state: PipelineState) -> PipelineState:
         ),
         state.note,
         model=state.model,
+        state=state,
     )
     state.route = plan
     state.log(f"router: tumor={plan.run_tumor} clinical={plan.run_clinical} "
@@ -199,6 +238,7 @@ def extractors(state: PipelineState) -> PipelineState:
             ),
             note,
             model=model,
+            state=state,
         )
         _set_candidate(state, "primary_site", tumor.primary_site, "tumor_extractor")
         _set_candidate(state, "histology", tumor.histology, "tumor_extractor")
@@ -215,6 +255,7 @@ def extractors(state: PipelineState) -> PipelineState:
             ),
             note,
             model=model,
+            state=state,
         )
         _set_candidate(state, "ecog_performance_status", clinical.ecog_performance_status, "clinical_extractor")
         _set_candidate(state, "line_of_therapy", clinical.line_of_therapy, "clinical_extractor")
@@ -231,6 +272,7 @@ def extractors(state: PipelineState) -> PipelineState:
             ),
             note,
             model=model,
+            state=state,
         )
         if molecular.biomarkers:
             _set_candidate(state, "biomarkers", molecular.biomarkers, "molecular_extractor")
@@ -245,6 +287,7 @@ def extractors(state: PipelineState) -> PipelineState:
             ),
             note,
             model=model,
+            state=state,
         )
         if treatment.treatment_regimen:
             _set_candidate(state, "treatment_regimen", treatment.treatment_regimen, "treatment_extractor")
@@ -285,13 +328,103 @@ def _dedupe_biomarkers(items: list[Biomarker]) -> list[Biomarker]:
     return list(seen.values())
 
 
+def _field_has_value(name: str, value: Any) -> bool:
+    if value is None:
+        return False
+    if isinstance(value, list):
+        return len(value) > 0
+    if isinstance(value, str):
+        return bool(value.strip())
+    return True
+
+
+def _compute_field_confidence(cand: FieldCandidate, flags: list[str]) -> float:
+    penalty = FLAG_CONFIDENCE_PENALTY * len(flags)
+    return max(0.0, min(1.0, cand.confidence - penalty))
+
+
+def build_extraction_output(
+    state: PipelineState,
+    *,
+    review_threshold: float | None = None,
+) -> ExtractionOutput:
+    """Attach per-field confidence and needs_review flags from pipeline state."""
+    threshold = REVIEW_CONFIDENCE_THRESHOLD if review_threshold is None else review_threshold
+    record = state.result or _build_extract(state)
+    fields: dict[str, FieldMeta] = {}
+    needs_review: list[str] = []
+
+    for name in EXTRACT_FIELD_NAMES:
+        cand = state.candidates.get(name)
+        flags = state.flags.get(name, [])
+        if cand is None or not _field_has_value(name, cand.value):
+            fields[name] = FieldMeta(confidence=1.0, needs_review=False, flags=flags)
+            continue
+
+        confidence = round(_compute_field_confidence(cand, flags), 3)
+        flagged = confidence < threshold
+        fields[name] = FieldMeta(
+            confidence=confidence,
+            needs_review=flagged,
+            source=cand.source,
+            evidence=cand.evidence,
+            flags=flags,
+        )
+        if flagged:
+            needs_review.append(name)
+
+    return ExtractionOutput(
+        extract=record,
+        fields=fields,
+        needs_review=needs_review,
+        review_threshold=threshold,
+        usage=TokenUsage(
+            prompt_tokens=state.prompt_tokens,
+            completion_tokens=state.completion_tokens,
+            total_tokens=state.total_tokens,
+        ),
+    )
+
+
+def _wrap_single_pass_output(
+    record: OncologyExtract,
+    *,
+    review_threshold: float | None = None,
+) -> ExtractionOutput:
+    """Assign default confidence to single-pass extraction (no verifier scores)."""
+    threshold = REVIEW_CONFIDENCE_THRESHOLD if review_threshold is None else review_threshold
+    fields: dict[str, FieldMeta] = {}
+    needs_review: list[str] = []
+    payload = record.model_dump(mode="json")
+
+    for name in EXTRACT_FIELD_NAMES:
+        value = payload.get(name)
+        if not _field_has_value(name, value):
+            fields[name] = FieldMeta(confidence=1.0, needs_review=False, source="single_pass")
+            continue
+
+        confidence = DEFAULT_EXTRACTOR_CONFIDENCE
+        flagged = confidence < threshold
+        fields[name] = FieldMeta(
+            confidence=confidence,
+            needs_review=flagged,
+            source="single_pass",
+            flags=[],
+        )
+        if flagged:
+            needs_review.append(name)
+
+    return ExtractionOutput(
+        extract=record,
+        fields=fields,
+        needs_review=needs_review,
+        review_threshold=threshold,
+    )
+
+
 def _build_extract(state: PipelineState) -> OncologyExtract:
     values: dict[str, Any] = {}
-    for name in (
-        "primary_site", "histology", "stage",
-        "ecog_performance_status", "line_of_therapy", "date_of_diagnosis",
-        "biomarkers", "treatment_regimen",
-    ):
+    for name in EXTRACT_FIELD_NAMES:
         if name in state.candidates:
             values[name] = state.candidates[name].value
 
@@ -382,6 +515,7 @@ def verifier(state: PipelineState) -> PipelineState:
             ),
             f"Note:\n{note}\n\nExtracted {field_name}: {current!r}",
             model=model,
+            state=state,
         )
         if outcome.confirmed and outcome.value is not None:
             state.candidates[field_name] = FieldCandidate(
@@ -405,6 +539,7 @@ def verifier(state: PipelineState) -> PipelineState:
             ),
             f"Note:\n{note}\n\nExtracted biomarkers: {current!r}",
             model=model,
+            state=state,
         )
         if outcome.confirmed and outcome.biomarkers:
             state.candidates["biomarkers"] = FieldCandidate(
@@ -427,6 +562,7 @@ def verifier(state: PipelineState) -> PipelineState:
             ),
             f"Note:\n{note}\n\nExtracted regimen: {current!r}",
             model=model,
+            state=state,
         )
         if outcome.confirmed and outcome.treatment_regimen:
             state.candidates["treatment_regimen"] = FieldCandidate(
@@ -463,7 +599,8 @@ def run_pipeline(
     *,
     model: str = CHAT_MODEL,
     use_verifier: bool = True,
-) -> OncologyExtract:
+    review_threshold: float | None = None,
+) -> ExtractionOutput:
     """Pipeline entry: router → extractors → validator → [verifier]."""
     state = PipelineState(note=note, model=model)
     state = router(state)
@@ -474,7 +611,7 @@ def run_pipeline(
     else:
         state.result = _build_extract(state)
         state.log("verifier: skipped")
-    return state.result or OncologyExtract()
+    return build_extraction_output(state, review_threshold=review_threshold)
 
 
 def make_extractor(
@@ -490,5 +627,7 @@ def make_extractor(
         return extract
 
     def extract(note: str) -> OncologyExtract:
-        return run_pipeline(note, model=model, use_verifier=use_verifier)
+        return run_pipeline(
+            note, model=model, use_verifier=use_verifier
+        ).extract
     return extract

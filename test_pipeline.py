@@ -4,6 +4,7 @@ from pipeline import (
     PipelineState,
     RoutePlan,
     _build_extract,
+    build_extraction_output,
     _coerce_stage,
     _dedupe_biomarkers,
     validator,
@@ -56,6 +57,20 @@ def test_validator_produces_oncology_extract():
     assert isinstance(state.result, OncologyExtract)
     assert state.result.primary_site == "breast"
     assert state.result.line_of_therapy == 2
+
+
+def test_build_extraction_output_high_confidence_ships():
+    state = PipelineState(note="x")
+    state.candidates = {
+        "primary_site": FieldCandidate("lung", 0.9, source="tumor_extractor"),
+        "histology": FieldCandidate("adenocarcinoma", 0.9, source="tumor_extractor"),
+        "stage": FieldCandidate(CancerStage.IIIA, 0.9, source="tumor_extractor"),
+        "line_of_therapy": FieldCandidate(1, 0.9, source="clinical_extractor"),
+    }
+    state.result = _build_extract(state)
+    output = build_extraction_output(state, review_threshold=0.75)
+    assert output.needs_review == []
+    assert output.extract.primary_site == "lung"
 
 
 def test_default_route_plan_runs_all_groups():

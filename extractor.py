@@ -1,5 +1,6 @@
 import json
 import sys
+import time
 from pathlib import Path
 from typing import Optional
 
@@ -7,7 +8,8 @@ import requests
 from dotenv import load_dotenv
 from langfuse import get_client, observe
 
-from schema import OncologyExtract
+from observability import attach_run_metrics
+from schema import ExtractionOutput, OncologyExtract
 from pipeline import run_pipeline
 
 OPENFDA_URL = "https://api.fda.gov/drug/label.json"
@@ -27,9 +29,17 @@ load_dotenv()
 
 
 @observe()
-def extract(text: str) -> OncologyExtract:
+def extract(text: str, review_threshold: Optional[float] = None) -> ExtractionOutput:
     """Public extraction entrypoint (delegates to agentic pipeline)."""
-    return run_pipeline(text)
+    started = time.perf_counter()
+    output = run_pipeline(text, review_threshold=review_threshold)
+    latency_ms = (time.perf_counter() - started) * 1000.0
+    return attach_run_metrics(output, latency_ms=latency_ms)
+
+
+def extract_record(text: str, review_threshold: Optional[float] = None) -> OncologyExtract:
+    """Return only the OncologyExtract record (for eval harnesses)."""
+    return extract(text, review_threshold=review_threshold).extract
 
 
 def fetch_label_text(drug_name: str, max_chars: int = 12_000) -> tuple[str, dict]:

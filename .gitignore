@@ -9,3 +9,4 @@ data/eval/ci_out/
 data/eval/experiment/
 data/eval/errors.csv
 data/real/mtsamples.csv
+data/batch/

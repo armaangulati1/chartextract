@@ -586,6 +586,26 @@ def format_pct(value: float) -> str:
     return f"{100 * value:.1f}%"
 
 
+def save_latest_metrics(
+    path: Path,
+    summary: EvalSummary,
+    rows: list[dict],
+    *,
+    source: str,
+) -> None:
+    macro = next((row for row in rows if row["field"] == "macro_avg"), None)
+    payload = {
+        "updated_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+        "source": source,
+        "n_examples": summary.n_examples,
+        "macro_f1": macro["f1"] if macro else None,
+        "rows": rows,
+        "error_distribution": dict(summary.error_distribution),
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
 def write_results_md(path: Path, summary: EvalSummary, rows: list[dict]) -> None:
     lines = [
         "# Extraction evaluation results",
@@ -691,17 +711,23 @@ def main():
     )
     args = parser.parse_args()
 
-    from extractor import extract
+    from extractor import extract_record
 
     pairs = load_pairs(args.data_dir, limit=args.limit)
     if not pairs:
         raise SystemExit(f"No synthetic pairs found in {args.data_dir}")
 
-    summary = evaluate_dataset(pairs, extract, cache_path=args.cache, use_cache=args.use_cache)
+    summary = evaluate_dataset(pairs, extract_record, cache_path=args.cache, use_cache=args.use_cache)
     rows = metrics_table(summary)
 
     write_results_md(args.out_dir / "results.md", summary, rows)
     write_errors_csv(args.out_dir / "errors.csv", summary.errors)
+    save_latest_metrics(
+        Path("data/eval/latest_metrics.json"),
+        summary,
+        rows,
+        source=str(args.data_dir),
+    )
     print_report(summary, rows)
     if args.min_macro_f1 is not None:
         check_macro_f1_threshold(rows, args.min_macro_f1)
