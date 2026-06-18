@@ -2,6 +2,16 @@
 
 Structured oncology variable extraction from clinical notes — with per-field evaluation, human-in-the-loop review, and production-oriented observability.
 
+**Links**
+
+| Surface | URL |
+|---|---|
+| API (Render) | https://chartextract-api.onrender.com |
+| API health | https://chartextract-api.onrender.com/health |
+| Streamlit UI | _Deploy pending — link will be added after Streamlit Cloud deploy_ |
+| Eval report | [`data/eval/results.md`](data/eval/results.md) |
+| Repo | https://github.com/armaangulati1/chartextract |
+
 ## Problem
 
 Oncology workflows depend on discrete chart variables (primary site, stage, biomarkers, line of therapy, regimen) buried in unstructured clinical text. Manual abstraction is slow, inconsistent, and hard to audit. ChartExtractor turns free-text notes into a typed `OncologyExtract` record, scores every field against gold labels, and routes low-confidence extractions to human review before they ship.
@@ -177,27 +187,32 @@ Weakest real fields: **line_of_therapy** (22.2% F1), **biomarkers** (40.0%), **p
 
 ## Run it
 
+### Quick start (local)
+
+```bash
+git clone https://github.com/armaangulati1/chartextract.git && cd chartextract
+cp .env.example .env   # set OPENAI_API_KEY; optional LANGFUSE_* / DATABASE_URL
+pip install -r requirements.txt
+uvicorn api:app --reload          # terminal 1 → http://localhost:8000
+streamlit run app.py              # terminal 2 → http://localhost:8501
+```
+
+The Streamlit app calls the API (`API_URL`, default `http://localhost:8000`). Set `API_URL` to the Render API URL when running the UI against a remote backend.
+
 ### One-command Docker (API)
 
 ```bash
-cp .env.example .env   # add OPENAI_API_KEY (and optional LANGFUSE_* / DATABASE_URL)
 docker build -t chartextract .
 docker run --rm -p 8000:8000 --env-file .env chartextract
 ```
 
 - **API:** http://localhost:8000  
 - **Health:** http://localhost:8000/health  
-- **Extract:** `POST http://localhost:8000/extract` with `{"text": "...", "review_threshold": 0.75}`
+- **Extract:** `POST /extract` with `{"text": "...", "review_threshold": 0.75}`
 
-### Streamlit UI
+### Streamlit UI features
 
-```bash
-pip install -r requirements.txt
-uvicorn api:app --reload          # terminal 1
-streamlit run app.py              # terminal 2  →  http://localhost:8501
-```
-
-The UI shows per-run **latency, token cost, and Langfuse trace links**, a **human review panel** for flagged fields, an **eval metrics tab**, and optional **FHIR export**.
+Per-run **latency, token cost, and Langfuse trace links**; **human review panel** for low-confidence fields; **eval metrics tab**; optional **FHIR Bundle** export.
 
 ### Batch throughput
 
@@ -217,14 +232,16 @@ python experiment.py                              # experiment section
 python scripts/report_real_eval.py --use-cache    # full dataset metrics in results.md
 ```
 
-### Live deploy (Render)
+### Deploy (Render + Streamlit Cloud)
 
-Blueprint: `render.yaml` → service `chartextract-api`. After deploy with env vars set:
+**API** — connect repo to Render using [`render.yaml`](render.yaml). Required secrets: `OPENAI_API_KEY`, `DATABASE_URL` (optional), `LANGFUSE_*` (optional).
 
-- **API:** https://chartextract-api.onrender.com  
-- **Health:** https://chartextract-api.onrender.com/health  
+| Endpoint | URL |
+|---|---|
+| API | https://chartextract-api.onrender.com |
+| Health | https://chartextract-api.onrender.com/health |
 
-Point the Streamlit app at the deployed API: `API_URL=https://chartextract-api.onrender.com streamlit run app.py`
+**Streamlit** — deploy `app.py` on Streamlit Cloud with `API_URL=https://chartextract-api.onrender.com`. Add the public Streamlit URL to the links table above once live.
 
 ## Limitations / what I'd do differently
 
