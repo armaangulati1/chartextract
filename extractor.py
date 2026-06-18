@@ -3,13 +3,12 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-import instructor
 import requests
 from dotenv import load_dotenv
 from langfuse import get_client, observe
-from langfuse.openai import OpenAI
 
 from schema import OncologyExtract
+from pipeline import run_pipeline
 
 OPENFDA_URL = "https://api.fda.gov/drug/label.json"
 # SPL label sections to pull as free-text (public FDA data, no PHI).
@@ -22,40 +21,15 @@ LABEL_SECTIONS = [
     "contraindications",
 ]
 
-EXTRACTION_SYSTEM_PROMPT = (
-    "Extract structured oncology variables from the clinical note into an OncologyExtract record. "
-    "Only use information actually stated in the text; use null for absent scalar fields and "
-    "empty lists for absent list fields. "
-    "Use the schema enums for stage (AJCC I–IV with substages), ECOG performance status (0–4), "
-    "and biomarker status (positive, negative, equivocal, unknown). "
-    "Do not invent fields or values."
-)
-
-CHAT_MODEL = "gpt-4o-mini"
 DEFAULT_SAMPLE_NOTE = Path("data/synthetic/0000.json")
 
 load_dotenv()
 
-_client = None
-
-
-def _get_client():
-    global _client
-    if _client is None:
-        _client = instructor.from_openai(OpenAI(timeout=60.0, max_retries=3))
-    return _client
-
 
 @observe()
 def extract(text: str) -> OncologyExtract:
-    return _get_client().chat.completions.create(
-        model=CHAT_MODEL,
-        response_model=OncologyExtract,
-        messages=[
-            {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
-            {"role": "user", "content": text},
-        ],
-    )
+    """Public extraction entrypoint (delegates to agentic pipeline)."""
+    return run_pipeline(text)
 
 
 def fetch_label_text(drug_name: str, max_chars: int = 12_000) -> tuple[str, dict]:

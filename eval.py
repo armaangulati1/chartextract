@@ -466,7 +466,10 @@ def load_pairs(data_dir: Path, limit: Optional[int] = None) -> list[tuple[str, s
     pairs = []
     for path in files:
         payload = json.loads(path.read_text())
-        pairs.append((path.stem, payload["note"], payload["gold"]))
+        gold = payload.get("gold")
+        if gold is None:
+            continue
+        pairs.append((path.stem, payload["note"], gold))
     return pairs
 
 
