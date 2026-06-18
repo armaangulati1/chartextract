@@ -1,17 +1,20 @@
 from fastapi.testclient import TestClient
 
 from api import app
-from extractor import ClinicalExtract, Medication
+from schema import Biomarker, BiomarkerStatus, CancerStage, OncologyExtract
 
 
-def test_clinical_extract_schema():
-    data = ClinicalExtract(
-        medications=[Medication(name="metoprolol", dose="50 mg", route="oral")],
-        adverse_reactions=["dizziness"],
-        patient_age=67,
+def test_oncology_extract_import_from_schema():
+    data = OncologyExtract(
+        primary_site="lung",
+        histology="adenocarcinoma",
+        stage=CancerStage.IIIA,
+        biomarkers=[Biomarker(name="EGFR", status=BiomarkerStatus.NEGATIVE)],
+        line_of_therapy=1,
+        treatment_regimen=["pembrolizumab"],
     )
-    assert data.patient_age == 67
-    assert data.medications[0].name == "metoprolol"
+    assert data.primary_site == "lung"
+    assert data.stage == CancerStage.IIIA
 
 
 def test_health():

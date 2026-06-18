@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a 65-year-old male with a history of hypertension and type 2 diabetes, presented to the oncology clinic for a follow-up regarding his colorectal cancer treatment. He was diagnosed on August 20, 2024, with stage IIIA mucinous adenocarcinoma after undergoing a colonoscopy that revealed a mass in the proximal colon. The tumor was further evaluated, confirming the histology type during pathology review. Notably, KRAS mutation analysis returned negative, which is favorable and could guide future therapeutic options.\n\nThe patient\u2019s current performance status is ECOG 1, indicating he is still capable of light work but is somewhat restricted in strenuous activities. He has been tolerating his third line of therapy well, which includes FOLFIRI combined with cetuximab. During today\u2019s visit, he reported manageable side effects associated with the chemotherapy regimen, including some fatigue and mild nausea, but overall he feels functional.\n\nHe has a family history of colon cancer in his father who was diagnosed at age 70, which has been concerning for the patient. Past surgical history is significant for an appendectomy performed over ten years ago, with no complications reported. Recent labs showed stable renal function and normal liver enzymes; however, his hemoglobin was slightly reduced at 11.2 g/dL, which we will continue to monitor. Further imaging scheduled in the upcoming months will assess for treatment response.\n\nThe multidisciplinary team continues to evaluate the best approach as the patient progresses through his therapy. Follow-up is scheduled for next month to review imaging results and any necessary adjustments to his treatment plan.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2024-08-20",
+    "treatment_regimen": [
+      "FOLFIRI",
+      "cetuximab"
+    ]
+  }
+}

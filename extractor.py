@@ -1,5 +1,6 @@
 import json
 import sys
+from pathlib import Path
 from typing import Optional
 
 import instructor
@@ -7,7 +8,8 @@ import requests
 from dotenv import load_dotenv
 from langfuse import get_client, observe
 from langfuse.openai import OpenAI
-from pydantic import BaseModel, Field
+
+from schema import OncologyExtract
 
 OPENFDA_URL = "https://api.fda.gov/drug/label.json"
 # SPL label sections to pull as free-text (public FDA data, no PHI).
@@ -20,18 +22,17 @@ LABEL_SECTIONS = [
     "contraindications",
 ]
 
+EXTRACTION_SYSTEM_PROMPT = (
+    "Extract structured oncology variables from the clinical note into an OncologyExtract record. "
+    "Only use information actually stated in the text; use null for absent scalar fields and "
+    "empty lists for absent list fields. "
+    "Use the schema enums for stage (AJCC I–IV with substages), ECOG performance status (0–4), "
+    "and biomarker status (positive, negative, equivocal, unknown). "
+    "Do not invent fields or values."
+)
 
-class Medication(BaseModel):
-    name: str = Field(description="drug/medication name")
-    dose: Optional[str] = Field(None, description="dose if stated, e.g. '50 mg'")
-    route: Optional[str] = Field(None, description="route if stated, e.g. oral, IV")
-
-
-class ClinicalExtract(BaseModel):
-    medications: list[Medication] = Field(default_factory=list, description="medications mentioned")
-    adverse_reactions: list[str] = Field(default_factory=list, description="side effects / adverse reactions mentioned")
-    patient_age: Optional[int] = Field(None, description="patient age in years if stated")
-
+CHAT_MODEL = "gpt-4o-mini"
+DEFAULT_SAMPLE_NOTE = Path("data/synthetic/0000.json")
 
 load_dotenv()
 
@@ -41,25 +42,17 @@ _client = None
 def _get_client():
     global _client
     if _client is None:
-        # instructor wraps OpenAI so completions return a Pydantic model instead of raw JSON.
-        # If the model output fails schema validation, instructor auto-retries until it parses cleanly.
         _client = instructor.from_openai(OpenAI(timeout=60.0, max_retries=3))
     return _client
 
 
 @observe()
-def extract(text: str) -> ClinicalExtract:
+def extract(text: str) -> OncologyExtract:
     return _get_client().chat.completions.create(
-        model="gpt-4o-mini",
-        response_model=ClinicalExtract,  # LLM must fill this schema; instructor validates + retries
+        model=CHAT_MODEL,
+        response_model=OncologyExtract,
         messages=[
-            {
-                "role": "system",
-                "content": (
-                    "Extract structured clinical info from the text. "
-                    "Only use information actually present; leave fields null/empty if not stated."
-                ),
-            },
+            {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
             {"role": "user", "content": text},
         ],
     )
@@ -111,13 +104,23 @@ def fetch_label_text(drug_name: str, max_chars: int = 12_000) -> tuple[str, dict
     return full_text, meta
 
 
+def _default_sample_note() -> str:
+    if DEFAULT_SAMPLE_NOTE.exists():
+        return json.loads(DEFAULT_SAMPLE_NOTE.read_text())["note"]
+    return (
+        "Oncology follow-up: 67-year-old male with lung adenocarcinoma, stage IIIA, "
+        "diagnosed 2023-10-09. ECOG 1. First-line pembrolizumab, carboplatin, pemetrexed. "
+        "EGFR negative, PD-L1 positive."
+    )
+
+
 def run_file(in_path: str, out_path: str):
     text = open(in_path).read()
     result = extract(text)
     get_client().flush()
     with open(out_path, "w") as f:
-        json.dump(result.model_dump(), f, indent=2)
-    print(f"Extracted {len(result.medications)} meds → {out_path}")
+        json.dump(result.model_dump(mode="json"), f, indent=2)
+    print(f"Extracted oncology record → {out_path}")
 
 
 def run_fda(drug_name: str, out_path: Optional[str] = None):
@@ -128,12 +131,12 @@ def run_fda(drug_name: str, out_path: Optional[str] = None):
 
     result = extract(text)
     get_client().flush()
-    payload = {"source": meta, "extract": result.model_dump()}
+    payload = {"source": meta, "extract": result.model_dump(mode="json")}
 
     if out_path:
         with open(out_path, "w") as f:
             json.dump(payload, f, indent=2)
-        print(f"Extracted {len(result.medications)} meds, {len(result.adverse_reactions)} reactions → {out_path}")
+        print(f"Extracted oncology record → {out_path}")
     else:
         print(json.dumps(payload, indent=2))
 
@@ -149,14 +152,9 @@ def main():
         run_file(sys.argv[1], sys.argv[2])
         return
 
-    # Default demo: synthetic clinical note (not real PHI).
-    sample = (
-        "A 67-year-old male was given 50 mg of oral metoprolol and 500 mg IV vancomycin, "
-        "after which he developed moderate dizziness and mild nausea."
-    )
-    result = extract(sample)
+    result = extract(_default_sample_note())
     get_client().flush()
-    print(result.model_dump_json(indent=2))
+    print(json.dumps(result.model_dump(mode="json"), indent=2))
 
 
 if __name__ == "__main__":

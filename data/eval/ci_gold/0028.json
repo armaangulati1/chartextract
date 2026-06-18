@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a male in his late 60s, presents for follow-up regarding his renal condition, having been diagnosed with stage III papillary renal cell carcinoma on February 12, 2022. His ECOG performance status is currently 0, indicating no significant limitations in daily activities. \n\nDuring this visit, a careful review of his treatment progress was undertaken. He is currently on his first line of therapy, consisting of pembrolizumab in combination with axitinib. Dates of prior imaging and clinical evaluations showed no significant changes in tumor volume, suggesting the current regimen may be effective. Biomarker analysis revealed PD-L1 status as equivocal; further evaluation is needed to determine its potential impact on treatment response or next steps.\n\nFamily history is notable for hypertension and diabetes, though there are no direct relatives with malignancies reported. The patient also has a history of benign prostatic hyperplasia, treated successfully via minimally invasive surgical intervention two years ago.\n\nLaboratory results show normal renal function, with creatinine levels within the normal range. Routine screening tests have revealed no abnormalities in electrolytes or blood counts that would require intervention. \n\nThe patient continues to tolerate the current therapy well, reporting only mild fatigue, which he attributes to a busy lifestyle, including a recent family vacation. Plans include periodic reassessment of his renal status through imaging and lab work in the coming weeks, while also discussing potential escalation of care if disease progression is noted. \n\nOverall, the patient remains engaged in his care and maintains a positive outlook.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "papillary renal cell carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-02-12",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "axitinib"
+    ]
+  }
+}

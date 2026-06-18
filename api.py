@@ -3,7 +3,8 @@ from langfuse import get_client
 from pydantic import BaseModel
 
 from db import recent, save_extraction
-from extractor import ClinicalExtract, extract
+from schema import OncologyExtract
+from extractor import extract
 
 
 app = FastAPI(title="Clinical Text Extractor API")
@@ -15,10 +16,10 @@ class ExtractRequest(BaseModel):
 def health():
     return {"status": "ok"}
 
-@app.post("/extract", response_model=ClinicalExtract)
+@app.post("/extract", response_model=OncologyExtract)
 def extract_endpoint(req: ExtractRequest):
     result = extract(req.text)
-    save_extraction(req.text, result.model_dump())
+    save_extraction(req.text, result.model_dump(mode="json"))
     get_client().flush()
     return result
 

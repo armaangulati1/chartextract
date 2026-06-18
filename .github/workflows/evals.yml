@@ -8,5 +8,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      # Phase 1: per-field precision/recall + error taxonomy evals go here.
-      - run: echo "evals placeholder — fill in Phase 1"
+      - run: pip install -r requirements.txt
+      - name: Run extraction eval gate
+        run: |
+          python eval.py \
+            --data-dir data/eval/ci_gold \
+            --out-dir data/eval/ci_out \
+            --cache data/eval/ci_predictions.jsonl \
+            --min-macro-f1 0.85
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
