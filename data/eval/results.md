@@ -48,18 +48,74 @@ Per-field gains were strongest on **stage**; regressions appeared on **primary_s
 
 Net: targeted extractors recover **stage** (+33 pp vs single-pass) but split regimens into component drugs (FOLFIRI → fluorouracil/irinotecan/leucovorin) and the verifier can drop low-signal biomarkers (PSA)—worth keeping the router/extractors, tightening regimen normalization, and raising the verifier threshold before production.
 
-## Real data (MTSamples)
+## Dataset evaluations
 
-Hand-labeled **50** public Hematology-Oncology transcriptions from [MTSamples](https://www.mtsamples.com/) (CC0). Synthetic CI gold: **6** notes.
+Production extract path: `extract_record()` → pipeline with verifier (`gpt-4o-mini`).
 
-### Macro-F1: synthetic vs real
+### Synthetic — CI gold (6 notes)
+
+Examples: **6** · Errors logged: **8**
+
+#### Per-field metrics
+
+| field | TP | FP | FN | precision | recall | F1 |
+|---|---:|---:|---:|---:|---:|---:|
+| primary_site | 5 | 1 | 1 | 83.3% | 83.3% | 83.3% |
+| histology | 6 | 0 | 0 | 100.0% | 100.0% | 100.0% |
+| stage | 5 | 0 | 1 | 100.0% | 83.3% | 90.9% |
+| ecog_performance_status | 5 | 0 | 0 | 100.0% | 100.0% | 100.0% |
+| line_of_therapy | 6 | 0 | 0 | 100.0% | 100.0% | 100.0% |
+| date_of_diagnosis | 6 | 0 | 0 | 100.0% | 100.0% | 100.0% |
+| biomarkers | 9 | 0 | 1 | 100.0% | 90.0% | 94.7% |
+| treatment_regimen | 10 | 4 | 1 | 71.4% | 90.9% | 80.0% |
+| macro_avg |  |  |  | 94.3% | 93.4% | 93.6% |
+| micro_avg | 52 | 5 | 4 | 91.2% | 92.9% | 92.0% |
+
+#### Error taxonomy
+
+| error_type | count | share |
+|---|---:|---:|
+| hallucinated | 4 | 50.0% |
+| wrong_value | 1 | 12.5% |
+| missed | 3 | 37.5% |
+
+### Real — MTSamples (50 notes)
+
+Examples: **50** · Errors logged: **224**
+
+#### Per-field metrics
+
+| field | TP | FP | FN | precision | recall | F1 |
+|---|---:|---:|---:|---:|---:|---:|
+| primary_site | 17 | 21 | 29 | 44.7% | 37.0% | 40.5% |
+| histology | 26 | 9 | 13 | 74.3% | 66.7% | 70.3% |
+| stage | 3 | 1 | 2 | 75.0% | 60.0% | 66.7% |
+| ecog_performance_status | 7 | 3 | 0 | 70.0% | 100.0% | 82.4% |
+| line_of_therapy | 2 | 14 | 0 | 12.5% | 100.0% | 22.2% |
+| date_of_diagnosis | 9 | 10 | 2 | 47.4% | 81.8% | 60.0% |
+| biomarkers | 2 | 4 | 2 | 33.3% | 50.0% | 40.0% |
+| treatment_regimen | 69 | 109 | 36 | 38.8% | 65.7% | 48.8% |
+| macro_avg |  |  |  | 49.5% | 70.1% | 53.8% |
+| micro_avg | 135 | 171 | 84 | 44.1% | 61.6% | 51.4% |
+
+#### Error taxonomy
+
+| error_type | count | share |
+|---|---:|---:|
+| hallucinated | 136 | 60.7% |
+| wrong_value | 32 | 14.3% |
+| wrong_span | 6 | 2.7% |
+| normalization | 1 | 0.4% |
+| missed | 49 | 21.9% |
+
+### Synthetic vs real (summary)
 
 | dataset | notes | macro-F1 | Δ vs synthetic |
 |---|---:|---:|---:|
 | synthetic (CI gold) | 6 | 93.6% | — |
 | real (MTSamples) | 50 | 53.8% | -39.8 pp |
 
-### Per-field F1 gap (real − synthetic)
+#### Per-field F1 gap (real − synthetic)
 
 | field | synthetic | real | gap (pp) |
 |---|---:|---:|---:|
@@ -72,7 +128,7 @@ Hand-labeled **50** public Hematology-Oncology transcriptions from [MTSamples](h
 | biomarkers | 94.7% | 40.0% | -54.7 |
 | treatment_regimen | 80.0% | 48.8% | -31.2 |
 
-### Takeaway
+#### Takeaway
 
 On **50** real MTSamples oncology notes, macro-F1 is **53.8%** vs **93.6%** on synthetic CI gold (**-39.8 pp gap**)—expected degradation on messy real text.
 

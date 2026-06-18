@@ -10,7 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from eval import (
+    EvalSummary,
     evaluate_dataset,
+    format_dataset_eval_section,
     format_pct,
     load_pairs,
     macro_f1_score,
@@ -21,6 +23,7 @@ from extractor import extract_record
 SYNTHETIC_DIR = Path("data/eval/ci_gold")
 REAL_DIR = Path("data/real")
 DEFAULT_OUT = Path("data/eval/results.md")
+DATASET_SECTION_MARKER = "## Dataset evaluations"
 
 
 def _field_f1_rows(rows: list[dict]) -> dict[str, float]:
@@ -31,22 +34,39 @@ def _field_f1_rows(rows: list[dict]) -> dict[str, float]:
     return {r["field"]: r["f1"] for r in rows if r["field"] in fields}
 
 
-def run_eval_on_dir(data_dir: Path, cache_name: str) -> tuple[list[dict], int]:
+def run_eval_on_dir(
+    data_dir: Path,
+    cache_name: str,
+    *,
+    use_cache: bool,
+) -> tuple[EvalSummary, list[dict], int]:
     pairs = load_pairs(data_dir)
     if not pairs:
         raise FileNotFoundError(f"No labeled pairs in {data_dir}")
     cache = Path("data/eval") / cache_name
-    summary = evaluate_dataset(pairs, extract_record, cache_path=cache, use_cache=False)
-    return metrics_table(summary), summary.n_examples
+    summary = evaluate_dataset(pairs, extract_record, cache_path=cache, use_cache=use_cache)
+    return summary, metrics_table(summary), summary.n_examples
 
 
-def append_real_section(
+def _preserve_experiment_section(out_path: Path) -> str:
+    if not out_path.exists():
+        return ""
+    text = out_path.read_text(encoding="utf-8")
+    for marker in (DATASET_SECTION_MARKER, "## Real data (MTSamples)"):
+        if marker in text:
+            return text.split(marker)[0].rstrip()
+    return text.rstrip()
+
+
+def append_dataset_evaluations(
     out_path: Path,
+    synth_summary: EvalSummary,
     synth_rows: list[dict],
+    real_summary: EvalSummary,
     real_rows: list[dict],
-    synth_n: int,
-    real_n: int,
 ) -> None:
+    synth_n = synth_summary.n_examples
+    real_n = real_summary.n_examples
     synth_macro = macro_f1_score(synth_rows)
     real_macro = macro_f1_score(real_rows)
     gap_pp = (real_macro - synth_macro) * 100
@@ -55,27 +75,31 @@ def append_real_section(
     real_f1 = _field_f1_rows(real_rows)
     fields = list(synth_f1.keys())
 
-    existing = out_path.read_text() if out_path.exists() else ""
-    if "## Real data (MTSamples)" in existing:
-        existing = existing.split("## Real data (MTSamples)")[0].rstrip() + "\n"
-
     lines = [
-        existing.rstrip(),
+        _preserve_experiment_section(out_path),
         "",
-        "## Real data (MTSamples)",
+        DATASET_SECTION_MARKER,
         "",
-        f"Hand-labeled **{real_n}** public Hematology-Oncology transcriptions from "
-        "[MTSamples](https://www.mtsamples.com/) (CC0). "
-        f"Synthetic CI gold: **{synth_n}** notes.",
+        "Production extract path: `extract_record()` → pipeline with verifier (`gpt-4o-mini`).",
         "",
-        "### Macro-F1: synthetic vs real",
+        *format_dataset_eval_section(
+            f"Synthetic — CI gold ({synth_n} notes)",
+            synth_summary,
+            synth_rows,
+        ),
+        *format_dataset_eval_section(
+            f"Real — MTSamples ({real_n} notes)",
+            real_summary,
+            real_rows,
+        ),
+        "### Synthetic vs real (summary)",
         "",
         "| dataset | notes | macro-F1 | Δ vs synthetic |",
         "|---|---:|---:|---:|",
         f"| synthetic (CI gold) | {synth_n} | {format_pct(synth_macro)} | — |",
         f"| real (MTSamples) | {real_n} | {format_pct(real_macro)} | {gap_pp:+.1f} pp |",
         "",
-        "### Per-field F1 gap (real − synthetic)",
+        "#### Per-field F1 gap (real − synthetic)",
         "",
         "| field | synthetic | real | gap (pp) |",
         "|---|---:|---:|---:|",
@@ -87,12 +111,12 @@ def append_real_section(
 
     lines.extend([
         "",
-        "### Takeaway",
+        "#### Takeaway",
         "",
         _real_takeaway(synth_macro, real_macro, synth_f1, real_f1, real_n),
         "",
     ])
-    out_path.write_text("\n".join(lines))
+    out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def _real_takeaway(
@@ -128,17 +152,32 @@ def main():
     parser.add_argument("--synthetic-dir", type=Path, default=SYNTHETIC_DIR)
     parser.add_argument("--real-dir", type=Path, default=REAL_DIR)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    parser.add_argument(
+        "--use-cache",
+        action="store_true",
+        help="score from cached predictions (no live API calls)",
+    )
+    parser.add_argument(
+        "--live",
+        action="store_true",
+        help="run live extraction (ignores cache)",
+    )
     args = parser.parse_args()
+    use_cache = args.use_cache or not args.live
 
     print("Evaluating synthetic CI gold...")
-    synth_rows, synth_n = run_eval_on_dir(args.synthetic_dir, "synthetic_ci_predictions.jsonl")
+    synth_summary, synth_rows, _ = run_eval_on_dir(
+        args.synthetic_dir, "synthetic_ci_predictions.jsonl", use_cache=use_cache
+    )
     print(f"  macro-F1: {format_pct(macro_f1_score(synth_rows))}")
 
     print("Evaluating real MTSamples gold...")
-    real_rows, real_n = run_eval_on_dir(args.real_dir, "real_mtsamples_predictions.jsonl")
+    real_summary, real_rows, _ = run_eval_on_dir(
+        args.real_dir, "real_mtsamples_predictions.jsonl", use_cache=use_cache
+    )
     print(f"  macro-F1: {format_pct(macro_f1_score(real_rows))}")
 
-    append_real_section(args.out, synth_rows, real_rows, synth_n, real_n)
+    append_dataset_evaluations(args.out, synth_summary, synth_rows, real_summary, real_rows)
     print(f"Wrote {args.out}")
 
 

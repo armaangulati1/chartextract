@@ -6,6 +6,7 @@ from eval import (
     compare_regimen,
     compare_scalar,
     evaluate_record,
+    format_dataset_eval_section,
     merge_summaries,
     metrics_table,
     normalize_date,
@@ -82,6 +83,18 @@ def test_evaluate_record_and_metrics():
 def test_macro_f1_threshold_gate():
     rows = [{"field": "macro_avg", "f1": 0.90, "precision": 0.9, "recall": 0.9}]
     check_macro_f1_threshold(rows, 0.85)
+
+
+def test_format_dataset_eval_section_includes_metrics_and_taxonomy():
+    gold = OncologyExtract(primary_site="lung", line_of_therapy=1)
+    pred = OncologyExtract(primary_site="breast", line_of_therapy=1)
+    summary = evaluate_record("0001", gold, pred)
+    rows = metrics_table(summary)
+    section = "\n".join(format_dataset_eval_section("Test set (1 note)", summary, rows))
+    assert "#### Per-field metrics" in section
+    assert "#### Error taxonomy" in section
+    assert "primary_site" in section
+    assert "wrong_value" in section
 
 
 def test_macro_f1_threshold_gate_fails():

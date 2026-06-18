@@ -606,6 +606,58 @@ def save_latest_metrics(
     path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
+def format_metrics_md_lines(rows: list[dict]) -> list[str]:
+    lines = [
+        "| field | TP | FP | FN | precision | recall | F1 |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for row in rows:
+        lines.append(
+            f"| {row['field']} | {row['tp']} | {row['fp']} | {row['fn']} | "
+            f"{format_pct(row['precision'])} | {format_pct(row['recall'])} | {format_pct(row['f1'])} |"
+        )
+    return lines
+
+
+def format_error_taxonomy_md_lines(summary: EvalSummary) -> list[str]:
+    lines = [
+        "| error_type | count | share |",
+        "|---|---:|---:|",
+    ]
+    total_errors = sum(summary.error_distribution.values()) or 1
+    for error_type in ERROR_TYPES:
+        count = summary.error_distribution.get(error_type, 0)
+        if count:
+            lines.append(
+                f"| {error_type} | {count} | {format_pct(count / total_errors)} |"
+            )
+    if len(lines) == 2:
+        lines.append("| _(none)_ | 0 | — |")
+    return lines
+
+
+def format_dataset_eval_section(
+    heading: str,
+    summary: EvalSummary,
+    rows: list[dict],
+) -> list[str]:
+    """Markdown block: per-field P/R/F1 table + error taxonomy for one gold set."""
+    return [
+        f"### {heading}",
+        "",
+        f"Examples: **{summary.n_examples}** · Errors logged: **{len(summary.errors)}**",
+        "",
+        "#### Per-field metrics",
+        "",
+        *format_metrics_md_lines(rows),
+        "",
+        "#### Error taxonomy",
+        "",
+        *format_error_taxonomy_md_lines(summary),
+        "",
+    ]
+
+
 def write_results_md(path: Path, summary: EvalSummary, rows: list[dict]) -> None:
     lines = [
         "# Extraction evaluation results",
@@ -615,25 +667,12 @@ def write_results_md(path: Path, summary: EvalSummary, rows: list[dict]) -> None
         "",
         "## Per-field metrics",
         "",
-        "| field | TP | FP | FN | precision | recall | F1 |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        *format_metrics_md_lines(rows),
+        "",
+        "## Error taxonomy",
+        "",
+        *format_error_taxonomy_md_lines(summary),
     ]
-    for row in rows:
-        lines.append(
-            f"| {row['field']} | {row['tp']} | {row['fp']} | {row['fn']} | "
-            f"{format_pct(row['precision'])} | {format_pct(row['recall'])} | {format_pct(row['f1'])} |"
-        )
-
-    lines.extend(["", "## Error taxonomy", ""])
-    total_errors = sum(summary.error_distribution.values()) or 1
-    lines.append("| error_type | count | share |")
-    lines.append("|---|---:|---:|")
-    for error_type in ERROR_TYPES:
-        count = summary.error_distribution.get(error_type, 0)
-        if count:
-            lines.append(
-                f"| {error_type} | {count} | {format_pct(count / total_errors)} |"
-            )
 
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines) + "\n")
