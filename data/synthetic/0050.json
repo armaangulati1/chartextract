@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 62-year-old female with a known history of stage IVB colorectal mucinous adenocarcinoma diagnosed on April 10, 2019. She has undergone two lines of therapy to date, currently receiving FOLFOX as part of her treatment regimen. Notably, her performance status is assessed at ECOG 3, indicating she is limited in self-care and largely confined to bed or a chair.\n\nDuring the recent follow-up, biomarkers were evaluated, revealing a KRAS mutation negative status, which may have implications for her treatment approach. Additionally, she is MSI negative, aligning with her clinical profile of classic mucinous adenocarcinoma, which often portends a more aggressive course. \n\nHer comorbidities include well-managed hypertension and mild osteoarthritis, which appear stable. There's a family history of breast cancer in her sister, but no prior surgeries related to her current malignancy. Laboratory workup has been unremarkable for benign conditions, with routine blood counts and metabolic panels within normal limits.\n\nThe patient continues to follow up regularly for management of her symptoms and side effects of FOLFOX, including occasional nausea and fatigue. Given her current performance status, close monitoring and supportive care are critical as further therapeutic options are considered.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "negative"
+      },
+      {
+        "name": "MSI",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-04-10",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

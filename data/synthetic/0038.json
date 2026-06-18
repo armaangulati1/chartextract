@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 54-year-old female, presented for her follow-up appointment after being diagnosed with breast cancer on January 5, 2022. Her primary tumor was classified as invasive lobular carcinoma, confirmed through excisional biopsy and subsequent pathology review. Radiographic assessments indicated the disease has progressed to stage IIIB, necessitating further intervention.\n\nAt the last visit, the patient\u2019s ECOG performance status was noted to be 0, indicating she is fully active and able to carry out all pre-disease activities without restriction. However, with exhaustive treatments thus far, she is now on her second line of therapy, currently receiving capecitabine as part of her regimen.\n\nBiomarker testing results revealed that the tumor is estrogen receptor (ER) negative. The HER2 status remains unknown at this time, which may guide future therapeutic options after further evaluation.\n\nIn the context of her cancer journey, patient history is significant for recurrent episodes of hypertension and a prior laparoscopic cholecystectomy performed in 2019 due to symptomatic gallstones. Notably, her family history includes a mother who is a breast cancer survivor diagnosed at age 62, emphasizing the potential hereditary component of her current diagnosis.\n\nAs this patient is being monitored closely, regular follow-ups are essential to evaluate the effectiveness of capecitabine and to discuss potential enrollment in clinical trials concerning HER2 targeting therapies, contingent on future test results. We will continue to provide comprehensive supportive care, addressing any signs of treatment side effects, as the plan for her oncology care evolves.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "negative"
+      },
+      {
+        "name": "HER2",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-01-05",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

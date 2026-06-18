@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a 62-year-old female with a significant past medical history including hypertension and hyperlipidemia, was diagnosed with stage IVB colorectal cancer with mucinous adenocarcinoma histology on February 26, 2025. She is currently classified with an ECOG performance status of 1, indicating she is restricted in strenuous activity but is otherwise able to carry out light work or activities of daily living independently.\n\nIn evaluating her disease, we noted the presence of KRAS mutation status as equivocal, which may have implications for treatment decisions moving forward. She is currently undergoing her first line of therapy, which consists of the FOLFOX regimen. The patient's treatment began two weeks ago, and she reports tolerating the regimen well so far, with manageable side effects, predominantly mild fatigue and some gastrointestinal upset.\n\nFamily history is significant for colorectal cancer in her sister, who was diagnosed at a similar age, raising concern for potential hereditary syndromes. Additionally, she underwent a cholecystectomy five years ago with no complications. Recent lab tests, including routine blood work, show normal liver enzymes and no signs of anemia, which is encouraging in light of her current chemotherapy treatment.\n\nThe patient's follow-up appointments will focus on monitoring her response to FOLFOX, as well as symptom management to improve her quality of life during this course of therapy. We will consider genomic profiling to further evaluate her KRAS status and discuss potential targeted therapies based on that assessment as she progresses in her treatment.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2025-02-26",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "note": "Patient is a 52-year-old female with a primary diagnosis of ovarian cancer, specifically high-grade serous carcinoma, confirmed on biopsy. The staging evaluation reveals disease classified as stage IB, indicating isolated involvement of one ovary with no apparent spread to lymph nodes or other sites. The patient was diagnosed on June 17, 2020, and has maintained a performance status of ECOG 0, demonstrating full activity without any symptom-related restrictions.\n\nBiomarker analysis highlights a positive status for homologous recombination deficiency (HRD) and BRCA1, while BRCA2 results are equivocal. These findings suggest a potential benefit of targeted therapy and warrant careful consideration during subsequent treatment planning.\n\nIn terms of treatment history, the patient is currently on the first line of therapy, with mirvetuximab soravtansine being the selected regimen. She has tolerated the initial cycles of treatment quite well, and there have been no significant adverse effects reported thus far.\n\nIt should be noted that the patient has a history of hypertension, controlled with medication, and previously underwent a hysterectomy several years ago for benign fibroids. Family history is significant for breast cancer in a sister, raising further discussion regarding genetic testing in family members. Labs reveal normal renal function and mild leukopenia, likely secondary to chemotherapy, but nothing clinically concerning at this point.\n\nOverall, the patient is optimistic regarding her treatment response, and we will continue to monitor her closely for any changes in her condition as she progresses through her therapeutic regimen.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "high-grade serous carcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "HRD",
+        "status": "positive"
+      },
+      {
+        "name": "BRCA1",
+        "status": "positive"
+      },
+      {
+        "name": "BRCA2",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-06-17",
+    "treatment_regimen": [
+      "mirvetuximab soravtansine"
+    ]
+  }
+}

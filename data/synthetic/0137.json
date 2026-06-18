@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 64-year-old male with a notable history of hypertension and hyperlipidemia, presenting for follow-up after being diagnosed with stage IV clear cell renal cell carcinoma on November 15, 2022. He has been on a treatment regimen consisting of pembrolizumab and axitinib, initiated after confirming the primary tumor site in the left kidney. The patient\u2019s current ECOG performance status is rated at 2, indicating he is somewhat active, but experiences significant limitations in strenuous activities.\n\nRecent imaging studies showed progressive disease with multiple metastases noted in the lungs and bones, and despite his current treatment, he reports increased fatigue and occasional shortness of breath, which he attributes to both his cancer and a history of seasonal allergies. \n\nLaboratory results from last week indicated stable electrolytes and normal renal function, with a creatinine level of 1.2 mg/dL and no signs of acute kidney injury. Notably, biomarker testing revealed negative results for VHL, while PD-L1 status returned as equivocal, leaving some uncertainty regarding the potential benefit of immunotherapy.\n\nThe patient\u2019s family history includes a mother who was treated for breast cancer and a brother with a history of prostate cancer, which raises some concerns about hereditary cancer predisposition. Additionally, he underwent a cholecystectomy five years ago and has no significant surgical history beyond this. \n\nWe discussed the importance of regular follow-up and potential clinical trial opportunities should his disease progress further. The patient is agreeable to continue with the current therapy while managing his symptoms conservatively and will return in four weeks for a re-evaluation.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-11-15",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "axitinib"
+    ]
+  }
+}

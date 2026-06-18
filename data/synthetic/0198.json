@@ -1,0 +1,28 @@
+{
+  "note": "The patient, a 62-year-old female with a history of hyperlipidemia and managed hypertension, was diagnosed with stage IB high-grade serous carcinoma of the ovary on June 19, 2019. She presented with increasingly frequent abdominal discomfort and had undergone a laparoscopy six months prior for suspected ovarian cysts, which turned out to be benign.\n\nUpon evaluation, her performance status was assessed as ECOG 2, indicating some assistance needed with activities of daily living, especially due to fatigue related to her cancer diagnosis and ongoing treatment. The initial treatment regimen she commenced included mirvetuximab soravtansine as the first line of therapy.\n\nRelevant biomarker testing revealed positive results for both BRCA1 and BRCA2, suggesting a hereditary predisposition to her malignancy, alongside a positive homologous recombination deficiency (HRD) status, indicating potential benefit from targeted therapies. Additionally, there is no notable family history of breast or ovarian cancer despite the patient\u2019s positive genetic findings.\n\nHer routine lab tests showed mild elevations in cholesterol levels but were otherwise unremarkable, and she has been compliant with her antihypertensive medications. The current follow-up plan includes monitoring for progression through physical exams and imaging, with additional genetic counseling to discuss implications for family members. The patient is encouraged to maintain good hydration and a balanced diet to support her overall well-being during treatment.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "high-grade serous carcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "positive"
+      },
+      {
+        "name": "BRCA1",
+        "status": "positive"
+      },
+      {
+        "name": "HRD",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-06-19",
+    "treatment_regimen": [
+      "mirvetuximab soravtansine"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "note": "The patient presented to the oncology clinic with a diagnosis of head and neck squamous cell carcinoma, currently staged at III. On evaluation, the ECOG performance status was noted to be 2, indicating that the patient is unable to carry out any work activities but can still manage self-care. Interestingly, the histological analysis demonstrated equivocal results for HPV status, while EBV was detected positively. Additionally, PD-L1 was found to be positive, which may influence treatment considerations moving forward.\n\nThis visit marks the continuation of the second line of therapy, where the patient has been receiving nivolumab. Previous treatment history includes local resection of the tumor, but not much else of significance stands out in the patient's surgical history.\n\nThe patient also carries a history of chronic hypertension and managed diabetes, which are well-controlled under current medication regimens\u2014hypertension medication seems effective with stable blood pressure at last check-up. Family history reveals no significant genetic predispositions, but note that there is a remote family history of lung cancer in a distant relative.\n\nLab results from last week showed benign electrolyte levels and kidney function within normal limits, providing a reassuring backdrop for the ongoing immunotherapy. The patient expresses some concern regarding side effects from treatment, which we will continue to monitor carefully. Overall, we are focusing on managing the cancer aggressively while ensuring quality of life as much as possible.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "HPV",
+        "status": "equivocal"
+      },
+      {
+        "name": "EBV",
+        "status": "positive"
+      },
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "nivolumab"
+    ]
+  }
+}

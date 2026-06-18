@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a male with a diagnosis of neuroendocrine carcinoma of the prostate, confirmed on biopsy performed on October 1, 2025. He is currently classified as stage IIIC due to lymph node involvement. The patient's clinical presentation and imaging studies indicate advanced disease; his ECOG performance status is rated at 1, suggesting he is capable of light activity but restricted in strenuous tasks, reflecting a relatively preserved functional status amid the advancing cancer. \n\nAt this time, the patient has undergone the third line of therapy, currently receiving docetaxel as part of his treatment regimen. Despite this aggressive approach, laboratory evaluation shows the PSA level to be equivocal, necessitating ongoing monitoring to assess treatment response and disease progression.\n\nNotably, the patient has a past medical history significant for hypertension and type 2 diabetes, both of which are being managed with medication. He recently underwent surgery for a benign prostate enlargement five years prior and has no significant family history of cancer aside from a familial pattern of cardiovascular disease. \n\nIt is essential to continue close surveillance and consider next steps based on the patient's response to docetaxel and any emerging symptoms. Multidisciplinary discussions may be warranted to address potential clinical trials or additional therapies, given the advanced nature of his cancer and current state of treatment.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2025-10-01",
+    "treatment_regimen": [
+      "docetaxel"
+    ]
+  }
+}

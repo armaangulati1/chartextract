@@ -1,0 +1,30 @@
+{
+  "note": "The patient, a 54-year-old woman, diagnosed with stage IIA breast carcinoma on November 29, 2021, presents for follow-up visit to assess treatment response and manage ongoing care. Her cancer is classified as HER2-positive carcinoma, and she is currently in the first line of therapy. She has been receiving a regimen that includes trastuzumab, pertuzumab, and docetaxel, which she began shortly after diagnosis.\n\nReview of systems reveals complaints of mild fatigue, consistent with an ECOG performance status of 1, indicating she is able to carry out light activities but is unable to engage in strenuous activity. Family history is significant for a sister who had breast cancer at age 50; however, there are no known BRCA mutations in the family. Current medications include antihypertensives for long-standing hypertension, treated with lisinopril, and atorvastatin for hyperlipidemia. She reports no recent lab abnormalities aside from routine elevations of LDL cholesterol, which have been stable.\n\nPathology and biomarker assessments show ER status is currently unknown, HER2 is negative, while PR status is equivocal. This necessitates further evaluation to determine any implications for treatment options moving forward. Imaging studies including a recent mammogram reveal no new lesions, and there is no evidence of metastasis at this time.\n\nDuring today\u2019s exam, the patient appears well-nourished and in no acute distress. Local breast examination shows no new masses or areas of concern. Plans for management include continuation of the current therapy, with the next administration of trastuzumab and pertuzumab scheduled for next month.  A repeat echocardiogram will also be arranged to monitor cardiac function given the cardiotoxic potential of the treatment regimen. We will reassess biomarker statuses with future pathology referrals as indicated. Follow-up appointment set for 4 weeks.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "unknown"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "PR",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-11-29",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

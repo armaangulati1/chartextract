@@ -1,0 +1,28 @@
+{
+  "note": "In follow-up with the oncology service, the patient, a 63-year-old male with a history of hypertension and hyperlipidemia, presents today for assessment of his colorectal malignancy diagnosis dated May 1, 2026. The pathology reveals a mucinous adenocarcinoma, classified as stage IIIA, which correlates with the patient's current treatment plan and performance status.\n\nThe patient's ECOG performance status is recorded as 0, indicating he is fully active and capable of carrying on all pre-disease activities without restriction. At the current visit, he is undergoing the second line of therapy, specifically the FOLFOX regimen, and reports tolerating the treatment well with minimal side effects.\n\nBiomarker analysis is critical in managing his case. Recent evaluations indicate a positive BRAF status, while testing for HER2 and NRAS returned negative results. These findings will guide ongoing treatment decisions and potential clinical trial considerations in the future.\n\nIt is noteworthy that the patient denies any gastrointestinal changes and reports stable weight. Concurrently, he has a family history of colorectal cancer in his paternal uncle, though no previous surgeries for cancer have been documented in his medical history.\n\nRoutine labs reveal slightly elevated cholesterol levels but overall are within acceptable limits, confirming no new significant concerns outside of his oncology management. The multidisciplinary team continues to monitor for any signs of disease progression and to assess response to the FOLFOX regimen effectively. Next consultation is scheduled in three months for ongoing evaluation.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "positive"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "NRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2026-05-01",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

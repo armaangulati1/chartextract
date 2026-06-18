@@ -1,0 +1,30 @@
+{
+  "note": "The patient is a 68-year-old male with a history of chronic obstructive pulmonary disease (COPD) and hyperlipidemia, presenting with a lung mass. Following further evaluation, he was diagnosed with stage II squamous cell carcinoma of the lung on November 22, 2021. At the time of diagnosis, he reported decreased exercise tolerance and an ECOG performance status of 2, indicating that he is not able to perform strenuous activity but is able to care for himself and perform light activities.\n\nThe patient's diagnostic workup included imaging that confirmed the presence of a tumor in the right hilum. Additionally, molecular profiling of the tumor revealed negative results for KRAS, ALK, and PD-L1 biomarkers, indicating that targeted therapies may not be effective for his current condition.\n\nHe has initiated treatment with a regimen consisting of pembrolizumab, carboplatin, and pemetrexed, representing the first line of therapy. Side effects have been manageable, though he has experienced mild fatigue and nausea, which he attributes to the chemotherapy. He has no significant family history of lung cancer but does have a prior history of a cholecystectomy performed five years ago. \n\nRoutine lab work showed normal liver and renal function, although his lipid levels remain elevated despite treatment. Continued monitoring of his tumor response through imaging and lab assessments will be necessary to evaluate the efficacy of the current regimen and to adjust as needed based on clinical response. \n\nThe patient has been counseled about the importance of smoking cessation; he has a 30 pack-year smoking history but quit smoking two years ago. He expresses a willingness to adhere to the treatment plan and is aware of potential clinical trial options for future lines of therapy if needed.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "negative"
+      },
+      {
+        "name": "ALK",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-11-22",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

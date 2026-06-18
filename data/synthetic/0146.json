@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 68-year-old male with a diagnosis of pancreatic ductal adenocarcinoma, stage IIIA, confirmed on January 23, 2021. He presents today for a follow-up visit regarding his progression under current treatment. Notable for the patient's ECOG performance status of 2, he is feeling somewhat fatigued and experiences occasional discomfort but remains capable of self-care and limited activities.\n\nSince his diagnosis, the patient has received multiple lines of therapy, currently at the third line, and has been on the FOLFIRINOX regimen. There have been no significant adverse effects aside from mild nausea, which he has been managing with ondansetron. The patient\u2019s last CA 19-9 levels are unavailable, and further testing is required to evaluate this marker for adjusting treatment strategies.\n\nNoteworthy is the patient's biomarker status; the BRCA2 gene is positive while the BRCA1 status remains equivocal, necessitating further exploration into targeted therapies or genetic counseling for potential familial implications. His family history reveals a background of prostate cancer in his father, which might have some relevance, given the hereditary ties of BRCA mutations.\n\nIn the past medical history, the patient has hypertension managed with lisinopril and hyperlipidemia treated with atorvastatin. Moreover, he underwent laparoscopic cholecystectomy in the past, which is unrelated to his current malignancy.\n\nA comprehensive assessment is required to discuss potential next steps, especially focused on the implications of his BRCA status and possibilities of clinical trials. Our plan includes arranging for repeat imaging in 6 weeks and reassessment of CA 19-9 values. The patient was advised to maintain a healthy diet and stay hydrated, which may help alleviate some side effects from the chemotherapy.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "equivocal"
+      },
+      {
+        "name": "BRCA2",
+        "status": "positive"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2021-01-23",
+    "treatment_regimen": [
+      "FOLFIRINOX"
+    ]
+  }
+}

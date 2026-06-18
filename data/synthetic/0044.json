@@ -1,0 +1,15 @@
+{
+  "note": "The patient, a 62-year-old male, was diagnosed with pancreatic ductal adenocarcinoma on February 18, 2022. At the time of diagnosis, the malignancy was classified as stage IV, indicating metastatic disease. The patient currently presents with an ECOG performance status of 1, reflecting some restricted activity but capable of maintaining independent living.\n\nThe treatment regimen initiated involves olaparib, as part of the first line of therapy. There are no significant biomarker alterations noted at this time. The patient has a history of hyperlipidemia and mild osteoarthritis but has not undergone any prior surgeries related to the neoplasm. Notably, a family history of breast cancer has been documented in the maternal lineage.\n\nReview of systems reveals mild abdominal discomfort but no changes in bowel habits. Laboratory findings indicate stable liver function, with no signs of cholestasis. Imaging from the initial staging shows metastasis predominantly within the liver.\n\nThe patient's follow-up is scheduled for next month, during which we will assess tolerance to olaparib and consider further interventions based on clinical response and tolerance.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IV",
+    "biomarkers": [],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-02-18",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

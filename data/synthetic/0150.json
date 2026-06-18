@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 54-year-old female with a recent diagnosis of invasive lobular carcinoma of the breast, confirmed on May 19, 2023. She presents with stage III disease, characterized by significant lymphatic involvement. Currently, her Eastern Cooperative Oncology Group (ECOG) performance status is classified as 1, indicating she is restricted in strenuous activity but is otherwise capable of complete self-care. \n\nDiagnostic imaging evaluated the extent of the malignancy, and histological assessment shows positive biomarkers, notably HER2 and Ki-67, suggesting an aggressive disease profile. The patient is still undergoing her first line of therapy, currently receiving sacituzumab govitecan. \n\nShe reports no other significant comorbidities impacting her treatment course, however, she has a past medical history of hypertension, well-controlled on lisinopril. Her family history is notable for breast cancer in her maternal aunt; no history of other malignancies was disclosed. \n\nLaboratory tests reveal normal complete blood count and basic metabolic panel, with the exception of slightly elevated cholesterol levels, which have been addressed with dietary modifications. She is currently being monitored closely for any adverse effects from the treatment regimen. The next follow-up appointment is scheduled for 4 weeks, at which time we will assess response to therapy, including necessary imaging and laboratory evaluations to further guide management. \n\nOverall, the patient remains optimistic and is committed to adhering to the treatment plan, engaging in light activities as tolerated.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "positive"
+      },
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2023-05-19",
+    "treatment_regimen": [
+      "sacituzumab govitecan"
+    ]
+  }
+}

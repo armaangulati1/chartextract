@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 68-year-old male with a diagnosis of pancreatic ductal adenocarcinoma, confirmed on biopsy, initially diagnosed on January 27, 2023. At presentation, he was evaluated and classified with stage IVB disease, indicating extensive metastatic spread. Current ECOG performance status is recorded as 2, reflecting that the patient is able to walk, but limited in strenuous activity due to ongoing symptoms associated with the malignancy. \n\nLaboratory investigations show a significant elevation in CA 19-9 levels, which is positive and aligns with the aggressive nature of the disease. Genetic testing results revealed that BRCA2 is positive while the status of BRCA1 remains equivocal, necessitating further interpretation in light of potential treatment options. \n\nThe patient has undergone two lines of prior therapy, with the current regimen consisting of the combination of gemcitabine and nab-paclitaxel, administered in an outpatient setting. This is his third line of therapy as we aim to manage disease burden while considering his performance status and symptomatology. \n\nClinical history includes benign prostatic hyperplasia and hypertension, well-controlled on medication. Family history is significant for breast cancer in a sister and colon cancer in a parent, warranting ongoing surveillance for additional malignancies. The patient has no significant allergies, with prior surgical history including a laparoscopic cholecystectomy approximately ten years ago. Regular follow-ups and imaging studies are recommended to monitor treatment response and progression of the disease.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "equivocal"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "positive"
+      },
+      {
+        "name": "BRCA2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2023-01-27",
+    "treatment_regimen": [
+      "gemcitabine",
+      "nab-paclitaxel"
+    ]
+  }
+}

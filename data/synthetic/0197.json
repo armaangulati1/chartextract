@@ -1,0 +1,26 @@
+{
+  "note": "Patient is a 65-year-old male with a diagnosis of squamous cell carcinoma of the lung, confirmed on biopsy performed on February 8, 2026, presenting with stage IIA disease. The patient has an ECOG performance status of 2, indicating that he is capable of all self-care but is unable to carry out any work activities due to fatigue and respiratory symptoms. He has a current line of therapy at the third stage, which includes the administration of pembrolizumab combined with carboplatin and pemetrexed.\n\nUpon evaluation, PD-L1 expression was found to be equivocal, suggesting that the tumor may have a variable response to immunotherapy, while EGFR testing has returned positive, which could guide targeted treatment options going forward. This information will need to be auspiciously weighed against the necessity for systemic therapy given his performance status and prior treatment responses.\n\nAdditionally, the patient's medical history is notable for hypertension and hyperlipidemia, which are currently managed with lisinopril and atorvastatin, respectively. There have been no significant adverse effects noted from his current treatment regimen thus far.\n\nSocial history reveals a 30 pack-year smoking history; however, he has been tobacco-free for the last five years. The patient has a family history of lung cancer in his mother, diagnosed at the age of 70, but no other malignancies reported in immediate family members.\n\nCurrent labs indicate stable kidney function with routine serum creatinine levels; liver function tests are within normal limits. Considering patient\u2019s current line of treatment and any additional therapeutic interventions, follow-up appointments have been scheduled every three weeks to monitor response to therapy and reassess overall clinical condition.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      },
+      {
+        "name": "EGFR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2026-02-08",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

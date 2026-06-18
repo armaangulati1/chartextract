@@ -1,0 +1,29 @@
+{
+  "note": "Patient is a 54-year-old female presenting for follow-up after being diagnosed with endometrioid carcinoma of the ovary on June 14, 2022. She is currently classified with stage IB disease. The patient has a reported ECOG performance status of 2, indicating she is ambulatory but limited in strenuous activity due to her condition.\n\nHer initial treatment regimen, which began shortly after diagnosis, included carboplatin combined with paclitaxel, and this was well tolerated with manageable side effects.\n\nRecent biomarker evaluations revealed a BRCA1 and BRCA2 status of negative, while homologous recombination deficiency (HRD) testing returned positive. This finding is noteworthy as it may influence her treatment options and future management strategies.\n\nThe patient's family history is significant for breast cancer (mother diagnosed at age 62) but with no known hereditary syndromes in the family tree. She has a medical history notable for hypothyroidism, which is well-controlled on levothyroxine. Other comorbidities include mild hypertension, currently managed with lisinopril, with no history of diabetes or cardiovascular disease.\n\nScheduled imaging studies suggest no evidence of metastatic disease at this time, and lab results from recent blood work show benign levels of electrolytes and liver function tests, with a slight elevation in CA-125 levels but not markedly significant.\n\nCurrently, the patient is on the first line of therapy, adhering to the prescribed regimen and attending her visits as scheduled. She expresses a good understanding of the treatment plan and the importance of performance status for ongoing assessments. Next steps will include regular follow-up visits and monitoring of both clinical symptoms and laboratory markers, with consideration for potential adjustments based on subsequent responses to therapy.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "endometrioid carcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "negative"
+      },
+      {
+        "name": "HRD",
+        "status": "positive"
+      },
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-06-14",
+    "treatment_regimen": [
+      "carboplatin",
+      "paclitaxel"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "note": "The patient presents for follow-up regarding their recent diagnosis of colorectal cancer. Histopathology confirms the presence of a mucinous adenocarcinoma. Notably, the tumor is classified as stage I, which suggests a favorable prognosis and early intervention opportunities. The patient is currently on the first line of therapy with regorafenib, and we will continue to monitor their response closely.\n\nDuring the evaluation of biomarkers, the BRAF status returned negative, which can be associated with a better response to treatment. However, the NRAS results were equivocal, and the KRAS status remains unknown at this point. These biomarkers are crucial for tailoring future management strategies, particularly if there is a need to consider additional therapies beyond the current regimen.\n\nThe ECOG performance status has not been formally assessed as this visit is primarily focused on treatment initiation and response surveillance. Patient-reported outcomes will be necessary to gauge any impact on their daily activities, especially regarding tolerance to regorafenib.\n\nAdditionally, the patient has a history of mild hypertension, well-controlled on Lisinopril, and previously underwent laparoscopic cholecystectomy five years ago with no complications. There is no significant family history of colorectal cancer, though the patient's paternal uncle had a past medical history of prostate cancer.\n\nRoutine labs will be repeated at the next scheduled visit to monitor any potential side effects from the treatment, and imaging to assess disease progression will be planned in the forthcoming months.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "negative"
+      },
+      {
+        "name": "NRAS",
+        "status": "equivocal"
+      },
+      {
+        "name": "KRAS",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "note": "The patient presents with a history of acral lentiginous melanoma, diagnosed on November 2, 2019. Currently, the melanoma is categorized as stage II, with performance status rated at ECOG 1, indicating that the patient is restricted in strenuous activity but fully ambulatory. Notably, recent biomarker assessments returned negative results for both NRAS and BRAF mutations, which is significant in guiding further treatment decisions.\n\nThe patient has been on their first line of therapy and is currently receiving a combination regimen of dabrafenib and trametinib. Tolerability has been fair with no major adverse effects reported. It is also worth mentioning the patient has a history of hypertension well-controlled by medication, and their last blood pressure reading was within normal limits. There was also a mention of mild seasonal allergies, which occasionally require antihistamines, but this did not seem to impact the patient's overall health status significantly.\n\nFamily history reveals a noncontributory pattern for cancer, with both parents and sibling being in good health. A surgical history includes a benign mole excision at age 30 without complications, but no previous oncological surgeries. The patient remains compliant with recommended follow-ups including routine dermatological examinations.\n\nDuring today's visit, the patient expressed concerns about the prognosis and potential side effects of their current treatment plan, notably expressing anxiety regarding the long-term management of their melanoma. Education on the importance of adherence to therapy, potential side effects of dabrafenib and trametinib, as well as regular monitoring was provided. The next appointment has been scheduled for three months to reassess treatment response and consider further imaging if needed. \n\nBaseline lab results remain stable, with only minor deviations in liver function tests, likely attributable to current medications, but no immediate action necessary. Overall, the patient appears well-managed under the current treatment protocol.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "acral lentiginous melanoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "negative"
+      },
+      {
+        "name": "BRAF",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-11-02",
+    "treatment_regimen": [
+      "dabrafenib",
+      "trametinib"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "note": "Patient is a 67-year-old male with a diagnosis of pancreatic ductal adenocarcinoma made on March 26, 2024. He presents for follow-up and evaluation of his ongoing treatment. At the time of diagnosis, the staging workup revealed stage IIIA disease. Current ECOG performance status is 2, indicating he is unable to carry out any work activities and is limited in strenuous activity. \n\nThe patient started on first-line therapy with a regimen of FOLFIRINOX. He has tolerated the treatment relatively well, though he reports some associated fatigue and intermittent nausea, which are common with this chemotherapy combination. He denies any significant weight loss since starting therapy but has noticed a slight decrease in appetite. Recent labs indicate that CA 19-9 levels are negative, which is promising; however, he is positive for BRCA1 mutations, while BRCA2 comes back negative.  \n\nA review of his past medical history shows hyperlipidemia treated with statins. There is no history of diabetes or significant gastrointestinal disorders prior to this diagnosis. He underwent a cholecystectomy five years ago and has no other significant prior surgeries. Family history is notable for breast cancer in a maternal aunt, which could be relevant given the BRCA results. \n\nDuring the visit, we discussed potential for future treatment options depending on his response to the initial therapy and any changes in his biomarker profile. The next follow-up is scheduled in two weeks to monitor his tolerance to treatment and any disease progression. Patient is encouraged to report any new symptoms or concerns immediately.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "negative"
+      },
+      {
+        "name": "BRCA1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-03-26",
+    "treatment_regimen": [
+      "FOLFIRINOX"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "note": "Patient is a 68-year-old male with a diagnosis of prostate adenocarcinoma, initially confirmed on August 24, 2019. He presents with stage IIIC disease, as per the latest imaging studies. The patient has been treated with a regimen of docetaxel as part of his current third line of therapy, following previous treatments including hormone therapy and radiation.\n\nDuring this visit, the patient\u2019s PSA levels indicate a positive finding, suggesting an ongoing response to treatment, though they remain elevated compared to desired thresholds. His current treatment status shows that he maintains an ECOG performance status of 1, indicating he is capable of light work and restricted in strenuous activities, which aligns with his current condition and functional capacity.\n\nAdditionally, the patient has a significant history of hypertension and hyperlipidemia, both well-managed with medications. He underwent a laparoscopic cholecystectomy approximately 5 years ago, which was without complications. Family history is notable for prostate cancer in his father, diagnosed at age 70.\n\nA review of systems was largely unremarkable aside from occasional fatigue, which could be attributed to his chemotherapy. No acute distress is noted at this time. We will continue to monitor PSA levels closely and consider possible subsequent lines of therapy should the current regimen fail to achieve adequate disease control.\n\nFollow-up imaging and lab tests will be scheduled in 8 weeks to assess treatment response.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2019-08-24",
+    "treatment_regimen": [
+      "docetaxel"
+    ]
+  }
+}

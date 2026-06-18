@@ -1,0 +1,26 @@
+{
+  "note": "The patient, a 58-year-old female with a significant family history of breast cancer (mother diagnosed at age 62), presents for follow-up regarding her breast cancer. She was diagnosed on October 22, 2023, with stage IVB HER2-positive carcinoma, confirmed through pathology. Notably, her HER2 status is negative, and her PR status is classified as equivocal, necessitating a review of her treatment options.\n\nDuring this visit, the patient reports no new symptoms and maintains an ECOG performance status of 0, indicating she is fully active and functioning without restrictions. She has completed her second line of therapy, which included trastuzumab, pertuzumab, and docetaxel. While she initially tolerated the regimen well, she experienced mild alopecia and fatigue but has managed these side effects effectively, and they are not impacting her daily activities significantly.\n\nThe patient\u2019s past medical history is remarkable for hypertension and a previous appendectomy in 2020 without complications. Recent labs show benign renal function, normal electrolytes, and stable blood counts. Additionally, her routine mammography was performed six months ago, revealing no new lesions in her breast tissue, consistent with her ongoing treatment response.\n\nFamily history reveals no known hereditary syndromes apart from her mother's early breast cancer. The plan is to continue monitoring the patient closely, with follow-up imaging and lab work scheduled in three months to assess for any progression or emergent side effects from the ongoing therapy. We also discussed supportive care options should she encounter additional treatment-related challenges moving forward.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "PR",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-10-22",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

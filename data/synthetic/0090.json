@@ -1,0 +1,30 @@
+{
+  "note": "A female patient with a notable history of obesity and controlled hypertension presented for follow-up in the oncology clinic. The patient was diagnosed with stage IVB breast cancer, specifically invasive ductal carcinoma, on October 19, 2020. Her latest pathology report indicated a positive estrogen receptor (ER) status, positive progesterone receptor (PR) status, and a negative Ki-67 proliferation index, which aligns with the overall profile for this tumor type.\n\nSince her diagnosis, she has been receiving a first-line treatment regimen consisting of trastuzumab, pertuzumab, and docetaxel. During her assessment today, she reported minimal fatigue that does not greatly hinder her daily activities, reflecting an ECOG performance status of 1.  \n\nThe patient's family history is significant for breast cancer in her mother, diagnosed at age 62. She has a personal history of benign ovarian cysts that have not required intervention. Laboratory results show normal liver function tests, and the most recent imaging studies were consistent with progressive disease, necessitating consideration of further therapeutic options.\n\nIn terms of comorbidities, the patient\u2019s hypertension remains well managed with medication, and she has no history of diabetes. She was advised on supportive care measures and potential referrals to palliative care services to enhance her quality of life. The continuation of her current treatment is strongly advised, and we will closely monitor her response at our next visit.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "positive"
+      },
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      },
+      {
+        "name": "PR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-10-19",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

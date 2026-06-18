@@ -1,0 +1,30 @@
+{
+  "note": "The patient, a 65-year-old male, presents with a diagnosis of lung cancer, confirmed on May 15, 2020. The pathology report indicates squamous cell carcinoma, staged as I, with no nodal involvement and no distant metastasis. The patient's ECOG performance status is noted to be 1, indicating that he is restricted in strenuous activity but is able to carry out light work.\n\nIn terms of molecular profiling, several biomarkers were evaluated. The BRAF status is negative, KRAS is also negative, and the PD-L1 expression is equivocal, suggesting that there may be variability in the potential for immunotherapeutic response. This information will be beneficial in guiding further treatment decisions.\n\nCurrently, the patient is on the first line of therapy, which consists of a regimen including durvalumab, etoposide, and carboplatin. He commenced this treatment protocol following his initial diagnosis and has tolerated it well with minimal adverse effects reported thus far.\n\nIt is noteworthy that the patient has a history of hypertension, which is managed with medication, but no other significant comorbidities are documented. Previous surgeries include a cholecystectomy performed in 2018, and there is no family history of any malignancies reported. Routine blood tests reveal benign results; however, the patient remains under close surveillance for any signs of progression or new symptoms.\n\nContinued follow-up is planned every three months to monitor the response to treatment and adjust as necessary based on clinical judgment and any emerging data regarding tumor markers or progression.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      },
+      {
+        "name": "KRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-05-15",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 62-year-old male with a history of hyperlipidemia, presented for follow-up regarding his lung adenocarcinoma. He was diagnosed on July 25, 2020, and currently classified as stage III. On initial assessment, the patient\u2019s performance status is ECOG 0, indicating he is fully active and can carry on all pre-disease activities without restriction. \n\nAt this time, he is receiving his first line of therapy, which includes crizotinib. This targeted agent is appropriate given the histological subtype of his cancer. However, the results of biomarker testing reveal some uncertainties. The status of the ROS1 gene alteration is unknown, while KRAS testing returned equivocal results. These findings necessitate further evaluation and possibly a reassessment of treatment options in the near future, especially as we monitor for any disease progression.\n\nDuring the visit, the patient reported no new respiratory symptoms, though he mentioned a longstanding history of seasonal allergies that occasionally complicate his clinical picture. Notably, he is a non-smoker with a family history significant for lung cancer in a distant relative, although no direct connection to his case has been established. \n\nPrevious medical history includes a laparoscopic cholecystectomy performed in 2015 with no complications. Routine labs performed today were unremarkable, reinforcing the stable nature of his condition. Follow-up appointments will continue to assess both his response to therapy and any additional symptomatic measures that may arise as treatment progresses.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "ROS1",
+        "status": "unknown"
+      },
+      {
+        "name": "KRAS",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-07-25",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

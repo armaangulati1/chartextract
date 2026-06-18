@@ -1,0 +1,30 @@
+{
+  "note": "The patient, a 56-year-old female with a history significant for hypertension and hyperlipidemia, presented to the oncology clinic for follow-up evaluation. She was diagnosed with invasive ductal carcinoma of the left breast on March 11, 2021, characterized as stage IIB. Review of prior pathology confirmed a negative HER2 status and a negative Ki-67 proliferation index, while the estrogen receptor (ER) was noted to be positive. \n\nHer current ECOG performance status is 2, indicating she is <em>able to walk and care for herself but unable to carry out any work activities</em>, reflecting some limitations in her daily activities. She is currently on her first line of therapy, which includes trastuzumab, pertuzumab, and docetaxel, initiated shortly after her last surgery including a lumpectomy and axillary lymph node dissection.\n\nPast medical history includes a laparoscopic cholecystectomy performed 5 years ago for symptomatic cholecystitis and she is compliant with her prescribed antihypertensive medication. Family history is noteworthy for breast cancer in her mother, diagnosed in her 40s, and her sister who had benign breast lesions. Her most recent labs showed stable complete blood count and benign metabolic panel results, with no significant abnormalities noted. The patient tolerates treatment well, with minimal side effects reported, primarily mild fatigue and transient nausea following chemotherapy infusions. \n\nThe treatment plan remains focused on managing her cancer diagnosis while monitoring side effects associated with ongoing therapy. Next follow-up is scheduled in 3 months to assess response to treatment and review imaging results.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      },
+      {
+        "name": "ER",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-03-11",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

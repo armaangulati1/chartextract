@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 58-year-old male with a diagnosis of cutaneous melanoma, established on June 15, 2019. He presents today for follow-up regarding his current treatment plan. The melanoma has been staged as IVA, indicating advanced disease. The therapeutic history reveals that he has already undergone two prior lines of therapy. His current regimen includes nivolumab and ipilimumab, which he has been tolerating with manageable side effects. \n\nThe patient's initial diagnosis revealed no mutations in the BRAF or NRAS genes, both of which returned negative. Additionally, evaluation for PD-L1 expression also yielded negative results. This molecular profile is critical, as it guides our treatment decisions, particularly in selecting appropriate immune checkpoint inhibitors.  \n\nHis ECOG performance status remains unassessable today, but he reports that he has been mainly restricted from strenuous activities due to fatigue attributed to his ongoing treatment. It is notable that the patient has a history of hypertension and hyperlipidemia, presently managed with atorvastatin and lisinopril. Family history includes a brother with a past medical history of skin cancer, which the patient finds concerning. He denies having any other significant comorbid conditions. \n\nLaboratory studies have shown benign results, including normal liver enzymes and no acute changes in renal function. He has completed dermatological surveillance with no new lesions reported. We will continue to monitor his response to therapy closely and consider additional imaging studies if clinical symptoms warrant. The plan is to re-evaluate his treatment response in the next month after a full cycle of the current immunotherapy.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "negative"
+      },
+      {
+        "name": "NRAS",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2019-06-15",
+    "treatment_regimen": [
+      "nivolumab",
+      "ipilimumab"
+    ]
+  }
+}

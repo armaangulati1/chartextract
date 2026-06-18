@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 64-year-old male with a known diagnosis of lung cancer, specifically squamous cell carcinoma, confirmed on pathology following bronchoscopy. The initial diagnosis was established on May 7, 2024, and subsequent imaging demonstrated stage II disease, with notable tumor involvement. The patient's current line of therapy is the third, having undergone previous treatments, which included chemotherapy and radiation.\n\nAs part of his treatment plan, he is currently receiving osimertinib, an oral agent known for targeting specific mutations in lung cancer. Recent biomarker testing revealed a ROS1 positive status, suggesting potential for targeted therapies, although the patient's progression has been challenging with ongoing respiratory symptoms. \n\nCurrently, the patient exhibits an ECOG performance status of 2, indicating that he is capable of all self-care but is unable to carry out any work activities. This lack of stamina has raised concerns about his overall quality of life and the effectiveness of ongoing treatment.\n\nIn addition to his oncological concerns, the patient has a history of hypertension, which is well-controlled with medication. He also has benign findings on his routine lab work, with normal liver and renal function parameters, and no evidence of diabetes. Family history includes instances of lung cancer in his father at age 70, which may have contributed to his risk factors. He denies any recent weight loss or significant changes in appetite but reports increased fatigue, likely correlating with his treatment and disease progression. \n\nThe treatment team continues to monitor his progress closely and will assess the efficacy of osimertinib in the following weeks, with plans for reevaluation of his therapeutic options should the current regimen prove inadequate.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "ROS1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2024-05-07",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

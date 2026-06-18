@@ -1,0 +1,25 @@
+{
+  "note": "The patient, a 62-year-old male with a history of hypertension and hyperlipidemia, was diagnosed with clear cell renal cell carcinoma (ccRCC) of the left kidney on June 10, 2024. He presented to the oncology clinic for further management and discussion regarding his treatment options.\n\nUpon examination, the patient is currently asymptomatic and maintains an ECOG performance status of 0, reflecting his ability to carry out normal activities without restrictions. Imaging studies confirmed that the tumor is at stage II, indicating a localized disease without nodal involvement.  \n\nRisk factors have been reviewed, and we noted that his family history includes a brother with prostate cancer but no significant genetic predispositions. The tumor testing for biomarkers showed negative results for both VHL and PD-L1, which were assessed in conjunction with pathology reports.\n\nIn terms of therapeutic approaches, the patient is being considered for first-line management with a combination treatment regimen including nivolumab and cabozantinib, which aligns with current guidelines for advanced renal cell carcinoma. Given the patient's health and the current staging, this dual therapy is recommended to optimize outcomes while monitoring for potential adverse effects.\n\nThe patient previously underwent a laparoscopic nephrectomy back in 2020 for a benign renal mass, which may have contributed to the current oncological findings. He has tolerated prior treatments well, and aside from reported fatigue, he has no other significant comorbidities affecting his current clinical status. \n\nFollow-up appointments will be scheduled to monitor treatment response and adjust the regimen as necessary. A baseline CT scan will be performed next month to evaluate effects and any new developments. The patient has expressed understanding of the treatment plan and is optimistic about the prognosis.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-06-10",
+    "treatment_regimen": [
+      "nivolumab",
+      "cabozantinib"
+    ]
+  }
+}

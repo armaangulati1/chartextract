@@ -1,0 +1,30 @@
+{
+  "note": "Patient is a 59-year-old male with a history of well-controlled hypertension and hyperlipidemia, presenting for follow-up of lung cancer management. He was diagnosed with stage IIA small cell carcinoma of the lung on October 30, 2021. His performance status is ECOG 1, indicating he is restricted in strenuous activity but is otherwise asymptomatic.\n\nAt initial diagnosis, his biomarker testing revealed that ALK was positive, while KRAS was negative, and the status of EGFR remains unknown at this time. He has undergone a total of 4 lines of therapy thus far, which included an induction regimen consisting of durvalumab, etoposide, and carboplatin. Interestingly, he has a family history of lung cancer \u2013 his father passed away from the disease at age 70.\n\nThe patient states he has tolerated his current treatment regimen well, with some mild fatigue but no significant side effects related to the chemotherapeutic agents. He denies any new onset of cough or hemoptysis, and he continues to engage in light exercise, although he finds climbing stairs occasionally challenging due to dyspnea on exertion.\n\nRoutine labs from his last visit were within normal limits, aside from a mildly elevated cholesterol level, which he attributes to dietary factors. He is being monitored closely, and the oncologist has recommended further imaging to evaluate the response to his current treatment. The next appointment is scheduled in six weeks, where a comprehensive assessment will be made, including a review of the imaging results and potential adjustments to his therapeutic strategy.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "positive"
+      },
+      {
+        "name": "KRAS",
+        "status": "negative"
+      },
+      {
+        "name": "EGFR",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2021-10-30",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

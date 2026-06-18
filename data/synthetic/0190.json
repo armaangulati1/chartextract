@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a 52-year-old female with a past medical history notable for mild hypertension and osteoarthritis, presented for a follow-up visit related to her breast cancer management. She was diagnosed with invasive ductal carcinoma (IDC) of the left breast on April 26, 2019, classified as stage IB. On initial workup, her Ki-67 proliferation index was positive, indicating a high level of tumor activity which has been a consideration in her treatment plan. \n\nCurrently, she is receiving her first line of therapy with capecitabine, which she tolerates reasonably well, although she reports some mild gastrointestinal upset, likely secondary to the medication. Her performance status is noted to be ECOG 1, as she experiences some restrictions in strenuous activities; however, she remains active in her daily routines and attends social functions regularly.\n\nFamily history includes a maternal aunt with breast cancer diagnosed at age 60, but no other significant oncological histories noted. Additionally, routine labs including her CBC and metabolic panel were within normal ranges during the last check, with no signs of acute distress. The patient also underwent a cholecystectomy several years ago for gallstones, which is not related to her cancer diagnosis but noted for completeness.\n\nWe will continue monitoring her response to the capecitabine regimen closely, and the plan is to reassess radiologically after three cycles to evaluate the treatment efficacy. Patient education focused on signs of potential side effects was provided, and she is encouraged to continue her structured exercise program with adaptations for her current status.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-04-26",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

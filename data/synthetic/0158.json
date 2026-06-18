@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 68-year-old female with a history of COPD and mild hypertension, who presents to the oncology clinic for follow-up of her lung adenocarcinoma diagnosed on February 9, 2019. At that time, imaging revealed Stage III disease, and she remains classified as ECOG 1, indicating she is capable of light physical activity but is restricted in more strenuous tasks. \n\nSince her diagnosis, she has initiated treatment on first-line therapy with osimertinib, though recent imaging shows some concern due to persistent pleural effusion, which is being monitored. Notably, the patient has undergone no prior surgeries for her malignancy, nor any recent interventions aside from routine pulmonology consultations. \n\nOn a side note, her family history is significant for breast cancer in her sister, but no other notable malignancies. She has no history of recent smoking, denying any active tobacco use in the past 15 years. Laboratory markers were checked as part of her evaluation; her EGFR and PD-L1 status returned negative results, indicating no actionable mutations.  \n\nIn terms of overall health, her hypertension is well-managed with medication, though the COPD can occasionally exacerbate her breathing during activities. The treatment team is considering potential changes to her regimen based on the upcoming imaging results, which are scheduled for next month.\n\nThe patient expresses understanding of her condition and is prepared to discuss any adjustments in therapy at our next visit.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "EGFR",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-02-09",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 62-year-old female with a diagnosis of mucinous adenocarcinoma of the colorectum, confirmed on biopsy dated July 11, 2019. Clinical staging reveals the cancer is classified as stage I, which indicates localized disease. The patient's current ECOG performance status is 2, indicating she is able to walk unaided and is generally in a stable condition but is somewhat limited in strenuous activities.\n\nBiomarker analysis for microsatellite instability (MSI) returned negative, suggesting a distinct profile that may inform treatment strategy. She is currently on her first line of therapy, which consists of FOLFOX regimen, a combination of oxaliplatin, leucovorin, and fluorouracil. Prior to this diagnosis, the patient underwent a cholecystectomy for gallstones two years ago without complication. \n\nFamily history is significant for breast cancer in her sister and hypertension in her mother. The patient has a history of well-controlled hypertension, but denies any recent exacerbation. Routine laboratory tests demonstrate normal liver and kidney function, with recent CBC showing only mild anemia, which is believed to be secondary to chemotherapy. \n\nOverall, the current treatment plan involves monitoring response to therapy closely, with follow-up imaging suggested in three months. It will be imperative to evaluate symptom control and overall performance status at each visit, as this will guide further therapeutic decisions.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "MSI",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-07-11",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

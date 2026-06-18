@@ -1,0 +1,15 @@
+{
+  "note": "The patient is a 67-year-old male with a history of prostate neuroendocrine carcinoma, diagnosed on December 7, 2020, presenting at stage IA. He initially sought consult for increased fatigue and occasional lower back pain, which warranted further investigation. Upon examination, the patient demonstrated an ECOG performance status of 2, indicating some limitations in daily activities but still able to care for himself.\n\nNo biomarkers have been identified that would modify the treatment plan at this time. The patient initiated his first line of therapy with olaparib, which he has been tolerating reasonably well, reporting mild gastrointestinal discomfort but no significant side effects that would warrant interruption. He remains active in following his dietary regimen and engaging in light exercise as recommended.\n\nThere is a notable family history of prostate cancer in his father and a sibling with unrelated type 2 diabetes, but no prior surgeries related to his current condition have been performed. His recent labs returned benign liver enzymes and normal renal function, contributing positively to his overall treatment tolerance. The patient is scheduled for routine follow-up in three months, at which time we will re-evaluate his clinical status and consider any necessary imaging or adjustments to his therapeutic approach to ensure optimal management of his health.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "IA",
+    "biomarkers": [],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-12-07",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

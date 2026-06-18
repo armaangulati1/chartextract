@@ -1,0 +1,15 @@
+{
+  "note": "Mr. J.S. is a 68-year-old male who presented for follow-up regarding his prostate cancer management. He was diagnosed with prostate adenocarcinoma on October 22, 2022, after presenting with elevated PSA levels and a transrectal ultrasound-guided biopsy that confirmed the diagnosis. Imaging studies showed that he has advanced to stage III disease. At the time of diagnosis, he reported minimal symptoms and has maintained an ECOG performance status of 1, indicating that he is only restricted in strenuous activities but is otherwise fully ambulatory.\n\nSince his diagnosis, Mr. J.S. has initiated treatment under a first-line therapy regimen that includes olaparib, an oral PARP inhibitor. He tolerated the initial cycles well and has not experienced any significant adverse effects thus far. His most recent labs demonstrated stable renal function and normal CBC parameters, which is reassuring considering the history of mild hypertension and benign prostatic hyperplasia.\n\nDuring this visit, Mr. J.S. expressed concern about potential side effects of olaparib, particularly regarding fatigue and impact on his quality of life; he has noted slight fatigue but attributes this to his early morning exercise routine. Family history is notable for prostate cancer in his father, diagnosed at age 72.\n\nWe discussed the importance of adherence to the medication regimen and scheduled follow-up imaging to assess treatment response in three months. A plan to monitor PSA levels more closely will be instituted alongside routine follow-up. He was encouraged to report any new symptoms or side effects and given supportive resources for any nutritional or psychological needs as he continues his treatment journey.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "III",
+    "biomarkers": [],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-10-22",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

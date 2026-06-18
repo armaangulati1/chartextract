@@ -1,0 +1,15 @@
+{
+  "note": "Patient is a 54-year-old female with a primary diagnosis of breast cancer, specifically HER2-positive carcinoma, established on December 13, 2019. Since the diagnosis, she has been classified as stage I, with an ECOG performance status of 1, indicating she is able to carry out light work but is restricted in strenuous activities. \n\nInitial management commenced with the first line of therapy, employing capecitabine as the primary treatment regimen. The patient tolerated her treatment well with no significant adverse effects but reports some mild gastrointestinal discomfort, which has been manageable. \n\nThe most recent follow-up visit revealed stable disease. No new lesions were identified on imaging, and the patient remains compliant with the treatment protocol. Family history is notable for a maternal history of breast cancer, which raises awareness for genetic predisposition; however, genetic testing has not been pursued at this time. \n\nThe patient's other medical background includes hypertension and hyperlipidemia, well-controlled on medication. Routine labs have shown benign results, with recent lipid panels and thyroid function tests within normal limits. \n\nPlans for continued monitoring with regular follow-up appointments every three months to assess for any changes in her condition, alongside routine imaging and clinical assessments, to ensure optimal management of her breast cancer. Discussion of potential escalation of therapy will depend on future assessments and the emergence of any concerning symptoms.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "I",
+    "biomarkers": [],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-12-13",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

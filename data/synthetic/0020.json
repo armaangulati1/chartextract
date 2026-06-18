@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 62-year-old male with a history of clear cell renal cell carcinoma, diagnosed on January 29, 2021. At his initial evaluation, the disease presented at stage IV, indicating a significant burden of illness with metastatic involvement. The patient is currently receiving his first line of therapy, which includes nivolumab and cabozantinib. \n\nHis most recent imaging suggests stable disease, and he has been tolerating the regimen well with no significant adverse effects reported. He maintains an ECOG performance status of 0, reflecting that he is completely asymptomatic and fully active despite the advanced disease state. \n\nIn the context of his tumor characteristics, PD-L1 expression was found to be positive, which may indicate a favorable response to immunotherapy. However, the status of the VHL biomarker remains undetermined at this time, adding a layer of complexity to the prognostic assessment. \n\nThe patient\u2019s past medical history is notable for hyperlipidemia and type 2 diabetes, managed with lifestyle modifications and oral hypoglycemic agents. He has never undergone any prior surgical interventions for the kidney mass, as the condition was deemed unresectable at presentation. Family history is significant for a brother who had prostate cancer, albeit that was many years ago with no known complications. \n\nOn routine laboratory work, liver function tests and complete blood count were within normal limits, although a mildly elevated cholesterol level was noted. Renal function remains stable, which is particularly important in the context of the current treatment regimen that includes cabozantinib.  The patient continues to follow up regularly in oncology, with close monitoring of disease progression and treatment response.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "VHL",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-01-29",
+    "treatment_regimen": [
+      "nivolumab",
+      "cabozantinib"
+    ]
+  }
+}

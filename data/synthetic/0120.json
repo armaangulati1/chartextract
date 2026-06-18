@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 67-year-old male with a history of chronic obstructive pulmonary disease (COPD) and hypertension, presenting to the oncology clinic for evaluation of his lung cancer. He was diagnosed with small cell carcinoma of the lung on March 9, 2026. At the time of diagnosis, the disease was classified as Stage III, and the patient exhibits an ECOG performance status of 1, indicating he is able to perform light activities but is somewhat limited in strenuous physical tasks. \n\nThe patient has undergone two prior treatment regimens, which have included platinum-based chemotherapy and radiation therapy, but he is now being considered for third-line therapy with osimertinib. \n\nRecent biomarker testing revealed a positive status for both KRAS and PD-L1, while ROS1 was found to be negative. Given these results, the treatment team is hopeful that osimertinib will provide clinical benefit, especially considering the PD-L1 positivity, which may enhance the efficacy of treatment. \n\nFamily history is notable for lung cancer in a sibling, and the patient's past medical history includes a benign prostate enlargement and a appendectomy performed two decades ago. Recent pulmonary function tests indicated moderate obstruction, consistent with his known COPD, although he denies any acute respiratory distress at this time. Routine blood work returned within normal limits, and the patient has been managing his hypertension effectively on lisinopril.\n\nThe care team will continue to monitor the patient's response to osimertinib closely and evaluate for any potential side effects. A follow-up CT scan is scheduled in six weeks to assess treatment response.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "positive"
+      },
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "ROS1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2026-03-09",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

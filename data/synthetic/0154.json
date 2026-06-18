@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a male diagnosed with prostate adenocarcinoma on December 11, 2022. At the time of evaluation, he presents as stage I, with no symptoms of advanced disease. Notably, the patient has a performance status of ECOG 0, indicating full activity without any limitations. \n\nIn terms of biomarkers, PSA levels are currently negative, which is favorable; however, testing has shown a positive result for AR-V7, suggesting potential resistance to certain therapies. Given his current clinical status and biomarker profile, he is being treated with olaparib as part of the second line of therapy. \n\nIt is important to note that the patient has a background history of hypertension, which is well-controlled with medication. He also had a cholecystectomy several years ago unrelated to his cancer diagnosis. Additionally, there is a family history of prostate cancer in his father and brother, both diagnosed at an earlier age than the patient. \n\nNo other significant comorbidities were identified during the clinical assessment, and lab results appear benign apart from the concerning AR-V7 positivity. Follow-up imaging shows no evidence of metastasis at this time. The plan is to continue monitoring the patient closely while proceeding with the prescribed treatment regimen. \n\nRegular PSA screenings will continue, and the patient is encouraged to report any new symptoms or side effects associated with olaparib. Next follow-up appointment is scheduled for next month.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      },
+      {
+        "name": "AR-V7",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-12-11",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a previously healthy individual with no significant past medical history, presented to the clinic for follow-up after recent diagnosis of cutaneous melanoma on September 4, 2023. Initial workup revealed the primary site to be the right lower extremity, with a histological diagnosis of cutaneous melanoma. Staging assessment classified the disease as stage IIIA. \n\nThe patient exhibits a performance status of ECOG 1, demonstrating some restriction in strenuous activity but remaining largely independent in daily living activities. As part of the first line of therapy, the patient has commenced treatment with nivolumab and ipilimumab, which are being well tolerated at this time. \n\nGenetic testing results indicate that the BRAF mutation status is negative, guiding our therapeutic approach away from targeted BRAF inhibitors. Notably, the patient denies any significant family history of melanoma or other malignancies. \n\nPast surgical history includes an appendectomy in childhood and no prior oncologic interventions. Recent laboratory results show no abnormalities aside from mild elevation in cholesterol, which is being monitored. The patient remains vigilant about sun protection and has been educated on signs of potential recurrence. \n\nFollow-up imaging and bloodwork are scheduled in three months to monitor treatment response and manage any side effects. We will continue to evaluate the patient\u2019s condition closely, considering the importance of psychosocial support alongside ongoing treatment.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2023-09-04",
+    "treatment_regimen": [
+      "nivolumab",
+      "ipilimumab"
+    ]
+  }
+}

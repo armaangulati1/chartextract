@@ -1,0 +1,16 @@
+{
+  "note": "The patient is a middle-aged female with a diagnosis of high-grade serous carcinoma originating from the ovary, with a staging of IVA established on February 10, 2021. This condition has necessitated her treatment through a progressive line of therapy; she is currently on her third regimen which includes the administration of bevacizumab alongside olaparib. \n\nAt this time, her ECOG performance status is rated at 2, indicating she is capable of self-care but is unable to carry out any work activities and is restricted in strenuous activity. \n\nHer surgical history includes a total abdominal hysterectomy with bilateral salpingo-oophorectomy performed six months post-diagnosis, aimed at managing her tumor burden. There are no significant biomarkers reported that would influence subsequent treatment decisions. The patient\u2019s family history is notable for breast cancer in her maternal aunt, while her past medical history includes well-controlled hypertension and type 2 diabetes. \n\nRecent lab results, focusing on routine blood work, reflected benign findings\u2014CBC within normal limits and stable renal function. Pain management has been addressed through outpatient services, and she regularly consults her oncologist to monitor the response to her current therapy. The multidisciplinary team continues to evaluate her to consider potential future interventions as the disease progresses.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "high-grade serous carcinoma",
+    "stage": "IVA",
+    "biomarkers": [],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2021-02-10",
+    "treatment_regimen": [
+      "bevacizumab",
+      "olaparib"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "note": "The patient presented to the oncology clinic for their initial treatment evaluation following a recent diagnosis of lung adenocarcinoma. Upon review of their clinical status, the ECOG performance status was assessed at 0, indicating the patient is completely asymptomatic in terms of their cancer-related symptoms and is able to carry out all normal activities without restriction.\n\nThe primary site of the malignancy has been confirmed as the lung, specifically histologically categorized as adenocarcinoma. Based on imaging and staging results, the current classification is stage IIA, which indicates a localized disease with a significant yet manageable tumor burden, allowing for immediate intervention.\n\nIn consultation, we discussed the first-line treatment regimen which comprises pembrolizumab in combination with carboplatin and pemetrexed. This three-drug combination was selected due to its synergistic potential and the current recommendations for initial therapy in stage II lung adenocarcinoma. The patient's biomarkers were noted to be unremarkable at this time, which we will monitor closely throughout the treatment course.\n\nAdditionally, the patient has no significant history of other comorbidities impacting their treatment, although there is a family history of hypertension and diabetes that should be acknowledged as part of their broader health context. The patient had undergone a routine appendectomy in their 20s with no complications reported. \n\nFurther follow-up appointments have been scheduled to monitor treatment response, and I have provided the patient with educational material regarding potential side effects of their therapy. Regular imaging and lab work will also be performed to assess the effectiveness of the treatment plan.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIA",
+    "biomarkers": [],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

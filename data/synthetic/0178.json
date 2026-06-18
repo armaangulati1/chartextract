@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 62-year-old male with a recent diagnosis of pancreatic ductal adenocarcinoma, assessed on March 17, 2024, at stage IIIA. He presents with an ECOG performance status of 1, indicating he is restricted in strenuous activity but otherwise capable of carrying out light work. The initial workup revealed elevated CA 19-9 levels, consistent with malignant disease, while BRCA1 testing returned negative.\n\nSince diagnosis, the treatment regimen initiated includes a combination of gemcitabine and nab-paclitaxel, reflecting the first line of therapy as per current guidelines. The patient tolerates therapy reasonably well and reports mild fatigue but has managed to maintain his usual activities with some modifications.\n\nHis past medical history includes hypertension and hyperlipidemia, both of which are currently managed with medication. No significant prior surgeries are noted, but there is a family history of colon cancer in a sibling, which has been discussed during consultation.\n\nOn follow-up, we will continue to monitor his CA 19-9 levels and overall clinical status closely. Recommendations for supportive care and potential nutrition consultations have also been provided to ensure his quality of life remains optimal through treatment.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "negative"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-03-17",
+    "treatment_regimen": [
+      "gemcitabine",
+      "nab-paclitaxel"
+    ]
+  }
+}

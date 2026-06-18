@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 56-year-old individual presenting for follow-up regarding their pancreatic ductal adenocarcinoma diagnosed recently. The tumor is localized to the pancreas and classified as stage I. The patient reports a performance status of ECOG 1, indicating they are active but limited in strenuous activity. Treatment has commenced with olaparib, which is being well tolerated thus far.\n\nFamily history is notable for breast cancer in a sibling, which may be contributory given the patient's BRCA1 status, which returned positive. However, testing for BRCA2 was negative, suggesting a more complex genetic background. The current levels of CA 19-9 are unknown at this time, but follow-up lab tests are planned to monitor tumor markers closely. Previous medical history includes controlled hypertension and hyperlipidemia, which are managed with medication. An appendectomy was performed several years ago, and there are no recent surgical interventions reported.\n\nThe treatment team continues to monitor the patient for any potential adverse reactions to the olaparib therapy, and regular imaging is scheduled to assess the patient's response to treatment. Furthermore, the patient reports no significant weight change and maintains a good appetite. We discussed the importance of lifestyle modifications, including dietary adjustments to support overall health during treatment. Overall, the patient's condition appears stable, and we will continue with the current therapeutic regimen while remaining vigilant for any changes in their clinical status.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "unknown"
+      },
+      {
+        "name": "BRCA1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

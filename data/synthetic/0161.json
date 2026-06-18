@@ -1,0 +1,30 @@
+{
+  "note": "The patient, a 68-year-old female with a notable smoking history, presents for follow-up regarding her lung adenocarcinoma. She was diagnosed on February 19, 2020, and her case has been classified as stage IIIC. At this visit, she rates her ECOG performance status as 3, indicating she is significantly limited in self-care and requires assistance for daily activities.\n\nIn reviewing her treatment history, she has undergone two previous lines of therapy, receiving both pembrolizumab and a combination of carboplatin with pemetrexed. Unfortunately, despite initial responses, her disease continues to progress.\n\nRecent biomarker testing revealed that the KRAS and ROS1 mutations are negative, while the ALK rearrangement is positive. This result supports the potential for consideration of ALK-inhibitor therapies moving forward. Family history is notable for a maternal history of breast cancer, which raises concerns warranted further investigation. \n\nThere was a mention of mild hypertension being managed through medication, and she has a history of well-controlled diabetes, with the most recent HbA1c at 6.5%. It is essential to continue monitoring her comorbidities closely in the context of her ongoing oncology treatment.\n\nGiven her current performance status and prior line of therapies, we will discuss the options available, including clinical trials for ALK inhibitors, at our next multidisciplinary team meeting. The patient is advised to maintain a close log of symptoms and side effects related to her previous regimens while fostering a supportive care environment at home.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "negative"
+      },
+      {
+        "name": "ROS1",
+        "status": "negative"
+      },
+      {
+        "name": "ALK",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2020-02-19",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

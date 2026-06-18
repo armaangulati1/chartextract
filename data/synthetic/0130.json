@@ -1,0 +1,26 @@
+{
+  "note": "The patient is a female with a confirmed diagnosis of invasive lobular carcinoma of the breast, staged at IVA, which was established on December 4, 2019. She has a complex history that includes well-managed hypertension and mild asthma, for which she is taking lisinopril and albuterol. \n\nAt the time of initial assessment, her tumor biomarkers indicated that both the estrogen receptor (ER) and Ki-67 were negative, which suggests a more aggressive tumor profile. She has commenced treatment with a first-line regimen that includes trastuzumab, pertuzumab, and docetaxel. The chemotherapy plan was discussed in detail during her last visit, noting the potential side effects and the overall importance of adherence to the prescribed treatment schedule.\n\nPatient\u2019s performance status is satisfactory, although she has noted some fatigue lately, which is expected given her current chemotherapy regimen. She has been advised to monitor her hydration and nutrition closely to help manage these side effects. There are no documented changes in her ECOG performance status, and she denies any recent weight loss or significant nausea, apart from mild queasiness post-therapy.\n\nNo family history of breast cancer was reported, although she does have a distant relative with colorectal cancer. Past surgical history is notable for an appendectomy performed in childhood. She is also under regular follow-up for thyroid function tests, all of which remain within normal limits, thus ruling out any significant thyroid disorders at this time.\n\nPlans for the next visit include routine imaging and lab work to assess treatment response, focusing on tumor markers and evaluating overall health stability. Patient education materials regarding breast cancer management and support resources were provided to enhance understanding of her condition. A follow-up appointment has been scheduled in six weeks.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      },
+      {
+        "name": "ER",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-12-04",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a 58-year-old female with a history of hypertension and hyperlipidemia, presents for follow-up of her pancreatic ductal adenocarcinoma, which was diagnosed on July 26, 2018. During her initial evaluation, imaging studies confirmed the primary site of the tumor in the pancreas. Staging revealed the cancer to be classified as stage IIB. \n\nNotably, genetic testing was performed, and the results indicated a positive status for the BRCA2 mutation, which may have implications for both treatment and familial screening.\n\nCurrently, the patient's ECOG performance status is rated at 2, indicating she is limited in her daily activities but not completely bedbound. This is consistent with her reported symptomatology, which includes intermittent abdominal discomfort and some fatigue, but she remains active in light household tasks.\n\nAt this time, she is on her first line of therapy with olaparib, which is a maintenance treatment aimed at targeting the identified genetic mutation. Tolerance to the regimen has been good, with no significant adverse effects noted thus far. The patient remains compliant with her appointments and has been advised on the importance of monitoring for evolving symptoms and potential side effects of her treatment.\n\nFamily history is significant for breast cancer in her sister and colorectal cancer in her father, underscoring the relevance of her BRCA2 findings. Previous surgical history is notable for a laparoscopic cholecystectomy performed 5 years ago, and she has no known drug allergies. \n\nOn the laboratory front, her most recent CBC showed mild anemia, but liver enzymes and bilirubin levels remained within normal limits, and other benign labs were unremarkable. The patient is encouraged to maintain routine follow-ups every 3 months, involving both imaging and clinical assessment, to monitor tumor progression or response to therapy.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2018-07-26",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

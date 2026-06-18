@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a 67-year-old male with a history significant for chronic obstructive pulmonary disease (COPD) and hypertension, presented for his triannual oncology follow-up. He was diagnosed with stage IVB lung squamous cell carcinoma on August 18, 2018, after an extensive workup that included imaging and a biopsy confirming the diagnosis. Initial line of therapy included chemotherapy, but the patient progressed after a few months, leading to the introduction of osimertinib as part of his second line of treatment. Currently, he is on his third line of therapy with osimertinib, following an assessment indicating a positive PD-L1 status.\n\nThe patient\u2019s ECOG performance status is recorded at 3, reflecting considerable fatigue and limited ability to carry out daily activities, although he remains independent with basic self-care. His family history is notable for lung cancer in a sibling and breast cancer in his mother, raising concerns for hereditary predispositions, though genetic testing has thus far been negative. He has undergone pulmonary rehabilitation due to his COPD, with a prior history of a right upper lobectomy performed ten years ago for what was evaluated as a benign mass, which adds complexity to his pulmonary status.\n\nDuring the current visit, differential vital signs showed slight tachycardia, with his blood pressure stable at 130/80. Blood work revealed mildly elevated inflammatory markers; however, other lab results, including liver and renal function, remain within normal ranges. The patient continues to express concerns regarding his prognosis and is seeking additional support options. Discussed potential participation in clinical trials should the need arise. Plan for re-evaluation in 6 weeks, and discuss symptom management strategies to enhance quality of life.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2018-08-18",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

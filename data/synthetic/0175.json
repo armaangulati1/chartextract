@@ -1,0 +1,24 @@
+{
+  "note": "The patient presented to the oncology clinic for an evaluation regarding their recently diagnosed head and neck malignancy. Diagnosis was confirmed on May 2, 2025, with histological findings revealing squamous cell carcinoma. Upon staging, the tumor was classified as Stage I, indicating localized disease without distant metastasis.\n\nDuring the workup, relevant biomarker analyses were performed. The Epstein-Barr Virus (EBV) status returned negative, while human papillomavirus (HPV) status was deemed equivocal, necessitating further discussion regarding its clinical implications. \n\nThe patient's performance status is currently rated at ECOG 3, indicating that they are largely confined to bed but are still capable of limited self-care. This could be attributed to both the physical effects of the tumor and underlying comorbidities, including controlled hypertension and mild osteoarthritis, which have a notable impact on mobility but are not directly related to the cancer diagnosis.\n\nIn light of their disease presentation and performance status, the treatment plan involves initiating pembrolizumab as the first line of therapy. The patient was counseled regarding the mechanism of action, expected side effects, and the importance of monitoring treatment response. A follow-up appointment was scheduled in six weeks to assess the response to immunotherapy and manage any potential adverse effects that may arise during treatment. \n\nAdditionally, the patient's family history includes instances of breast cancer in first-degree relatives, which was discussed as part of the risk assessment and possible genetic counseling evaluation. Routine lab results, including full blood count and metabolic panel, were within normal limits, reflecting no immediate concerns. Continuous support will be offered to assist with both physical and psychosocial aspects as they navigate this treatment journey.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "EBV",
+        "status": "negative"
+      },
+      {
+        "name": "HPV",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2025-05-02",
+    "treatment_regimen": [
+      "pembrolizumab"
+    ]
+  }
+}

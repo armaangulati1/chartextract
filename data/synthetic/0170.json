@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 58-year-old female with a known history of HER2-positive carcinoma of the breast, diagnosed on October 7, 2022. Currently, the disease has progressed to stage IVB. Since diagnosis, she has undergone extensive treatment and is currently on her fourth line of therapy, which includes a regimen of trastuzumab, pertuzumab, and docetaxel. \n\nDespite the advanced stage, the patient maintains an ECOG performance status of 0, indicating she is fully active and able to carry out all pre-disease activities without restriction. \n\nNotably, the status of progesterone receptors remains undetermined at this time, contributing to the complexity of her treatment planning. Additionally, the patient has no significant past medical history other than her breast cancer, although she was previously treated for hypertension which is well-controlled on lisinopril.\n\nFamily history is notable for breast cancer in her maternal aunt and colon cancer in her father. Recent lab results show benign elevations in liver function tests, likely attributable to the current chemotherapy regimen; however, no other abnormalities detected. Following her latest imaging, there is evidence of further metastatic progression, compelling the oncology team to consider possible clinical trial options. In terms of psychosocial aspects, the patient continues to receive support from a psychologist to help cope with the anxiety related to her ongoing treatment and prognosis.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "PR",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2022-10-07",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

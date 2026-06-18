@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 54-year-old female with a known diagnosis of endometrioid carcinoma of the ovary, initially diagnosed on October 1, 2021. At the time of diagnosis, she was staged as IVA, indicating advanced disease with peritoneal spread. Currently, she presents with an ECOG performance status of 2, reflecting moderate impairment in daily activities and some limitation in endurance. \n\nThe patient's oncological history includes multiple lines of therapy; she is currently receiving the fourth line of treatment. Her treatment regimen comprises bevacizumab and olaparib, aiming to target her cancer's specific pathways while managing symptoms and improving quality of life. \n\nGenetic testing has revealed the following biomarker status: BRCA1 is positive, which suggests a hereditary predisposition, while BRCA2 and homologous recombination deficiency (HRD) have returned negative results. This molecular profile is guiding her therapy choice and future management plans. \n\nShe has a medical history significant for hypertension and hyperlipidemia, both well-controlled without medication complications. Surgical history is notable for a hysterectomy performed five years prior due to benign fibroids. There is no relevant family history of oncological diseases, although there is a noted family history of cardiovascular disease, primarily in her parents.  \n\nLaboratory studies show her complete blood count and metabolic panels within normal limits, however, her CA-125 level is moderately elevated at this time, warranting further monitoring. The treatment response will continue to be evaluated through regular imaging and clinical assessments, as she maintains a collaborative approach with her oncology team.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "endometrioid carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "positive"
+      },
+      {
+        "name": "HRD",
+        "status": "negative"
+      },
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2021-10-01",
+    "treatment_regimen": [
+      "bevacizumab",
+      "olaparib"
+    ]
+  }
+}

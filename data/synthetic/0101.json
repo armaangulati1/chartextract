@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 65-year-old male with a significant medical history of hypertension and type 2 diabetes, presenting for his follow-up oncology visit. He was diagnosed with clear cell renal cell carcinoma (ccRCC) of the kidney on July 12, 2021. Initial imaging revealed a localized tumor, classified as stage IA. However, despite initial treatment, his disease has shown progression, leading to a third line of therapy.\n\nCurrently, he is undergoing treatment with pembrolizumab and axitinib, which he began approximately six months ago. The patient tolerates these medications fairly well, although he reports occasional fatigue that restricts him from activities such as jogging. His ECOG performance status is rated at 2, indicating he is able to walk and do light work, but is unable to perform strenuous activities. \n\nGenetic testing was performed, with the VHL gene status returning negative, which correlates with his current treatment plan. Other routine labs revealed benign findings, including normal liver function tests and a complete blood count within normal limits. Family history is notable for a sibling with prostate cancer, but otherwise, no significant hereditary cancer syndromes are identified. \n\nThe patient is also receiving routine monitoring for his comorbid conditions, including periodic checks of his fasting glucose and blood pressure. He mentioned he is compliant with follow-up appointments and has scheduled his next visit in three months, at which time we will reassess both his renal function and overall response to the current regimen.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2021-07-12",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "axitinib"
+    ]
+  }
+}

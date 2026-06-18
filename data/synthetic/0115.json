@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a male diagnosed with prostate adenocarcinoma on December 25, 2021. During the initial evaluation, the cancer was staged at I, indicating localized disease with no evidence of spread beyond the prostate. The patient demonstrated a positive prostate-specific antigen (PSA) level, which contributes to the overall assessment of disease status, while the AR-V7 biomarker testing returned negative, suggesting a lower likelihood of resistance to hormonal therapies if needed in the future.\n\nAt present, he is on his first line of therapy, having commenced treatment with docetaxel. He has tolerated this regimen well thus far, with only mild fatigue reported, which does not significantly impede his daily activities. The patient has no recorded issues that affect his performance status; as noted, the ECOG score is unreported but indicates he is functioning well and has not had significant restrictions in activity levels.\n\nIn the context of his medical history, he also has a well-controlled hypertension and a previous appendectomy many years ago with no complications. Family history is notable for prostate cancer in his father at age 75, contributing to his awareness and concern regarding his current diagnosis. Lab results aside from PSA were unremarkable, including renal and liver function tests within normal limits.\n\nFollow-up appointments will focus on closely monitoring PSA levels and assessing any treatment-related side effects. The next imaging studies may also be arranged to evaluate the response to docetaxel, alongside continued supportive measures. Overall, the patient remains optimistic about his prognosis.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "positive"
+      },
+      {
+        "name": "AR-V7",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-12-25",
+    "treatment_regimen": [
+      "docetaxel"
+    ]
+  }
+}

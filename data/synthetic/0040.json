@@ -1,0 +1,28 @@
+{
+  "note": "The patient, a 62-year-old gentleman with a significant smoking history, presents for follow-up concerning his advanced lung malignancy. He was diagnosed with stage IVA squamous cell carcinoma of the lung on June 3, 2025. His pathological review confirmed the diagnosis, and subsequent biomarker testing revealed a positive status for EGFR while KRAS and ALK were both negative. \n\nAt this time, the patient is being managed with osimertinib, which he started on after progressing with an earlier line of therapy. His performance status, according to the ECOG scale, is currently at 2, reflecting that he is occasionally bedbound but still able to engage in self-care, needing assistance with some activities.\n\nIn addition to his oncological history, the patient has a comorbid background that includes mild hypertension and managed hyperlipidemia. His past surgical history is notable for a laparoscopic cholecystectomy performed in 2018, and he has no current evidence of any significant benign conditions that would complicate his oncological treatment. \n\nFamily history is pertinent for lung cancer in his older brother and diabetes in his father, both of which are worth noting during treatment planning. On examination today, he reports experiencing mild dyspnea with exertion and some sporadic fatigue, which is consistent with the expected side effects of osimertinib.\n\nThe treatment plan remains to continue osimertinib, monitor his response closely, and reassess in four weeks, keeping in mind the need for additional imaging to evaluate disease progression or response. Discussion around potential clinical trial opportunities will also be addressed at the next visit, along with supportive care options. Further assessment of his quality of life and symptom management strategies will be prioritized as the disease and treatment course continues.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "negative"
+      },
+      {
+        "name": "ALK",
+        "status": "negative"
+      },
+      {
+        "name": "EGFR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2025-06-03",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

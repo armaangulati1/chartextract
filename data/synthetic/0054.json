@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 55-year-old female with a diagnosis of invasive ductal carcinoma of the breast, confirmed on biopsies taken during prior evaluations. The initial diagnosis was made on May 17, 2022. Currently, the disease is staged at IVB, indicating advanced progression. Notably, the patient maintains an ECOG performance status of 0, reflecting her ability to carry out all normal activities without restriction.\n\nIn our latest assessments, the tumor demonstrates a positive status for estrogen receptors (ER+), which may influence therapeutic strategies moving forward. The patient is currently on her third line of therapy, having undergone extensive treatment options previously. Currently, she is receiving a combination regimen that includes trastuzumab, pertuzumab, and docetaxel. \n\nOf interest, she was previously treated with neoadjuvant chemotherapy, which included multiple agents; however, metabolism in response to those interventions was challenging. Past medical history includes hypertension and intermittent asthma, which are being managed with standard medications. The family history is significant for a maternal aunt who had breast cancer, though no other malignancies are reported.\n\nLab results this past week were unremarkable, showing normal CBC and CMP, which is favorable given her current treatment regimen. The patient tolerates her current medications well, with manageable side effects such as mild fatigue and occasional gastrointestinal upset.\n\nFuture plans include further imaging studies to evaluate therapeutic response and a multidisciplinary review to consider any potential enrollment in clinical trials, given her current disease status and treatment history. Further follow-up in 6 weeks is scheduled to monitor her progress closely.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2022-05-17",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

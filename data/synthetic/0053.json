@@ -1,0 +1,16 @@
+{
+  "note": "The patient was diagnosed with pancreatic ductal adenocarcinoma on March 16, 2024. Currently, the disease is classified as stage IVB. At presentation, the patient exhibited an ECOG performance status of 2, indicating that they are capable of walking about but are unable to carry out work activities due to fatigue and discomfort. \n\nThe treatment regimen has included second-line therapy utilizing gemcitabine in combination with nab-paclitaxel. These agents are being administered in accordance with clinical guidelines for advanced pancreatic cancer, focusing on optimizing therapeutic outcomes while managing symptoms. \n\nRelevant comorbidities include a history of hypertension and hyperlipidemia, which have been stable with current management. It is noteworthy that laboratory results reveal benign findings, with liver enzymes and biomarkers not suggesting any acute liver compromise at this time. \n\nFamily history is significant for pancreatic cancer in a distant relative but otherwise unremarkable for hereditary syndromes. The patient has undergone standard imaging studies, which confirmed the metastatic disease involving regional lymph nodes and liver. Regular follow-ups are scheduled to assess response to therapy and manage side effects.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-03-16",
+    "treatment_regimen": [
+      "gemcitabine",
+      "nab-paclitaxel"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "note": "The patient is a 62-year-old male with a history of hypertension and hyperlipidemia, who presented to our clinic for follow-up after his diagnosis of lung adenocarcinoma on February 22, 2023. Initially diagnosed at stage IB, he is currently receiving his second line of therapy following a management plan that incorporates durvalumab, etoposide, and carboplatin. \n\nFamily history is significant for lung cancer in his paternal grandmother, who was diagnosed at age 70 and subsequently passed away. The patient has reported limited engaging in strenuous activity and is currently classified with an ECOG performance status of 2, predominantly affected by symptoms such as persistent fatigue and mild dyspnea. \n\nIn terms of molecular markers, the ALK status has returned positive, while the EGFR status remains unknown pending further analyses. Imaging studies performed prior to starting treatment showed no evidence of distant metastasis. \n\nHe has tolerated the treatment regimen reasonably well, experiencing manageable side effects such as mild nausea and transient anemia. Recent labs revealed stable renal function with creatinine at 0.9 mg/dL and a hemoglobin level of 11.5 g/dL, which is consistent with his treatment history. \n\nThe multidisciplinary team discussed the possibility of further genetic testing for other actionable mutations, given the current unknown EGFR status, and will continue to monitor his response to the current therapy. We will reevaluate imaging in the next 6 weeks to assess the efficacy of the regimen. This plan will be communicated to the patient and further appointments scheduled as required.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "EGFR",
+        "status": "unknown"
+      },
+      {
+        "name": "ALK",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-02-22",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

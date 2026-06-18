@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a 56-year-old female, presents for follow-up on her breast cancer management. She was diagnosed with stage I invasive lobular carcinoma on August 15, 2018, and has had a relatively uneventful course since then. The patient initially underwent a lumpectomy followed by adjuvant radiotherapy, with no significant complications reported. Family history is notable for breast cancer in her maternal aunt, causing concern but no genetic testing has been pursued.\n\nCurrently, her performance status is ECOG 1, indicating she is restricted in strenuous activity, yet she can perform light tasks without issues. She has been progressing through her treatment regimen, currently on her second line of therapy, which includes palbociclib and letrozole. Prior to this regimen, she received standard neoadjuvant therapy; however, specifics of that therapy were not documented in the available records. \n\nHer most recent labs indicate a HER2 positive status, enhancing the complexity and guiding the focus of her therapeutic interventions. She continues to tolerate her current medications with occasional mild nausea but denies any episodes of vomiting or significant loss of appetite. \n\nAdditionally, it is worth noting that the patient has well-controlled hypertension and hyperlipidemia, which are being managed with lisinopril and atorvastatin, respectively. These comorbidities are stable and do not appear to complicate her oncology treatment. The patient expressed slight anxiety regarding her cancer journey, but she is otherwise in good spirits and engaged in supportive group therapy.\n\nClinical findings during the exam are unremarkable, with no palpable masses noted on examination. We plan to continue her current regimen and perform repeat imaging in three months to evaluate treatment response.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2018-08-15",
+    "treatment_regimen": [
+      "palbociclib",
+      "letrozole"
+    ]
+  }
+}

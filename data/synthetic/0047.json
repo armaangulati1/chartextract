@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 67-year-old male with a documented history of lung adenocarcinoma, diagnosed on 12/25/2019. His cancer staging is noted as IIIB, reflecting significant involvement. The patient has been assessed and currently presents with an ECOG performance status of 2, indicating he is ambulatory but unable to carry out any work activities due to his condition.\n\nFollowing initial treatment, which included a regimen of etoposide and carboplatin, the patient's therapy has progressed to the second line of treatment involving durvalumab. Recent pathology results indicate that the PD-L1 biomarker is positive, which suggests a potential benefit from immunotherapy strategies; this was considered when formulating the current treatment approach.\n\nHe has a notable family history of lung cancer, with both parents having been diagnosed with different types of malignancies at advanced ages. Additionally, the patient has several comorbidities including well-controlled hypertension and mild asthma, which have not impacted his treatment regimen significantly. \n\nDuring the last follow-up, the patient reported some side effects from the ongoing therapy, like fatigue and mild nausea, but overall, he tolerated the regimen reasonably well. His next appointment is scheduled in a month to re-evaluate his condition and response to durvalumab, alongside monitoring for any adverse reactions or disease progression. Regular imaging studies will be conducted to assess the efficacy of the current line of therapy.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-12-25",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 52-year-old female presenting with invasive lobular carcinoma of the breast, staged IIIB, following her diagnosis on March 30, 2024. At this time, she has significant lymphadenopathy and a palpable mass, indicating an advanced local disease. The histological analysis confirms the diagnosis with positive estrogen receptors (ER positive) and progesterone receptors (PR positive), which may influence her treatment course for efficacy in hormone receptor-targeted therapy.\n\nUnfortunately, her ECOG performance status is rated at 3, indicating she is unable to carry out any work activities and is mostly confined to bed or a chair. She has been advised to limit strenuous activity, reflecting her current level of energy and overall functionality.\n\nThe patient is currently on her second line of therapy, receiving capecitabine. Previous management attempted with a different regimen, however, details about earlier treatments are not available in the current record. She tolerates her current medication moderately well, with some reports of hand-foot syndrome, but no serious adverse events noted to date.\n\nAdditionally, she has a history of hypertension managed with medication, which appears to be well-controlled. Family history includes a maternal antecedent of breast cancer diagnosed at 60, though no significant background of other malignancies. Routine labs show her leukocyte counts and liver enzymes are within normal limits, and recent imaging demonstrates stable disease with no new lesions identified since last assessment.\n\nOverall, we will continue monitoring her response to capecitabine and consider further imaging studies in the coming weeks to evaluate disease progression and treatment efficacy.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "positive"
+      },
+      {
+        "name": "PR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-03-30",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

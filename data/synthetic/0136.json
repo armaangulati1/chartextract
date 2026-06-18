@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 58-year-old male with a known history of clear cell renal cell carcinoma (ccRCC) diagnosed on April 15, 2023. He presents today for follow-up assessment after undergoing his fourth line of therapy. Currently, he is on a regimen that includes nivolumab and cabozantinib, which he has tolerated reasonably well, although he reports some mild fatigue and intermittent nausea. \n\nReview of systems shows no significant weight loss, though he admits to some difficulty in performing strenuous activities, aligning with an ECOG performance status of 1. Family history is notable for hypertension in both parents and a brother who passed away from prostate cancer at age 65, but no direct history of kidney cancer.\n\nLab work demonstrates stable renal function but shows a trivial elevation in liver enzymes, which can be attributed to his ongoing treatment regimen; previous tests were normal. Additionally, imaging studies from last month indicate no new metastatic lesions, maintaining stage IIIC classification of his disease. \n\nPathological biomarkers reveal that the VHL gene status is positive, whereas PD-L1 expression is negative, possibly influencing future therapeutic considerations. Despite the challenges of managing this aggressive renal carcinoma, the patient remains engaged in his care and is actively participating in decision-making regarding further treatment options.\n\nOverall, the patient is coping well with the treatment effects and has been advised to continue regular monitoring of his symptoms and follow up in 4 weeks for reassessment of therapy efficacy and any potential side effects. All other comorbidities, including mild asthma and managed dyslipidemia, remain stable at this time.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "positive"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2023-04-15",
+    "treatment_regimen": [
+      "nivolumab",
+      "cabozantinib"
+    ]
+  }
+}

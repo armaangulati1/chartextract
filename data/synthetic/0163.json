@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 65-year-old with a known diagnosis of colorectal cancer, specifically mucinous adenocarcinoma, diagnosed on May 7, 2019. Her disease is classified as stage IVB, indicating extensive metastatic involvement. Currently, the patient's ECOG performance status is rated at 2, reflecting a degree of limited mobility and self-care needs, particularly during strenuous activities.\n\nSince her initial diagnosis over four years ago, we have explored multiple treatment options. Currently, she is on the second line of therapy, receiving regorafenib, an oral multikinase inhibitor. Notably, her tumor exhibits HER2 positivity, which indicates potential for targeted therapies should further lines of treatment be necessary in the future.\n\nThe patient does not have any significant past medical history that complicates her current treatment regimen, although she has hypertension and osteoarthritis, which have been well-managed with medication. Family history reveals a background of colorectal cancer in her father, which raises the importance of regular screenings and genetic counseling in her case.\n\nDespite the heavy burden of her illness, the patient reports maintaining a relatively stable quality of life with minimal exacerbations of her baseline symptoms, although she does experience intermittent abdominal discomfort likely related to her malignancy. She will be monitored closely for any signs of disease progression or treatment side effects. Additionally, her lab work shows no acute abnormalities, with stable liver function tests and normal electrolytes, which are crucial considering her oral therapy.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-05-07",
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

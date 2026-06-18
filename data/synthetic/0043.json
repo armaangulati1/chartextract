@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 65-year-old male with a significant history of smoking, presenting with pulmonary complaints. Diagnostic imaging and subsequent bronchoscopy led to a diagnosis of squamous cell carcinoma of the lung, confirmed on biopsy in August 2019. At that time, the cancer was classified as stage II, with no evidence of nodal involvement or distant metastasis.\n\nHis ECOG performance status is currently noted as 0, indicating he is fully active and able to carry on all normal activities without restriction. Notably, he is now on the second line of therapy, having initiated treatment with osimertinib due to previous therapeutic interventions. \n\nEarlier treatments were focused on managing the primary tumor which was effectively responded to; however, he remains positive for related comorbidities, including well-controlled hypertension and mild COPD, which do not significantly impair his functional capacity at present. \n\nBiomarker testing for ROS1 and ALK revealed negative results, narrowing the treatment options further, yet the patient tolerated the osimertinib regimen well, with minimal side effects reported, including modest fatigue but no significant toxicity that required hospitalization.\n\nDuring past follow-ups, lab evaluations for other unrelated benign conditions like his routine lipid profile and glucose levels remained normal. The patient's family history is significant for lung cancer in an aunt and prostate cancer in his father. Given the current status and ongoing therapy response, continued close monitoring, along with regular imaging, is warranted to evaluate for possible progression.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "ROS1",
+        "status": "negative"
+      },
+      {
+        "name": "ALK",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-08-21",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "note": "The patient, a 64-year-old male with a significant smoking history and a past medical history notable for hypertension and hyperlipidemia, presented to the oncology clinic with complaints of persistent cough, significant weight loss, and dyspnea on exertion. Upon evaluation, imaging studies revealed a mass in the right lung, prompting a biopsy that confirmed the diagnosis of small cell carcinoma, now staged as IV. \n\nHis performance status is rated at ECOG 3, indicating he is in a state requiring considerable assistance and is not capable of self-care. Comprehensive biomarker testing was conducted, revealing a negative status for BRAF, while ROS1 results returned as equivocal. \n\nGiven the advanced stage of his disease and performance status, treatment has been initiated with a first-line regimen including pembrolizumab, carboplatin, and pemetrexed. The patient tolerated the initial infusion well; however, he is experiencing some mild nausea and fatigue, which are being managed symptomatically. Regular follow-up appointments have been scheduled to monitor his response to therapy, alongside routine blood work to assess for any cytopenias or other treatment-related side effects. \n\nIn terms of familial history, there is a notable incidence of lung cancer on the paternal side. Previous surgeries include a cholecystectomy performed five years ago, and he has no allergies reported. Additionally, benign lab results indicated slightly elevated cholesterol levels, yet liver function tests returned within normal limits. \n\nThe patient has been counseled on the importance of smoking cessation and supportive services available, as his prognosis depends significantly on the responsiveness to the current treatment regimen and managing comorbid conditions.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "negative"
+      },
+      {
+        "name": "ROS1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

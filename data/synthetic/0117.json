@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 52-year-old female with a history of HER2-positive breast carcinoma diagnosed on December 2, 2023, currently classified as stage IIIA. Following initial treatments, she is now on her second line of therapy, which includes the combination of palbociclib and letrozole. The most recent pathology report indicates a positive Ki-67 status, suggesting a higher proliferation rate, which is consistent with her current disease characteristics. While the patient's performance status currently remains unremarkable, she has reported some difficulty with strenuous exercise but is otherwise able to manage daily activities without significant issues.\n\nThe patient has no known history of cardiovascular disease but does have well-controlled hypertension and a family history notable for breast and ovarian cancer in her maternal lineage. Prior to this diagnosis, the patient underwent a benign lumpectomy for fibrocystic changes in 2020, which complicates the clinical picture but does not directly impact her current treatment plan. Lab results from the most recent visit show stable metabolic panels, with no worrisome findings apart from an elevated cholesterol that is being monitored. \n\nShe continues to discuss care strategies with her oncology team and is participating in the ongoing management plan aggressively. Regular follow-ups are planned to monitor tumor response to the current regimen, and she is advised to continue self-monitoring for any new concerns. The multi-disciplinary team is engaged, ensuring that all aspects of her health are managed comprehensively.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-12-02",
+    "treatment_regimen": [
+      "palbociclib",
+      "letrozole"
+    ]
+  }
+}

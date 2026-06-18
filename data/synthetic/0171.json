@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 65-year-old male with a recent diagnosis of lung adenocarcinoma made on February 17, 2024. His cancer is classified as stage I, which indicates early localization without evident metastasis. The patient is currently undergoing his first line of therapy with crizotinib, a targeted agent pertinent to specific molecular alterations.\n\nDuring the evaluation, we explored biomarker status; the ALK test came back negative, indicating no involvement of the ALK gene rearrangement typically targeted by ALK inhibitors. The KRAS status was found to be equivocal, warranting further investigation in future assessments, as KRAS mutations can influence treatment responses and prognosis. \n\nThe patient's ECOG performance status is noted as 3, which classifies him as being capable of only limited self-care; he is confined to bed or chair for more than half of the day and cannot carry out any work activities due to fatigue related to both the malignancy and its treatment effects.\n\nMedical history is significant for hypertension and type 2 diabetes, both of which are well-managed but must be monitored closely due to their potential impact on treatment tolerance. The family history is notable for lung cancer in a paternal uncle and colorectal cancer in his mother, which highlights possible hereditary carcinogenic factors.\n\nBaseline labs have shown normal renal and liver function, and previous imaging studies revealed no signs of metastatic disease, which is encouraging. Given the patient\u2019s current therapeutic regimen and performance status, close follow-up is essential to monitor treatment response and manage any emerging side effects.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "negative"
+      },
+      {
+        "name": "KRAS",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-02-17",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

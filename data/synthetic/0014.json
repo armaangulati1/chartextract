@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 62-year-old male with a diagnosis of stage IV squamous cell carcinoma originating from the head and neck region. The initial diagnosis was made on February 16, 2026, following a biopsy that confirmed the histological nature of the tumor. The patient's past medical history is significant for hypertension and mild COPD. He reports a 15-pack-year smoking history but quit over a decade ago. Family history is notable for hypertension in both parents but no history of malignancies.\n\nCurrently, the patient presents with an ECOG performance status of 1, indicating he is restricted in strenuous activity but can carry out light work. He is currently undergoing his second line of therapy with nivolumab, an immune checkpoint inhibitor. Evaluation of biomarkers revealed that he is positive for Epstein-Barr virus (EBV), while PD-L1 expression status was found to be negative. The clinical team is monitoring for any potential adverse effects related to the treatment, particularly immune-mediated responses.\n\nDuring the last visit, there was a discussion about dietary modifications to enhance overall health during treatment. The patient has been advised to follow up closely every four weeks, considering his treatment regimen and the implications of his advanced disease. Routine labs, including CBC and metabolic panel, showed no alarming findings aside from mild proteinuria, which is most likely benign given his normal kidney function.\n\nPlans were made for imaging studies to assess response to nivolumab, and referrals to supportive services for palliative care will be established to address symptom management as the disease progresses. Close observation of any new symptoms is recommended, such as changes in swallowing or increased fatigue. Next visit is scheduled in a month for follow-up and re-evaluation of treatment efficacy.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "EBV",
+        "status": "positive"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2026-02-16",
+    "treatment_regimen": [
+      "nivolumab"
+    ]
+  }
+}

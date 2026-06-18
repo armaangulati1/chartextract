@@ -1,0 +1,25 @@
+{
+  "note": "The patient, a 62-year-old male with a significant past medical history, was initially diagnosed with stage IVB colorectal adenocarcinoma on June 1, 2022. His current ECOG performance status is rated at 1, indicating he is limited in strenuous activity but ambulatory and capable of self-care. As he progresses through his treatment, the patient is currently on the third line of therapy, comprising FOLFIRI combined with cetuximab, aiming to target disease progression effectively.\n\nHistologically, the adenocarcinoma has been evaluated, and current biomarker assessments for HER2 status return equivocal results, while the BRAF mutation status is marked as unknown. This lack of definitive results highlights the complexity of his oncological profile and may necessitate further genetic evaluation or clinical trials for optimal management strategy.\n\nIn addition to his oncological history, the patient has a background of hypertension and hyperlipidemia, which are being managed with medication. Additionally, he previously underwent an appendectomy ten years ago, which, although unrelated, contributes to his surgical history. Family history reveals a notable incidence of colorectal cancer in his father, who was diagnosed at age 67, and a sister with a history of thyroid disease.\n\nOngoing labs indicate normal liver function tests and stable hemoglobin levels, with routine imaging showing limited progression of metastatic disease at the last follow-up. The multidisciplinary team continues to monitor his response to the current regimen and evaluate symptomatic management strategies to ensure quality of life.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "equivocal"
+      },
+      {
+        "name": "BRAF",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2022-06-01",
+    "treatment_regimen": [
+      "FOLFIRI",
+      "cetuximab"
+    ]
+  }
+}

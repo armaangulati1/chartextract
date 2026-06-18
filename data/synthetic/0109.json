@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 65-year-old male with a history of cutaneous melanoma, stage IVB, diagnosed on November 20, 2018. He has been previously treated with multiple lines of therapy, currently in the third line. \n\nRecently reviewed laboratory results reveal negative PD-L1 and BRAF biomarkers, which may impact ongoing treatment considerations. His ECOG performance status is noted as 2, indicating he is able to walk and carry out light work but has restrictions in more strenuous activities. \n\nFor the current management of his disease, the patient is on a regimen of dabrafenib and trametinib, having previously tolerated these medications with manageable side effects. It is worth noting that the patient has a history of hypertension and hyperlipidemia, well-controlled with medications. \n\nAdditionally, he has undergone a previous excisional biopsy for a benign skin lesion in 2015 and has no significant family history of melanoma; however, his brother had prostate cancer diagnosed in his 70s. \n\nThe plan is to continue with the current treatment protocol while monitoring for any potential adverse effects, as well as regular follow-ups to assess disease progression. The patient has been advised to maintain hydration and report any new symptoms or changes in his condition promptly. Regular dermatological evaluations will also be important due to his melanoma history, in conjunction with the oncology follow-ups.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      },
+      {
+        "name": "BRAF",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2018-11-20",
+    "treatment_regimen": [
+      "dabrafenib",
+      "trametinib"
+    ]
+  }
+}

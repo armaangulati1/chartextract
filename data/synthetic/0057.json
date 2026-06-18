@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a 54-year-old female with a past medical history significant for hypertension and hyperlipidemia, presented to the oncology clinic for follow-up regarding her diagnosis of breast cancer. She was initially diagnosed with invasive ductal carcinoma, stage IIB, on May 20, 2019. The tumor was noted to be HER2 negative, and she has been treated with a first-line therapy regimen consisting of palbociclib and letrozole.\n\nUpon evaluation, the patient is currently displaying an ECOG performance status of 2, indicating she has some restriction in strenuous activity but is still ambulatory and capable of self-care. Notably, she reports that she experiences fatigue while managing daily activities, which may be associated with her current treatment regimen. \n\nThe patient denies any recent weight loss but complains of occasional joint aches, likely attributable to the letrozole. In addition, she has a family history of breast cancer in her mother, who was diagnosed at the age of 62, raising concerns about genetic predisposition. The patient has no history of smoking, and her previous surgical history includes a right-sided lumpectomy followed by radiation therapy post-diagnosis.\n\nOn routine blood work, her CBC was benign with no signs of anemia or leukopenia, and liver function tests were within normal limits. She has been compliant with her medication and has recently engaged with support groups, which she finds beneficial for coping with her diagnosis.\n\nFuture considerations entail discussing potential adjuvant therapies, particularly considering she remains HER2 negative. A follow-up appointment has been scheduled in three months, at which point we will reassess her performance status and any side effects associated with her ongoing therapy.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-05-20",
+    "treatment_regimen": [
+      "palbociclib",
+      "letrozole"
+    ]
+  }
+}

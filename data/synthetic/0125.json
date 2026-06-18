@@ -1,0 +1,30 @@
+{
+  "note": "This patient was initially evaluated on October 11, 2021, at which time she was diagnosed with invasive lobular carcinoma of the breast, categorized as stage IIB. The case is complicated by a family history of breast cancer in her mother, which may contribute to her current diagnosis. She has a performance status of ECOG 0, indicating she is fully active and able to carry out all pre-disease activities without restriction.\n\nLaboratory evaluations revealed the following biomarker statuses: estrogen receptor (ER) showing an equivocal result, progesterone receptor (PR) testing positive, and HER2 also having an equivocal status. These results have implications for her treatment selection as we are considering the nuances in the receptor statuses before proceeding with any targeted therapy.\n\nCurrently, she is on her first line of therapy, which includes a regimen of trastuzumab, pertuzumab, and docetaxel. While she has tolerated these medications without significant side effects, some mild alopecia and fatigue have been noted, which are common with this chemotherapy combination. Additionally, she reports her appetite remains stable, and she has not experienced any nausea, which is promising. Patient denies any prior surgeries related to this condition; however, she does have a history of benign breast disease which was managed conservatively in the past.\n\nOverall, given the complexity of her case and the treatment undertaken, we will continue to monitor her progress with ongoing imaging studies and follow-up evaluations to assess the efficacy of the current regimen, while also being vigilant about her overall health, including screening for potential comorbid conditions.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "equivocal"
+      },
+      {
+        "name": "PR",
+        "status": "positive"
+      },
+      {
+        "name": "HER2",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-10-11",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

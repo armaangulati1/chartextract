@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 62-year-old female with a complex medical history, including hyperlipidemia and managed hypertension, presenting for evaluation of her metastatic ovarian cancer diagnosed on December 16, 2025. This case has been challenging due to her ECOG performance status of 2, indicating that she is unable to carry out any work activities and is confined to bed for more than half the day. \n\nHistologically, the primary tumor was identified as endometrioid carcinoma, stage IV, with extensive peritoneal spread and involvement of retroperitoneal lymph nodes noted on imaging studies. Initial treatment included a combination of carboplatin and paclitaxel, which the patient tolerated with some mild nausea and fatigue but no major complications. \n\nUpon evaluation of genetic markers, the results revealed an equivocal status for BRCA1 and HRD, while BRCA2 was definitively negative. These findings will be crucial for further therapeutic decisions moving forward, especially given the second line of therapy relevance.  \n\nReviewing the family history, there is a noted prevalence of breast and ovarian cancers in her lineage, which may have implications for genetic counseling and testing moving forward. The patient also has a past surgical history of cholecystectomy. \n\nOn current examination, she continues to experience abdominal discomfort, attributed to her cancer-related symptoms, and will be closely monitored as we assess her response to the current regimen. Overall, given her advanced stage, ongoing support measures including palliative care consultations are being arranged to better manage her symptoms and improve quality of life.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "endometrioid carcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "equivocal"
+      },
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      },
+      {
+        "name": "HRD",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2025-12-16",
+    "treatment_regimen": [
+      "carboplatin",
+      "paclitaxel"
+    ]
+  }
+}

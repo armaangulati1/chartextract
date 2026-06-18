@@ -1,0 +1,30 @@
+{
+  "note": "Patient is a [AGE]-year-old [GENDER] with a diagnosis of lung squamous cell carcinoma, first identified on November 21, 2023. The tumor is classified as stage IIB, indicating a local extent of disease that includes nodal involvement. During the latest assessment, the patient's ECOG performance status is rated at 2, indicating they are ambulating but require some assistance with daily activities.\n\nBiomarker testing revealed an ALK-positive result, crucial for therapeutic decision-making. Although the status of BRAF remains unknown, ROS1 has been ruled out as negative, suggesting that targeted therapies directed at these markers may not be appropriate at this time. Therefore, the current treatment regimen includes durvalumab, an immune checkpoint inhibitor, used in combination with etoposide and carboplatin, to enhance systemic disease control during the second line of therapy.\n\nThe patient has a history of hypertension and hyperlipidemia but denies any recent pulmonary complications; lung function remains stable according to recent spirometry results. Notably, there are no indications of other malignancies in family history, although a cousin has a history of breast cancer. Ongoing monitoring of liver function tests due to etoposide administration shows no significant abnormalities at this time, with all values within normal limits.\n\nFollow-up is planned post course completion of the current regimen, and tumor response will be monitored via imaging studies every 8 weeks. The patient is encouraged to report any new symptoms, particularly those related to increased shortness of breath or unexpected weight loss that may indicate disease progression.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "unknown"
+      },
+      {
+        "name": "ROS1",
+        "status": "negative"
+      },
+      {
+        "name": "ALK",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-11-21",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

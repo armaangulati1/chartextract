@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 62-year-old male with a primary diagnosis of colorectal adenocarcinoma, initially diagnosed on May 2, 2019. Presenting with stage IIIC disease, his ECOG performance status is rated at 1, indicating some restrictions in strenuous activity but otherwise independent in most daily tasks.\n\nOn molecular profiling, the tumor exhibits HER2 positivity, alongside a negative KRAS mutation result, indicating potential for targeted therapies. Currently, he is being treated on the second line therapy with a regimen comprising bevacizumab in combination with capecitabine, following progression on first-line treatment.\n\nThe initial approach included FOLFOX, which was tolerated with mild adverse effects, notably fatigue and mild neuropathy. Family history is significant for colon cancer in a paternal uncle and breast cancer in a maternal aunt, which may add to his risk profile. He has a past medical history of hypertension and well-controlled diabetes mellitus, both under regular management with medications.\n\nRecent lab work showed stable CBC results with benign values in liver function tests, and his last imaging via CT abdomen and pelvis indicated progression of disease with several enlarged mesenteric lymph nodes. The decision to initiate the current regimen was made in a multidisciplinary meeting after discussing potential benefits and his overall performance status.\n\nFollow-up appointments are scheduled every 3 weeks for treatment monitoring and supportive care assessment. Additionally, the patient expresses concerns about managing adverse effects and is being guided on symptom management, including nausea and potential gastrointestinal issues related to ongoing therapy. He remains actively engaged in his care plan and is informed about the importance of regular follow-ups. A discussion regarding the possibility of clinical trials was also broached, which he is considering pending further evaluation of his response to the current treatment.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "positive"
+      },
+      {
+        "name": "KRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-05-02",
+    "treatment_regimen": [
+      "bevacizumab",
+      "capecitabine"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "note": "This is a follow-up visit for the patient diagnosed with pancreatic ductal adenocarcinoma, confirmed on November 16, 2018. The disease has progressed to stage IVB, with metastases noted during the last imaging study. Currently, the patient has an ECOG performance status of 2, indicating they are able to walk and carry out light activity but are unable to engage in strenuous physical efforts.\n\nThe patient has undergone a second line of therapy, with the most recent regimen comprising FOLFIRINOX, continuing to manage symptoms associated with advanced disease. It's important to note that the BRCA2 mutation analysis returned negative, suggesting no hereditary predisposition in relation to BRCA-associated cancers. \n\nDuring this visit, the patient reported experiencing fatigue and some abdominal discomfort but denied any significant weight loss. Family history includes a mother with type 2 diabetes and a father with hypertension; no immediate relatives have a history of pancreatic cancer. Recent labs showed benign fluctuations typical for chemotherapy, with normal liver function tests and mild anemia, which is consistent with their treatment. \n\nPhysical examination revealed a mildly distended abdomen with no palpable masses. Vital signs were stable, but the patient noted concerns regarding ongoing nausea managed with antiemetics. Plans for comprehensive supportive care will be discussed, focusing on symptom control as we prepare for further treatment evaluation. An updated imaging study has been scheduled to assess disease burden and response to the current regimen.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2018-11-16",
+    "treatment_regimen": [
+      "FOLFIRINOX"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a female with a diagnosis of HER2-positive carcinoma of the breast, initially identified on November 30, 2019. Her current stage is classified as IA. Notably, she presents with a positive HER2 biomarker status and an estrogen receptor (ER) negative status.\n\nUpon reviewing her performance status, it is concerning that she is currently functioning at ECOG performance status 4, indicating she is unable to carry on any self-care and is completely disabled. This level of debilitation is a significant factor in her ongoing cancer management plan.\n\nThe patient is currently on her second line of therapy, receiving sacituzumab govitecan, which has been initiated in response to her disease progression despite earlier treatment. It's important to account for her history of ineffective responses to prior therapies as we progress with her treatment regimen.\n\nAdditionally, her medical history includes chronic hypertension and osteoarthritis, yet there have been no significant cardiac events prior to or during her cancer diagnosis. Family history reveals a mother who had breast cancer diagnosed at age 60, emphasizing the potential hereditary risks that necessitate ongoing screening for both the patient and her family members.\n\nComplimentary lab results show benign levels of liver enzymes and routine metabolic panels within the normal range. However, her recent imaging studies do reveal some lymphadenopathy which warrants close monitoring. \n\nGiven the nature of her disease alongside her comorbidities, multidisciplinary discussions will be vital in dictating the care approach moving forward. Palliative care consultation may also be considered to manage her symptoms and improve quality of life as part of her comprehensive care pathway.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "positive"
+      },
+      {
+        "name": "ER",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 4,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-11-30",
+    "treatment_regimen": [
+      "sacituzumab govitecan"
+    ]
+  }
+}

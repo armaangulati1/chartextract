@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 67-year-old male, presented to the clinic following a diagnosis of prostate neuroendocrine carcinoma on August 2, 2022. Upon evaluation, he is classified as stage IIA, indicating localized disease that has not spread beyond the prostate. His ECOG performance status is 1, reflecting some restriction in strenuous activities but largely independent with daily living tasks.\n\nRecent laboratory evaluations showed both AR-V7 and PSA biomarkers to be negative, which could be indicative of a less aggressive tumor profile. This finding is particularly encouraging, given the neuroendocrine nature of the carcinoma.\n\nCurrently, the patient is undergoing his first line of therapy with olaparib, aimed at targeting any potential DNA repair deficiencies noted in the tumor. He has been tolerating the treatment well without significant adverse effects so far. Prior medical history is notable for mild hypertension and hyperlipidemia, managed routinely with medication; however, these conditions are currently stable. The patient's family history includes a sibling diagnosed with prostate cancer, which underscores the importance of monitoring in this patient cohort.\n\nThe patient will be followed up in the oncology clinic in three months with repeat imaging and laboratory tests to assess tumor response to therapy and any progression indicators. An interdisciplinary discussion may be warranted to consider potential involvement in clinical trials, should he remain a suitable candidate.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "AR-V7",
+        "status": "negative"
+      },
+      {
+        "name": "PSA",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-08-02",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

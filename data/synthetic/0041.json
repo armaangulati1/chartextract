@@ -1,0 +1,15 @@
+{
+  "note": "Patient presented to the oncology clinic for routine follow-up regarding colorectal adenocarcinoma. The tumor was diagnosed on June 14, 2025, classified under stage IB based on the latest imaging and clinical evaluations. Notably, the patient's ECOG performance status is 0, indicating they are fully active and able to carry on all predisease activities without restrictions.\n\nThis marks the patient\u2019s third line of therapy, during which they are currently receiving regorafenib as part of their treatment regimen. They have tolerated the previous therapies well without significant adverse effects; however, they do have some mild fatigue that they attribute to the ongoing treatment, which is not uncommon. At this time, there are no identified biomarkers associated with the tumor that would suggest a targeted therapy alternative.\n\nDuring the last check-up, it was also noted that the patient has a history of hypertension, successfully managed with amlodipine, and reports occasional seasonal allergies that are well controlled with over-the-counter antihistamines. Additionally, the patient had a minor laparoscopic appendectomy in their late twenties with no complications.\n\nFamily history reveals that both parents were diagnosed with different cancers, yet each was managed appropriately and remains in remission. The patient remains engaged in their care and is encouraged to maintain open communication regarding any new symptoms or side effects they may experience.\n\nPlan: Continue with the current treatment regimen of regorafenib and schedule follow-up appointments every 4 weeks for reassessment. Routine labs will be drawn to monitor for any potential side effects.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IB",
+    "biomarkers": [],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2025-06-14",
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

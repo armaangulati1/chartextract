@@ -1,0 +1,16 @@
+{
+  "note": "The patient is a 58-year-old with a diagnosis of colorectal cancer stemming from an initial diagnosis on August 10, 2018. Histological examination revealed mucinous adenocarcinoma, categorized as stage IB, with no evidences of distant metastasis. At the time of evaluation, the patient presents with an ECOG performance status of 0, indicating they are fully active and able to carry on all pre-disease activities without restriction.\n\nIt is noteworthy that the patient has not undergone any prior oncology treatments, as this is their first line of therapy. The current treatment regimen includes the administration of capecitabine, an oral chemotherapy agent, and bevacizumab, a monoclonal antibody that targets vascular endothelial growth factor (VEGF) to inhibit tumor neovascularization. \n\nIn the past medical history, the patient has a significant history of hypertension controlled with medication, but no other major comorbidities have been reported. Labs from last month indicated stable renal function and normoglycemia, with liver function tests within normal limits. The patient's family history is notable for hypertension and type 2 diabetes mellitus in both parents, but no immediate family members have been affected by colorectal cancer.\n\nRegular follow-ups are scheduled with imaging studies to monitor treatment response and any potential adverse effects. The first imaging evaluation is planned in three months, and we will continue to assess the overall performance status as treatment progresses. Patient education on potential side effects and the importance of adherence to therapy has been discussed during the visit.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IB",
+    "biomarkers": [],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2018-08-10",
+    "treatment_regimen": [
+      "bevacizumab",
+      "capecitabine"
+    ]
+  }
+}

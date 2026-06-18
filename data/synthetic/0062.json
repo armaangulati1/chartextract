@@ -1,0 +1,30 @@
+{
+  "note": "The patient presented to the oncology clinic today for follow-up after being diagnosed with squamous cell carcinoma of the head and neck on February 7, 2024. At the time of diagnosis, the cancer was classified as stage IIIB, and the patient is currently on their third line of therapy, which includes a regimen of cetuximab, carboplatin, and paclitaxel. \n\nOn review of the biomarkers, all relevant tests returned positive results: the PD-L1 status is positive, indicating potential benefit from immunotherapy; similarly, both the Epstein-Barr Virus (EBV) and Human Papillomavirus (HPV) statuses are also positive, suggestive of viral associations with the malignancy. \n\nThe patient's ECOG performance status is noted as 1, indicating they are restricted in strenuous activity but generally able to carry out light work. The patient has been tolerating the current treatment regimen fairly well, with manageable side effects. \n\nFamily history is significant for lung cancer in a sibling and breast cancer in the mother, but there are no other pertinent hereditary cancer syndromes noted. The patient's past medical history includes hypertension and controlled type 2 diabetes. The labs performed at the last visit showed benign results for renal function and regular blood counts, with no signs of acute infections or distress at that time. \n\nAlthough the patient has been experiencing mild mucositis and fatigue, these side effects are considered typical in the context of their extensive treatment. We will continue to monitor the patient closely and consider imaging studies in upcoming appointments to assess response to treatment.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "EBV",
+        "status": "positive"
+      },
+      {
+        "name": "HPV",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2024-02-07",
+    "treatment_regimen": [
+      "cetuximab",
+      "carboplatin",
+      "paclitaxel"
+    ]
+  }
+}

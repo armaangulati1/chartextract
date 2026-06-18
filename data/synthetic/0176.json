@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a female diagnosed with invasive lobular carcinoma of the breast on October 18, 2019. Upon clinical examination and histopathological evaluation, the tumor has been classified as stage II. The patient's ECOG performance status is recorded as 1, indicating she has some restrictions in strenuous activities but is generally capable of self-care.\n\nIn terms of treatment, the patient is currently on her first line of therapy, which consists of capecitabine. The tumor markers were assessed, revealing HER2 status to be negative, suggesting a lower likelihood of aggressive disease progression associated with HER2 positivity.\n\nThe patient's medical history is notable for hypertension and hyperlipidemia, but these conditions have been stable with current management. Family history is significant for breast cancer in a distant relative and no other hereditary cancers noted. The patient had a cholecystectomy in 2008 but reported no complications from that surgery.\n\nLaboratory results from the recent tests showed normal ranges for electrolyte panels and liver function tests, continuing to support her current treatment regimen. Overall, the patient appears to be tolerating capecitabine well without significant adverse effects reported at this time. We will continue to monitor her progress closely and plan for routine imaging and follow-up appointments as necessary to assess the response to therapy.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-10-18",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

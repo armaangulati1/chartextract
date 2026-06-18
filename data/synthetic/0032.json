@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 58-year-old female who presents for follow-up regarding her endometrioid carcinoma of the ovary, diagnosed on May 18, 2021. At the time of diagnosis, the cancer was staged as II, with the tumor being localized but showing signs of possible spread to the pelvic area.\n\nDuring her initial treatment phase, she received a regimen consisting of carboplatin and paclitaxel, administered over several cycles. We are now at the second line of therapy, following the sequence of her treatment plan, and she has tolerated the chemotherapeutic agents reasonably well. \n\nCurrent assessment shows her ECOG performance status is 1, indicating she is restricted in strenuous activity but is capable of caring for her personal needs and is ambulatory.\n\nIt is notable that testing has revealed a positive status for the BRCA1 biomarker, which has important implications for both her treatment options and potential familial screening. There are no significant unrelated comorbidities that would impact her oncological treatment at this time; however, she does have a history of controlled hypertension and is currently using lisinopril. Additionally, her laboratory results showed normal thyroid function tests and a routine complete blood count (CBC) that is within normal limits, which gives us confidence in managing her therapy.\n\nFamily history is unremarkable for malignancies, except for her mother, who had breast cancer at age 67. \n\nThe patient has scheduled follow-ups every 6 weeks to monitor her response to therapy, including imaging studies and laboratory evaluations, to assess for any changes in tumor markers or status after the next treatment cycle. It is imperative that we continue to monitor her closely given the implications of her BRCA1 status and the potential for genetic counseling.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "endometrioid carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2021-05-18",
+    "treatment_regimen": [
+      "carboplatin",
+      "paclitaxel"
+    ]
+  }
+}

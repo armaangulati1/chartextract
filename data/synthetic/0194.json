@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 62-year-old male with a history of cutaneous melanoma, diagnosed on October 11, 2024. Currently, he is being staged at IVA, indicating significant local disease involvement. Upon evaluation, comprehensive biomarker analysis revealed that NRAS, BRAF, and PD-L1 are all negative, which has implications for his treatment options. \n\nAt this point in the treatment course, the patient's ECOG performance status is noted as 0, indicating he is fully active and has no restrictions on his daily activities. This is remarkable considering his ongoing treatment regimen, which consists of second-line therapy with dabrafenib and trametinib, both of which are targeted therapies. \n\nFurthermore, the patient's family history includes instances of hypertension and type II diabetes, but no known malignancies, which makes his current diagnosis particularly concerning. He has a past surgical history of a cholecystectomy and appendectomy with no complications. Laboratory tests did not show any abnormalities aside from mild vitamin D deficiency, which he is managed for supplementally. His routine follow-ups have been consistent, and he has been compliant with his prescribed treatments and lifestyle modifications.\n\nOverall, the patient's follow-up appointments are scheduled every three months for monitoring of the disease progression and potential side effects of the ongoing treatment. The multidisciplinary team remains engaged with the patient\u2019s care, emphasizing the importance of extensive follow-up due to the aggressive nature of melanoma at this clinical stage.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "negative"
+      },
+      {
+        "name": "BRAF",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-10-11",
+    "treatment_regimen": [
+      "dabrafenib",
+      "trametinib"
+    ]
+  }
+}

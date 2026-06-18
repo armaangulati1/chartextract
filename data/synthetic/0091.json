@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 62-year-old male, presenting for oncology evaluation due to a recent diagnosis of advanced colorectal pathology. Upon review of the clinical history, it is noted that the patient has been classified with stage IV adenocarcinoma stemming from the colorectal region. No specific date of diagnosis is recorded; however, the patient is responding to ongoing treatment regimens.\n\nCurrent immuno-oncology biomarkers reveal NRAS positivity, indicating potential resistance to certain targeted therapies. HER2 testing has returned negative, suggesting a lower likelihood of benefit from agents that target this pathway. Impressively, microsatellite instability (MSI) has been identified as positive, which may open avenues for immunotherapy options in the future.\n\nThe patient's ECOG performance status is assessed at 0, indicating that he is fully active and able to carry out all pre-disease activities without restriction, thus showing resilience amidst treatment.\n\nHe is currently on his second line of therapy, receiving a FOLFOX regimen, which consists of leucovorin, fluorouracil, and oxaliplatin. This is important to note as previous lines of therapy may have included other agents.\n\nAdditionally, past medical history is notable for hypertension and hyperlipidemia, both of which are being managed with standard antihypertensives and statins. The patient also underwent a laparoscopic cholecystectomy 5 years ago without any complications.\n\nFamily history includes colorectal cancer in a first-degree relative at age 70, which raises further considerations for genetic counseling despite not being the primary subject of this visit. A brief review of the patient's lab results shows normocytic anemia but no laboratory abnormalities warranting immediate intervention.\n\nFuture considerations will include ongoing assessments for treatment response via imaging and further discussions about potential participation in clinical trials given the MSI-positive status. The patient expresses understanding and agrees to continue on the current therapeutic pathway.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "positive"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "MSI",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

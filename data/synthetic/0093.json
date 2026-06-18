@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a 54-year-old female with a history of acral lentiginous melanoma diagnosed on April 30, 2022, presents today for follow-up evaluation. At initial diagnosis, the melanoma was staged as IIIB, indicating a more advanced disease with concerning local and regional involvement. The most current ECOG performance status is 0, representing no restrictions on activity. \n\nOncologic workup revealed a positive NRAS mutation, which has significant implications for targeted therapy. The patient is currently on the second line of therapy, receiving a combination regimen of dabrafenib and trametinib, which she has tolerated reasonably well, experiencing manageable side effects including mild fatigue and some rash, consistent with the medications. \n\nPast medical history includes hypertension, well-controlled on lisinopril, and a benign fibroid condition which has not required surgical intervention. She underwent a hysterectomy at age 45 but there have been no recurrence or complications related to that procedure. Notably, there are no significant familial predispositions to malignancies reported, although a sister was treated for basal cell carcinoma in her 60s.\n\nLaboratory results from her recent check-up show normal liver function tests and a stable complete blood count. The patient has been compliant with regular skin checks and is advised on sun protective measures to mitigate the risk of further skin lesions. \n\nConsidering this patient's ongoing treatment and the importance of close monitoring for progression or side effects, we will schedule her for follow-up appointments every 3 months, along with imaging to evaluate response to current therapy. The next session will focus on any emerging symptoms, reassessing her overall health status, and discussing potential clinical trial options as they become available.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "acral lentiginous melanoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-04-30",
+    "treatment_regimen": [
+      "dabrafenib",
+      "trametinib"
+    ]
+  }
+}

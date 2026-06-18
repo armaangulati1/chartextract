@@ -1,0 +1,16 @@
+{
+  "note": "The patient is a 62-year-old female with a recent diagnosis of pancreatic ductal adenocarcinoma confirmed on biopsy dated July 16, 2021. Initial imaging studies indicate that the tumor is localized, with staging classifying it as Stage I. The patient's ECOG performance status is 0, reflecting her ability to carry out all daily activities without significant restrictions. \n\nShe has commenced her first line of therapy, which includes a combination regimen of gemcitabine and nab-paclitaxel, administered on a bi-weekly basis. To date, the patient has tolerated the treatment regimen well, with minimal side effects reported. Additionally, she has no recorded biomarkers at this stage.\n\nA review of her past medical history reveals controlled hypertension and hyperlipidemia. The patient underwent a cholecystectomy several years ago, with no complications. Family history is significant for breast cancer in her sister and colorectal cancer in her father, which were both diagnosed at an earlier age.\n\nRoutine laboratory work shows stable liver enzymes, and her last abdominal ultrasound displayed no biliary obstruction. She is closely monitored every few months with imaging studies to track any potential progression of the malignancy. Overall, the patient remains optimistic and engaged in her treatment plan.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-07-16",
+    "treatment_regimen": [
+      "gemcitabine",
+      "nab-paclitaxel"
+    ]
+  }
+}

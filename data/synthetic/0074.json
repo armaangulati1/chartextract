@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 56-year-old female with a confirmed diagnosis of high-grade serous carcinoma of the ovary, established on August 17, 2021. Currently, she is staged at IIIC, reflecting significant disease burden with peritoneal carcinomatosis and a notable ascitic component. On assessment, the patient presents with an ECOG performance status of 1, indicating she is able to conduct light daily activities but experiences some restrictions with strenuous efforts.\n\nIn her treatment history, this marks her second line of therapy, and she is currently receiving mirvetuximab soravtansine, which has been well-tolerated thus far. Prior to this regimen, she underwent chemotherapy consisting of carboplatin and paclitaxel. Family history is significant for breast cancer in her sister, although genetic testing for BRCA mutations has shown an unknown status regarding BRCA2. \n\nNo apparent acute comorbidities were noted during this visit, though the patient has a history of hypertension which is managed with lisinopril. Routine laboratory results were largely benign\u2014her complete blood count shows mild anemia, but liver and renal function panels are within normal limits. Follow-up imaging studies are scheduled to evaluate response to the current treatment, and the patient is encouraged to maintain a healthy lifestyle, including a balanced diet, as she continues her therapy.\n\nNext appointment is set for six weeks from today, at which time imaging results will be discussed and treatment adjustments will be made as necessary.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "high-grade serous carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2021-08-17",
+    "treatment_regimen": [
+      "mirvetuximab soravtansine"
+    ]
+  }
+}

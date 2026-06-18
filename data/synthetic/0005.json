@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a [insert age] year old female with a recent diagnosis of breast cancer dated June 3, 2023, presents for evaluation regarding her treatment plan. Her pathology reveals HER2-positive carcinoma, classified at stage III, indicating a more aggressive tumor biology. Notably, the cancer demonstrates a positive Ki-67 proliferation index, supporting a high growth fraction. \n\nAt this stage of her disease, we have commenced her first line of therapy with capecitabine, which we hope will effectively target the malignancy. The HER2 positivity is particularly relevant, as it suggests a potential for favorable responsiveness to therapies targeting this pathway. The patient's ECOG performance status has not been documented in this visit; however, initial assessments suggested she may be functioning well, with no significant impact on her daily activities noted. \n\nWhile reviewing her medical history, it is important to document any relevant comorbidities that could influence her treatment course. The patient has a background of well-managed hypertension and a history of benign ovarian cysts, which have been monitored with routine imaging and do not currently warrant intervention. Family history is significant for breast cancer in her mother, underscoring the importance of genetic counseling in her treatment discussions.\n\nIn summary, our focus remains on the effective management of her detected malignancy through the current regimen of capecitabine, while keeping a close watch for any potential side effects or complications that may arise from treatment. Further action will be determined following her response to therapy and potential evaluation for HER2-targeted therapies in the future.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      },
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2023-06-03",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "note": "The patient, a 62-year-old male with a significant history of hypertension and type II diabetes, presents for follow-up regarding his lung cancer management. He was diagnosed with squamous cell carcinoma of the lung on May 18, 2019, which has been staged as IIA. The patient is currently on the second line of therapy following initial treatment. Current regimen includes durvalumab in combination with etoposide and carboplatin. \n\nUpon evaluation, the patient has reported some mild fatigue but maintains an ECOG performance status of 1, indicating he is able to carry out daily activities, although he experiences some restrictions during strenuous physical exertion. Recent imaging studies have suggested stable disease; however, close monitoring is warranted. \n\nIt is notable that PD-L1 expression analysis returned negative, which has led to further discussion regarding future treatment options considering his current poor response to immunotherapy with durable agents. \n\nFamily history is significant, with a paternal uncle who had lung cancer and a maternal grandmother who suffered from breast cancer; however, no other hereditary syndromes have been noted. The patient denies any recent weight loss but mentions an increase in his smoking frequency, which is concerning given his oncological history. \n\nAdditional comorbidities include occasional hyperlipidemia, for which he is diet-controlled. Previous surgeries include a cholecystectomy performed in 2015 along with unrelated processes. Routine lab results show benign levels of creatinine and electrolytes, with his liver function tests remaining within normal limits. \n\nWe will continue to assess the efficacy of his current treatment regimen and evaluate other potential therapeutic options as necessary during our next encounter.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-05-18",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

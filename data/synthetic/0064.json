@@ -1,0 +1,25 @@
+{
+  "note": "The patient was diagnosed with acral lentiginous melanoma on November 18, 2023, classified as Stage I. At the time of evaluation, their ECOG performance status was noted to be 2, indicating some restriction in mobility and daily activities. The treatment regimen commenced included nivolumab and ipilimumab as part of the third line of therapy, reflecting an aggressive approach to manage advanced disease status.\n\nBiomarker testing revealed BRAF status as equivocal, which may necessitate further investigation or consideration of additional molecular testing in future treatment discussions. Furthermore, PD-L1 expression was recorded as negative, which could influence the anticipated response to immunotherapy.\n\nThe patient's comorbidities include well-managed hypertension and mild osteoarthritis, which notably have not impacted their oncological treatment. A family history highlights an older brother who had sporadic basal cell carcinoma, but there is no direct family history of melanoma. Prior surgical history includes an appendectomy in childhood without complications.\n\nThe most recent lab results indicated normal complete blood count levels; however, the liver function tests showed mild elevation in transaminases, likely attributed to the ongoing immunotherapy regimen. Plans for close monitoring of liver function and immune-related adverse effects have been discussed with the patient, along with regular dermatological assessments given the skin-related nature of their condition.\n\nOverall, the multidisciplinary team will continue to reassess the patient's response to treatment strategies. Follow-ups are scheduled bi-weekly to monitor for any emerging side effects or changes in clinical status.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "acral lentiginous melanoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "equivocal"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2023-11-18",
+    "treatment_regimen": [
+      "nivolumab",
+      "ipilimumab"
+    ]
+  }
+}

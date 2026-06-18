@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 61-year-old female with a history of diabetes mellitus and hyperlipidemia, presenting for routine follow-up regarding her pancreatic condition. She was diagnosed with stage IA pancreatic ductal adenocarcinoma on November 15, 2018. Her treatment regimen has consisted of the first line therapy FOLFIRINOX, which she has tolerated reasonably well, experiencing minimal side effects such as transient nausea and mild fatigue.\n\nDuring this visit, we reviewed her performance status, which remains at ECOG 1; the patient reports being able to engage in light activity but feels restricted when it comes to strenuous exercise. It is noteworthy that both BRCA1 and BRCA2 biomarkers have been tested and returned negative results, indicating no germline mutations associated with this malignancy.\n\nIn addition to her oncology history, the patient has undergone laparoscopic cholecystectomy for gallbladder removal five years ago, and she lists familial hypercholesterolemia in her family history; her mother passed away from colon cancer at age 70. Lab results from her last visit showed slightly elevated LDL levels, but her liver function tests are within normal limits, and her blood glucose control has been stable on metformin.\n\nFuture management will include continued monitoring of her CA 19-9 levels along with periodic imaging to assess for any progression of disease. We will plan for the next follow-up in three months, or sooner if any new symptoms arise.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      },
+      {
+        "name": "BRCA1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2018-11-15",
+    "treatment_regimen": [
+      "FOLFIRINOX"
+    ]
+  }
+}

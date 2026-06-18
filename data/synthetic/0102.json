@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 62-year-old male with a history of hypertension and hyperlipidemia, presented to the oncology clinic for follow-up regarding his colorectal cancer diagnosis. He was initially diagnosed on September 20, 2020, with a mucinous adenocarcinoma, staged IIB based on clinical and pathological findings. Notably, the patient has an ECOG performance status of 1, indicating he is restricted in strenuous activities but is able to perform light work. \n\nCurrently, he is on the second line of therapy following initial treatment. During his previous regimen, he received FOLFOX chemotherapy which he tolerated moderately well, aside from some mild neuropathy and fatigue. His parental family history is significant for colon cancer in his father but no relevant history on the maternal side. \n\nRecent biomarker testing revealed that HER2 is negative; however, KRAS is positive, warranting careful consideration in further treatment options and potential inclusion in clinical trials. Despite the kidney stones diagnosed last year, the patient\u2019s overall status remains stable, and routine labs continue to show benign results, including normal liver function tests and a stable complete blood count. \n\nAs part of our ongoing strategy for managing this patient\u2019s cancer, we discussed the possibility of incorporating targeted therapies that may align with the patient's KRAS status in the future. Plans for follow-up imaging and additional mutation profiling were established to guide subsequent treatment decisions.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "KRAS",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2020-09-20",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

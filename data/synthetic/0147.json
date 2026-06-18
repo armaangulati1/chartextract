@@ -1,0 +1,28 @@
+{
+  "note": "The patient was diagnosed with stage IIA colorectal adenocarcinoma on May 31, 2020. They initially presented with symptoms that led to a colonoscopy revealing a tumor, which was confirmed to be adenocarcinoma through biopsy. Since diagnosis, the patient has been undergoing treatment and is currently on the second line of therapy, receiving regorafenib, which is being closely monitored for efficacy and tolerability.\n\nNoteworthy are the biomarker assessments, which show positive results for multiple markers, indicating a complex tumor biology: the patient has positive microsatellite instability (MSI), positive HER2 status, and positive NRAS mutations. These biomarkers have implications for treatment decisions and may guide future therapeutic strategies, particularly with regard to targeted therapies.\n\nCurrently, the patient's ECOG performance status is 3, indicating significant limitation in ambulation, as they are largely confined to bed but can sit up and participate in some activities of daily living with assistance. They have a history of hypertension and managed type 2 diabetes, but these comorbidities are stable with current medications.\n\nThe most recent laboratory tests, including CBC and metabolic panel, were within normal limits with no signs of acute stress or complications, although slight elevations in liver enzymes were noted. Family history reveals a pattern of colorectal cancers, with a paternal cousin diagnosed at an early age, raising concerns for potential hereditary syndromes.\n\nThe patient is actively engaged in their treatment plan and has been referred to genetic counseling for further evaluation of hereditary risk factors. Follow-up appointments are scheduled every three weeks to assess the response to the current regimen and make any necessary adjustments.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "MSI",
+        "status": "positive"
+      },
+      {
+        "name": "HER2",
+        "status": "positive"
+      },
+      {
+        "name": "NRAS",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2020-05-31",
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "note": "Patient is a 67-year-old male with a significant history of chronic obstructive pulmonary disease (COPD) and hyperlipidemia, previously treated with atorvastatin. He presented to the oncology clinic for follow-up regarding his lung cancer diagnosed on August 6, 2022. Initial imaging and biopsy confirmed squamous cell carcinoma of the lung, classified as stage IIB.\n\nUpon introduction to treatment, the patient was started on a chemotherapy regimen including carboplatin and pemetrexed, in addition to pembrolizumab as part of the first line of therapy. Unfortunately, at the latest evaluation, the patient exhibited an ECOG performance status of 3, indicating he is limited in his ability to care for himself and has restricted mobility, requiring assistance for daily activities.\n\nA review of biomarkers was conducted, revealing PD-L1 expression to be negative, complicating the treatment plan and prognosis. Family history is notable for lung cancer in both maternal and paternal grandparents, suggesting a possible genetic predisposition. The patient's overall health remains challenging due to his background of respiratory illness.\n\nDuring today's visit, we discussed the possibility of supportive care, given the patient's current performance status and symptoms. Additionally, a thorough workup of his pulmonary function is recommended to ascertain his eligibility for potential second-line therapies in the future, should his condition stabilize. The patient has expressed concerns regarding his ability to continue with chemotherapy and is considering a palliative approach moving forward.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-08-06",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

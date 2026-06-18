@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 65-year-old male with a significant smoking history, presenting with persistent cough and weight loss over the past three months. Following thorough evaluation and imaging, a diagnosis of lung adenocarcinoma was established on June 28, 2025. His disease is classified as stage IIIC, indicating extensive involvement with lymphatic spread and a notable prognosis.\n\nRecent staging scans, performed prior to this appointment, confirmed the tumor's progression. The ECOG performance status is noted as 2, meaning the patient experiences significant limitations in his daily activities; he is mostly confined to bed except for brief periods. Alongside this diagnosis, the patient has a medical history notable for hypertension and hyperlipidemia, managed with medication. He has no history of previous malignancies or surgeries specifically related to the lung.\n\nPathology results revealed positivity for PD-L1, suggesting potential responsiveness to immunotherapy. As the patient hasn't responded adequately to the first line of therapy, the oncology team is now proceeding with a second-line regimen comprising durvalumab alongside etoposide and carboplatin. We discussed the treatment plan in detail with the patient, including potential side effects such as fatigue and nausea, which he understands but is willing to accept given the intent of response.\n\nFamily history is significant for lung cancer in his father, who passed away at the age of 70, possibly indicating a hereditary component. Prior to starting the new therapy, tumor board recommendations will be reviewed in conjunction with expected metrics for monitoring response and tolerability. The patient will return for follow-up in 6 weeks to assess treatment efficacy and adjust the regimen as necessary.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2025-06-28",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

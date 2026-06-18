@@ -1,0 +1,25 @@
+{
+  "note": "The patient presented for follow-up on October 2, 2023, for her ongoing management of breast cancer. She was diagnosed with invasive ductal carcinoma on May 4, 2022, and is currently staged at IIB. During her evaluation, she was noted to have an ECOG performance status of 2, indicating she is somewhat limited in her activities but is still able to carry out light work.  \n\nThe treatment regimen has included palbociclib and letrozole, following the initial therapies which included surgery and adjuvant radiotherapy. She is currently on her second line of therapy, as she experienced disease progression after her initial treatment. At this time, HER2 status is negative, which may explain her current treatment choice. It should also be noted that the Ki-67 index is unknown; hence, we cannot categorize the proliferation rate that may impact further therapeutic decisions.\n\nShe denies any significant new symptoms, though she does report some fatigue, which could be attributed to her regimen. The patient also has a history of hypertension, which is well-controlled with lisinopril. There is no evidence of metastasis on recent imaging, and her labs show normal liver function, with only mild anemia noted from previous tests. Furthermore, her family history is significant for breast cancer in her mother, diagnosed at age 52, but no other relevant malignancies were noted.\n\nWe will continue to monitor her closely, discuss the implications of her Ki-67 status at the next visit, and consider additional options should she not respond favorably to the current agents.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "unknown"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-05-04",
+    "treatment_regimen": [
+      "palbociclib",
+      "letrozole"
+    ]
+  }
+}

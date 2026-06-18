@@ -1,0 +1,30 @@
+{
+  "note": "The patient, a female with a primary breast tumor, was diagnosed with invasive ductal carcinoma on November 13, 2018. Since her diagnosis, she has been categorized as stage IVB, indicating a significant metastatic burden. Her current ECOG performance status is 0, reflecting that she is fully active and able to carry on all pre-disease activities without restriction. \n\nIn terms of biomarker analysis, her tumor is estrogen receptor (ER) positive, expressing this receptor potentially allowing for targeted endocrine therapy options. However, the progesterone receptor (PR) status remains unknown at this time, which will need to be monitored as additional testing may be warranted. Notably, the HER2 status is positive, suggesting that her cancer cells have higher levels of the human epidermal growth factor receptor 2 (HER2), making her a candidate for targeted therapies against this pathway.\n\nThe current line of therapy being administered is the first line, which includes a regimen combining trastuzumab, pertuzumab, and docetaxel. This combination intends to effectively combat HER2 positive disease while also addressing the invasive ductal carcinoma's aggressive nature. \n\nThe patient has a history of mild hypertension managed by diet and lifestyle modifications and has previously undergone a laparoscopic cholecystectomy. There is no significant family history of breast cancer reported, although breast cancer is noted in distant relatives. Routine lab work reveals benign findings aside from CA 15-3 levels indicating the need for ongoing surveillance of her disease status. \n\nIn summary, we will continue to monitor her response to the current therapy closely and assess the need for further intervention as appropriate, keeping all multidisciplinary options open as part of her ongoing care.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "positive"
+      },
+      {
+        "name": "PR",
+        "status": "unknown"
+      },
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2018-11-13",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

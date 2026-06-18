@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a male with a recent diagnosis of prostate adenocarcinoma, confirmed on October 16, 2024. His disease has progressed to stage IIIC, indicating more advanced dissemination. Notably, the ECOG performance status is 2, reflecting that he is confined to sedentary activities and requires some assistance with daily tasks. \n\nIn the context of his treatment journey, he is currently on a second-line therapy regimen which includes abiraterone in combination with prednisone, aiming to control symptoms and slow disease progression. Laboratory investigations have shown a negative PSA level, yet the AR-V7 biomarker result is recorded as equivocal, necessitating further assessment to evaluate its clinical implications. \n\nAdditionally, the patient has a complicated medical history including hypertension and hyperlipidemia, but these are managed effectively and are not contributing to his current oncological concerns. The patient's family history includes an incidence of colon cancer in his father, which has raised awareness for potential screenings in the future. \n\nFollow-up imaging studies may be indicated to monitor for any obstructions or metastatic changes, and multidisciplinary input may be beneficial for comprehensive care planning as we proceed with this next line of therapy.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      },
+      {
+        "name": "AR-V7",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-10-16",
+    "treatment_regimen": [
+      "abiraterone",
+      "prednisone"
+    ]
+  }
+}

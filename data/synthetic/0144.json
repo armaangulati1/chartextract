@@ -1,0 +1,22 @@
+{
+  "note": "The patient, a 52-year-old female with a past medical history notable for hypertension and controlled type 2 diabetes, presents for follow-up regarding her breast cancer treatment. Following her diagnosis of invasive lobular carcinoma on April 23, 2021, classified as stage IA, she began her first line of therapy which includes trastuzumab, pertuzumab, and docetaxel. \n\nCurrent examination reveals no signs of recurrence, and she is maintaining an ECOG performance status of 0, indicating she is fully active and able to carry on all pre-disease activities without restrictions.\n\nPertinent lab results in recent panels demonstrate that her estrogen receptor (ER) status is positive, which aligns well with her current hormonal therapy considerations. The patient expresses some concerns regarding side effects from the chemotherapy regimen, particularly fatigue and mild alopecia, but she is managing well overall.\n\nFamily history is significant for breast cancer in her maternal aunt, but there is no known history of hereditary cancer syndromes within her family. She has undergone a bilateral mammogram recently, which showed no abnormal findings. Notably, she underwent an appendectomy in 2015, which is unrelated to her current oncological concerns.\n\nThe plan involves continuing her current treatment regimen with regular bi-weekly infusions of the targeted agents. We will reassess her treatment tolerance and adjust therapies if necessary. Next step includes scheduling follow-up imaging in three months to monitor treatment response, alongside routine blood work to assess her hematologic status.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-04-23",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 67-year-old male with a history of well-controlled hypertension and hyperlipidemia, who presents today for follow-up regarding his head and neck squamous cell carcinoma. The cancer was diagnosed on March 28, 2022, and he is currently undergoing his second line of therapy with pembrolizumab. \n\nUpon review, the patient\u2019s performance status is rated at ECOG 2, indicating he is ambulatory and capable of self-care but unable to perform any work-related activities. He reports some difficulty in swallowing but states that he can manage fluids and soft foods. \n\nPathology results indicate that the tumor is staged as III, with an emphasis on the squamous cell carcinoma of the oropharynx. Biomarker testing has yielded equivocal results for both EBV and HPV status. However, PD-L1 is noted to be positive, providing potential further therapeutic avenues. \n\nIn the past medical history, he also underwent a laparoscopic cholecystectomy for gallbladder disease five years prior, which was uncomplicated. Family history is significant for a paternal history of prostate cancer and a maternal history of breast cancer, with no other significant malignancies reported. His recent labs showed stable kidney function and normal liver enzymes, with mild elevation in cholesterol that he manages with his prescribed statin. \n\nPhysical exam shows the patient in no acute distress, with some mild mucositis noted in the oral cavity but otherwise clear pharyngeal examination. The treatment plan moving forward includes continuing with pembrolizumab, as his response has been favorable thus far and discussions regarding supportive care are ongoing, given the patient's nutrition concerns. Scheduled follow-up visits will monitor for side effects and disease progression, with imaging planned in the next few months.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "EBV",
+        "status": "equivocal"
+      },
+      {
+        "name": "HPV",
+        "status": "equivocal"
+      },
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-03-28",
+    "treatment_regimen": [
+      "pembrolizumab"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a 62-year-old male with a significant smoking history and prior diagnosis of chronic obstructive pulmonary disease (COPD), presented for a follow-up visit today. He was diagnosed with stage IIIB adenocarcinoma of the lung on May 1, 2024, following a biopsy that indicated a positive ALK biomarker status. His performance status is currently evaluated as ECOG 0, showing no limitations in daily activities. \n\nAt initial diagnosis, he was classified under line of therapy 2, having completed a prior regimen successfully. Currently, he is on crizotinib, which appears to have a favorable tolerability profile for him so far, with no significant adverse side effects reported.\n\nDuring this visit, the patient expressed some concern about an ongoing cough, which he has attributed to his history of asthma, but denies any hemoptysis or new skin lesions. His recent imaging demonstrated stable disease without evidence of progression, which is reassuring. Family history includes a sibling with cardiovascular disease; however, no family history of malignancy was established. Routine lab work showed normal liver function and slightly elevated cholesterol levels, which is consistent with his recent dietary habits but is being managed non-pharmacologically.\n\nHe continues to be engaged with pulmonary rehabilitation and reports adherence to his medication regimen. We will proceed with continued monitoring of his pulmonary function and oncological treatment response. Next steps include scheduling a follow-up CT scan in three months and assessing the current treatment regimen's effectiveness. Patient education materials regarding smoking cessation and support resources have been provided. \n\nOverall, the patient's current trajectory in management of his lung adenocarcinoma remains positive, and we will maintain close clinical oversight as we progress with the planned oncological care.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-05-01",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

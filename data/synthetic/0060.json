@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 62-year-old male with a history of chronic obstructive pulmonary disease (COPD) and hypertension, who presents for evaluation of his lung cancer. He was diagnosed with small cell carcinoma of the lung on June 5, 2021, and currently shows an ECOG performance status of 0, indicating he is fully active and able to carry out all pre-disease activities without restriction.\n\nUpon review of his pathology reports, the tumor stage has been classified as IIB. Biomarker testing revealed negative results for PD-L1, ROS1, and EGFR. His current treatment regimen includes osimertinib, which he has been on as part of his second line of therapy given the aggressive nature of his disease and initial responses to therapy. \n\nFamily history is significant for lung cancer in both paternal and maternal grandparents, and personal history is unremarkable aside from a cholecystectomy performed in 2018. Although he has made substantial strides with his current treatment, the nursing staff noted that he has had some recent complaints of mild dyspnea on exertion, which he attributes to his pre-existing lung condition rather than new onset pulmonary symptoms. \n\nRoutine lab work shows stable renal and liver function, with all benign markers. The patient expressed concern regarding the persistence of his cough and occasional night sweats, which are not uncommon in individuals with a history of lung malignancies. As part of his ongoing management, a follow-up appointment has been scheduled to reassess his progress and consider further imaging if symptoms persist or worsen. We have emphasized the importance of symptom monitoring and early reporting to ensure timely intervention if needed.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      },
+      {
+        "name": "ROS1",
+        "status": "negative"
+      },
+      {
+        "name": "EGFR",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2021-06-05",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

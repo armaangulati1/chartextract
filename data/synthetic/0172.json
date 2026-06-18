@@ -1,0 +1,25 @@
+{
+  "note": "The patient, diagnosed with stage IA mucinous adenocarcinoma of the colorectal region on October 25, 2025, presents today for follow-up. Their ECOG performance status is currently noted as 1, indicating they are restricted in strenuous activity but generally able to care for themselves. \n\nIn terms of therapy, they are currently on their first line of treatment, which includes a regimen of FOLFIRI in combination with cetuximab. These regimens have been well tolerated so far, although the patient reports mild gastrointestinal upset, which is manageable with over-the-counter medications.\n\nDuring the last assessment, it was noted that the KRAS biomarker status remains unknown, while the HER2 marker is negative, which could impact future treatment decisions. Additionally, no other concerning comorbidities were identified, although a history of hypertension and mild hyperlipidemia is documented, both of which are being managed with medication.\n\nFamily history reveals no significant genetic predispositions to colorectal cancer, but the patient's father had prostate cancer, which has been ruled out as hereditary in their case. Routine lab work from last week showed benign results, with normal liver function tests and a stable complete blood count.\n\nNext steps include continuing the current treatment regimen and monitoring the patient's response at the next visit, where we will also consider the potential for genetic profiling depending on the upcoming biomarker results.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "unknown"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2025-10-25",
+    "treatment_regimen": [
+      "FOLFIRI",
+      "cetuximab"
+    ]
+  }
+}

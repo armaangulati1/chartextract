@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 64-year-old male with a medical history notable for hypertension and hyperlipidemia, presents for follow-up after being diagnosed on September 14, 2021, with papillary renal cell carcinoma (RCC), specifically staged IIIC based on imaging and clinical evaluation. He reports no significant changes in his general health status and is currently experiencing no symptoms pertaining to his diagnosis. Performance status remains optimal at ECOG 0, as he remains fully active without restrictions to daily activities.\n\nThe patient's treatment regimen commenced with sunitinib, which he has tolerated well thus far, with no reported adverse effects. Laboratory evaluations regarding tumor biomarkers were performed, revealing negative PD-L1 status and positive VHL status, which provides additional insight into his tumor type and potential therapeutic response.\n\nPrevious interventions included a left nephrectomy 3 years prior for unrelated renal stones, and family history is notable for a sibling who experienced prostate cancer at the age of 72. Routine lab work was performed, including CBC and metabolic panel, which showed benign results, with no significant deviations.\n\nOverall, the current management plan includes continuation of sunitinib as the first line of therapy, with regular follow-up for both disease progression monitoring and management of any potential side effects. The patient was counseled on signs and symptoms of complications and the importance of adherence to scheduled follow-ups. Next appointment is planned in three months, or sooner if symptoms develop.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "papillary renal cell carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      },
+      {
+        "name": "VHL",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-09-14",
+    "treatment_regimen": [
+      "sunitinib"
+    ]
+  }
+}

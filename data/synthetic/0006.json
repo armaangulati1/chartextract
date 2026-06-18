@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 58-year-old male with a diagnosis of colorectal cancer confirmed on biopsy, specifically classified as mucinous adenocarcinoma. The date of initial diagnosis was recorded on August 22, 2020. At the time of assessment, the cancer is staged as III, which indicates significant local and regional spread but not yet metastatic involvement.\n\nCurrently, the patient's ECOG performance status is noted as 2, indicating that he is able to walk and care for himself but is unable to carry out any work activities. This performance status suggests some limitations in daily functioning. \n\nIn terms of treatment, the patient is on his first line of therapy, which consists of the FOLFIRI regimen in combination with cetuximab. FOLFIRI, which includes fluorouracil, leucovorin, and irinotecan, is being administered bi-weekly, aiming to manage disease progression and improve overall condition. \n\nBiomarker testing has been performed; however, the results for KRAS status remain unknown as the tumor is still under further evaluation. Additionally, the HER2 status has been classified as equivocal, which may necessitate closer monitoring and reassessment to determine any implications for targeted therapy moving forward.\n\nIt's important to note that the patient has a past medical history significant for hypertension and hyperlipidemia, both well-controlled with medication. No prior surgeries have been documented in relation to his current condition apart from a routine appendectomy during childhood.\n\nFamily history is notable for colorectal cancer in his father, diagnosed at age 60, and diabetes in his mother, all of which adds a layer of complexity to his treatment plan. Regular follow-ups have been scheduled to monitor the effectiveness of the current regimen and assess any new developments in his biomarkers.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "unknown"
+      },
+      {
+        "name": "HER2",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-08-22",
+    "treatment_regimen": [
+      "FOLFIRI",
+      "cetuximab"
+    ]
+  }
+}

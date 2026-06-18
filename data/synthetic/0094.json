@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a male in his late sixties, initially diagnosed with neuroendocrine carcinoma of the prostate on June 21, 2018, presents today for follow-up. He is currently receiving his second line of therapy, which includes abiraterone in combination with prednisone. His treatment regimen has been well tolerated thus far, with no significant adverse effects reported. \n\nDuring today's assessment, a detailed review of the patient's biomarkers revealed a negative PSA level, which suggests that the disease is not currently producing measurable prostate-specific antigen. Imaging studies performed last month indicated a stage IIIB progression, with local and some distant involvement evident. \n\nThe patient remains heavily dependent on external support due to his cancer diagnosis but has not shown signs of further deterioration in his overall performance status. There is no ECOG performance status noted, as he typically restricts himself to light activities at home due to fatigue and other comorbidities, including well-managed hypertension and a history of hyperlipidemia.\n\nFamily history is significant for prostate cancer in a first-degree relative, but no other hereditary syndromes have been identified. Prior surgeries include an appendectomy in his thirties, with no complications reported. Blood work from last week showed normal renal function and electrolytes; liver function tests remained within the normal range, indicating no hepatic impairment from the current medications.\n\nThe long-term management plan includes regular monitoring of clinical status, additional imaging as indicated, and potential exploration of clinical trials should the patient's condition evolve. Upcoming appointments will focus on symptom management and adjustment of therapies based on patient tolerability and progression of disease.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2018-06-21",
+    "treatment_regimen": [
+      "abiraterone",
+      "prednisone"
+    ]
+  }
+}

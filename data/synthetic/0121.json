@@ -1,0 +1,21 @@
+{
+  "note": "Patient is a 55-year-old male with a past medical history notable for hypertension and hyperlipidemia, presenting for follow-up regarding his colorectal cancer treatment. He was diagnosed with mucinous adenocarcinoma on July 27, 2022, currently classified as stage IIB. He was previously managed with first-line therapy; however, he has demonstrated disease progression and is now on his second line of therapy, which includes bevacizumab and capecitabine.\n\nThe patient reports some mild abdominal discomfort but denies any significant weight loss, changes in bowel habits, or new symptoms since the last clinic visit. His performance status is assessed as ECOG 2, indicating he is ambulatory but unable to carry out work activities and is limited in strenuous activity.\n\nIt is worth noting that molecular testing for NRAS showed equivocal results, thus complicating the management plan moving forward. Family history is significant for colorectal cancer in an aunt, diagnosed in her early 60s. He is also a non-smoker and has no significant surgical history, though he previously underwent an appendectomy in his youth.\n\nRoutine laboratory tests reveal stable electrolytes and liver function without significant anomalies, and a normal complete blood count. No signs of infection were noted at this time. The patient was advised on adherence to the treatment plan and to maintain regular follow-ups for monitoring the response to his current regimen. During his last visit, imaging studies were performed, which will inform further therapeutic adjustments.\n\nThe plan is to continue with the current regimen, reassess in four weeks, and potentially consider escalation strategies depending on the latest imaging outcomes. Patient education regarding side effects of current medications and supportive care measures were reviewed with him and his family.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-07-27",
+    "treatment_regimen": [
+      "bevacizumab",
+      "capecitabine"
+    ]
+  }
+}

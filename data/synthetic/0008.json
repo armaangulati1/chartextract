@@ -1,0 +1,24 @@
+{
+  "note": "The patient a 58-year-old female, presented for a follow-up visit regarding her colorectal adenocarcinoma diagnosed on June 25, 2022. She is currently classified as having stage IIA disease, with favorable performance status (ECOG 1), indicating she is capable of light physical activity but may be restricted during strenuous events.\n\nAt diagnosis, her tumor markers showed positive microsatellite instability (MSI) and negative NRAS, which were taken into consideration for her therapeutic approach. Currently, the patient is on a first line of therapy which includes regorafenib, and she has tolerated the regimen well thus far. She reports only mild side effects, including occasional fatigue but no significant intolerances or complications.\n\nHer past medical history includes well-controlled hypertension and hyperlipidemia, both of which are currently managed with medication. She has not undergone any prior surgeries related to her cancer but has a history of laparoscopic cholecystectomy due to cholelithiasis five years ago. Family history reveals a father who had prostate cancer and a mother who experienced breast cancer in her eighties, but no other significant hereditary cancer syndromes.\n\nOn examination today, the patient appears well-nourished and is alert. Vital signs are stable, and there are no signs of acute distress. Abdominal examination is unremarkable, with no palpable masses or tenderness. The lab work, drawn last week, showed normal complete blood count and liver function tests, indicating no current metastatic involvement. \n\nThe plan is to continue with regorafenib while monitoring for any new symptoms or side effects. A follow-up appointment is scheduled in three months to assess treatment response and to consider further imaging if necessary. Additionally, the patient has been advised on maintaining a healthy diet and engaging in regular, moderate exercise as tolerated.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "MSI",
+        "status": "positive"
+      },
+      {
+        "name": "NRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-06-25",
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

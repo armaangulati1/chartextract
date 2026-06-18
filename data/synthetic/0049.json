@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a [redacted] year-old individual with a recent diagnosis of lung cancer made on November 17, 2020, characterized as small cell carcinoma. This case has been staged as IIB, indicating significant involvement yet localized presentation. Notably, the patient has an ECOG performance status of 2, reflecting the patient's limited ability to carry out strenuous activity due to the effects of the malignancy. \n\nDuring the pre-treatment evaluation, genetic profiling revealed a negative result for the BRAF mutation, while PD-L1 status returned equivocal, suggesting some uncertainty regarding the immune checkpoint pathway's involvement in this case. The initial treatment regimen commenced with osimertinib, aligning with current guidelines for targeted therapies in oncogenic profiles. \n\nThe patient's extensive history also uncovers a background of hypertension and osteoarthritis, managed with appropriate medications. No significant family history of lung cancer was reported; however, there is a noted occurrence of breast cancer in the patient's aunt, which may warrant monitoring for hereditary links. Additionally, the patient underwent a cholecystectomy in 2015 due to gallstone disease, though this is not believed to have direct implications on current management. Recent imaging suggests stable lung lesions with no acute distress noted.\n\nPlan moving forward includes follow-up imaging in 6 weeks to assess treatment response and continued monitoring of performance status and side effects associated with osimertinib. These evaluations will guide potential adjustments to therapy if needed.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-11-17",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

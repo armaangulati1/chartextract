@@ -1,0 +1,22 @@
+{
+  "note": "The patient, a middle-aged individual, was diagnosed with lung cancer, specifically squamous cell carcinoma, on January 3, 2026. Notably, the disease is currently staged as I, indicating localized disease without distant metastasis. This patient has been undergoing treatment and is currently on their second line of therapy, which includes a regimen of durvalumab, etoposide, and carboplatin.\n\nDuring the diagnostic workup, some genetic profiling was conducted, which revealed an equivoque status for the ROS1 biomarker. This finding necessitates further evaluation, as it may influence future therapeutic decisions.\n\nDespite their cancer diagnosis, it is worth noting that the patient has a well-controlled history of hypertension and experiences occasional seasonal allergies, which do not complicate treatment plans. Furthermore, they have a family history notable for colorectal cancer in a first-degree relative.\n\nThe patient has maintained good performance status overall; however, specific ECOG performance status was not documented at this visit. They remain active in daily activities with some limitations but continue to engage in most normal routines.\n\nRegular follow-up is planned to monitor the response to therapy and reassess the equivoque status of the ROS1 biomarker. Labs reveal stable renal function and normal liver enzymes, with no significant abnormalities reported.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "ROS1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2026-01-03",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

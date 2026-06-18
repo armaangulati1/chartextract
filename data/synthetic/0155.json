@@ -1,0 +1,15 @@
+{
+  "note": "The patient is a 56-year-old male with a diagnosis of colorectal adenocarcinoma, confirmed on biopsy on November 10, 2019. At presentation, he was classified as stage I, indicating localized disease without lymph node involvement. His ECOG performance status is 0; he is fully active and can carry on all pre-disease activities without restriction.\n\nThe current treatment regimen initiated is FOLFOX, which commenced shortly after the diagnosis, reflecting the standard first-line therapy for his stage and histology. At this time, there are no noted biomarkers or mutations of significance affecting treatment decisions.\n\nIn addition to his oncology assessment, the patient has a history of well-controlled hypertension and mild hyperlipidemia, both of which are managed with lifestyle modifications and medication. Prior surgeries include an appendectomy when he was younger, which is unrelated and has no bearing on his current condition.\n\nFamily history is significant for colon cancer in a first-degree relative, prompting early screening and surveillance. Routine lab work performed before starting chemotherapy showed normal liver and kidney function, with no abnormalities noted that would impede treatment.\n\nThe plan will continue with scheduled follow-up every three months for the first year post-treatment initiation, focusing on monitoring for any disease recurrence and managing potential chemotherapy-related side effects.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-11-10",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

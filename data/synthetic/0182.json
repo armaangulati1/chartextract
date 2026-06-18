@@ -1,0 +1,28 @@
+{
+  "note": "The patient presented to the oncology clinic for follow-up regarding their lung cancer diagnosis. The initial diagnosis of small cell carcinoma was confirmed on March 10, 2024, placing the tumor at stage IB.  The patient underwent imaging and biopsy, which substantiated these findings. \n\nDuring today's visit, relevant biomarkers were assessed. Notably, the patient tested positive for ALK and EGFR mutations; however, the status of ROS1 remains unknown at this point. This genetic profile is being carefully monitored as it may influence future treatment decisions. \n\nThe ECOG performance status was noted as 2, indicating the patient has some restrictions in daily activities, though they are able to ambulate independently with some limitations in more strenuous efforts. Administration of osimertinib has been initiated as the first line of therapy, which the patient has tolerated well thus far with minimal side effects. \n\nHistory reveals no significant prior surgical interventions related to the lung condition, but the patient does have a comorbidity of well-controlled hypertension and a family history significant for lung cancer in both paternal uncle and maternal grandmother. Other benign lab tests, including routine complete blood counts, remained within normal limits and are being monitored for any changes over the course of treatment.\n\nNext steps include continued treatment with osimertinib, regular imaging to assess response, and a follow-up visit in eight weeks to re-evaluate performance status and consider any adjustments in therapeutic strategy, particularly as further biomarker results become available.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "ROS1",
+        "status": "unknown"
+      },
+      {
+        "name": "ALK",
+        "status": "positive"
+      },
+      {
+        "name": "EGFR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-03-10",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

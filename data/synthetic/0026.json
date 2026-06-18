@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a middle-aged individual with a diagnosis of pancreatic ductal adenocarcinoma, confirmed on February 7, 2019. Currently, the disease is staged at IIIB. The patient has undergone three previous lines of therapy prior to the current regimen, which includes olaparib. Notably, current ECOG performance status stands at 1, indicating that the patient is restricted in strenuous activities but fully capable of performing light housework and other sedentary tasks.\n\nRecent molecular profiling revealed that both BRCA1 and BRCA2 genes are negative, which has implications for the response to certain targeted therapies. The pancreatic mass remains symptomatic despite ongoing treatment, and imaging at the last follow-up indicated local invasion, corroborating the advanced stage of the disease. Additionally, the patient has a prior history of hypertension and hyperlipidemia, for which they are on medication. There is a family history of breast cancer in a second-degree relative but no other significant oncological history.\n\nLaboratory results show stable benign findings with no indication of acute issues at this time. Despite the aggressive nature of pancreatic cancer, the patient remains optimistic as they continue with the current line of therapy, and we are monitoring their condition closely, assessing for both side effects and efficacy of the treatment.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "negative"
+      },
+      {
+        "name": "BRCA2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2019-02-07",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

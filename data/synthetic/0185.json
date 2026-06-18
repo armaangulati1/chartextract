@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 56-year-old female with a diagnosed stage IVA breast cancer, specifically invasive lobular carcinoma. She was initially diagnosed on July 30, 2025, and has undergone two prior lines of therapy with varying results. Her third regimen includes trastuzumab, pertuzumab, and docetaxel, which has shown some promise in managing her disease. \n\nUpon review, the most recent pathology report confirms that the Ki-67 biomarker is positive, indicating a higher proliferation index. This finding may be crucial for determining aggressive treatment options moving forward. Currently, the patient is at an ECOG performance status of 1, reflecting her ability to engage in light activities but presenting some restrictions with more strenuous tasks.\n\nIn the personal medical history, the patient has a past surgical history that includes lumpectomy and axillary lymph node dissection due to localized disease that was initially T2N1M0 prior to metastasis. Notably, the family history is significant for breast cancer with her mother being diagnosed at the age of 70. The patient has also experienced mild hypertension controlled with medication, but this comorbidity does not currently impact her cancer treatment. \n\nOn examination, the patient appears well-nourished and in no acute distress. Although she reports fatigue, this is primarily attributed to the ongoing treatment. Routine lab work continues to be within benign limits with no indication of acute renal or hepatic issues noted. The management plan will be reassessed in light of ongoing therapy response and any potential side effects that may require adjustment in her treatment. \n\nFollow-up is scheduled in 4 weeks to monitor her response to the current regimen and to evaluate her tolerance to docetaxel, as side effects can accumulate. Additionally, counseling regarding genetic testing for BRCA mutations will be discussed, given her family history.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2025-07-30",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

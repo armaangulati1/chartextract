@@ -1,0 +1,26 @@
+{
+  "note": "Patient presents for follow-up care related to lung adenocarcinoma, diagnosed on 02/27/2025. Current performance status is ECOG 2, indicating the patient is able to walk more than 50 meters but is limited in strenuous activity. The tumor was classified as stage I and has shown positive biomarkers for PD-L1, while BRAF testing returned negative results.\n\nPatient has already undergone one line of therapy and is currently receiving a second line regimen which includes durvalumab, etoposide, and carboplatin, reflecting a targeted approach given the PD-L1 positivity. \n\nIn addition to the oncology history, it is noteworthy that the patient has a history of hypertension, managed with lisinopril. Prior surgeries include an appendectomy performed in 2010 without complication. There is a family history of breast cancer; the patient's mother was diagnosed in her 50s, but there are no known genetic mutations identified in the family. \n\nRoutine lab results earlier this month were largely unremarkable, with the exception of mild transaminitis values that have stabilized since previous evaluations. The patient reports some fatigue and nausea, but these remain manageable with current antiemetics. \n\nMonitoring for any potential adverse effects of treatment, as well as ongoing evaluation of biomarkers, will be crucial in guiding further management. Next oncology visit is scheduled for one month from today, with a re-evaluation of imaging studies planned at that time.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "BRAF",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2025-02-27",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

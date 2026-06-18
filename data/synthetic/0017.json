@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 54-year-old female with a diagnosis of invasive ductal carcinoma of the breast, confirmed on November 5, 2019. Currently, she is categorized as stage IIIC, indicating significant lymphatic involvement. Her treatment history has progressed through three prior lines of therapy, now under a fourth line consisting of palbociclib and letrozole. Despite the complexities of her case, she maintains an ECOG performance status of 1, indicating that she is only restricted in strenuous activity.\n\nRegarding biomarker status, the HER2 results came back negative, suggesting a non-amplified profile, while the estrogen receptor (ER) status remains unknown. The Ki-67 index is also reported as negative, which may reflect lower proliferation activity, though further context is needed given the patient's extensive disease characteristics.\n\nIn addition to her oncological history, the patient has a notable medical history of hypertension, which is well-controlled, and a former excision of a benign thyroid nodule. Family history is significant for breast cancer with her maternal aunt diagnosed at age 62. \n\nReview of systems reveals no acute complaints; however, the patient does report occasional fatigue, which may be related to her therapeutic regimen. She is adhering to her medication schedule and has been attending routine follow-ups. Next appointment will include a thorough review of her response to the current treatment and potential adjustments based on symptomatology and subsequent imaging results.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "unknown"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2019-11-05",
+    "treatment_regimen": [
+      "palbociclib",
+      "letrozole"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 64-year-old female with a diagnosed stage IB colorectal adenocarcinoma, confirmed on biopsy dated August 12, 2019. She has undergone initial workup that has shown a BRAF negative status, which may influence our treatment decisions moving forward. The patient\u2019s ECOG performance status is rated at 2, indicating she is somewhat limited in her daily activities but is not bedridden. \n\nSince her diagnosis, she has commenced her first line of therapy, which consists of a combination of bevacizumab and capecitabine. We aim for careful monitoring of her response to this regimen, particularly assessing for any side effects given her performance status. The importance of adherence to the medication regimen has been emphasized, and baseline laboratory tests showed normal renal and liver function, with no evidence of any significant benign abnormalities.\n\nIn her medical history, she has a background of mild hypertension, controlled with medication, and there is no indication of any prior surgeries related to the gastrointestinal tract. Additionally, family history reveals a maternal history of breast cancer, but there are no other significant oncological conditions in the family. \n\nWe will continue to monitor her closely with regular follow-up appointments, assessing any symptomatology and quality of life issues due to her current treatment protocol.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-08-12",
+    "treatment_regimen": [
+      "bevacizumab",
+      "capecitabine"
+    ]
+  }
+}

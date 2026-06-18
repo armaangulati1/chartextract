@@ -1,0 +1,30 @@
+{
+  "note": "The patient, a 63-year-old male, initially presented to our clinic in June 2018 with persistent cough and weight loss. After further evaluation, he was diagnosed with stage IIIA lung squamous cell carcinoma on June 22, 2018. A comprehensive workup revealed that he is ECOG performance status 1, indicating he is restricted in strenuous activity but otherwise functional. \n\nHis treatment regimen commenced with a combination of durvalumab, etoposide, and carboplatin as the first line of therapy. Upon assessment, biomarker testing indicated negative for EGFR mutation and negative for ALK rearrangements. However, PD-L1 expression was found to be positive, which suggests a potential benefit from immunotherapy options given the tumor's immunogenic profile. \n\nThe patient has a history of hypertension and hyperlipidemia, managed with lisinopril and atorvastatin, respectively. No prior surgeries for lung disease were recorded, but he underwent an appendectomy in 2005 and has a family history of lung cancer in his father. \n\nThroughout the treatment, the patient has tolerated the regimen reasonably well, experiencing mild nausea and fatigue but no severe adverse effects reported. Subsequent imaging will be necessary to assess the treatment response and determine any further management strategies. Further follow-ups have been scheduled to closely monitor his condition and any potential development of new symptoms.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "EGFR",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "ALK",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2018-06-22",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

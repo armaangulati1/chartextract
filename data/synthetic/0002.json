@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 58-year-old female diagnosed with invasive ductal carcinoma of the breast on August 13, 2020. At diagnosis, she was classified as Stage II based on the extent of tumor development and lymph node involvement. An assessment of hormone receptor status indicated a positive Progesterone Receptor (PR) expression, which will guide our further treatment decisions as well as the overall therapeutic approach. \n\nShe is currently on her second line of therapy and has been receiving sacituzumab govitecan, a treatment option that has shown promise in similar cases of breast cancer.\n\nThe patient's family history is notable for breast cancer in her mother and an uncle with prostate cancer, which raises some concerns for hereditary syndromes. Additionally, she has a past medical history of hypertension and arthritis, but no relevant cardiac issues have been recorded that would pose a risk for her current treatment regimen.\n\nIt is worth noting that the patient has been compliant with follow-up appointments and maintains an active role in her treatment planning. There is no ECOG performance status recorded at this visit, but she has expressed that she is able to carry out daily activities with minimal limitations, although she refrains from strenuous exercise due to fatigue related to her ongoing chemotherapy regimen.\n\nOverall, the management plan will focus on assessing her response to sacituzumab govitecan and monitoring for any side effects, as we consider the next steps in her treatment strategy.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "PR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2020-08-13",
+    "treatment_regimen": [
+      "sacituzumab govitecan"
+    ]
+  }
+}

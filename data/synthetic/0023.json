@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a female with a diagnosis of invasive ductal carcinoma of the breast, confirmed on January 26, 2021. Upon presentation, she was classified as having stage IVA disease. Relevant biomarker analysis revealed HER2 negative status, while Ki-67 was reported positive. The patient\u2019s ECOG performance status is 1, indicating she is restricted in strenuous activity but capable of self-care.\n\nShe is currently on her first line of therapy with sacituzumab govitecan, following a careful assessment of her treatment options. The patient's overall health is somewhat stable, though she continues to experience mild fatigue which is common with her current regimen. \n\nIn her medical history, she has a known history of hypothyroidism, for which she is receiving treatment, and there are no reported allergic reactions to medications. Surgical history includes a lumpectomy performed in 2020 for a benign breast lesion, which was uneventful.\n\nFamily history is notable for a maternal aunt who had breast cancer at age 60 and a father with a history of prostate cancer at 67. There are no other significant hereditary cancer syndromes noted within the family lineage.\n\nDuring the most recent follow-up visit, routine labs were performed. Lipid panel and liver function tests were within normal limits, providing reassurance regarding her metabolic state during treatment. Her white blood cell count remains stable, which is favorable considering the ongoing therapy.\n\nThe plan is to continue monitoring her response to sacituzumab govitecan with regular imaging and follow-ups every three months, ensuring to evaluate her performance status and quality of life as we navigate her treatment course.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-01-26",
+    "treatment_regimen": [
+      "sacituzumab govitecan"
+    ]
+  }
+}

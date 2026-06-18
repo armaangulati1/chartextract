@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 54-year-old female with a known history of HER2-positive carcinoma of the breast diagnosed on September 13, 2018, presents for follow-up. She has been treated successfully for HER2-positive breast cancer, but currently has a diagnosis of stage IVB disease. At this visit, her ECOG performance status is 1, indicating she remains restricted in strenuous activity, though she is generally functioning well.\n\nHer latest assessment shows that she is on her third line of therapy, currently receiving sacituzumab govitecan, which she has tolerated with an acceptable side effect profile. Notably, her progesterone receptor status is positive, while her Ki-67 proliferation index is negative, suggesting a lower proliferative rate of her tumor, which may have treatment implications.\n\nShe has a past medical history of hypertension, managed with lisinopril, and a family history of breast cancer in her mother, which she reports has impacted her treatment decisions. There have been no recent surgeries or interventions since the last oncology visit.\n\nOn examination, there are no new symptoms reported, and her labs reflect stable renal function and electrolyte levels, with a benign complete blood count and normal liver function tests. She continues to follow up with her primary care physician for management of her diabetes type 2, which is well-controlled on metformin. \n\nOverall, the plan includes continuing the current treatment regimen, with imaging scheduled in 8 weeks to monitor disease status, as well as a referral for genetic counseling given her family history of malignancy.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "PR",
+        "status": "positive"
+      },
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2018-09-13",
+    "treatment_regimen": [
+      "sacituzumab govitecan"
+    ]
+  }
+}

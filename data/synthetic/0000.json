@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a 67-year-old male with a history notable for hypertension and hyperlipidemia, presented for follow-up regarding his prostate cancer diagnosed on October 9, 2023. His pathology revealed adenocarcinoma of the prostate, classified as Stage I. At this time, the patient reports no significant symptoms and maintains a good performance status overall. There are no ECOG performance status concerns noted.\n\nDuring this visit, PSA levels were evaluated, yielding negative results, which adds to the patient's favorable prognosis. He is currently on his first line of therapy, which consists of abiraterone and prednisone. Side effects have been manageable, with only mild fatigue reported, not impairing his daily activities.\n\nFamily history is significant for prostate cancer in his father, who was diagnosed at age 70. The patient's previous medical history includes a cholecystectomy performed 15 years ago, with no subsequent surgical interventions reported. He is adherent to his medication regimen for comorbid conditions, which are under good control.\n\nFuture evaluations will focus on monitoring PSA levels and any potential emergence of symptoms. The current treatment strategy remains appropriate given the staging and his overall health status. Next appointment is scheduled for three months.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2023-10-09",
+    "treatment_regimen": [
+      "abiraterone",
+      "prednisone"
+    ]
+  }
+}

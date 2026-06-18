@@ -1,0 +1,26 @@
+{
+  "note": "The patient, a 67-year-old male with a history of hypertension and hyperlipidemia, presents for follow-up regarding his lung cancer management. He was diagnosed with squamous cell carcinoma of the lung on March 23, 2023, with staging confirming IIIB disease. His performance status is currently ECOG 1, indicating he is restricted in strenuous activity but can perform light work.\n\nThe previous treatment regimens included pembrolizumab, carboplatin, and pemetrexed, which he tolerated reasonably well, although he experienced mild fatigue and occasional nausea. In the course of his therapy, we evaluated tumor markers; both ALK and PD-L1 statuses were found to be equivocal, necessitating ongoing surveillance and potential considerations for the next lines of treatment as we decide the optimal course of action given his third line of therapy.\n\nHis family history is significant for lung cancer in an older sibling, while he denies any personal history of smoking, which raises some questions about environmental exposures. Notably, he underwent cholecystectomy five years prior and has no other major surgical history impacting his current oncological care. His laboratory results from the last visit revealed stable renal function and an unremarkable complete blood count, aside from slight leukopenia \u2013 likely related to ongoing therapy.\n\nPlans for the next visit include further imaging studies to assess the current status of the malignancy and discussions surrounding either continuation of immunotherapy or consideration for potential clinical trials should his disease progress. The patient expresses understanding of his condition and is keen to explore all therapeutic options available.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "equivocal"
+      },
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2023-03-23",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

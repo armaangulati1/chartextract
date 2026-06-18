@@ -1,0 +1,20 @@
+{
+  "note": "The patient presented for follow-up evaluation of lung adenocarcinoma originally diagnosed in October 2019. Currently classified as stage IVA, the tumor has exhibited significant progression over the past few months. The most recent imaging studies revealed extensive metastatic involvement, indicating the need for aggressive management. The patient is currently on their third line of therapy, receiving osimertinib, which they began following the previous regimens washed out. \n\nA review of biomarker status shows the presence of the ALK rearrangement, which may have influenced treatment decisions. Despite initial responses to therapy, the patient's ECOG performance status is assessed at 2, indicating that they are capable of all self-care but are unable to carry out any work or active life, being restricted in terms of strenuous activity.\n\nIn addition to the oncological considerations, the patient has a past medical history of mild hypertension, managed with lifestyle modifications; however, there are no recent cardiovascular complications. They have also reported occasional asthma, for which they use albuterol as needed. Family history is significant for lung cancer in a first-degree relative, potentially speaking to a genetic predisposition. \n\nLaboratory results remain stable, with benign findings in metabolic panels, although a low-grade anemia has been noted, which warrants monitoring but appears not to be contributing significantly to the patient\u2019s overall condition at this time. Continuous follow-ups will be critical for assessing treatment response and potential transition to experimental therapies in light of the tumor's aggressive characteristics.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2019-10-18",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

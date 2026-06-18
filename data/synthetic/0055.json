@@ -1,0 +1,22 @@
+{
+  "note": "The patient returned to the oncology clinic for follow-up on their lung adenocarcinoma, diagnosed on June 20, 2021. Currently, they are classified as stage IVA, with ongoing treatment as part of their third line of therapy. Their treatment regimen includes pembrolizumab in combination with carboplatin and pemetrexed, which they have tolerated fairly well with manageable side effects.\n\nDuring the evaluation, the patient's performance status was assessed with an ECOG score of 1, indicating they are capable of some light activity but experience restrictions with more strenuous tasks. The most recent imaging showed progression in the disease, prompting consideration of further therapeutic options.\n\nWe reviewed the biomarker status; the EGFR status remains equivocal, which complicates targeted therapy considerations going forward. Family history is notable for lung cancer in the maternal lineage, and the patient has a history of hypertension but is otherwise stable. Routine lab work demonstrated a benign electrolyte profile, with no significant abnormalities noted in liver function tests.\n\nAdditionally, the patient underwent a prior lobectomy in 2019 for adenocarcinoma in situ but had no recurrence until their last diagnosis. Current plans include discussing potential clinical trial opportunities or contemplating a switch in the treatment strategy to address the cancer progression effectively. The patient was encouraged to reach out with any new symptoms or concerns. Next follow-up is scheduled in six weeks, or sooner if necessary to re-evaluate treatment responses.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "EGFR",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2021-06-20",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

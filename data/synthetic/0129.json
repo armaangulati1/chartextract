@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 62-year-old male with a history of pancreatitis and mild hyperlipidemia, presents for follow-up regarding his treatment for pancreatic ductal adenocarcinoma diagnosed on November 2, 2023. Imaging studies have indicated that the primary tumor site is the pancreas, with findings consistent with stage IIIB disease. The patient has maintained an ECOG performance status of 0, indicating he is fully active without restriction.\n\nDuring this visit, we reviewed the results of biomarker testing. Notably, the patient is positive for BRCA2 mutations, which may inform his treatment decisions moving forward. Additionally, CA 19-9 levels are elevated, supporting the tumor's active status.\n\nCurrently, the patient is on the second line of therapy with olaparib, which has been well-tolerated thus far. He reports experiencing minimal side effects, primarily intermittent mild fatigue. His previous treatments included systemic chemotherapy, which led to a slight reduction in tumor size observed during his last imaging.\n\nFamily history is significant for breast cancer in his sister and colorectal cancer in his father, raising concerns around hereditary cancer syndromes. The patient has never undergone surgeries other than cholecystectomy several years ago for gallbladder stones, and there are no notable surgical interventions related to his current diagnosis. \n\nRecent lab work revealed stable liver function tests and a normal complete blood count, but with a persistent elevation in CA 19-9. Given the patient's positive response to olaparib and the positive BRCA2 status, we will continue with this regimen while monitoring his CA 19-9 levels closely in future appointments. Also discussed were potential clinical trials that might be appropriate, emphasizing maintaining a multidisciplinary approach as we navigate his care.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "positive"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-11-02",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

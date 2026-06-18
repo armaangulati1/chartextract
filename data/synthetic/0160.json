@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a 64-year-old male with a complex medical history including type 2 diabetes and hyperlipidemia, presents to the oncology clinic for a follow-up evaluation following a recent diagnosis of pancreatic ductal adenocarcinoma dated September 19, 2023. For context, the patient is currently classified as stage IIIB, with an ECOG performance status of 3, indicating he is unable to carry out any self-care and is completely limited in self-sufficiency.\n\nUpon review of the treatment course, the patient has undergone two lines of therapy, currently receiving FOLFIRINOX as part of the second-line regimen aimed at managing disease progression. Despite the aggressive nature of the therapy, the patient has reported significant fatigue and decreased ability to engage in usual activities; however, he denies any new symptoms of jaundice or significant pain, which had previously prompted urgent intervention.\n\nFurther evaluation of biomarkers showed negative BRCA1 status, leading to considerations for additional genetic counseling or trials that might be available, given the patient's presentation and family history of cancer\u2014his sister had breast cancer diagnosed in her 50s. Laboratory results demonstrate mildly elevated liver enzymes but normal bilirubin levels, reinforcing the need for vigilant follow-up.\n\nThe patient's past surgical history includes laparoscopic cholecystectomy performed ten years ago, and he has undergone several routine endoscopies for gastrointestinal reflux disease. Regular monitoring of his comorbid conditions, particularly his diabetic management, will continue to be crucial as he navigates the complexities of his oncology treatment. \n\nIn summary, the oncological focus remains on managing the advanced pancreatic cancer through the current therapy while addressing ancillary issues arising from his comorbidities and maintaining quality of life. A multidisciplinary team meeting is suggested to discuss further treatment pathways, including clinical trial options.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-09-19",
+    "treatment_regimen": [
+      "FOLFIRINOX"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "note": "The patient presents for follow-up evaluation regarding their melanoma diagnosis, confirmed as acral lentiginous melanoma, which was established on June 13, 2023. Currently, the patient is classified with stage IA disease. Their ECOG performance status is assessed at 1, indicating the ability to carry out light physical activity but with some restrictions.\n\nUpon review of their recent histopathological findings, there are no mutations detected in NRAS or BRAF, with PD-L1 also testing negative. These results inform our ongoing management strategy. \n\nWe have initiated the third line of therapy, incorporating nivolumab and ipilimumab, which the patient has tolerated reasonably well so far, aside from some mild fatigue that is not affecting daily activities significantly. The most recent treatment was performed two weeks ago, and the patient reports no new symptoms nor worsening of prior complaints.\n\nOf note, the patient has a history of well-controlled hypertension and experienced a benign outgrowth removal (lipoma) on the forearm last year, but those conditions are unrelated to current cancer management. Family history is significant for skin cancers in a distant relative, but there are no first-degree relatives with a melanoma diagnosis. The patient is advised to consistently monitor for any changes in skin lesions and keep up with regular dermatological checks for skin cancer surveillance. \n\nNext steps will include close monitoring with scheduled imaging in three months and additional laboratory assessments to monitor any treatment-related effects and ensure continued tolerability of the current regimen.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "acral lentiginous melanoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "negative"
+      },
+      {
+        "name": "BRAF",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2023-06-13",
+    "treatment_regimen": [
+      "nivolumab",
+      "ipilimumab"
+    ]
+  }
+}

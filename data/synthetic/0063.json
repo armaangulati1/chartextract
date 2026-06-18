@@ -1,0 +1,29 @@
+{
+  "note": "The patient, a 52-year-old female with a past medical history notable for hypertension and hypothyroidism, presented following abnormal imaging studies that led to biopsy. A diagnosis of high-grade serous carcinoma of the ovary (stage IIIC) was confirmed on July 22, 2021. She has commenced her first line of therapy, currently receiving a treatment regimen of carboplatin and paclitaxel, well-tolerated thus far with an ECOG performance status of 1, indicating she is only restricted in strenuous activity.\n\nLaboratory evaluations have revealed conflicting results regarding her genetic biomarkers; specifically, BRCA2 and BRCA1 statuses are equivocal, while homologous recombination deficiency (HRD) is confirmed positive. Notably, her family history does not suggest a strong predisposition to breast or ovarian cancers, but this remains a consideration. The patient has previously undergone a laparoscopic cholecystectomy, which was well-compensated without any surgical complications.\n\nDuring her most recent follow-up appointment, the patient reported mild fatigue but denied nausea or significant weight change. Her vital signs have remained stable, and lab studies indicated normal renal function\u2014creatinine and electrolytes are within normal limits. The plan is to continue with the current chemotherapy regimen while monitoring for potential side effects. A repeat imaging study is scheduled in three cycles to assess treatment response. Additionally, genetic counseling is being considered to further evaluate her biomarker results and discuss implications for her treatment and family screening options.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "high-grade serous carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "BRCA2",
+        "status": "equivocal"
+      },
+      {
+        "name": "HRD",
+        "status": "positive"
+      },
+      {
+        "name": "BRCA1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-07-22",
+    "treatment_regimen": [
+      "carboplatin",
+      "paclitaxel"
+    ]
+  }
+}

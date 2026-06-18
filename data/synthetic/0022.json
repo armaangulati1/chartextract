@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 67-year-old male with a recent diagnosis of stage IVB colorectal adenocarcinoma, presenting with significant symptoms consistent with advanced disease. Upon examination, his ECOG performance status is recorded as 2, indicating he is capable of self-care but experiences considerable limitations in physical activity. \n\nThe initial treatment regimen includes FOLFIRI in combination with cetuximab, which is aligned with the second line of therapy given the aggressive nature of his cancer. \n\nRecent biomarker analysis has yielded notable results: KRAS status was found to be equivocal, while HER2 is negative, and microsatellite instability markers indicate a negative status as well. These genetic findings may guide further treatment decisions, particularly with regards to targeted therapies.\n\nThe patient's past medical history includes hypertension and hyperlipidemia, which are being managed effectively. There are no significant benign lab anomalies outside of baseline liver function tests that were well within normal limits. Family history reveals a sibling with colorectal cancer diagnosed in their early 60s, which further emphasizes the need for careful monitoring and possible genetic counseling.\n\nAs we proceed with the second line of therapy, the patient's support system is well established, and he has expressed understanding of the treatment plan. Continuous assessment of treatment response and side effects will be critical in the upcoming follow-up visit. Attention will also be paid to enhance his performance status and manage any symptom burden related to his illness.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "equivocal"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      },
+      {
+        "name": "MSI",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "FOLFIRI",
+      "cetuximab"
+    ]
+  }
+}

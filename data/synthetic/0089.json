@@ -1,0 +1,15 @@
+{
+  "note": "The patient, a 52-year-old female, presents for follow-up evaluation of her breast cancer diagnosed on April 3, 2025. Initially categorized as stage IB, she has a histological diagnosis of invasive lobular carcinoma. Her current ECOG performance status is 0, indicating that she is fully active and able to carry on all pre-disease activities without restriction. \n\nThe patient has undergone two previous lines of therapy and is currently receiving capecitabine as her third-line treatment regimen, which is being monitored for efficacy and tolerability. She reports no significant side effects but has expressed concern over mild fatigue, considered normal for her current regimen. There are no actionable biomarkers identified at this time, and routine follow-ups will continue without major alterations unless clinically indicated.\n\nIn her past medical history, she has well-controlled hypertension and a history of cholecystectomy three years ago with an uncomplicated recovery. Family history is notable for breast cancer in her mother who was diagnosed at 60, but no other significant hereditary syndromes have been identified. Lab work shows benign levels of liver enzymes and lipids within normal ranges, suggesting that her current treatment remains tolerable.\n\nThe plan includes continuing capecitabine and closely monitoring her for any changes in symptoms or disease progression. The next appointment is scheduled in three months, and imaging studies will be conducted as per standard protocol to assess the response to current treatment.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IB",
+    "biomarkers": [],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2025-04-03",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

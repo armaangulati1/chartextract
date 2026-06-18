@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 62-year-old female with a diagnosis of cutaneous melanoma, presenting with stage IVA disease. At her recent oncology follow-up, she exhibited an ECOG performance status of 1, indicating she is slightly restricted in strenuous activity but otherwise functioning well. \n\nNotably, molecular profiling has revealed a positive NRAS mutation, suggesting a potential target for future therapies. Meanwhile, PD-L1 expression was found to be negative, which may influence treatment decisions moving forward. \n\nShe is currently on her fourth line of therapy, having previously undergone various regimens without response. Currently, she is receiving a combination therapy of nivolumab and ipilimumab. The patient has tolerated this regimen with manageable side effects, including mild fatigue and skin rash, which are being monitored closely. \n\nThe patient has a significant medical history that includes well-controlled hypertension and hyperlipidemia, but no history of diabetes. Additionally, she underwent a hysterectomy for benign fibroids several years ago. Her family history is notable for breast cancer in her sister, which raises some awareness for genetic counseling, although no hereditary syndromes have been confirmed.\n\nRegular follow-ups are scheduled to monitor her response to the immune checkpoint inhibitors and to assess for any new symptoms that may arise. We will continue to explore clinical trial options as this is her fourth treatment line and she expresses interest in novel therapies if they become available. \n\nOverall, her care team remains optimistic about her current treatment plan, while continuously assessing the effectiveness and her tolerance to ongoing therapy.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      },
+      {
+        "name": "NRAS",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "nivolumab",
+      "ipilimumab"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "note": "The patient presented today for follow-up regarding her HER2-positive carcinoma diagnosed on May 17, 2019. The primary site of concern is the breast, classified at stage IIA. Notably, the patient remains at an ECOG performance status of 1, indicating she is restricted in strenuous activity but generally maintains an ambulatory state.\n\nDuring this visit, we reviewed her treatment regimen which currently consists of trastuzumab and pertuzumab in combination with docetaxel; she is currently on her second line of therapy. Her histological examination supports the diagnosis of HER2-positive carcinoma, and we noted biomarker evaluations: her progesterone receptor (PR) status is negative, while the Ki-67 index is positive, indicating a relatively high proliferation rate. Microscopic assessments revealed no positivity for HER2, which was unexpected given the initial HER2-positive classification; further review may be warranted here.\n\nIn addition to her oncological history, the patient has a past medical history significant for hypertension diagnosed approximately five years ago, controlled with medication. She reports no significant family history of malignancies but has a maternal history of breast cancer. Previous surgeries include a laparoscopic cholecystectomy performed in 2015.\n\nLabs from her last visit showed benign results, including normal complete blood counts and stable liver function tests. As we continue her treatment, we will keep monitoring her biomarker response and may consider further imaging studies to assess the current status of her disease.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "PR",
+        "status": "negative"
+      },
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-05-17",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

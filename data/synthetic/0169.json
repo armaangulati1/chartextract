@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 68-year-old male with a past medical history significant for hypertension and hyperlipidemia, both well controlled on medication. He presents to the oncology clinic for follow-up regarding his prostate cancer, diagnosed on December 21, 2018. Histologic evaluation confirmed neuroendocrine carcinoma, classified as stage I. \n\nCurrently, he is noted to have an ECOG performance status of 2, which indicates he is able to walk but restricted in terms of strenuous activity, presenting with some fatigue but no significant weight loss. He has previously received a second line of therapy with docetaxel, which he tolerated adequately with mild fatigue and minimal adverse effects. Notably, biomarker analysis for AR-V7 was negative, which is promising for his treatment response.\n\nHis family history is significant for prostate cancer in his paternal uncle, while his own prior surgeries include an appendectomy and cataract surgery several years ago. Laboratory results show normal renal function and benign lipid profiles, providing reassurance regarding his overall health status despite his oncological diagnosis.\n\nThe treatment strategy moving forward may consider further imaging to monitor his disease status and potentially discuss additional therapeutic options or clinical trial participation, as we continue to evaluate his response to ongoing management. Instructions provided for regular follow-up visits and the importance of maintaining healthy lifestyle choices to support his treatment.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "AR-V7",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2018-12-21",
+    "treatment_regimen": [
+      "docetaxel"
+    ]
+  }
+}

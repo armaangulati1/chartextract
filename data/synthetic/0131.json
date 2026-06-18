@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 54-year-old female with a known diagnosis of Stage IVA breast cancer, specifically HER2-positive carcinoma, established on September 10, 2024. At this point in her treatment course, she is undergoing her second line of therapy, which includes capecitabine. \n\nDuring her recent evaluation, biomarkers indicated a negative Ki-67 status, which is relevant as we monitor the tumor proliferation rate in the context of her ongoing treatment. The HER2-positive status has guided her therapeutic approach, and current treatment regimens reflect the latest oncology guidelines.\n\nNoteworthy is the patient's medical history, which indicates previous menopause alongside a family history of non-Hodgkin lymphoma in her sister and hypertension in her mother. Although there are benign findings on routine lab work such as normal lipid levels and glucose metabolism, close attention is warranted for any emerging comorbidities, particularly given her extensive oncological treatment history. \n\nThe patient's performance status is currently unrecorded, but she has previously reported being restricted only in strenuous activity, allowing for a moderately active lifestyle during her treatment. Future assessments will continue to evaluate her functional performance as we monitor her treatment response. Plans include follow-up imaging and consultations to reassess cancer progression after completing the current cycle of capecitabine.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-09-10",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

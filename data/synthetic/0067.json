@@ -1,0 +1,26 @@
+{
+  "note": "The patient is a 65-year-old female with a history of invasive ductal carcinoma of the breast, diagnosed on December 1, 2018. At present, she is classified as stage IVB, indicating advanced disease with distant metastases. Her performance status is ECOG 1, as she is able to perform light activities but is limited in strenuous tasks.\n\nOn recent evaluation, her tumor biomarkers displayed an equivocal result for HER2, which raises questions regarding potential targeted therapies, while Ki-67 was reported as positive, suggesting a higher proliferative rate. Given these findings and her current line of therapy, she is on her second line which includes a regimen of trastuzumab, pertuzumab, and docetaxel.\n\nThis patient has also been dealing with several comorbid conditions, including hyperlipidemia and a history of hypertension, which are being managed with appropriate medication. She underwent a laparoscopic cholecystectomy in 2019 due to gallbladder disease, but this has been a functional recovery with no complications post-operatively.\n\nHer last imaging revealed some progression of disease, prompting discussions regarding her treatment options moving forward, possibly contemplating participation in clinical trials given the lack of a well-defined HER2 target. Family history is notable for breast cancer in her mother, adding significance to her oncological background. Routine labs have shown stable renal function while routine mammograms are not performed due to her current stage.\n\nNext steps will include a multidisciplinary case review to explore further treatment options and supportive care measures as needed.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "equivocal"
+      },
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2018-12-01",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

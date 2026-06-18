@@ -1,0 +1,26 @@
+{
+  "note": "The patient is a 62-year-old male with a history of long-term tobacco use and chronic obstructive pulmonary disease (COPD). He presented to the oncology clinic with a confirmed diagnosis of small cell carcinoma of the lung, staged IIB, as per the recent imaging studies and biopsy results collected on October 6, 2024. His ECOG performance status is assessed at grade 1, indicating he is restricted in strenuous activity but remains ambulatory.\n\nUpon evaluation, the patient has received the first line of therapy, which includes durvalumab in conjunction with etoposide and carboplatin. His treatment began just recently and he has tolerated the regimen well without significant adverse effects so far. \n\nIn terms of biomarkers, PD-L1 and ROS1 status were both found to be equivocal; these findings warrant continued monitoring and may influence subsequent therapeutic decisions based on the evolving clinical picture. \n\nThe patient\u2019s family history includes a father who had lung cancer, but no known hereditary syndromes. Notably, his medical history also includes managed hypertension and hyperlipidemia. Pre-treatment laboratory tests returned with unremarkable results for complete blood count (CBC) and basic metabolic panel, with liver and renal functions within normal limits. \n\nHe denies any significant weight loss but reports mild dyspnea on exertion, an exacerbation likely related to his underlying respiratory condition. Supportive care measures were discussed, including smoking cessation programs and nutritional support, as he is motivated to optimize his health during treatment.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      },
+      {
+        "name": "ROS1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-10-06",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

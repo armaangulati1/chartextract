@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 61-year-old male with a recent diagnosis of colorectal adenocarcinoma, confirmed on biopsy performed on March 24, 2025. The cancer is classified as stage IA with no evidence of metastasis. Notably, the patient exhibits positive microsatellite instability (MSI) status; however, the BRAF status remains undetermined as the necessary testing was inconclusive.  \n\nIn terms of performance status, the patient is currently rated at ECOG 4, indicating poor overall function, not able to carry out any self-care and in bed >50% of the day. This may significantly influence treatment tolerance and overall management strategy. Despite the performance status, we initiated first-line therapy with the FOLFOX regimen, consisting of oxaliplatin, leucovorin, and fluorouracil, which is standard for stage IA disease. \n\nThe patient has a history of hypertension and dyslipidemia, both of which are well-controlled with medication. His surgical history is significant for an appendectomy in 2005 and a cholecystectomy in 2010. Family history reveals a father who succumbed to gastrointestinal cancer in his late-70s, which may suggest a genetic predisposition to malignancy. \n\nRoutine laboratory assessments, including CBC and CMP, indicate mild anemia but no abnormalities in liver function or electrolytes. The patient has been counseled about potential side effects of FOLFOX and is being monitored closely for any treatment-related complications. Follow-up appointments are scheduled to reassess clinical response and adapt the management plan accordingly.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "MSI",
+        "status": "positive"
+      },
+      {
+        "name": "BRAF",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 4,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2025-03-24",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

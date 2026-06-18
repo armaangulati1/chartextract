@@ -1,0 +1,16 @@
+{
+  "note": "The patient was diagnosed with stage IIIC papillary renal cell carcinoma on July 17, 2023. Initially presenting with symptoms consistent with renal dysfunction, further imaging revealed a mass localized to the kidney, prompting biopsy. Histological examination confirmed papillary renal cell carcinoma with no significant biomarkers identified at this time.\n\nAt the most recent assessment, the patient exhibited an ECOG performance status of 3, indicating considerable limitations, as they are unable to engage in self-care and are mostly confined to bed. Due to the advanced stage of the disease, this marks the start of the first line of therapy. The initiated treatment regimen includes pembrolizumab in combination with axitinib, which will target the renal neoplasm and aim to improve the patient\u2019s overall condition. \n\nThe patient has a complex medical history that includes hypertension and well-controlled type 2 diabetes, which are being managed appropriately. There are no notable family histories of malignancies; however, their father had a hypertensive disorder. Previous surgical history is significant for a laparoscopic cholecystectomy performed in 2015, which was uneventful. \n\nRoutine lab evaluations have been unremarkable, with creatinine levels remaining stable. Given the person's current state and the nature of their cancer, plans will be made for close monitoring of response to treatment along with supportive care measures. Follow-up appointments will occur as per the treatment protocol to reassess the efficacy and tolerate of the regimen.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "papillary renal cell carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2023-07-17",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "axitinib"
+    ]
+  }
+}

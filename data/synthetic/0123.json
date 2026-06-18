@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a [age]-year-old individual with a known history of lung cancer, was diagnosed with stage IIIB adenocarcinoma on September 22, 2025. At present, the patient's ECOG performance status is evaluated as 1, reflecting limitations to strenuous activities, which is consistent with the ongoing treatment burden. \n\nThe treatment regimen initiated included crizotinib, with the patient currently on their fourth line of therapy, suggesting a complex treatment history, possibly involving multiple lines targeting previous disease progression. Notably, tumor markers were assessed, revealing PD-L1 expression as equivocal, highlighting the potential variability in response to immunotherapy should it be considered in future lines of treatment. \n\nAdditionally, the patient has a history of hypertension managed with medication and mild hyperlipidemia, both of which are stable and under control with lifestyle modifications. Family history is significant for lung cancer in the patient's grandfather but otherwise unremarkable. Surgical history includes a lobectomy performed in 2022, post which the patient's adherence to oncological care has been consistent. \n\nRegular follow-ups are being scheduled to monitor both the oncology metrics and any potential side effects from the current treatment. Additional imaging studies and labs will be performed to further assess progression or response, and multidisciplinary review will be necessary to evaluate further treatment options based on clinical and biomarker findings.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2025-09-22",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "note": "The patient presented for follow-up regarding their head and neck malignancy, diagnosed on August 9, 2021. The histology indicates a diagnosis of squamous cell carcinoma, currently staged at IIB, reflecting local invasion yet without distant metastasis. Notably, the patient maintains an ECOG performance status of 0, implying they are fully active and capable of carrying on all pre-disease activities without restriction.\n\nIn terms of treatment history, the patient has undergone the second line of therapy, which included a regimen of cetuximab, carboplatin, and paclitaxel. These agents were selected based on the aggressive nature of the tumor and patient tolerance during prior therapies.\n\nBiomolecular evaluation showed PD-L1 positivity, suggesting a potential therapeutic target and indicative of possible response to immunotherapy, although testing for HPV status remains inconclusive at this time. The unexplained HPV status may require re-evaluation as it could impact future management options.\n\nThe patient has a reported history of well-controlled hypertension, managed with lifestyle modifications. Family history reveals a significant incidence of non-melanoma skin cancers, but no first-degree relatives have experienced head and neck malignancies. Recent laboratory results indicated normal blood counts, and renal function was within the normal range, suggesting good organ function to support ongoing therapy.\n\nPlans for monitoring will include periodic imaging and imaging for disease progression assessment. Follow-up is scheduled for six weeks to assess reaction to treatment and side effects, and we will continue to explore any emerging clinical trial options that may benefit the patient.\u201d}  Obsolete Assistant  to=RenderedNote  ## Output is in the format specified by the user  {",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "HPV",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2021-08-09",
+    "treatment_regimen": [
+      "cetuximab",
+      "carboplatin",
+      "paclitaxel"
+    ]
+  }
+}

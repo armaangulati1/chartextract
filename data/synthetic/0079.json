@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 65-year-old male with a history of smoking and chronic obstructive pulmonary disease who initially presented in July 2021 with persistent cough and hemoptysis, leading to imaging studies that revealed a mass in the right lung. A biopsy confirmed the diagnosis of small cell carcinoma, consistent with classic histopathology findings. Upon staging, the disease was classified as stage IVB, indicating metastasis beyond the primary site.\n\nNotably, the patient\u2019s current ECOG performance status is classified as 3, indicating that he is largely confined to bed, requiring assistance with most activities of daily living due to disease-related fatigue and weakness.\n\nMolecular profiling was conducted, revealing several pertinent biomarkers: the ALK gene is positive while KRAS is negative; however, ROS1 gene rearrangement is present, indicating potential for targeted therapy. \n\nThe patient has been treated with osimertinib as part of the second line of therapy, following initial chemotherapy that included etoposide and cisplatin. His treatment regimen has been complicated by treatment-related fatigue and intermittent nausea, which were managed with supportive care.\n\nFamily history reveals a father with a history of lung cancer and a mother who struggled with breast cancer, suggesting a potential genetic predisposition. Additionally, the patient has a past medical history notable for hyperlipidemia and hypertension, which are well-controlled with medication. Routine lab work showed elevated cholesterol levels but normal liver and renal function, as well as a stable complete blood count, although concerns regarding lymphopenia have been addressed.\n\nFollow-ups are scheduled every four weeks to monitor treatment response, with a recent imaging study showing stable disease. The interdisciplinary team continues to discuss options for his treatment and palliative care to manage symptoms effectively.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "positive"
+      },
+      {
+        "name": "KRAS",
+        "status": "negative"
+      },
+      {
+        "name": "ROS1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2021-07-14",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a 65-year-old male with a history of hypertension and hyperlipidemia, presented for follow-up regarding his colorectal cancer diagnosed on April 7, 2021. Initial staging revealed a stage IIIC mucinous adenocarcinoma, and he is currently listed as ECOG performance status 1, indicating his limitations are primarily in strenuous activities. \n\nDuring this visit, we reviewed his treatment history; he is on his second line of therapy and has been receiving regorafenib. The patient has tolerated this regimen reasonably well, although he reported some mild fatigue and occasional abdominal discomfort, which could be expected. His appetite remains adequate, and he has not experienced any significant weight loss since the last visit. \n\nNotably, genetic testing revealed a positive NRAS mutation. This finding will be important in guiding future therapeutic decisions. We have discussed the potential for enrolling in clinical trials, considering the aggressive nature of his histology and personal profile.  \n\nThe patient has also mentioned a familial history of colorectal cancer, with his father diagnosed at age 70, which raises his risk factors further. Furthermore, his last routine lab work showed stable blood counts, and liver function tests are within normal limits; however, we will continue to monitor for any changes, as this is crucial given the treatment regimen. \n\nIn summary, the plan is to continue regorafenib while keeping a close watch on side effects and response. The patient is scheduled for imaging in 6 weeks to assess treatment efficacy and will return for a follow-up consultation. Educated the patient on the symptoms he should watch for that may signify disease progression or treatment complications. He expressed understanding and appears engaged in his treatment journey.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2021-04-07",
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

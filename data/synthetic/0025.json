@@ -1,0 +1,26 @@
+{
+  "note": "Patient is a 67-year-old male with a longstanding history of smoking, presenting with advanced squamous cell carcinoma of the lung diagnosed on August 9, 2024. The patient exhibits an ECOG performance status of 2, indicating he is capable of walking and limited daily activities but is restricted in rigorous tasks.  \n\nOn examination, the lung mass was found to be Stage IIIC, which is consistent with his clinical presentation and imaging results. Histological analysis confirmed squamous cell carcinoma, and the tumor biomarkers indicate a positive status for PD-L1, which may influence potential immunotherapy treatment options. However, the status for ROS1 was returned as equivocal, demanding further assessment before making any targeted therapy decisions.  \n\nCurrently, the patient is on his third line of therapy. His treatment regimen includes durvalumab, etoposide, and carboplatin. As part of his treatment plan, he has tolerated these agents with manageable side effects; however, he reports increased fatigue and mild nausea, which we are monitoring closely. \n\nPast medical history includes chronic obstructive pulmonary disease and hypertension, but no previous oncologic interventions. Family history is significant for lung cancer in a first-degree relative. Additionally, liver function tests are within the normal range, and recent blood counts indicated no acute anemia\u2014 hemoglobin levels are stable.  \n\nFollow-up imaging is scheduled to evaluate response to current therapies, and supportive care measures are in place to ensure quality of life during treatment. Social work has been involved to address his psychosocial needs considering his ongoing cancer battle.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "ROS1",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2024-08-09",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

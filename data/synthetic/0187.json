@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 58-year-old male with a diagnosis of stage IA mucinous adenocarcinoma of the colorectal region, identified on April 16, 2026. He has presented to the clinic for follow-up and further management after the initial diagnoses and discussions regarding treatment options.\n\nUpon review, the ECOG performance status is noted to be 2, indicating that the patient is capable of walking but is limited in self-care and unable to carry out any work activities. His treatment regimen commenced with capecitabine and bevacizumab, marking the first line of therapy in managing his cancerous condition. Recent imaging studies have demonstrated no evidence of metastasis, which is consistent with his stage IA classification.\n\nBiomarker analysis revealed HER2 positivity, which may influence future treatment considerations. The patient has a history of hypertension and moderate hyperlipidemia, for which he is on medications but reports occasional dizziness, likely related to his antihypertensive therapies. There has been no significant family history of colorectal cancer, although his father had a history of prostate cancer.\n\nThe patient also underwent a colonoscopy prior to his diagnosis, which led to the discovery of the tumor. He did not report any significant gastrointestinal symptoms prior to that time. Furthermore, he has no history of prior surgical interventions related to the colorectal area, but did have an appendectomy during his youth.\n\nHe expressed concerns regarding the side effects of his current regimen, stating he has experienced mild fatigue and occasional nausea, yet he continues to adhere to the treatment as he has thus far tolerated it well.\n\nPlans include continuing with the current regimen while monitoring for adverse effects and further assessing treatment response in subsequent visits. A referral to a nutritionist was also made to address his dietary needs during chemotherapy.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2026-04-16",
+    "treatment_regimen": [
+      "bevacizumab",
+      "capecitabine"
+    ]
+  }
+}

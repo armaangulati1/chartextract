@@ -1,0 +1,30 @@
+{
+  "note": "The patient presented with a diagnosis of small cell carcinoma of the lung on May 3, 2023. At the time of consultation, the cancer is classified as stage IVB, indicating advanced disease. The patient reports increasing dyspnea and persistent cough, which align with the clinical picture of extensive disease. Current ECOG performance status is recorded as 2, suggesting the patient is capable of all self-care but is unable to carry out any work activities due to the illness.\n\nPathology results indicated a negative status for the EGFR biomarker and an equivocal result for KRAS. Notably, the ROS1 biomarker was found to be positive, which may have implications for targeted therapy consideration moving forward. \n\nThe patient is currently on their second line of therapy, which includes durvalumab, etoposide, and carboplatin. This regimen was initiated following the onset of symptoms that intensified after previous therapies. The patient tolerated the initial cycles reasonably well, with manageable side effects reported, primarily fatigue and a mild rash.\n\nAdditional relevant history includes well-controlled hypertension treated with lisinopril and a prior appendectomy, which was an uncomplicated procedure documented five years ago. Family history is significant for lung cancer in a sibling and breast cancer in the mother but notable for no personal history of smoking. The patient's lab findings show normal renal function with creatinine levels within normal limits and benign liver function tests.\n\nContinued follow-up is recommended to monitor treatment response and adjust therapeutic strategies as necessary, especially considering the positive ROS1 status, which could open avenues for future targeted treatment, depending on evolving clinical guidelines and patient's overall condition.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "EGFR",
+        "status": "negative"
+      },
+      {
+        "name": "ROS1",
+        "status": "positive"
+      },
+      {
+        "name": "KRAS",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-05-03",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

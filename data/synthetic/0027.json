@@ -1,0 +1,28 @@
+{
+  "note": "In follow-up for our oncology patient, the primary diagnosis remains cutaneous melanoma, confirmed in our records since December 24, 2021. At this point, the disease is classified as stage IIB, with appropriate treatment initiated. The patient is currently undergoing their first line of therapy with pembrolizumab, which has been well-tolerated thus far. \n\nRecent biomarker assessments show a positive result for BRAF mutations, while NRAS testing yielded a negative result. PD-L1 expression remains equivocal, which may impact future therapeutic decisions, depending on clinical responses and evolving guidelines.\n\nThe patient exhibits an ECOG performance status of 1, indicating some restriction in strenuous activity but otherwise maintaining reasonable functional status. It\u2019s noteworthy that they have a history of hypertension, which is being managed with medication, and they also report a family history of melanoma in a first-degree relative.\n\nReview of recent labs shows benign findings; liver function tests are within normal limits, and the complete blood count is unremarkable. The patient has not undergone any recent surgical interventions related to their melanoma but does have a past surgical history of excisional biopsy for a benign skin lesion.\n\nGoing forward, we plan to continue monitoring the patient closely with regular follow-ups and imaging as needed, along with reassessment of biomarkers after the completion of several cycles of the current immunotherapy. Patient has been advised about the potential side effects of pembrolizumab and the importance of reporting any new symptoms promptly.\n\nScheduled next appointment for reassessment in 6 weeks to evaluate treatment response and overall health status.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "equivocal"
+      },
+      {
+        "name": "BRAF",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-12-24",
+    "treatment_regimen": [
+      "pembrolizumab"
+    ]
+  }
+}

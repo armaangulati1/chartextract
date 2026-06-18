@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 64-year-old male with a primary site of squamous cell carcinoma located in the head and neck region. He was diagnosed on August 5, 2023, at which time the disease was classified as stage I. The patient presents with an ECOG performance status of 2, indicating he is unable to perform strenuous activities but is still ambulatory and capable of self-care. \n\nUpon review of his biomarkers, both EBV and HPV statuses were found to be equivocal, while PD-L1 expression was noted to be negative. This finding may influence further treatment decisions. As part of the first line of therapy, the patient has been started on nivolumab, which he began on August 15, 2023. He tolerated the initial infusion well without any significant adverse effects reported.\n\nThe patient has a history of hypertension and hyperlipidemia, which are currently managed with medication. There are no pertinent findings in his prior medical history that indicate other significant comorbidities impacting his treatment plan. Additionally, a thorough family history was taken, revealing no significant history of head and neck cancers, though his father had a history of lung cancer.\n\nHe denies any new symptoms since starting treatment; however, he does report occasional mild fatigue, which he attributes to the chemotherapy regimen. A follow-up appointment has been scheduled in four weeks to monitor response to nivolumab and assess any side effects. Overall, the management plan remains focused on careful monitoring and potential imaging after the initial cycles to evaluate treatment response.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "EBV",
+        "status": "equivocal"
+      },
+      {
+        "name": "HPV",
+        "status": "equivocal"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2023-08-05",
+    "treatment_regimen": [
+      "nivolumab"
+    ]
+  }
+}

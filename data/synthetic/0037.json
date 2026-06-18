@@ -1,0 +1,24 @@
+{
+  "note": "The patient presented today for follow-up regarding their lung adenocarcinoma, which was diagnosed on October 12, 2021. Currently classified as stage IIB, the patient has been maintaining an ECOG performance status of 1, reflecting some limitations in strenuous activity but otherwise functional. Treatment initiated has consisted of osimertinib, aligning with the first line of therapy due to the identified positive biomarkers: both ALK and EGFR have shown positivity in prior molecular studies, suggesting a targeted therapeutic approach is well-indicated.\n\nDuring today\u2019s visit, the patient reports tolerating treatment relatively well without significant adverse effects noted apart from mild fatigue, which has been manageable. The most recent imaging indicated stable disease with no signs of progression. Family history is notable for lung cancer in the mother but no other significant oncological concerns. The patient also mentioned a history of hypertension, which is well-controlled with medication, and no other significant past medical history.\n\nLab tests conducted at the last visit showed benign levels of electrolytes and a normal complete blood count, which is reassuring at this stage of treatment. The patient is encouraged to monitor symptoms and maintain regular follow-ups. \n\nNext steps include continuation of osimertinib, with a follow-up scan planned in three months to reassess the therapeutic response. Overall, the patient remains optimistic with ongoing support and education about their condition.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "positive"
+      },
+      {
+        "name": "EGFR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-10-12",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

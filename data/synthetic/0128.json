@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 62-year-old male with a recent diagnosis of pancreatic ductal adenocarcinoma, confirmed on biopsy dated January 12, 2025. His current ECOG performance status is 1, indicating he is restricted in strenuous activity but can engage in light work. We are managing him under the third line of therapy with a combination regimen of gemcitabine and nab-paclitaxel after previous treatments were exhausted.\n\nNotably, this patient has stage IIIB disease, classified based on local invasion and regional nodal involvement without distant metastases at this time. Initial biomarker testing revealed a positive status for BRCA1 mutations, which could have implications for future targeted therapies, while CA 19-9 levels returned negative, suggesting a potentially favorable response to the current treatment plan.\n\nThe patient\u2019s past medical history includes hypertension and mild hyperlipidemia, managed successfully with lifestyle modifications and medications. He has undergone laparoscopic cholecystectomy two years prior without any complications. Family history is significant for colorectal carcinoma in his mother, diagnosed in her 50s. \n\nWe have scheduled follow-up imaging studies to monitor treatment response and any potential disease progression given the aggressive nature of this malignancy. The patient is advised to maintain a comprehensive dietary journal to track any gastrointestinal symptoms that may arise. It\u2019s crucial to continue monitoring his performance status and overall quality of life as we adjust the therapy plan based on his tolerance and clinical response.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "positive"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2025-01-12",
+    "treatment_regimen": [
+      "gemcitabine",
+      "nab-paclitaxel"
+    ]
+  }
+}

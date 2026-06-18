@@ -1,0 +1,20 @@
+{
+  "note": "The patient presented for a follow-up visit following their diagnosis of pancreatic ductal adenocarcinoma, which was confirmed on February 10, 2023. At this stage, the disease has progressed to stage IIIA. Upon review of the patient's condition, their current performance status is noted to be ECOG 0, indicating they are fully active and able to carry out all predisease activities without restriction.\n\nThe primary site of concern remains the pancreas. For treatment, the patient is currently undergoing their first line of therapy with the FOLFIRINOX regimen. This combination chemotherapy has been initiated as it offers a robust approach for management of locally advanced disease.\n\nIn laboratory evaluations, a recent CA 19-9 tumor marker test returned negative, which is quite promising. Such findings may suggest a favorable response to the current therapeutic regimen, although clinical correlation will be important moving forward. \n\nAdditionally, the patient has a notable history of hypertension that is well-controlled with their current medication regimen, including lisinopril. There are no recent incidents of diabetes or other significant comorbidities. Family history reveals a paternal incidence of colorectal cancer at the age of 65, which may necessitate further genetic consideration. Also confirmed were routine benign lab results including normal liver function tests and a regular complete blood count. \n\nThe patient tolerates the treatment well so far without significant adverse effects. Regular monitoring is essential, and the next follow-up is scheduled for four weeks to evaluate the efficacy of the ongoing therapy and adjust the treatment plan as necessary.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "CA 19-9",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2023-02-10",
+    "treatment_regimen": [
+      "FOLFIRINOX"
+    ]
+  }
+}

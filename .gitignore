@@ -5,3 +5,5 @@ __pycache__/
 out.json
 data/eval/predictions.jsonl
 data/eval/ci_out/
+data/eval/results.md
+data/eval/errors.csv

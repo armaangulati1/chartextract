@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a 55-year-old female with a recent diagnosis of stage IA colorectal mucinous adenocarcinoma confirmed on biopsy. The diagnosis was made on February 19, 2022, following a comprehensive evaluation that included colonoscopy and imaging studies. She currently presents with an ECOG performance status of 1, indicating she is fully active but slightly restricted in strenuous activity due to mild fatigue.\n\nHer treatment regimen consists of first-line therapy with bevacizumab and capecitabine, initiated shortly after the diagnosis. Notably, biomarker analysis revealed positive NRAS status, while KRAS and MSI testing returned negative results, which will influence future therapeutic decisions.\n\nThe patient also has a history of hypertension and hyperlipidemia, for which she is managed with lisinopril and atorvastatin. No significant family history of colorectal cancer or other malignancies has been reported, though her maternal side has a history of diabetes and cardiovascular disease. The patient underwent a routine cholecystectomy in 2015 without complications.\n\nLabs are notable for a stable CBC, with no signs of leukopenia or thrombocytopenia. Liver function tests are within normal limits, and there is no evidence of liver metastasis on imaging. Radiological monitoring is planned in three months to assess the response to ongoing therapy. The patient is being closely followed for potential side effects of the treatment, particularly any gastrointestinal issues, given the nature of her chemotherapeutic regimen.\n\nOverall, the patient understands her treatment plan and expresses a positive outlook, emphasizing her focus on maintaining a balanced diet and regular exercise within her energy limitations. Further discussions regarding genetic counseling will be considered due to the identified NRAS mutation.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "positive"
+      },
+      {
+        "name": "MSI",
+        "status": "negative"
+      },
+      {
+        "name": "KRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-02-19",
+    "treatment_regimen": [
+      "bevacizumab",
+      "capecitabine"
+    ]
+  }
+}

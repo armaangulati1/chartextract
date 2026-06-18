@@ -1,0 +1,28 @@
+{
+  "note": "The patient is a 62-year-old female with a notable history of hypertension and type 2 diabetes, presenting for follow-up evaluation. She was diagnosed with breast cancer on February 15, 2019, specifically invasive lobular carcinoma of stage III, following a mammogram that revealed an irregular mass in the upper outer quadrant of the left breast. Her ECOG performance status is currently at 2, indicating she is able to walk but experiences limitation due to fatigue.\n\nHistological analysis shows the tumor is positive for estrogen receptors (ER positive), progesterone receptors (PR positive), and demonstrates a high Ki-67 proliferation index, indicating active cellular division. Treatment commenced with capecitabine as the first line of therapy, which she tolerated reasonably well, although she reported mild nausea and some fatigue.\n\nThe family history is significant for breast cancer in her sister, but there is no other notable oncological history in the family. Recent lab work including routine CBC and electrolyte panels revealed benign findings, with no signs of acute distress.  \n\nDuring this visit, we will assess her response to the current regimen, considering her reports of persistent malaise that impacts her daily activities. I will also review her symptomatology in detail, particularly any changes in her breast pain or new onset of symptomatic lymphadenopathy. The need for possible imaging to evaluate treatment efficacy will be discussed, monitoring for any metastasis.\n\nAdditionally, I recommend discussing lifestyle modifications to help manage her comorbidities and improve overall health during treatment. Overall, the focus remains on managing her breast cancer while monitoring for any complications related to her diabetes and hypertension.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "PR",
+        "status": "positive"
+      },
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      },
+      {
+        "name": "ER",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-02-15",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

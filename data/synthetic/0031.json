@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 54-year-old female with a diagnosis of invasive lobular carcinoma of the breast, established on February 3, 2026, following mammography and subsequent biopsy. At presentation, the tumor was classified as stage IIB, indicating a moderate degree of disease spread. The tumor was tested for biomarkers, revealing negative results for both Ki-67 and HER2, which could influence prognosis and treatment decisions.\n\nThis patient is currently receiving her second line of therapy, which involves capecitabine as the selected regimen. There are no indications of ECOG performance status impairments reported, suggesting she remains functional and is tolerating her treatment well, although she does sometimes experience mild fatigue. Notably, she has a past medical history significant for hypertension, which is well-managed with medication, and a family history of thyroid disease but no known breast cancer in her family.\n\nRegular follow-ups are being scheduled to monitor her response to treatment, manage any potential side effects, and assess for any need for additional support. The patient has expressed understanding of her diagnosis and is engaged in her treatment plan. Next steps will include routine imaging and labs to evaluate the progression of her response to capecitabine.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      },
+      {
+        "name": "HER2",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2026-02-03",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

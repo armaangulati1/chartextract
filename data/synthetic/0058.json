@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 62-year-old male who presented to the oncology clinic for follow-up after being diagnosed with stage IIB small cell carcinoma of the lung on February 1, 2024. His symptoms included a persistent cough and shortness of breath, which led to imaging studies revealing a mass in the right lung. He has an ECOG performance status of 0, indicating he is fully active and can carry out all normal activities without restriction.\n\nUpon initial assessment, the patient underwent comprehensive molecular profiling. Notably, his biomarker analysis revealed a positive status for EGFR, while the ROS1 results returned negative. This finding suggests that he may be amenable to targeted therapy aimed at the EGFR pathway. As the patient has a history of hypertension and hyperlipidemia, both well-controlled with medication, alongside no significant past surgical history besides an appendectomy in his youth, the risk of complications during treatment remains low.\n\nCurrently, he is on his second line of therapy, receiving crizotinib. He was previously treated with a combination of chemotherapy regimens, which the patient tolerated moderately well, experiencing mild side effects like fatigue and transient nausea but nothing concerning.\n\nHis family history is significant for lung cancer in an uncle and breast cancer in a maternal aunt, which may suggest a genetic predisposition, although no genetic testing has been performed yet. The patient\u2019s last lab work showed normal renal and liver function, along with stable electrolytes. The latest imaging after the initial therapy indicated a partial response.\n\nThe ongoing treatment plan includes regular monitoring of symptoms and potential side effects from crizotinib. Follow-up appointments will assess the efficacy of the current regimen and consider any necessary adjustments based on treatment tolerance and response. Generally, the patient is optimistic and actively involved in his care decisions.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "ROS1",
+        "status": "negative"
+      },
+      {
+        "name": "EGFR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-02-01",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

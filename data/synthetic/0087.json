@@ -1,0 +1,24 @@
+{
+  "note": "Patient is a 67-year-old male with a history of prostate adenocarcinoma, first diagnosed on October 29, 2024. The current clinical stage is IIIB, as evidenced by significant local and potential regional spread. The patient presents with an Eastern Cooperative Oncology Group (ECOG) performance status of 1, indicating he is largely active but experiences some limitation in rigorous activities.\n\nBiomarker analysis was performed, revealing a positive AR-V7 status, which guides treatment decisions. Notably, the PSA level is currently negative, indicating a favorable response to prior interventions. The patient is currently on the third line of therapy, having previously received standard hormonal therapies and radiation.\n\nAs part of the ongoing management, the patient is presently being treated with olaparib. Side effects have been mild, and the patient tolerates the medication well. Current medication review notes no interactions with other ongoing prescriptions for benign chronic conditions such as hypertension, which is well-controlled with lisinopril. \n\nFamily history includes prostate cancer in a brother diagnosed at age 68, but no other significant hereditary cancers. Overall, the multidisciplinary team continues to monitor the patient closely, considering the malignant progression and existing comorbidities.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      },
+      {
+        "name": "AR-V7",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2024-10-29",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

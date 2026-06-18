@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 62-year-old female diagnosed with breast cancer on May 13, 2024. The primary site of the malignancy is the left breast where histological examination confirms the presence of HER2-positive carcinoma. The tumor has been classified as stage I, indicating early-stage disease. Upon assessment, biomarkers showed the patient is HER2 positive while Ki-67 status returned negative, suggesting a lower proliferation rate.  \n\nThe patient's ECOG performance status is rated as 2, indicating that she is able to walk and care for herself but is limited in strenuous activity. It is noteworthy that she has a history of hypertension which is well-managed with medication. Additionally, she underwent a cholecystectomy for gallstones five years ago, with no complications noted thereafter. \n\nIn response to the diagnosis, the patient was started on her first line of therapy consisting of palbociclib combined with letrozole. Initial tolerance of medications has been acceptable, and the patient is being monitored closely for any adverse effects or complications that may arise from the treatment regimen. \n\nFamily history reveals that her mother had breast cancer, diagnosed at age 65, but both siblings are reported to be healthy with no significant medical conditions. Routine labs show normal liver function tests and stable renal parameters, with no indications of other malignancies. Follow-up appointments are scheduled to evaluate response to therapy and adjust the treatment plan as necessary.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "negative"
+      },
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-05-13",
+    "treatment_regimen": [
+      "palbociclib",
+      "letrozole"
+    ]
+  }
+}

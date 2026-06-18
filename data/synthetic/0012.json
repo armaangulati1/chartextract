@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 67-year-old female with a known history of hypertension and diabetes who presents for follow-up after being diagnosed with kidney cancer. She received her diagnosis of stage IA papillary renal cell carcinoma on February 19, 2024. At the current clinic visit, her performance status has been categorized as ECOG 3, indicating increased assistance is required in activities of daily living.  \n\nSince diagnosis, she has commenced her first line of therapy, which includes nivolumab combined with cabozantinib. Reports indicate she has tolerated the regimen reasonably well, with no major adverse reactions noted thus far, although she requires close monitoring due to her performance status.  \n\nRecent tumor biomarker analysis showed both VHL and PD-L1 status to be negative, which is essential for understanding her disease trajectory and therapeutic response. The unremarkable results in the context of treatment and clinical status will guide the further management of her case. \n\nAdditionally, her past medical history is significant for a cholecystectomy performed two years ago for gallstones, and she has a family history of breast cancer in her sister, which might indicate a broader genetic predisposition within the family. Laboratory tests continue to demonstrate stable creatinine levels despite her chronic kidney disease, and her blood pressure remains controlled on lisinopril therapy. \n\nThe plan includes continuing with the current treatment regimen while closely monitoring her performance status and managing her comorbidities effectively. Further imaging will be scheduled in the coming months to assess the therapeutic effectiveness and disease progression.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "papillary renal cell carcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "negative"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-02-19",
+    "treatment_regimen": [
+      "nivolumab",
+      "cabozantinib"
+    ]
+  }
+}

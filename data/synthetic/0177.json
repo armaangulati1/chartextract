@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 58-year-old male with a history of acral lentiginous melanoma, diagnosed on June 2, 2019. Initial staging revealed a stage IA melanoma. At the time of diagnosis, the tumor's histological analysis was consistent with the acral lentiginous variant, which is less common in Caucasian populations, particularly noted on the plantar aspect of the foot. The patient presents today for follow-up on his treatment regimen, where he has been on pembrolizumab, the first line of therapy in his case.\n\nOn review of biomarkers, we found that NRAS is positive, suggesting potential avenues for future targeted therapies, whereas PD-L1 status is negative, which may indicate the need for close monitoring given his current regimen. The ECOG performance status is currently at 2, indicating that the patient is not fully functional and restricted in strenuous activity but can manage daily life with assistance.\n\nThe patient continues to report some fatigue, likely related to pembrolizumab administration, but denies significant pain or other systemic symptoms. No significant prior surgeries pertaining to the melanoma were recorded, although he did undergo a routine appendectomy and cholecystectomy in the past without complications. Family history is notable for a grandmother who had breast cancer and an aunt with colorectal cancer, raising some concerns about hereditary syndromes; however, no genetic testing has been performed to date.\n\nLabs from the most recent visit showed unremarkable results: normal liver enzymes, creatinine, and a slightly elevated LDL cholesterol level, which was addressed in a previous consultation.\n\nIn summary, the patient is currently on an appropriate treatment pathway for his melanoma, and we will continue to monitor his progress closely while considering a multidisciplinary approach should his ECOG status decline further. The next appointment is scheduled for 8 weeks from now, with instructions to report any significant changes in condition before then.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "acral lentiginous melanoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "positive"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-06-02",
+    "treatment_regimen": [
+      "pembrolizumab"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 62-year-old female with a diagnosis of high-grade serous carcinoma of the ovary, initially diagnosed on May 30, 2021. She presents today for follow-up regarding her response to treatment and overall performance status. During her last visit, she reported mild fatigue but remained ECOG 1, indicating that her ability to perform daily activities is somewhat restricted, particularly with strenuous exertion.\n\nCurrently, she is undergoing her third line of therapy, which includes bevacizumab and olaparib. Previous lines included a combination of carboplatin and paclitaxel, after which she experienced disease progression necessitating the current regimen. The patient has not yet developed any significant adverse effects attributed to the new therapy, although she does report occasional mild nausea that she manages with over-the-counter medications.\n\nBiomarker analysis performed previously revealed a negative BRCA1 status, which has influenced the treatment decisions. Family history is notable for breast cancer in her mother and a history of colon cancer in her paternal aunt. No other significant familial genetic syndromes have been documented, and she currently denies any gastrointestinal symptoms or changes in weight that could indicate complications.\n\nAt this time, her lab results from recent testing showed stable liver function, and her hemoglobin levels remained within normal limits, thus supporting her ongoing treatment's safety profile. She continues to receive supportive care and is compliant with her follow-up appointments.\n\nPlans moving forward include continued monitoring of her response to the current therapy regimen. A repeat imaging study is scheduled in two months, with the consideration of potential modifications based on results. The patient and her family have been counseled regarding disease progression signs to watch for, and they expressed understanding and commitment to the treatment plan.",
+  "gold": {
+    "primary_site": "ovary",
+    "histology": "high-grade serous carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2021-05-30",
+    "treatment_regimen": [
+      "bevacizumab",
+      "olaparib"
+    ]
+  }
+}

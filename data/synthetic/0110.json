@@ -1,0 +1,28 @@
+{
+  "note": "Patient is a X-year-old with a confirmed diagnosis of squamous cell carcinoma localized to the head and neck, entered into care following the definitive staging on July 30, 2025. On examination, the patient's performance status is recorded as ECOG 0, indicating full activity without significant limitations. Current workup revealed the malignancy classified as stage IIA, consistent with parameters from clinical imaging and assessment.  \n\nThe treatment plan has been initiated, specifically utilizing pembrolizumab as the first line of therapy. Notably, biomarker analysis returned positive for PD-L1 expression, which may suggest potential responsiveness to the current immunotherapy regimen. Concurrent evaluations for other viral oncogenic indicators showed EBV and HPV statuses as negative, which provides essential context for prognostic implications and treatment strategies moving forward.  \n\nIn the patient's medical history, no significant unrelated comorbidities appear to pose additional risks at this time, and they deny any recent surgical interventions or related hospitalizations. Noteworthy family history includes a mother with a history of breast cancer and a father with hypertension, though neither of these conditions appears to directly correlate with the current oncological diagnosis.  \n\nPlan moving forward includes regular follow-up appointments to monitor response to pembrolizumab, alongside supportive care to manage any potential immune-related adverse effects. Further imaging studies are scheduled in three months to assess treatment efficacy and adjust the management plan as necessary.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      },
+      {
+        "name": "EBV",
+        "status": "negative"
+      },
+      {
+        "name": "HPV",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2025-07-30",
+    "treatment_regimen": [
+      "pembrolizumab"
+    ]
+  }
+}

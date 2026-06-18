@@ -1,0 +1,29 @@
+{
+  "note": "The patient is a male in his mid-60s with a history of pancreatic ductal adenocarcinoma, initially diagnosed on April 27, 2019. Upon presentation, he was classified as having stage IIA disease, indicating a moderately advanced tumor without distant metastasis, but with local invasion. He has a current ECOG performance status of 2, describing limited self-care capabilities; he is able to walk and care for himself but is unable to carry out work activities.\n\nHis treatment regimen commenced with first-line therapy using gemcitabine in combination with nab-paclitaxel, which he tolerated with only mild side effects and has shown some benefits in controlling disease progression. During follow-up, the patient's biomarkers were assessed: BRCA1 status remains unknown, while BRCA2 testing returned positive. Additionally, the CA 19-9 marker was negative, which can be a favorable sign as it suggests no evidence of tumor activity.\n\nThe patient also has a past medical history that includes hypertension and hyperlipidemia, for which he is on appropriate medications. He underwent laparoscopic cholecystectomy three years ago for symptomatic gallstones, which was uncomplicated. Family history is positive for colon cancer in his father at age 72 and breast cancer in a sister at age 58, but no significant genetic predispositions have been conclusively identified apart from the BRCA2 mutation.\n\nDuring this visit, he expressed concern about increasing abdominal discomfort and weight loss over the past few weeks. A pain management regimen was discussed, and we reiterated the importance of monitoring symptoms closely. Follow-up imaging will be scheduled to evaluate any changes in disease status. He was encouraged to maintain his follow-up appointments and to report any new symptoms promptly.",
+  "gold": {
+    "primary_site": "pancreas",
+    "histology": "pancreatic ductal adenocarcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "BRCA1",
+        "status": "unknown"
+      },
+      {
+        "name": "BRCA2",
+        "status": "positive"
+      },
+      {
+        "name": "CA 19-9",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-04-27",
+    "treatment_regimen": [
+      "gemcitabine",
+      "nab-paclitaxel"
+    ]
+  }
+}

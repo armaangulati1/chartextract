@@ -1,0 +1,25 @@
+{
+  "note": "The patient, a male in his mid-60s, presented to the oncology clinic with a diagnosis of clear cell renal cell carcinoma, confirmed on biopsy dated June 3, 2021. His disease is classified as stage IV, indicating advanced spread beyond the kidney. Notably, he has an ECOG performance status of 1, suggesting he is restricted in strenuous activity but otherwise capable of carrying out daily tasks with minimal assistance.\n\nIn terms of molecular characteristics, PD-L1 and VHL status were both assessed and returned negative results, which is pertinent given the current treatment landscape for renal cancers. He is currently on the first line of therapy, consisting of nivolumab combined with cabozantinib, which began shortly after diagnosis. The patient has tolerated the regimen reasonably well to date, with manageable side effects and no significant interruptions in therapy.\n\nDuring this visit, the patient reported mild fatigue but denied any acute issues such as hematuria or significant weight loss. He has a past medical history that includes hypertension and hyperlipidemia, well-controlled with medication. There are no prior surgeries related to his renal pathology, although he does have a family history of lung cancer in his father and breast cancer in his mother, which adds a layer of complexity to his care.\n\nRoutine labs conducted in the previous week have shown stable renal function and no acute electrolyte disturbances; however, we will continue to monitor his levels closely given the nephrotoxic potential of his current regimen. Overall, the management plan will remain to continue with nivolumab and cabozantinib therapy, with a follow-up imaging study scheduled in three months to assess treatment response. The interdisciplinary team will reconvene regularly to discuss progress and any potential changes in treatment approach.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      },
+      {
+        "name": "VHL",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-06-03",
+    "treatment_regimen": [
+      "nivolumab",
+      "cabozantinib"
+    ]
+  }
+}

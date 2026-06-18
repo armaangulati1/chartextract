@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 62-year-old male with a diagnosis of clear cell renal cell carcinoma (ccRCC) confirmed on biopsy dated January 16, 2025. He presents today for follow-up evaluation after completing two lines of therapy. Notably, his performance status is evaluated as ECOG 0, indicating that he is fully active and able to carry out all pre-disease activities without restriction.\n\nThis patient was initially diagnosed at stage IVA, with significant tumor burden. His treatment regimen has included pembrolizumab in combination with axitinib, which appears to have been well tolerated thus far. During the previous evaluation, we noted the presence of the VHL mutation, which is classified as positive, suggesting implications for his clinical management moving forward.\n\nThe patient\u2019s medical history is significant for mild hypertension and hyperlipidemia, managed effectively with diet and lifestyle modifications. He also underwent a laparoscopic cholecystectomy five years prior with no complications. Family history is positive for cardiovascular disease, with his father experiencing myocardial infarction at age 70.\n\nLaboratory results show a normal renal function and stable electrolyte levels, despite ongoing therapy. Imaging studies demonstrate partial response to treatment, with some reduction in the primary renal mass and no new metastatic lesions identified. Currently, the plan is to continue monitoring with serial imaging and consider further therapeutic options based on his response to the current regimen.\n\nEnd-of-visit discussions emphasized the importance of continued follow-up and adherence to treatment, as well as addressing any potential adverse effects from the ongoing immunotherapy. The patient expressed understanding and agreement with the treatment plan.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2025-01-16",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "axitinib"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "note": "The patient, a 68-year-old female with a past medical history significant for hypertension and hyperlipidemia, presented today for follow-up on her lung cancer treatment. She was diagnosed with stage IIIA adenocarcinoma of the lung on September 17, 2022. Upon evaluation, her ECOG performance status is classified as 1, indicating she is restricted in strenuous activity but can perform light work.\n\nThe patient is currently in her third line of therapy, having already undergone two previous regimens. She has been receiving treatment with crizotinib, which was initiated after confirming the presence of BRAF positivity and PD-L1 positivity. The ROS1 status remains to be determined, and further molecular profiling may be required. \n\nDuring her prior visits, she has expressed some concerns regarding potential side effects, particularly fatigue and mild gastrointestinal discomfort, which are not uncommon with this regimen. Her family history is notable for a brother who had non-small cell lung cancer, and a sister with breast cancer, raising her risk profile.\n\nCurrent imaging studies and laboratory evaluations show that her CBC is unremarkable, and her liver function tests are in the normal range. No new lesions are noted in the latest scans, suggesting that she may be responding to therapy. The patient continues to receive supportive care, including nutritional guidance and management of her pre-existing conditions.\n\nWe will continue to monitor her closely and plan for follow-up imaging in the next two months to assess the efficacy of her ongoing treatment with crizotinib, considering the positive biomarkers present. Additionally, careful observation for any new symptoms is warranted, particularly as we explore ROS1 testing results in tandem with her current clinical management.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "positive"
+      },
+      {
+        "name": "ROS1",
+        "status": "unknown"
+      },
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2022-09-17",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

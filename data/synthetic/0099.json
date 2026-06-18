@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 58-year-old female with a diagnosis of colon cancer made on August 6, 2020. Histopathological examination confirmed the presence of mucinous adenocarcinoma originating from the colorectal site. At the time of diagnosis, the cancer was classified as stage IIIC. The patient is currently on her first line of therapy, which consists of a combination regimen of FOLFIRI and cetuximab.\n\nImmunohistochemical studies revealed that the tumor is microsatellite stable, with the MSI status recorded as negative. Genetic testing for NRAS mutations indicated a positive result, which may have implications for treatment considerations. The patient's performance status is classified as ECOG 1, indicating that she is restricted in strenuous activity yet maintains an ability to carry out light work.\n\nPast medical history includes hypertension and well-controlled hyperlipidemia. The patient underwent a laparoscopic cholecystectomy a few years ago and has no reported significant family history of malignancies, although her mother had breast cancer, which was treated successfully.\n\nRoutine lab tests returned normal values, with no evidence of hepatic dysfunction or electrolyte abnormalities. Continued evaluation for response to therapy will occur at the next follow-up visit, and further imaging studies will be considered based on clinical response.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "MSI",
+        "status": "negative"
+      },
+      {
+        "name": "NRAS",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-08-06",
+    "treatment_regimen": [
+      "FOLFIRI",
+      "cetuximab"
+    ]
+  }
+}

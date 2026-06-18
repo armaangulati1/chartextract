@@ -1,0 +1,26 @@
+{
+  "note": "The patient, a 62-year-old female with a significant past medical history that includes hypertension and hyperlipidemia, presents for follow-up regarding her breast cancer management. She was diagnosed with invasive lobular carcinoma on May 2, 2026, at stage IVA. Imaging studies revealed extensive lymphatic involvement, and the tumor is primarily located in the right breast.\n\nDuring the assessment, her current ECOG performance status is rated as 2, indicating she is able to walk and care for herself but is restricted in strenuous activity. Previous lines of therapy have included aromatase inhibitors during the adjuvant setting, followed by a regimen that included doxorubicin and cyclophosphamide. Currently, she is on her third line of treatment, which features a combination of trastuzumab, pertuzumab, and docetaxel, with the most recent infusion completed two weeks ago.\n\nBiomarker analysis shows an equivocal result for estrogen receptor (ER), while progesterone receptor (PR) status is positive, suggesting that we may consider hormone therapy options as part of her future treatment plan. The patient expresses some concern regarding the side effects of her current chemotherapy regimen, particularly the gastrointestinal issues she has been experiencing.\n\nHer family history is significant for breast cancer in her sister and ovarian cancer in her maternal aunt, which adds complexity to her case given the potential hereditary factors. Labs show benign results with normal serum electrolytes and no evidence of liver dysfunction; however, we will continue to monitor her complete blood counts due to the myelosuppressive effects of her ongoing treatments. \n\nOverall, discussion of potential clinical trials and alternative therapeutic strategies will be scheduled for the next oncology appointment, where we aim to reassess her performance status and response to the current treatment regimen.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "equivocal"
+      },
+      {
+        "name": "PR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2026-05-02",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

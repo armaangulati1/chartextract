@@ -1,0 +1,15 @@
+{
+  "note": "The patient is a male in his 60s with a history of colorectal mucinous adenocarcinoma, diagnosed on December 30, 2018, after presenting with alteration in bowel habits and weight loss. At the time of diagnosis, the tumor was classified as stage IIIA, indicating significant locoregional involvement but no distant metastasis. His ECOG performance status is currently 1, which reflects that he is restricted in strenuous activity, yet capable of self-care and light daily tasks.\n\nSince initiation of treatment, he has been placed on a regimen of regorafenib, which he has tolerated relatively well without significant adverse effects noted. Regular blood tests have shown benign results unrelated to his oncological treatment, such as normal liver function tests and platelet counts, mitigating any pre-existing concerns. \n\nThe patient's family history reveals a background of colorectal cancer in a first-degree relative, which prompted earlier screening. Additionally, he has a past medical history significant for hyperlipidemia but denies any respiratory or cardiovascular issues. \n\nOn the follow-up visit, the patient reported a stable condition with no acute symptoms. We will continue to monitor via imaging studies and regular check-ups, ensuring any adverse effects of treatment are managed appropriately. He remains committed to ongoing chemotherapy and maintains a positive attitude toward his treatment plan.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2018-12-30",
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

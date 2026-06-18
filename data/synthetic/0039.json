@@ -1,0 +1,20 @@
+{
+  "note": "The patient is a 58-year-old male with a known history of colorectal cancer, diagnosed with stage IVB mucinous adenocarcinoma on February 21, 2023. This diagnosis followed a thorough evaluation, including imaging that revealed multiple metastatic lesions. The patient\u2019s performance status is currently assessed as ECOG PS 2, indicating he is unable to carry out any work activities but is capable of self-care. \n\nMolecular profiling was performed, revealing negative KRAS status, which provides important prognostic information and guides further treatment options. The patient is currently on the second line of therapy with regorafenib, which has been well tolerated thus far, although he reports some mild gastrointestinal side effects that are manageable. \n\nPrior to this diagnosis, the patient had undergone a laparoscopic colectomy for an earlier stage of colorectal carcinoma five years ago, with no significant complications noted from that procedure. His past medical history is notable for hypertension and hyperlipidemia, both well-controlled on medication. Family history is significant for colorectal cancer in his father, who was diagnosed in his late 60s.\n\nLabs drawn during the last visit demonstrated normal liver function tests, although there is a slight elevation in LDH, which often correlates with tumor burden in this patient population. A follow-up scan is scheduled in two months to monitor disease progression and response to current therapy. Multi-disciplinary input is being sought as needed for potential clinical trials that may better suit the patient's evolving treatment landscape. \n\nIn summary, the ongoing management of this patient with advanced colorectal mucinous adenocarcinoma continues with regorafenib, and proactive monitoring for therapeutic efficacy and adverse effects will be essential in the upcoming visits.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2023-02-21",
+    "treatment_regimen": [
+      "regorafenib"
+    ]
+  }
+}

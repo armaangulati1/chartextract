@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 58-year-old male with a diagnosis of clear cell renal cell carcinoma, confirmed on June 22, 2021. At the time of diagnosis, the tumor was classified as stage IIA. The patient presents today for follow-up after completing a third line of therapy, which included a combination of nivolumab and cabozantinib. Notably, he is currently maintaining an ECOG performance status of 0, indicating he is fully active and able to carry out all daily activities without restriction.\n\nDuring his treatment course, laboratory evaluations have focused on pertinent biomarkers. The VHL gene mutation status returned positive, while the PD-L1 expression remains unknown at this time, which may have implications for future therapeutic decisions. \n\nHe has a history of hypertension and hyperlipidemia but has maintained good control of both conditions with lifestyle modifications and medications. Noteworthy, he underwent a laparoscopic cholecystectomy for gallbladder stones approximately 5 years ago, which was uncomplicated. \n\nFamily history reveals a paternal uncle who passed from prostate cancer, but otherwise, there are no significant cancer alerts in his immediate family. His most recent imaging studies revealed no new metastases and no evidence of progression of his renal mass, supporting the effectiveness of the current therapeutic strategy.\n\nAssessment findings today show the patient tolerates the current regimen well, reports minimal side effects\u2014mainly mild fatigue and transient nausea\u2014and continues to engage actively in regular exercise. We will continue to monitor for any changes in his health status, including a repeat imaging study scheduled in three months to evaluate tumor response and the potential need for additional therapeutic options. \n\nCareful attention will be given to PD-L1 status in future evaluations to guide any immunotherapy adjustments. The plan is to continue current treatment, monitor biomarkers closely, and maintain routine follow-ups.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "clear cell renal cell carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "positive"
+      },
+      {
+        "name": "PD-L1",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2021-06-22",
+    "treatment_regimen": [
+      "nivolumab",
+      "cabozantinib"
+    ]
+  }
+}

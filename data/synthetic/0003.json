@@ -1,0 +1,15 @@
+{
+  "note": "The patient is a 52-year-old female with a prior diagnosis of invasive lobular carcinoma of the breast, confirmed on biopsy on November 21, 2022. Currently, she presents in the oncology clinic for routine follow-up and treatment review, now on the second line of therapy with capecitabine. At this consultation, she maintains an ECOG performance status of 0, indicating she is fully functional and asymptomatic in her daily activities.\n\nUpon review of her medical history, it is notable that she underwent a lumpectomy in early 2022 followed by adjuvant chemotherapy; however, the disease progressed, necessitating the initiation of capecitabine. Her most recent imaging studies show no evidence of distant metastasis, and she is currently staged as IB, reflecting localized disease limited to the breast.\n\nThe patient reports no significant side effects from the current treatment regimen, stating she feels well overall. Family history is significant for breast cancer in her maternal grandmother but is otherwise unremarkable for hereditary syndromes. \n\nThe patient is up to date with her mammograms, and her most recent laboratory work shows benign findings, including normal liver function tests and no abnormalities in her complete blood count. She remains highly motivated to continue her treatment and is engaged in discussions about future management options, keeping abreast of potential clinical trials. \n\nAt this stage, the plan involves continued monitoring of her response to capecitabine, with follow-up imaging scheduled for two months, and she was advised to report any new symptoms immediately. Further assessment will consider her response before moving forward with any additional lines of therapy.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "IB",
+    "biomarkers": [],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-11-21",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}

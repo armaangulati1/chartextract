@@ -1,0 +1,24 @@
+{
+  "note": "Patient is a 67-year-old male with a history of benign prostatic hyperplasia and hyperlipidemia, presenting for follow-up of prostate adenocarcinoma diagnosed on November 16, 2019. He was initially staged as IIA following a biopsy that revealed prostate adenocarcinoma. Currently, he is in his first line of therapy, having been started on enzalutamide, which he has tolerated well to date.\n\nUpon examination, he exhibits an ECOG performance status of 2, indicating that he is capable of self-care but cannot carry out work activities. He reports some difficulty with strenuous activities, but overall he remains relatively functional. The patient has experienced no significant side effects from treatment, though he does mention mild fatigue.\n\nBiochemical markers were evaluated, with a PSA level reported as positive, raising concerns regarding disease progression. Additionally, AR-V7 biomarker status returned equivocal, complicating prognostic considerations and treatment planning. The patient has been educated on the implications of these findings, particularly in relation to treatment resistance.\n\nHe denies any new constitutional symptoms such as weight loss, fever, or night sweats. A review of systems is otherwise non-contributory, with no urinary obstruction or bone pain reported. Notably, he has a family history of prostate cancer in a first-degree relative, which potentially raises his risk profile.\n\nPast medical history includes a cholecystectomy performed 15 years ago, and current medications include statins for his hyperlipidemia. He has been compliant with follow-up appointments and is actively engaged in ongoing management discussions. Further monitoring and possible adjustments to his treatment regimen will be guided by future PSA levels and side effect assessments. \n\nNext appointment is scheduled in 3 months for re-evaluation and further imaging if clinically indicated.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "AR-V7",
+        "status": "equivocal"
+      },
+      {
+        "name": "PSA",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2019-11-16",
+    "treatment_regimen": [
+      "enzalutamide"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "note": "The patient, a 62-year-old male with a significant smoking history, presented to our oncology clinic for evaluation following a diagnosis of small cell carcinoma of the lung, confirmed on biopsy dated September 21, 2019. His ECOG performance status is currently rated at 1, indicating some restriction in strenuous activity, but he maintains a largely active lifestyle.\n\nThe tumor is classified as stage II based on the initial workup. On the biomarker panel, KRAS and ALK mutations were noted to be positive, whereas PD-L1 expression was found to be negative. These results guide our treatment decisions, especially considering his previous therapies. \n\nThe patient has undergone two lines of therapy; notably, he is currently on crizotinib, following a regimen of upfront chemotherapy. His treatment response has been monitored closely, and while he has experienced some manageable side effects, including mild fatigue and transient nausea, his overall condition remains stable. \n\nIn addition to his malignancy, the patient has a history of hyperlipidemia and managed hypertension, which are currently well controlled on medication. His family history is unremarkable with no significant hereditary cancer syndromes reported. Additionally, he underwent a cholecystectomy approximately five years ago without complications.\n\nThe next steps include regular imaging to monitor the disease progression and a multi-disciplinary review in four weeks to assess the effectiveness of the current treatment regimen. Despite the challenges posed by his malignancy, the patient remains optimistic and engaged in his care plan.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "positive"
+      },
+      {
+        "name": "ALK",
+        "status": "positive"
+      },
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2019-09-21",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "note": "Patient is a 55-year-old male with a recent diagnosis of lung adenocarcinoma, staged at IIIA as per both radiological and histological evaluation conducted on November 8, 2024. The tumor was evaluated for molecular biomarkers, and it was found to be ALK-positive, indicating a potential for targeted therapy. The patient's current ECOG performance status is 0, suggesting he is fully active and able to carry on all pre-disease activities without restriction.\n\nThis marks the patient's first line of therapy, and he has initiated treatment with osimertinib, which is aligned with current oncological standards for managing ALK-positive adenocarcinoma of the lung. It is noteworthy that the patient has no significant comorbidities that could potentially complicate his treatment, although he does have a benign history of seasonal allergies and occasional gastroesophageal reflux disease, which have been stable.\n\nFamily history is significant for a mother who passed from breast cancer at age 70 and a father with a history of hypertension but alive and well at age 75. No prior surgeries related to the lung cancer have been documented. Overall, the patient remains optimistic about the treatment plan and understands the need for close monitoring, specifically regarding any side effects from osimertinib.\n\nLabs performed prior to the initiation of therapy were largely unremarkable except for mild hypokalemia. Follow-up imaging and repeat laboratory tests are scheduled in six weeks to assess treatment response and any related adverse effects.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "ALK",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-11-08",
+    "treatment_regimen": [
+      "osimertinib"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "note": "The patient, a 65-year-old male with a significant smoking history and prior COPD, was diagnosed with lung adenocarcinoma on February 6, 2022. At the time of diagnosis, the disease was classified as stage II, and the histological examination confirmed adenocarcinoma. Upon evaluation of biomarkers, PD-L1 status was found to be positive, suggesting potential responsiveness to immune checkpoint inhibitors.\n\nCurrently, the patient is at ECOG performance status of 3, indicating that he is limited in self-care and unable to carry out any work activities but is still able to walk and attend to care needs.\n\nThis constitutes the second line of therapy; prior treatments included a combination of carboplatin and pemetrexed, which the patient completed without major complications. He is now receiving pembrolizumab as part of the ongoing regimen, which aims to target the PD-L1 positive cancer cells more effectively.\n\nAdditionally, the patient's medical history includes hypertension, for which he has been on lisinopril. Family history is significant for lung cancer in his father, who passed away at age 72. Recent lab results were within normal limits for liver and renal function, and other benign conditions were noted in his past medical records, including a resolved episode of pneumonia last year. The patient remains under close monitoring with plans for follow-up imaging to assess the treatment response after 3 cycles of pembrolizumab, with the next appointment scheduled for next month.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "II",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-02-06",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "carboplatin",
+      "pemetrexed"
+    ]
+  }
+}

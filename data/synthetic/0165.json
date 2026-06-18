@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 58-year-old male with a history of hypertension and type 2 diabetes, presented for follow-up regarding his colorectal neoplasm diagnosed on March 19, 2021. He underwent surgical resection followed by adjuvant chemotherapy with FOLFOX, which he completed approximately 6 months ago. Currently, he shows no signs of disease recurrence and maintains an ECOG performance status of 0, indicating that he is fully active.\n\nUpon review of his tumor characteristics, the histology confirmed adenocarcinoma of the colon, classified as stage IIIA. Notably, the biomarker analysis revealed an equivocal result for KRAS status and a positive result for BRAF, which may have implications for future targeted therapies or clinical trials.  \n\nThe patient has tolerated the FOLFOX regimen well with only minor side effects, including mild peripheral neuropathy and transient nausea, both of which have resolved since completion of treatment. He continues to be monitored for any new symptoms and is compliant with follow-up appointments. Family history is significant for colorectal cancer in his father diagnosed at age 64, raising concern for hereditary factors although he denies other family history of malignancies. \n\nAt this visit, we discussed options for the next line of therapy should any signs of recurrence emerge. Given the positive BRAF status, targeted therapy options may be considered in the future. He expressed a desire to continue monitoring closely and has agreed to follow-up imaging in 3 months.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "adenocarcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "equivocal"
+      },
+      {
+        "name": "BRAF",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2021-03-19",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

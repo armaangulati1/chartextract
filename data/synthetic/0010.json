@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 58-year-old male with a history of smoking and moderate alcohol use who presented with complaints of persistent sore throat and dysphagia for the past three months. Physical examination revealed an exophytic lesion in the oropharynx. Biopsy results confirmed the diagnosis of squamous cell carcinoma. The tumor has been staged as IIIA per AJCC criteria, with no signs of metastasis on imaging studies. The patient was diagnosed on June 13, 2021.\n\nECOG performance status is currently assessed at 2, indicating the patient is ambulatory and capable of self-care, but unable to carry out any work activities. The treatment plan initiated includes a combination regimen of cetuximab, carboplatin, and paclitaxel, as this is the first line of therapy for management. The patient receives cetuximab weekly while carboplatin and paclitaxel are administered every three weeks.\n\nPD-L1 expression status remains unknown, necessitating further exploration as it may impact therapeutic decisions moving forward. Throughout treatment, the patient has maintained regular follow-up visits, although he expresses increased fatigue and occasional nausea.\n\nAdditionally, there is a notable medical history of orchiectomy for testicular cancer in 2015, and the patient's family history is significant for breast cancer in a first-degree relative. Recent lab work showed mild elevation in liver enzymes, likely related to the chemotherapy regimen, but overall routine blood counts are within normal limits.\n\nThe patient continues to be counseled about smoking cessation and has expressed interest in support groups, particularly given the psychosocial impacts of his diagnosis. Next steps will involve scheduling imaging studies after completing the current chemotherapy cycle, and further evaluation of PD-L1 status is recommended.",
+  "gold": {
+    "primary_site": "head and neck",
+    "histology": "squamous cell carcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-06-13",
+    "treatment_regimen": [
+      "cetuximab",
+      "carboplatin",
+      "paclitaxel"
+    ]
+  }
+}

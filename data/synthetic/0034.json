@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 58-year-old female with a primary diagnosis of invasive lobular carcinoma of the breast, initially diagnosed on December 29, 2022. On evaluation, she presents with stage III disease, reflecting significant local advancement. The oncology team noted that the patient's ECOG performance status is 1, indicating some limitations in strenuous activity, but she remains fully ambulatory and independent in her activities of daily living.\n\nLaboratory results show positive HER2 expression, which has guided our treatment approach. This patient has now completed three lines of therapy, initiating with a regimen that included docetaxel in combination with pertuzumab and trastuzumab\u2014indicating her receipt of targeted therapy due to the HER2 positivity.\n\nShe is currently on her fourth line of therapy, with discussions ongoing about potential clinical trial options for further management, considering that standard therapies have had limited long-term effectiveness at this stage. The patient's medical history is notable for hypertension, managed with lisinopril, and hyperlipidemia, for which she takes atorvastatin. No previous malignancies have been reported. \n\nFamily history includes a mother with breast cancer diagnosed at age 65 and a sister previously treated for uterine cancer. Current imaging studies will be reviewed next week to assess response to the current regimen. She expresses concerns about her treatment side effects, including fatigue and nausea, which we are addressing with supportive care measures. Intermittent counseling regarding lifestyle modifications and the importance of follow-up appointments is also ongoing.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive lobular carcinoma",
+    "stage": "III",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 4,
+    "date_of_diagnosis": "2022-12-29",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

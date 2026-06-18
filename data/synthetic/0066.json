@@ -1,0 +1,22 @@
+{
+  "note": "The patient presented today for follow-up regarding their lung cancer management. History reveals that the patient was diagnosed with squamous cell carcinoma of the lung on March 31, 2024. Upon review of the latest imaging and clinical findings, it has been established that the disease is currently staged at IVA, indicating extensive local and regional spread with potential metastasis.\n\nNotably, the patient\u2019s performance status is classified as ECOG 3 due to significant symptoms, which limits even basic self-care and indicates the need for assistance in daily activities. It is essential to consider this performance status when devising future treatment strategies.\n\nIn the prior assessment, biomarkers were evaluated, and the KRAS mutation was found to be positive, which may influence further treatment options and potential enrollment in targeted therapy trials. Given the evolving landscape of treatment for lung cancer, this information is crucial for ongoing management.\n\nCurrently, the patient is on their third line of therapy comprising durvalumab, etoposide, and carboplatin. The patient has endured previous lines of chemotherapy with variable success; however, this latest regimen has been tolerated reasonably well, albeit with persistent fatigue and decreased appetite. It\u2019s vital to monitor for treatment-related side effects as the course continues, especially considering the patient was previously treated with other regimens that did not yield significant responses.\n\nFamily history includes a mother with non-small cell lung cancer who succumbed to the disease at an advanced age. The patient's past medical history is significant for hypertension and hyperlipidemia, managed with appropriate medications. Additionally, a notable surgical history includes an appendectomy 15 years ago; however, there are no recent surgeries that could complicate current treatment plans.\n\nTo conclude, we continue to reinforce supportive care and symptom management for this patient, alongside ongoing evaluation based on the latest imaging and biomarker developments. Follow-up appointments are advised in 6 weeks to reassess treatment effectiveness and quality of life.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "KRAS",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2024-03-31",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

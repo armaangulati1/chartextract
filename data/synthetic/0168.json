@@ -1,0 +1,22 @@
+{
+  "note": "The patient is a 68-year-old female with a primary diagnosis of invasive ductal carcinoma of the breast, confirmed on biopsy. She was diagnosed on December 26, 2024, at which time her cancer was staged at IVB, indicating advanced disease. Clinically, she presents with an ECOG performance status of 2, which signifies that she is capable of all self-care but is unable to carry out any work activities, reflecting some limitations in her daily functioning due to her illness.\n\nHistologically, the tumor is classified as ER-negative, suggesting a more aggressive disease course, as it does not express estrogen receptors. The current regimen involves second-line therapy, which includes trastuzumab, pertuzumab, and docetaxel, consistent with current guidelines for metastatic HER2-positive breast cancer, especially given the profile of this tumor.\n\nThe patient has a significant past medical history, including type II diabetes mellitus and hypertension, both of which are well managed with medication. She underwent a hysterectomy five years ago for benign uterine fibroids and has no family history of breast cancer but does report a sister who had ovarian cancer at age 55. Initial laboratory work-up showed normal levels for alkaline phosphatase and liver enzymes; however, she exhibits elevated CA 15-3 levels, consistent with her active malignancy.\n\nFollow-up appointments are scheduled to monitor her response to therapy and adjust as necessary. The patient was advised about possible side effects of her current regimen, including fatigue, nausea, and risk of neutropenia associated with docetaxel. Overall, she seems to be tolerating treatment well but requires close follow-up given the advanced stage of her disease.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IVB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2024-12-26",
+    "treatment_regimen": [
+      "trastuzumab",
+      "pertuzumab",
+      "docetaxel"
+    ]
+  }
+}

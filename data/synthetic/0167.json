@@ -1,0 +1,20 @@
+{
+  "note": "Patient is a 67-year-old female with a new diagnosis of mucinous adenocarcinoma of the colorectal region, confirmed on biopsy scheduled on 2024-02-08. She presents to the oncology clinic for further management. Notably, her performance status is determined to be ECOG 3, as she is largely confined to bed, experiencing significant fatigue and requiring assistance with personal care activities. \n\nUpon review of the relevant pathology, the tumor has been staged as IB, and molecular studies indicate a positive status for MSI (microsatellite instability), which may suggest a favorable response to certain immunotherapy agents in the future.\n\nPatient is currently being recommended for treatment with a FOLFOX regimen, as this represents her first line of therapy. No prior surgeries related to the malignancy have been performed, although she does have a history of hypertension and hyperlipidemia which are managed with medications. Family history is significant for colorectal cancer in an older sibling, although her own lifestyle factors have generally included low physical activity, with occasional mild exercise.\n\nThe patient reports no significant laboratory abnormalities at this time, and baseline labs before initiating treatment will be drawn to ensure safety and appropriateness of the FOLFOX regimen.\n\nIn summary, the treatment plan involves starting FOLFOX chemotherapy, with plans for close monitoring of her performance status and potential adjustments based on tolerance. Further discussions regarding genetic counseling and management of metastatic disease options will be scheduled at future visits as indicated.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "MSI",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-02-08",
+    "treatment_regimen": [
+      "FOLFOX"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a male in his late 60s with a significant history of hypertension, presents for follow-up regarding his metastatic prostate adenocarcinoma, diagnosed on December 10th, 2025. The disease has progressed to stage IV, and he is currently in the second line of therapy. \n\nHis ECOG performance status is noted as 3, indicating that he is largely bedbound but not completely incapacitated, only able to walk short distances with assistance. Family history reveals a sister with breast cancer but otherwise is unremarkable for other malignancies. \n\nRecent lab results show a positive PSA, reinforcing concern for active disease. Additionally, testing for AR-V7 returned positive, suggesting potential resistance to certain therapies. \n\nThe patient is currently receiving olaparib as part of his treatment regimen, which continues to be monitored for response and tolerability. Despite his current condition, he reports intermittent mild improvements in fatigue levels but experiences significant pain which we plan to address with palliative care options. Benign findings noted in laboratory tests include normal glucose levels and stable renal function. A rehabilitation referral has also been placed to assist with his mobility issues and overall quality of life. Future imaging studies are scheduled in three months to assess disease progression.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "adenocarcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "AR-V7",
+        "status": "positive"
+      },
+      {
+        "name": "PSA",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2025-12-10",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

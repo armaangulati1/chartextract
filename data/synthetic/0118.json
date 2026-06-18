@@ -1,0 +1,30 @@
+{
+  "note": "The patient, a 65-year-old male with a significant smoking history, presents for evaluation of lung mass found incidentally on chest imaging during work-up for unrelated hypertension and hyperlipidemia. He is asymptomatic and reports no weight loss, cough, or dyspnea. Review of medical history is notable for benign prostatic hyperplasia, which was managed conservatively. The family history is significant for lung cancer in a sibling and coronary artery disease in parents.\n\nOn examination, the patient appears well-nourished and in no acute distress. Vital signs are stable; ECOG performance status is documented as 0, indicating no restriction in physical activity. \n\nCT chest reveals a left upper lobe lesion measuring approximately 4 cm in maximum dimension, with associated mediastinal lymphadenopathy. A biopsy was performed, and histological analysis confirms the presence of small cell carcinoma. Notable biomarkers were evaluated: PD-L1 is negative, ROS1 is negative, and ALK is positive, which may have implications for targeted therapy.\n\nThe staging work-up confirms stage IIB disease, consistent with the findings. Given the positive ALK status, treatment has been initiated with first-line therapy, comprising durvalumab, etoposide, and carboplatin. The current treatment regimen aims to leverage the ALK pathway while providing systemic chemotherapy.\n\nAssessing laboratory results reveals no acute abnormalities; renal function and electrolytes remain within normal limits. The patient is tolerating the regimen well thus far and reports minimal side effects, primarily fatigue. Follow-up imaging will be scheduled to assess response to the current therapy. \n\nPlan includes continued monitoring of performance status and potential adjustments to the regimen based on tolerance and response, with routine follow-ups every three weeks during treatment cycles. The importance of smoking cessation support was discussed and will be a continued focus during the course of treatment.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "small cell carcinoma",
+    "stage": "IIB",
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "status": "negative"
+      },
+      {
+        "name": "ROS1",
+        "status": "negative"
+      },
+      {
+        "name": "ALK",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": null,
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

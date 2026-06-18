@@ -1,0 +1,24 @@
+{
+  "note": "The patient, a 52-year-old female, presented for follow-up regarding her breast cancer treatment. She was diagnosed with invasive ductal carcinoma on April 11, 2026, now staged at IIIB. Current performance status is rated as ECOG 0, indicating she is fully active with no restrictions on activity.  \n\nBiopsy results reveal that the primary site of malignancy is the breast, and significant biomarker evaluations show the tumor to be estrogen receptor (ER) negative, while Ki-67 is positive, indicating a proliferation index that warrants close monitoring.  \n\nThe patient is currently in the second line of therapy and is receiving sacituzumab govitecan, following an initial regimen that included neoadjuvant treatment. She has tolerated her treatment well thus far with manageable side effects; however, she continues to experience moderate fatigue, consistent with her therapy plan. \n\nThe patient\u2019s past medical history includes well-controlled hypertension and a history of hypothyroidism, managed with levothyroxine. She reports no significant family history of breast cancer but does mention her mother had a history of ovarian cysts, though they were noted as benign. \n\nLabs were reviewed, with a CBC showing slight anemia, likely secondary to chemotherapy, but liver and renal function tests remain within normal limits. At this visit, we discuss the patient's overall health and maintain regular surveillance for potential complications associated with both her cancer and treatment, while also revising her supportive care plan.\n\nFuture visits will involve assessments of symptomatology and adjustments to her treatment regimen as necessary, particularly in light of her current high Ki-67 marker, which suggests a more aggressive disease profile. Next oncology visit is scheduled in 4 weeks to evaluate response to current therapy.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "negative"
+      },
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2026-04-11",
+    "treatment_regimen": [
+      "sacituzumab govitecan"
+    ]
+  }
+}

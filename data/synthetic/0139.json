@@ -1,0 +1,25 @@
+{
+  "note": "Patient is a 68-year-old male with a primary diagnosis of prostate cancer originally made on December 15, 2022. The histology is classified as neuroendocrine carcinoma, presenting as stage IB. Significant comorbidities include well-controlled hypertension and a history of hyperlipidemia, with a family history notable for a father who had prostate cancer diagnosed at age 70. \n\nUpon recent evaluation, the patient exhibits an ECOG performance status of 3, indicating that he is unable to carry out any work activities and is confined to bed or a chair more than 50% of the time due to the effects of his cancer and treatment.\n\nCurrent therapy includes abiraterone and prednisone, consistent with the first line of treatment for this condition. Initial laboratory tests show that PSA levels are negative; however, ongoing monitoring is critical as transgender trends can alter the clinical picture. The AR-V7 biomarker assessment was returned as equivocal, warranting further investigation and potential re-evaluation as part of the treatment planning.\n\nRegular follow-up appointments have been scheduled to assess the patient's response to the current regimen, and discussions regarding possible adjustments based on biomarker developments and performance status improvements will be held in light of the evolving clinical scenario. The focus remains on managing symptoms and maintaining quality of life.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      },
+      {
+        "name": "AR-V7",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2022-12-15",
+    "treatment_regimen": [
+      "abiraterone",
+      "prednisone"
+    ]
+  }
+}

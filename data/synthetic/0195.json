@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 67-year-old male with a history of prostate cancer diagnosed on January 8, 2025, presenting for follow-up. He was previously treated with surgical resection and has undergone radiation therapy. Notably, he has been on his third line of therapy, currently receiving enzalutamide, with a reasonable response observed, especially considering the aggressive nature of neuroendocrine carcinoma.\n\nAt this visit, performance status was assessed as ECOG 1, suggesting he is restricted in strenuous activity, but he is otherwise active and manages daily activities with some assistance. Laboratory results demonstrate a negative PSA level, which is somewhat atypical for neuroendocrine variants given their potential escape from standard androgen suppression.\n\nBiomarker analysis indicated no available information on AR-V7 status, which could add complexity to his treatment course. Previous treatments and current therapeutic approaches reveal a challenge with the progression of disease, coinciding with the established stage of IIIA, indicating significant local and possibly regional spread.\n\nIn the context of his comorbidities, he has a past medical history significant for hypertension and controlled type II diabetes. There are no recent heart issues noted, and all routine labs for electrolytes and liver function remain within normal limits. Family history is notable for prostate cancer in his father and maternal uncle, which raises concerns for potential genetic predispositions, though genetic testing has not been performed thus far.\n\nThe patient's overall prognosis remains guarded due to the aggressive nature of neuroendocrine tumors evidenced by imaging studies showing lymphadenopathy. Plans for continued surveillance and progression management with regular imaging and lab tests were discussed during today's encounter, emphasizing the importance of monitoring for any new symptoms or changes in his condition.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      },
+      {
+        "name": "AR-V7",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2025-01-08",
+    "treatment_regimen": [
+      "enzalutamide"
+    ]
+  }
+}

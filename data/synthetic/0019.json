@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a 62-year-old male with a significant history of colorectal mucinous adenocarcinoma, initially diagnosed on August 17, 2022. At the time of diagnosis, the disease was staged at IV, indicating advanced malignancy. This patient has been under care for this condition, presenting with an ECOG performance status of 1, which reflects his ability to carry out daily activities with some restrictions, particularly in terms of engaging in strenuous exercise.\n\nUpon evaluation of tumor markers, BRAF status was found to be positive, indicating a potential pathway for targeted therapies.\n\nIn terms of treatment, the patient is currently on a second line of therapy regimen, which includes bevacizumab and capecitabine. This combination therapy was initiated after the initial regimen proved inadequate in controlling disease progression. The patient has been tolerating the current treatment reasonably well, although he reports mild fatigue and some gastrointestinal discomfort, which are not uncommon side effects of these agents.\n\nNotably, the patient has a past medical history that includes hypertension and type 2 diabetes mellitus, well-managed with medication. He has no prior surgeries related to the current cancer but underwent a cholecystectomy several years ago. Family history is significant for colorectal cancer in his father and breast cancer in his mother, but there is no known hereditary syndrome.\n\nFurther management will include routine imaging to assess tumor response and any necessary adjustments to the treatment regimen based on the evolving clinical picture. Continued monitoring of both oncologic status and overall health will be paramount.",
+  "gold": {
+    "primary_site": "colorectal",
+    "histology": "mucinous adenocarcinoma",
+    "stage": "IV",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2022-08-17",
+    "treatment_regimen": [
+      "bevacizumab",
+      "capecitabine"
+    ]
+  }
+}

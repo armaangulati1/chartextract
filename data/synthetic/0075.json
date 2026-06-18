@@ -1,0 +1,28 @@
+{
+  "note": "Patient is a 54-year-old female with a documented history of invasive ductal carcinoma of the breast diagnosed on August 21, 2021. Currently at stage IIA, she presents with an ECOG performance status of 0, indicating no restrictions in her daily activities. \n\nUpon review of her pathology report, we found the tumor primarily located in the breast. The histologic analysis confirmed the presence of invasive ductal carcinoma. Interestingly, HER2 status remains equivocal, suggesting that further evaluation may be warranted to clarify treatment options. The progesterone receptor (PR) status was noted as positive, which could guide therapeutic decisions. However, the Ki-67 labeling index remains unknown at this time, impacting our prognosis assessment.\n\nThe patient is currently on her first line of therapy, receiving sacituzumab govitecan due to its relevance in HER2-negative breast cancer treatments. Despite her cancer diagnosis, she has a relatively stable overall condition, with no acute comorbidities reported. \n\nIt\u2019s worth mentioning that her family history is significant for breast cancer, as her mother was diagnosed in her 60s. Additionally, the patient has a history of benign breast disease, but she has not undergone any previous surgeries related to her malignancy.\n\nRoutine labs reveal within normal limits, and there are no indications of metastatic disease noted on her recent imaging studies. A multidisciplinary approach remains essential as we continue monitoring this patient's progress on the current treatment regimen.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IIA",
+    "biomarkers": [
+      {
+        "name": "HER2",
+        "status": "equivocal"
+      },
+      {
+        "name": "PR",
+        "status": "positive"
+      },
+      {
+        "name": "Ki-67",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2021-08-21",
+    "treatment_regimen": [
+      "sacituzumab govitecan"
+    ]
+  }
+}

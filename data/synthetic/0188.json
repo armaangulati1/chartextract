@@ -1,0 +1,20 @@
+{
+  "note": "The patient, a [AGE REDACTED] year-old individual with a medical history significant for hypertension and hyperlipidemia, presented for follow-up regarding their cutaneous melanoma. The melanoma was diagnosed on September 29, 2020, classified as stage IIIA. \n\nUpon review, the patient displays an ECOG performance status of 1, indicating they are only restricted in strenuous activity but remain largely independent in daily tasks. For this stage of melanoma, the patient has been initiated on pembrolizumab, which is the first line of therapy as per current guidelines. Previous therapies were not applicable given the recent diagnosis with no prior interventions noted.\n\nBiomarker testing revealed that the NRAS mutation status is negative, providing insight into the biological behavior of the melanoma and potential implications for prognosis and further treatment options in the future. \n\nMoreover, the patient\u2019s family history is notable for a sister with a history of breast cancer but no other significant oncology-related issues have been identified. The rest of the review of systems was largely unremarkable; benign lab values including normal cholesterol readings were documented during the last routine evaluation. \n\nThe treatment response will be closely monitored, and multidisciplinary discussions will be held at the next oncology meeting. Follow-up appointments are scheduled every 3 months for continued evaluation of treatment efficacy and disease progression.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IIIA",
+    "biomarkers": [
+      {
+        "name": "NRAS",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-09-29",
+    "treatment_regimen": [
+      "pembrolizumab"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "note": "The patient is a [gender-neutral] individual diagnosed with cutaneous melanoma on October 16, 2018, currently classified as stage IVA. Notably, the tumor is BRAF positive, which has informed the choice of treatment regimen. The patient is presently on the second line of therapy, consisting of a combination of dabrafenib and trametinib, aimed at targeting the BRAF mutation effectively. \n\nDuring the most recent assessment, the ECOG performance status is recorded at 2, indicating the patient is capable of self-care but is unable to carry out any work activities and has significant restrictions when it comes to strenuous activity. We have observed some side effects from the ongoing treatments, including fatigue and mild nausea, which the patient is managing with supportive care. \n\nThe patient has a notable medical history that includes hypertension well controlled on medication and a previous cholecystectomy performed in 2015. Regular dermatological follow-ups have not reported any new lesions since the initiation of therapy. The last imaging studies did indicate some lymphadenopathy; however, there has not been evidence of visceral metastasis.\n\nFamily history includes a relative with a history of skin cancer, heightening the patient's awareness and adherence to regular checkups despite expressing some anxiety over the long-term implications of their diagnosis. Blood work, including liver function tests, remains within acceptable ranges, with mild variations that have not prompted concern. \n\nIn summary, the patient continues to respond to treatment but requires ongoing monitoring to manage side effects and assess treatment efficacy, with the next follow-up in 6 weeks.",
+  "gold": {
+    "primary_site": "melanoma",
+    "histology": "cutaneous melanoma",
+    "stage": "IVA",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2018-10-16",
+    "treatment_regimen": [
+      "dabrafenib",
+      "trametinib"
+    ]
+  }
+}

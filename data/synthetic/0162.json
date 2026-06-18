@@ -1,0 +1,25 @@
+{
+  "note": "The patient is a 58-year-old female with a primary diagnosis of invasive ductal carcinoma of the breast, confirmed on biopsy. Her cancer was staged at IB at the time of diagnosis on June 30, 2020. The patient demonstrates a negative estrogen receptor (ER) status and a positive HER2 status, indicating a specific treatment approach is warranted. \n\nGiven her performance status of ECOG 1, she experiences some restrictions in strenuous activities but is otherwise functioning well. The patient is currently on her first line of therapy, which includes a regimen of palbociclib combined with letrozole in light of her HR-positive and HER2-positive disease characteristics. \n\nThe patient has a medical history notable for controlled hypertension and hypothyroidism, but there are no other significant comorbidities affecting her treatment plan. Family history reveals a mother with a history of breast cancer diagnosed in her early 60s, prompting thorough monitoring during her own treatment. \n\nCurrently, the patient's labs show benign results: her CBC is within normal limits, and liver function tests are unremarkable. Follow-up imaging, such as the recent mammogram and ultrasound, will be necessary for ongoing assessment of treatment response. \n\nThe patient expresses understanding of her diagnosis and is receptive to discussing additional therapy options as the need arises. We will continue to monitor her closely in the subsequent visits, evaluating both the efficacy of the current regimen and any potential side effects.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "invasive ductal carcinoma",
+    "stage": "IB",
+    "biomarkers": [
+      {
+        "name": "ER",
+        "status": "negative"
+      },
+      {
+        "name": "HER2",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 1,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-06-30",
+    "treatment_regimen": [
+      "palbociclib",
+      "letrozole"
+    ]
+  }
+}

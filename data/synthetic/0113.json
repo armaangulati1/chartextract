@@ -1,0 +1,24 @@
+{
+  "note": "The patient is a 68-year-old male with a confirmed diagnosis of neuroendocrine carcinoma of the prostate, staged IIIC, following the initial diagnosis on April 14, 2025. Currently, the patient is receiving the second line of therapy, having been treated with olaparib.\n\nUpon evaluation, the ECOG performance status is recorded as 0, indicating that the patient is fully active and capable of carrying out all pre-disease activities without restriction. \n\nRecent laboratory results show a negative PSA, which is somewhat atypical in this malignancy, aligning with the neuroendocrine pathology. Additionally, AR-V7 status is noted as equivocal, warranting continued close monitoring, as this knowledge may influence future therapeutic strategies.\n\nThe patient has no significant past medical history that complicates the treatment plan. A review of his family history reveals a father with a history of prostate cancer diagnosed at age 70, but no other notable hereditary malignancies were recorded. Additionally, the patient has a history of hypertension that is well-controlled with medication.\n\nPrior to the diagnosis of neuroendocrine carcinoma, he underwent a laparoscopic cholecystectomy for gallstones without complications. He reports a good quality of life, with no complaints other than fatigue commonly associated with the olaparib regimen.\n\nFollow-up is scheduled in four weeks to assess for any potential treatment-related side effects and overall response to the current therapy.",
+  "gold": {
+    "primary_site": "prostate",
+    "histology": "neuroendocrine carcinoma",
+    "stage": "IIIC",
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "status": "negative"
+      },
+      {
+        "name": "AR-V7",
+        "status": "equivocal"
+      }
+    ],
+    "ecog_performance_status": 0,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2025-04-14",
+    "treatment_regimen": [
+      "olaparib"
+    ]
+  }
+}

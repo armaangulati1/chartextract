@@ -1,0 +1,20 @@
+{
+  "note": "The patient was diagnosed with lung cancer on April 5, 2024. Pathological examination reveals squamous cell carcinoma localized to the lung, classified as Stage I. Notably, the patient tested positive for the EGFR biomarker, indicating potential sensitivity to targeted therapies. \n\nCurrent treatment involves the first line of therapy with crizotinib. This oral agent is being prescribed given the positive EGFR status, which should allow for a tailored approach to management. \n\nDuring the recent visit, the patient reported no significant symptoms, although they mentioned a history of mild hypertension and occasional asthma exacerbations, which have been controlled with albuterol as needed. There is no reported ECOG performance status noted at this time, as the patient remains active with no limitations on daily activities. \n\nFamily history is relatively non-contributory with no direct incidence of lung cancer; however, there is a noted history of breast cancer in a maternal aunt. Other lab results from recent checks remain within normal ranges, providing reassurance about the patient's overall health prior to initiating the crizotinib regimen.\n\nThe plan includes closely monitoring the patient's response to therapy, as well as management of any oncological side effects that may arise. A follow-up appointment is scheduled in one month, or sooner if there are any concerning developments.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "squamous cell carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "EGFR",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": null,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2024-04-05",
+    "treatment_regimen": [
+      "crizotinib"
+    ]
+  }
+}

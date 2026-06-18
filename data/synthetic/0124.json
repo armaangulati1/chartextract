@@ -1,0 +1,26 @@
+{
+  "note": "The patient, a 62-year-old male with a significant smoking history, presented to the oncology clinic for follow-up after being diagnosed with stage IIIB lung adenocarcinoma on October 12, 2020. He has been receiving his second line of therapy that includes a combination of durvalumab, etoposide, and carboplatin. \n\nAt the last appointment, the patient reported increasing fatigue and shortness of breath, correlating with a performance status of ECOG 3, where he feels mostly limited in his daily activities. Prior to this treatment regimen, he had undergone one line of therapy, which included chemotherapy plus immunotherapy; however, the specifics were not documented in the previous notes. \n\nBiomarker analysis revealed a positive status for ROS1, while BRAF status remains unknown. Family history is notable for a paternal uncle who had lung cancer, but there are no reported genetic predispositions noted in terms of BRCA or hereditary syndromes. \n\nInitial imaging at diagnosis showed significant left-sided hilar mass and lymphadenopathy indicating advanced disease. A pulmonary function test suggested some obstructive patterns likely related to his smoking history. The patient also has a history of hypertension and hyperlipidemia, which are currently managed with lisinopril and atorvastatin, respectively.\n\nNo new laboratory abnormalities were observed during the recent evaluations, and routine biochemistry continues to be within acceptable limits. To manage his symptoms better, palliative care referrals have been discussed, focusing on enhancing quality of life and addressing dyspnea more effectively. The plan is to continue the current regimen while monitoring closely for side effects and any signs of disease progression.",
+  "gold": {
+    "primary_site": "lung",
+    "histology": "adenocarcinoma",
+    "stage": "IIIB",
+    "biomarkers": [
+      {
+        "name": "BRAF",
+        "status": "unknown"
+      },
+      {
+        "name": "ROS1",
+        "status": "positive"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 2,
+    "date_of_diagnosis": "2020-10-12",
+    "treatment_regimen": [
+      "durvalumab",
+      "etoposide",
+      "carboplatin"
+    ]
+  }
+}

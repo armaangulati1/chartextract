@@ -1,0 +1,21 @@
+{
+  "note": "The patient, a 62-year-old male with a past medical history of hypertension managed with lisinopril, presents today for follow-up of his renal mass discovered incidentally during imaging for chronic back pain. He was diagnosed on February 27, 2020, with papillary renal cell carcinoma (pRCC) of the right kidney, classified as stage I at that time. His ECOG performance status is currently 2, indicating he is up and about but unable to carry out any work activities and is limited in his more strenuous activities.\n\nSince diagnosis, he has received first-line therapy consisting of pembrolizumab and axitinib. There have been no reported adverse effects from the treatment, and he has maintained a fairly stable quality of life; however, he does report some fatigue, which he attributes partially to his treatment regimen. \n\nOn recent imaging, there is no evidence of disease progression; the primary tumor remains localized without any lymphadenopathy or metastasis, which is encouraging. The VHL gene status from the tumor genomic profiling returned negative, indicating a good prognostic indicator with respect to tumor behavior. \n\nAdditionally, the patient's family history is significant for his mother, who had a history of breast cancer diagnosed at age 58, and his father was treated for prostate cancer. He has also undergone laparoscopic appendectomy in the past without complications. Routine lab work shows normal kidney function with creatinine at 0.9 mg/dL, and his liver enzyme levels are within normal limits. \n\nGiven his current status, we will continue monitoring with regular imaging and assessment of treatment tolerance. A follow-up appointment is scheduled in two months to reassess his condition and any potential need for therapy adjustments.",
+  "gold": {
+    "primary_site": "kidney",
+    "histology": "papillary renal cell carcinoma",
+    "stage": "I",
+    "biomarkers": [
+      {
+        "name": "VHL",
+        "status": "negative"
+      }
+    ],
+    "ecog_performance_status": 2,
+    "line_of_therapy": 1,
+    "date_of_diagnosis": "2020-02-27",
+    "treatment_regimen": [
+      "pembrolizumab",
+      "axitinib"
+    ]
+  }
+}

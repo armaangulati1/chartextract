@@ -1,0 +1,28 @@
+{
+  "note": "The patient, a middle-aged female with a history of hypertension and hyperlipidemia, was evaluated in the oncology clinic on September 14, 2024, following her diagnosis of breast cancer established on September 7, 2024. The primary site is noted to be the left breast, and histopathological analysis reveals HER2-positive carcinoma. \n\nBased on clinical evaluation, the disease is staged as IA, indicating an early stage with local confinement. Biomarker testing demonstrates a positive Ki-67, suggesting active proliferation of tumor cells, and a positive progesterone receptor (PR) status, which is promising for prognosis and treatment response. However, the HER2 status remains unknown at this time, warranting further investigation or reassessment to guide targeted therapy.\n\nThe patient\u2019s ECOG performance status is rated at 3; she exhibits significant limitations in daily activities and is confined to bed most of the time, reflecting a need for palliative management considerations. A detailed review of her treatment history indicates that she has already undergone two lines of therapy prior to the initiation of capecitabine, which is her current treatment regimen.\n\nNotably, the patient has had prior surgeries including a hysterectomy for benign fibroids and a cholecystectomy several years ago, with family history suggesting breast cancer in her maternal grandmother, which could underscore the genetic predisposition. Routine laboratory workup showed stable, benign results apart from the oncological concerns, with liver function tests within normal limits. Given her current condition and the status of her disease, further discussions about supportive care and oncology consultations will be essential in subsequent visits.",
+  "gold": {
+    "primary_site": "breast",
+    "histology": "HER2-positive carcinoma",
+    "stage": "IA",
+    "biomarkers": [
+      {
+        "name": "Ki-67",
+        "status": "positive"
+      },
+      {
+        "name": "PR",
+        "status": "positive"
+      },
+      {
+        "name": "HER2",
+        "status": "unknown"
+      }
+    ],
+    "ecog_performance_status": 3,
+    "line_of_therapy": 3,
+    "date_of_diagnosis": "2024-09-07",
+    "treatment_regimen": [
+      "capecitabine"
+    ]
+  }
+}
