@@ -2,6 +2,13 @@
 
 Structured oncology variable extraction from clinical notes — with per-field evaluation, human-in-the-loop review, and production-oriented observability.
 
+**Impact**
+
+- **93.6% macro-F1** on a 6-note CI gold set (per-field precision/recall on 8 variables); automated gate blocks deploy below **85%**
+- **250 gold-labeled notes** evaluated (200 synthetic + 50 real MTSamples); real-world macro-F1 **53.8%** (−39.8 pp vs synthetic) — surfaced before production
+- Agentic pipeline + verifier improved **stage F1 +33 pp** vs single-pass (66.7% → 100%) in a controlled 4-config experiment
+- Shipped live: [Streamlit UI](https://chartextract-f9wfrftqzygappf2pgi3hts.streamlit.app/) + [FastAPI backend](https://chartextract.onrender.com/docs) with confidence-based human review and Langfuse cost/latency tracing
+
 **Links**
 
 | Surface | URL |
