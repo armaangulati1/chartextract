@@ -501,7 +501,7 @@ def run_predictions(
 
     for example_id, note, gold_dict in pairs:
         gold = OncologyExtract.model_validate(gold_dict)
-        if example_id in cached:
+        if use_cache and example_id in cached:
             pred = OncologyExtract.model_validate(cached[example_id])
         else:
             pred = extract_fn(note)
@@ -509,7 +509,7 @@ def run_predictions(
         cache_rows.append({"example_id": example_id, "pred": cached[example_id]})
         results.append((example_id, gold, pred))
 
-    if not use_cache or cache_path:
+    if not use_cache:
         save_predictions_cache(cache_path, cache_rows)
     return results
 

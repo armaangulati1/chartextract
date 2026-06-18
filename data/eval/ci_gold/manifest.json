@@ -1,5 +1,6 @@
 {
   "description": "Fixed gold set for CI eval gate (6 diverse oncology notes).",
   "count": 6,
+  "predictions_cache": "data/eval/ci_predictions.jsonl",
   "files": ["0000.json", "0006.json", "0028.json", "0063.json", "0114.json", "0150.json"]
 }

@@ -3,6 +3,5 @@
 __pycache__/
 .DS_Store
 out.json
-data/eval/*_predictions.jsonl
-data/eval/ci_out/
 data/eval/predictions.jsonl
+data/eval/ci_out/
