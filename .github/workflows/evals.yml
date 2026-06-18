@@ -9,11 +9,12 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - name: Run extraction eval gate
+      - name: Run extraction eval gate (live)
         run: |
           python eval.py \
             --data-dir data/eval/ci_gold \
             --out-dir data/eval/ci_out \
             --cache data/eval/ci_predictions.jsonl \
-            --use-cache \
             --min-macro-f1 0.85
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
