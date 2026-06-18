@@ -13,7 +13,7 @@ RUN apt-get update \
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY schema.py pipeline.py extractor.py api.py db.py batch.py cost.py observability.py fhir.py eval_dashboard.py ./
+COPY schema.py pipeline.py extractor.py api.py db.py eval.py batch.py cost.py observability.py fhir.py eval_dashboard.py ./
 
 EXPOSE 8000
 
