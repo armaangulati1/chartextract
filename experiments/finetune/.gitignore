@@ -1,0 +1,4 @@
+.venv/
+adapters/
+results/*.json
+data/*.jsonl
