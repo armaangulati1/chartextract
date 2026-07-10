@@ -1,6 +1,7 @@
 from typing import Optional
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from langfuse import get_client
 from pydantic import BaseModel, Field
 
@@ -10,6 +11,18 @@ from extractor import extract
 
 
 app = FastAPI(title="Clinical Text Extractor API")
+
+# CORS: allow the ChartExtract-UI review console (local dev + GitHub Pages)
+# to call this API from the browser.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://armaangulati1.github.io",
+    ],
+    allow_methods=["GET", "POST"],
+    allow_headers=["content-type"],
+)
 
 class ExtractRequest(BaseModel):
     text: str
