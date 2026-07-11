@@ -1,0 +1,115 @@
+{
+  "set": "real",
+  "tag": "ft",
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "adapter": "experiments/finetune/adapters",
+  "n_examples": 50,
+  "parse_failures": 2,
+  "n_total": 50,
+  "macro_f1": 0.2982841547637669,
+  "micro_f1": 0.3408239700374532,
+  "wall_seconds": 337.2,
+  "rows": [
+    {
+      "field": "primary_site",
+      "tp": 13,
+      "fp": 33,
+      "fn": 33,
+      "precision": 0.2826086956521739,
+      "recall": 0.2826086956521739,
+      "f1": 0.2826086956521739
+    },
+    {
+      "field": "histology",
+      "tp": 19,
+      "fp": 28,
+      "fn": 20,
+      "precision": 0.40425531914893614,
+      "recall": 0.48717948717948717,
+      "f1": 0.4418604651162791
+    },
+    {
+      "field": "stage",
+      "tp": 2,
+      "fp": 39,
+      "fn": 3,
+      "precision": 0.04878048780487805,
+      "recall": 0.4,
+      "f1": 0.08695652173913045
+    },
+    {
+      "field": "ecog_performance_status",
+      "tp": 6,
+      "fp": 15,
+      "fn": 1,
+      "precision": 0.2857142857142857,
+      "recall": 0.8571428571428571,
+      "f1": 0.42857142857142855
+    },
+    {
+      "field": "line_of_therapy",
+      "tp": 2,
+      "fp": 45,
+      "fn": 0,
+      "precision": 0.0425531914893617,
+      "recall": 1.0,
+      "f1": 0.08163265306122448
+    },
+    {
+      "field": "date_of_diagnosis",
+      "tp": 4,
+      "fp": 13,
+      "fn": 7,
+      "precision": 0.23529411764705882,
+      "recall": 0.36363636363636365,
+      "f1": 0.2857142857142857
+    },
+    {
+      "field": "biomarkers",
+      "tp": 2,
+      "fp": 6,
+      "fn": 2,
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1": 0.3333333333333333
+    },
+    {
+      "field": "treatment_regimen",
+      "tp": 43,
+      "fp": 45,
+      "fn": 62,
+      "precision": 0.48863636363636365,
+      "recall": 0.4095238095238095,
+      "f1": 0.44559585492227977
+    },
+    {
+      "field": "macro_avg",
+      "tp": "",
+      "fp": "",
+      "fn": "",
+      "precision": 0.25473030763663224,
+      "recall": 0.5375114016418364,
+      "f1": 0.2982841547637669
+    },
+    {
+      "field": "micro_avg",
+      "tp": 91,
+      "fp": 224,
+      "fn": 128,
+      "precision": 0.28888888888888886,
+      "recall": 0.4155251141552511,
+      "f1": 0.3408239700374532
+    }
+  ],
+  "error_distribution": {
+    "wrong_value": 55,
+    "hallucinated": 168,
+    "missed": 72,
+    "normalization": 2,
+    "wrong_span": 2
+  },
+  "parse_failure_samples": [
+    "{\"primary_site\": \"breast\", \"histology\": \"carcinoma\", \"stage\": \"I\", \"biomarkers\": [], \"ecog_performance_status\": null, \"line_of_therapy\": 1, \"date_of_diagnosis\": null, \"treatment_regimen\": []",
+    "{\"primary_site\": \"melanoma\", \"histology\": \"fOLFICAR ular non-Hodgkin's lymphoma\", \"stage\": \"IV\", \"biomarkers\": [], \"ecog_performance_status\": 0, \"line_of_therapy\": 6, \"date_of_diagnosis\": \"1988-02-19\""
+  ]
+}

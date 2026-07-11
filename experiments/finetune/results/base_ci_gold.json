@@ -1,0 +1,111 @@
+{
+  "set": "ci_gold",
+  "tag": "base",
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "adapter": null,
+  "n_examples": 6,
+  "parse_failures": 0,
+  "n_total": 6,
+  "macro_f1": 0.6955513784461153,
+  "micro_f1": 0.7200000000000001,
+  "wall_seconds": 22.6,
+  "rows": [
+    {
+      "field": "primary_site",
+      "tp": 5,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "f1": 0.8333333333333334
+    },
+    {
+      "field": "histology",
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "field": "stage",
+      "tp": 2,
+      "fp": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5
+    },
+    {
+      "field": "ecog_performance_status",
+      "tp": 2,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.5714285714285715
+    },
+    {
+      "field": "line_of_therapy",
+      "tp": 2,
+      "fp": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5
+    },
+    {
+      "field": "date_of_diagnosis",
+      "tp": 4,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8
+    },
+    {
+      "field": "biomarkers",
+      "tp": 5,
+      "fp": 4,
+      "fn": 5,
+      "precision": 0.5555555555555556,
+      "recall": 0.5,
+      "f1": 0.5263157894736842
+    },
+    {
+      "field": "treatment_regimen",
+      "tp": 10,
+      "fp": 3,
+      "fn": 1,
+      "precision": 0.7692307692307693,
+      "recall": 0.9090909090909091,
+      "f1": 0.8333333333333333
+    },
+    {
+      "field": "macro_avg",
+      "tp": "",
+      "fp": "",
+      "fn": "",
+      "precision": 0.8947649572649573,
+      "recall": 0.621969696969697,
+      "f1": 0.6955513784461153
+    },
+    {
+      "field": "micro_avg",
+      "tp": 36,
+      "fp": 8,
+      "fn": 20,
+      "precision": 0.8181818181818182,
+      "recall": 0.6428571428571429,
+      "f1": 0.7200000000000001
+    }
+  ],
+  "error_distribution": {
+    "missed": 19,
+    "wrong_value": 5,
+    "hallucinated": 3,
+    "normalization": 1
+  },
+  "parse_failure_samples": []
+}

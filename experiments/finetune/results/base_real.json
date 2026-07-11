@@ -1,0 +1,112 @@
+{
+  "set": "real",
+  "tag": "base",
+  "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "adapter": null,
+  "n_examples": 50,
+  "parse_failures": 0,
+  "n_total": 50,
+  "macro_f1": 0.4796330536225377,
+  "micro_f1": 0.5224274406332454,
+  "wall_seconds": 209.4,
+  "rows": [
+    {
+      "field": "primary_site",
+      "tp": 15,
+      "fp": 17,
+      "fn": 31,
+      "precision": 0.46875,
+      "recall": 0.32608695652173914,
+      "f1": 0.38461538461538464
+    },
+    {
+      "field": "histology",
+      "tp": 20,
+      "fp": 9,
+      "fn": 19,
+      "precision": 0.6896551724137931,
+      "recall": 0.5128205128205128,
+      "f1": 0.5882352941176471
+    },
+    {
+      "field": "stage",
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "field": "ecog_performance_status",
+      "tp": 6,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1": 0.923076923076923
+    },
+    {
+      "field": "line_of_therapy",
+      "tp": 2,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1": 0.5714285714285715
+    },
+    {
+      "field": "date_of_diagnosis",
+      "tp": 6,
+      "fp": 3,
+      "fn": 5,
+      "precision": 0.6666666666666666,
+      "recall": 0.5454545454545454,
+      "f1": 0.6
+    },
+    {
+      "field": "biomarkers",
+      "tp": 1,
+      "fp": 4,
+      "fn": 3,
+      "precision": 0.2,
+      "recall": 0.25,
+      "f1": 0.22222222222222224
+    },
+    {
+      "field": "treatment_regimen",
+      "tp": 49,
+      "fp": 25,
+      "fn": 56,
+      "precision": 0.6621621621621622,
+      "recall": 0.4666666666666667,
+      "f1": 0.547486033519553
+    },
+    {
+      "field": "macro_avg",
+      "tp": "",
+      "fp": "",
+      "fn": "",
+      "precision": 0.5109042501553277,
+      "recall": 0.4947714423257901,
+      "f1": 0.4796330536225377
+    },
+    {
+      "field": "micro_avg",
+      "tp": 99,
+      "fp": 61,
+      "fn": 120,
+      "precision": 0.61875,
+      "recall": 0.4520547945205479,
+      "f1": 0.5224274406332454
+    }
+  ],
+  "error_distribution": {
+    "missed": 86,
+    "wrong_span": 11,
+    "hallucinated": 27,
+    "wrong_value": 29,
+    "normalization": 1
+  },
+  "parse_failure_samples": []
+}
