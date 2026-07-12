@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: chartextract-api
+  namespace: chartextract
+  labels:
+    app: chartextract
+spec:
+  # LoadBalancer provisions an AWS ELB in front of the pods. This is what the
+  # load test and browser hit. The ELB is billed while it exists, so teardown.sh
+  # deletes this Service before deleting the cluster to release the ELB.
+  type: LoadBalancer
+  selector:
+    app: chartextract
+  ports:
+    - name: http
+      protocol: TCP
+      # External port 80 maps to the container's 8000.
+      port: 80
+      targetPort: 8000

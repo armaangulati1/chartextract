@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: chartextract
+  labels:
+    app: chartextract
+    purpose: demo
+    lifecycle: ephemeral

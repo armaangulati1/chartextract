@@ -1,0 +1,67 @@
+# eksctl ClusterConfig for a time-boxed demo deployment of the ChartExtractor API.
+# This provisions a minimal EKS cluster used only to capture evidence (probes,
+# HPA scale-out, self-healing) and is torn down immediately after. It is NOT a
+# hosted or long-running service.
+#
+# Apply with:  eksctl create cluster -f cluster.yaml
+# Delete with: eksctl delete cluster -f cluster.yaml   (see teardown.sh)
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: chartextract-demo
+  # us-east-1 is the cheapest and most feature-complete AWS region, and the
+  # default for most examples, which keeps ECR image pulls in-region (no
+  # cross-region data charges).
+  region: us-east-1
+  tags:
+    project: chartextract
+    purpose: demo
+    owner: armaan
+    lifecycle: ephemeral
+
+# Single managed node group. Managed groups let AWS handle AMI patching and
+# node lifecycle, which is less to babysit for a short-lived demo.
+managedNodeGroups:
+  - name: demo-ng
+    # t3.small = 2 vCPU / 2 GiB. Big enough to run 2 to 5 small API pods plus
+    # metrics-server and kube-system daemons, small enough to stay cheap
+    # (~$0.0208/hr on-demand per node in us-east-1 at the time of writing).
+    instanceType: t3.small
+    # desiredCapacity 2 gives the Deployment its 2 baseline replicas room on
+    # separate nodes; maxSize 2 hard-caps spend for the demo. The HPA scales
+    # pods (2 to 5), not nodes, so 2 nodes is enough headroom for this test.
+    desiredCapacity: 2
+    minSize: 2
+    maxSize: 2
+    # 20 GiB gp3 root volume is the smallest sensible EBS size and cheaper than
+    # the gp2 default.
+    volumeSize: 20
+    volumeType: gp3
+    # Single AZ is acceptable for a throwaway demo and avoids any cross-AZ data
+    # transfer charges between nodes. Do not copy this choice for anything real:
+    # a single AZ has no fault tolerance.
+    availabilityZones: ["us-east-1a"]
+    # SSH disabled: no keypair, no inbound 22, smaller attack surface. All
+    # interaction happens through kubectl / the AWS API.
+    ssh:
+      allow: false
+    tags:
+      project: chartextract
+      purpose: demo
+      lifecycle: ephemeral
+    # Least-privilege-ish managed policies. ECR read is required to pull the
+    # image; the others are the standard managed-node baseline.
+    iam:
+      withAddonPolicies:
+        imageBuilder: false
+        autoScaler: false
+        ebs: false
+
+# Managed addons kept minimal. vpc-cni, kube-proxy, and coredns are the
+# baseline networking/DNS addons EKS needs; leaving them explicit makes the
+# cluster reproducible from this file alone.
+addons:
+  - name: vpc-cni
+  - name: kube-proxy
+  - name: coredns

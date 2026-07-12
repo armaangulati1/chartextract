@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chartextract-api
+  namespace: chartextract
+  labels:
+    app: chartextract
+spec:
+  # 2 baseline replicas. The HPA (hpa.yaml) manages this between 2 and 5 under
+  # load, so we do not hardcode a fixed count beyond the floor.
+  replicas: 2
+  selector:
+    matchLabels:
+      app: chartextract
+  template:
+    metadata:
+      labels:
+        app: chartextract
+    spec:
+      containers:
+        - name: api
+          # IMAGE_PLACEHOLDER is substituted by ecr-push.sh, which writes a
+          # ready-to-apply deployment.generated.yaml with the real ECR image
+          # URI. Never edit this line by hand.
+          image: IMAGE_PLACEHOLDER
+          ports:
+            - name: http
+              # Matches Dockerfile EXPOSE 8000 and the uvicorn --port 8000
+              # start command.
+              containerPort: 8000
+          # LANGFUSE_HOST is a non-secret static value (same as render.yaml).
+          # The credential keys come from the Secret below.
+          env:
+            - name: LANGFUSE_HOST
+              value: "https://us.cloud.langfuse.com"
+          envFrom:
+            - secretRef:
+                name: chartextract-secrets
+          # Resources sized for a t3.small node (2 vCPU / 2 GiB, ~1.9 CPU and
+          # ~1.5 GiB allocatable after system overhead). Low requests let 2 to 5
+          # replicas plus kube-system pods co-schedule across 2 nodes. The CPU
+          # request of 100m is also the HPA denominator: 60% target = 60m.
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+          # Startup probe covers the cold import of langfuse/openai/psycopg so a
+          # slow first boot is not mistaken for a liveness failure. Allows up to
+          # 30 x 3s = 90s to become ready before liveness kicks in.
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            periodSeconds: 3
+            failureThreshold: 30
+          # Readiness gates traffic: a pod only receives Service traffic once
+          # /health returns 200.
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          # Liveness restarts a wedged pod. Thresholds are deliberately lenient
+          # (20s period, 3 failures = ~60s) to avoid restart loops on transient
+          # slowness.
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            timeoutSeconds: 5
+            failureThreshold: 3

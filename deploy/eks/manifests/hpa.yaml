@@ -1,0 +1,40 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: chartextract-api
+  namespace: chartextract
+  labels:
+    app: chartextract
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: chartextract-api
+  # Min 2 keeps the baseline; max 5 caps fan-out for the demo.
+  minReplicas: 2
+  maxReplicas: 5
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          # Scale out when average CPU across pods exceeds 60% of the 100m
+          # request (i.e. 60m). Requires metrics-server to be installed (see
+          # RUNBOOK.md "Install metrics-server").
+          averageUtilization: 60
+  # Faster-than-default scale-up, slower scale-down, so the scale-out is easy to
+  # capture on video and does not immediately collapse when load stops.
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 0
+      policies:
+        - type: Pods
+          value: 2
+          periodSeconds: 30
+    scaleDown:
+      stabilizationWindowSeconds: 120
+      policies:
+        - type: Pods
+          value: 1
+          periodSeconds: 60

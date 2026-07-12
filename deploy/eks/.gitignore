@@ -1,0 +1,3 @@
+# Generated at runtime by ecr-push.sh with the real ECR image URI. Never
+# committed (the image URI embeds the AWS account id).
+manifests/deployment.generated.yaml
