@@ -1,0 +1,46 @@
+This will DELETE:
+  - Kubernetes Service 'chartextract/chartextract-api' (releases the AWS ELB)
+  - EKS cluster 'chartextract-demo' (region us-east-1, includes the node group)
+  - ECR repository 'chartextract-api' and all its images
+
+Deleting LoadBalancer Service (releasing the ELB)...
+service "chartextract-api" deleted from chartextract namespace
+Waiting 30s for AWS to deprovision the ELB before deleting the cluster...
+Deleting EKS cluster 'chartextract-demo'...
+2026-07-11 23:51:29 [ℹ]  deleting EKS cluster "chartextract-demo"
+2026-07-11 23:51:29 [ℹ]  will drain 0 unmanaged nodegroup(s) in cluster "chartextract-demo"
+2026-07-11 23:51:29 [ℹ]  starting parallel draining, max in-flight of 1
+2026-07-11 23:51:30 [ℹ]  deleted 0 Fargate profile(s)
+2026-07-11 23:51:30 [✔]  kubeconfig has been updated
+2026-07-11 23:51:30 [ℹ]  cleaning up AWS load balancers created by Kubernetes objects of Kind Service, Ingress, or Gateway
+2026-07-11 23:51:31 [ℹ]  
+2 sequential tasks: { delete nodegroup "demo-ng", delete cluster control plane "chartextract-demo" 
+}
+2026-07-11 23:51:31 [ℹ]  will delete stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:51:31 [ℹ]  waiting for stack "eksctl-chartextract-demo-nodegroup-demo-ng" to get deleted
+2026-07-11 23:51:31 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:52:02 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:52:52 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:54:16 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:55:18 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:56:13 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:57:10 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-11 23:58:51 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-12 00:00:28 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-nodegroup-demo-ng"
+2026-07-12 00:00:28 [ℹ]  will delete stack "eksctl-chartextract-demo-cluster"
+2026-07-12 00:00:28 [ℹ]  waiting for stack "eksctl-chartextract-demo-cluster" to get deleted
+2026-07-12 00:00:28 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-cluster"
+2026-07-12 00:00:58 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-cluster"
+2026-07-12 00:01:48 [ℹ]  waiting for CloudFormation stack "eksctl-chartextract-demo-cluster"
+2026-07-12 00:01:48 [✔]  all cluster resources were deleted
+Deleting ECR repository 'chartextract-api'...
+ECR repo deleted.
+
+Teardown attempted. VERIFY nothing is still billing:
+  - EC2 instances (should be none):      https://console.aws.amazon.com/ec2/home?region=us-east-1#Instances:
+  - Load Balancers (should be none):     https://console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers:
+  - EKS clusters (should be none):        https://console.aws.amazon.com/eks/home?region=us-east-1#/clusters
+  - Overall billing dashboard:            https://console.aws.amazon.com/billing/home#/
+
+To recreate later: run ecr-push.sh, then 'eksctl create cluster -f cluster.yaml',
+then re-apply the manifests (see RUNBOOK.md). No state is preserved between runs.

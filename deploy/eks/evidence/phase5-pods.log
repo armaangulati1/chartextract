@@ -1,0 +1,5 @@
+NAME                               READY   STATUS    RESTARTS   AGE   IP               NODE                             NOMINATED NODE   READINESS GATES
+chartextract-api-b466dd5d4-45pkr   1/1     Running   0          56s   192.168.56.128   ip-192-168-63-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-cgqc2   1/1     Running   0          56s   192.168.57.239   ip-192-168-48-133.ec2.internal   <none>           <none>
+NAME               TYPE           CLUSTER-IP     EXTERNAL-IP                                                              PORT(S)        AGE
+chartextract-api   LoadBalancer   10.100.1.101   ab4b2a09565064b83816fbafae04b82f-780616234.us-east-1.elb.amazonaws.com   80:32283/TCP   56s

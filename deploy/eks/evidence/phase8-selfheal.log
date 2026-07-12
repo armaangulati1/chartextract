@@ -1,0 +1,29 @@
+Current pods:
+NAME                               READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+chartextract-api-b466dd5d4-45pkr   1/1     Running   0          4m48s   192.168.56.128   ip-192-168-63-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-cgqc2   1/1     Running   0          4m48s   192.168.57.239   ip-192-168-48-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-m9spl   1/1     Running   0          31s     192.168.52.126   ip-192-168-63-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-vm5qb   1/1     Running   0          61s     192.168.41.141   ip-192-168-63-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-xcbn5   1/1     Running   0          61s     192.168.59.169   ip-192-168-48-133.ec2.internal   <none>           <none>
+
+Deleting one pod to simulate a crash: chartextract-api-b466dd5d4-45pkr
+pod "chartextract-api-b466dd5d4-45pkr" deleted from chartextract namespace
+
+Pods within a few seconds of the delete:
+NAME                               READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+chartextract-api-b466dd5d4-cgqc2   1/1     Running   0          4m51s   192.168.57.239   ip-192-168-48-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-m9spl   1/1     Running   0          34s     192.168.52.126   ip-192-168-63-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-vm5qb   1/1     Running   0          64s     192.168.41.141   ip-192-168-63-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-xcbn5   1/1     Running   0          64s     192.168.59.169   ip-192-168-48-133.ec2.internal   <none>           <none>
+chartextract-api-b466dd5d4-zqrwt   0/1     Running   0          3s      192.168.63.163   ip-192-168-48-133.ec2.internal   <none>           <none>
+
+Watching until all pods are Ready again (Ctrl-C once they are):
+Expected: replacement pod reaches Running / 1-1 READY, total back to floor.
+NAME                               READY   STATUS    RESTARTS   AGE
+chartextract-api-b466dd5d4-cgqc2   1/1     Running   0          4m51s
+chartextract-api-b466dd5d4-m9spl   1/1     Running   0          34s
+chartextract-api-b466dd5d4-vm5qb   1/1     Running   0          64s
+chartextract-api-b466dd5d4-xcbn5   1/1     Running   0          64s
+chartextract-api-b466dd5d4-zqrwt   0/1     Running   0          3s
+chartextract-api-b466dd5d4-zqrwt   0/1     Running   0          10s
+chartextract-api-b466dd5d4-zqrwt   1/1     Running   0          10s

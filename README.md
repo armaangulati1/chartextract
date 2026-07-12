@@ -297,6 +297,109 @@ python scripts/report_real_eval.py --use-cache    # full dataset metrics in resu
 
 **Streamlit** — [chartextract on Streamlit Cloud](https://chartextract-f9wfrftqzygappf2pgi3hts.streamlit.app/). Secrets: `API_URL=https://chartextract.onrender.com`.
 
+## Kubernetes (EKS) deployment
+
+The same containerized ChartExtractor API that runs on Render was also deployed
+to a Kubernetes cluster on AWS (EKS) to demonstrate container orchestration:
+health-gated rollouts, horizontal autoscaling, and self-healing. This was a
+time-boxed demo deployment. It was created, exercised to capture evidence, and
+then torn down in a single session (total AWS cost under $2).
+
+### Architecture
+
+```
+        Internet
+           |
+   AWS Network Load Balancer  (Service type: LoadBalancer, port 80)
+           |
+   EKS cluster: chartextract-demo (us-east-1, 2 x t3.small nodes)
+           |
+   Deployment: chartextract-api
+     - 2 to 5 replicas (HorizontalPodAutoscaler, CPU 60% target)
+     - startup + readiness + liveness probes on GET /health (port 8000)
+     - credentials injected from a Kubernetes Secret
+           |
+   Image pulled from Amazon ECR (cross-built for linux/amd64 with buildx)
+```
+
+The image is the repo's existing `Dockerfile` (python:3.11-slim, uvicorn on port
+8000), cross-built for `linux/amd64` with `docker buildx` and pushed to Amazon
+ECR. Manifests are plain Kubernetes YAML under
+[`deploy/eks/manifests/`](deploy/eks/manifests/); the cluster is defined
+declaratively in [`deploy/eks/cluster.yaml`](deploy/eks/cluster.yaml) (eksctl).
+
+### What was demonstrated (with captured evidence)
+
+The run was executed end to end and the raw command output is committed under
+[`deploy/eks/evidence/`](deploy/eks/evidence/) (text logs, account identifiers
+redacted):
+
+- **Health-gated traffic.** Readiness probes keep a pod out of the load balancer
+  rotation until `/health` returns 200; liveness probes restart a wedged pod.
+  `GET /health` returned `{"status":"ok"}` with HTTP 200 through the public
+  load balancer once the ELB finished provisioning.
+  ([`phase5-pods.log`](deploy/eks/evidence/phase5-pods.log) shows the two pods
+  Running 1/1 and the LoadBalancer Service with its public ELB hostname;
+  [`phase6-health-via-elb.log`](deploy/eks/evidence/phase6-health-via-elb.log)
+  shows the 200 through the ELB.)
+- **Horizontal autoscaling.** Under load from `hey`, the HorizontalPodAutoscaler
+  scaled the Deployment from 2 to 5 replicas (its max) once average CPU crossed
+  the 60% target, using metrics-server. CPU peaked at 495% of the 60% target, so
+  the CPU-target trigger fired on its own and no fallback threshold was needed.
+  ([`phase7-hpa-before.log`](deploy/eks/evidence/phase7-hpa-before.log) is the
+  at-rest state, cpu 2%/60% at 2 replicas;
+  [`phase7-hpa-watch.log`](deploy/eks/evidence/phase7-hpa-watch.log) shows CPU
+  climbing to 495%/60% and replicas scaling out;
+  [`phase7-loadtest-output.log`](deploy/eks/evidence/phase7-loadtest-output.log)
+  is the `hey` summary, 393,724 responses all HTTP 200.)
+- **Self-healing.** Deleting a pod showed the ReplicaSet immediately creating a
+  replacement to restore the desired replica count. The replacement pod appeared
+  within 3 seconds of the delete and reached Ready 1/1 within 10 seconds.
+  ([`phase8-selfheal.log`](deploy/eks/evidence/phase8-selfheal.log).)
+- **Cluster lifecycle.** Cluster and node group were created declaratively and
+  the whole stack was torn down afterward.
+  ([`phase3-cluster-create.log`](deploy/eks/evidence/phase3-cluster-create.log)
+  is the eksctl create, control plane plus a 2-node managed nodegroup ready;
+  [`phase9-teardown.log`](deploy/eks/evidence/phase9-teardown.log) is the
+  teardown with its billing-verification checklist.)
+
+### Scope and honesty
+
+This was a **time-boxed demo deployment**, run to capture the evidence above and
+then torn down. Specifics, stated plainly:
+
+- Not a hosted or long-running service. The public deployment remains Render
+  ([chartextract.onrender.com/health](https://chartextract.onrender.com/health)).
+- The service operates on synthetic and public data only (no PHI).
+- Single AZ, 2-node cluster, no TLS/ingress hardening, no multi-environment
+  setup. These are demo-scope choices, not a template for a real service.
+- The cluster was deleted after evidence capture and teardown was verified
+  independently: 0 clusters, 0 load balancers, 0 ECR repositories, and 0 running
+  instances remaining. Ongoing cost is $0. Recreating it is
+  [`deploy/eks/cluster.yaml`](deploy/eks/cluster.yaml) plus the scripts (see
+  [`deploy/eks/RUNBOOK.md`](deploy/eks/RUNBOOK.md)).
+
+### Cost of one full run
+
+| Item | Rate (us-east-1, on-demand) | Notes |
+| --- | --- | --- |
+| 2 x t3.small nodes | ~$0.0208/hr each | EC2 compute for the node group |
+| EKS control plane | ~$0.10/hr | per-cluster charge |
+| Network Load Balancer | ~$0.0225/hr + LCU | from the LoadBalancer Service |
+| ECR storage | ~$0.10/GB-month | one small image, prorated |
+| EBS (2 x 20 GiB gp3) | ~$0.08/GB-month | node root volumes, prorated |
+
+This run, created and torn down in one session, cost under $2 in total. The
+dominant risk is forgetting teardown, so the runbook makes teardown a mandatory
+final phase with a billing-verification checklist and a $20 AWS budget alarm set
+up front.
+
+### Reproduce
+
+Full step-by-step guide: [`deploy/eks/RUNBOOK.md`](deploy/eks/RUNBOOK.md).
+Manifests, cluster config, and lifecycle scripts (`ecr-push.sh`, `loadtest.sh`,
+`selfheal-demo.sh`, `teardown.sh`) are all under `deploy/eks/`.
+
 ## Limitations / what I'd do differently
 
 1. **Synthetic ↔ real gap (-40 pp macro-F1).** The 6-note CI gate passes easily; 50 MTSamples notes expose that sparse consults break line-of-therapy and biomarker extraction. I'd expand real gold labeling before trusting production metrics.

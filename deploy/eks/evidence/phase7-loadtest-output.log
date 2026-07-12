@@ -1,0 +1,30 @@
+  0.453 [0]	|
+  0.508 [2]	|
+  0.563 [45]	|
+
+
+Latency distribution:
+  10%% in 0.0239 secs
+  25%% in 0.0297 secs
+  50%% in 0.0394 secs
+  75%% in 0.0525 secs
+  90%% in 0.0653 secs
+  95%% in 0.0750 secs
+  99%% in 0.2483 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0000 secs, 0.0467 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0261 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0191 secs
+  resp wait:	0.0456 secs, 0.0127 secs, 0.5632 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0136 secs
+
+Status code distribution:
+  [200]	393724 responses
+
+
+
+
+Load finished. The HPA will scale back down to 2 after its 120s
+scale-down stabilization window. Capture 'kubectl get hpa' and
+'kubectl get pods' output NOW while replicas are still elevated.

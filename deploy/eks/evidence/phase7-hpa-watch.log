@@ -1,0 +1,14 @@
+--- 23:45:10
+chartextract-api   Deployment/chartextract-api   cpu: 2%/60%   2     5     2     3m6s
+--- 23:45:36
+chartextract-api   Deployment/chartextract-api   cpu: 2%/60%   2     5     2     3m32s
+--- 23:46:02
+chartextract-api   Deployment/chartextract-api   cpu: 408%/60%   2     5     2     3m58s
+--- 23:46:28
+chartextract-api   Deployment/chartextract-api   cpu: 495%/60%   2     5     4     4m24s
+SCALE-OUT OBSERVED: 4 replicas
+chartextract-api-b466dd5d4-45pkr   1/1   Running   0     4m26s
+chartextract-api-b466dd5d4-cgqc2   1/1   Running   0     4m26s
+chartextract-api-b466dd5d4-m9spl   1/1   Running   0     9s
+chartextract-api-b466dd5d4-vm5qb   1/1   Running   0     39s
+chartextract-api-b466dd5d4-xcbn5   1/1   Running   0     39s
