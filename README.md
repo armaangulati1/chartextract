@@ -310,7 +310,7 @@ then torn down in a single session (total AWS cost under $2).
 ```
         Internet
            |
-   AWS Network Load Balancer  (Service type: LoadBalancer, port 80)
+   AWS Classic ELB  (provisioned by the Service, type: LoadBalancer, port 80)
            |
    EKS cluster: chartextract-demo (us-east-1, 2 x t3.small nodes)
            |
@@ -331,8 +331,8 @@ declaratively in [`deploy/eks/cluster.yaml`](deploy/eks/cluster.yaml) (eksctl).
 ### What was demonstrated (with captured evidence)
 
 The run was executed end to end and the raw command output is committed under
-[`deploy/eks/evidence/`](deploy/eks/evidence/) (text logs, account identifiers
-redacted):
+[`deploy/eks/evidence/`](deploy/eks/evidence/) (text logs; no account identifiers
+appear in any log):
 
 - **Health-gated traffic.** Readiness probes keep a pod out of the load balancer
   rotation until `/health` returns 200; liveness probes restart a wedged pod.
@@ -344,8 +344,8 @@ redacted):
   shows the 200 through the ELB.)
 - **Horizontal autoscaling.** Under load from `hey`, the HorizontalPodAutoscaler
   scaled the Deployment from 2 to 5 replicas (its max) once average CPU crossed
-  the 60% target, using metrics-server. CPU peaked at 495% of the 60% target, so
-  the CPU-target trigger fired on its own and no fallback threshold was needed.
+  the 60% target, using metrics-server. CPU peaked at 495% against the 60% target, so
+  the trigger fired on its own and no fallback threshold was needed.
   ([`phase7-hpa-before.log`](deploy/eks/evidence/phase7-hpa-before.log) is the
   at-rest state, cpu 2%/60% at 2 replicas;
   [`phase7-hpa-watch.log`](deploy/eks/evidence/phase7-hpa-watch.log) shows CPU
@@ -385,7 +385,7 @@ then torn down. Specifics, stated plainly:
 | --- | --- | --- |
 | 2 x t3.small nodes | ~$0.0208/hr each | EC2 compute for the node group |
 | EKS control plane | ~$0.10/hr | per-cluster charge |
-| Network Load Balancer | ~$0.0225/hr + LCU | from the LoadBalancer Service |
+| Classic ELB | ~$0.025/hr + data transfer | from the LoadBalancer Service |
 | ECR storage | ~$0.10/GB-month | one small image, prorated |
 | EBS (2 x 20 GiB gp3) | ~$0.08/GB-month | node root volumes, prorated |
 
