@@ -10,3 +10,5 @@ jobs:
           python-version: "3.11"
       - run: pip install -r requirements.txt -r requirements-dev.txt
       - run: pytest -q
+      - name: Pre-bill review eval (offline, deterministic)
+        run: python -m prebill.evalset --min-macro-f1 0.99

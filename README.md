@@ -400,6 +400,70 @@ Full step-by-step guide: [`deploy/eks/RUNBOOK.md`](deploy/eks/RUNBOOK.md).
 Manifests, cluster config, and lifecycle scripts (`ecr-push.sh`, `loadtest.sh`,
 `selfheal-demo.sh`, `teardown.sh`) are all under `deploy/eks/`.
 
+## Pre-bill review demo (`prebill/`)
+
+A small, self-contained layer that consumes the structured extraction output and
+a minimal **billing-claim stub**, then runs deterministic **pre-bill chart-review
+checks** that flag problems before a claim would be submitted. It shows how the
+extractor's structured fields (and its own low-confidence review routing) can feed
+a downstream claims-readiness gate.
+
+**Honest scope.** This is a *generic demonstration analog* of pre-bill review
+workflows. Every rule, code, crosswalk, and threshold in `prebill/` is a
+**self-authored teaching heuristic** over an **invented demo code system**
+(`EVAL-*`, `PROC-*`, `MOL-PANEL`, `DX-*` placeholders chosen so they do not
+collide with any real CPT, HCPCS, or ICD code). It **does not reproduce real
+payer rules, NCCI edits, or CMS documentation guidelines**, it uses only
+**self-authored synthetic fixtures** (no real patient data), it is
+**fully offline and deterministic** (no LLM calls, no API keys), and it is
+**not affiliated with, and does not encode the rules of, any company or vendor**.
+
+### The checks
+
+| id | check | what it flags |
+|----|-------|---------------|
+| PB001 | code / documentation support | a billed code presupposes a documented field that is absent from the extraction |
+| PB002 | missing required elements | required documentation elements for the claim type are missing |
+| PB003 | field conflicts | internal contradictions (service-before-diagnosis date, second-line therapy with no regimen, same biomarker positive **and** negative) |
+| PB004 | documentation-level mismatch | billed evaluation level exceeds the documented element count (self-authored thresholds) |
+| PB005 | diagnosis / procedure consistency | a procedure billed against a diagnosis it presupposes, via a self-authored crosswalk |
+| PB006 | duplicate / overlapping codes | an exact duplicate code, or two mutually-exclusive codes on one encounter |
+| PB007 | missing attestation | no provider attestation or rendering-provider field on the claim |
+| PB008 | low-confidence support | a billed code leans on an extraction field the extractor itself routed to human review |
+
+Findings are aggregated **transparently**: `build_report()` returns a readiness
+label (`ready` / `needs_review` / `hold`) plus a **documented penalty sum** of
+severity weights. There is no opaque model score.
+
+### Run it
+
+```bash
+python -m prebill.evalset          # print the eval table
+pytest test_prebill_checks.py test_prebill_eval.py test_prebill_fixtures.py
+```
+
+### Eval (exact-match, on its 10-fixture self-authored set)
+
+Granularity is `(fixture, check_id)`: for each fixture a check either fires or it
+does not, compared to the golden. These numbers measure agreement between the
+checks and **their own self-authored goldens on this 10-fixture set** (2 clean,
+8 with planted defects). They are **not** a measure of real-world billing
+accuracy.
+
+```
+check     TP  FP  FN    prec     rec      f1
+PB001      1   0   0   1.000   1.000   1.000
+PB002      1   0   0   1.000   1.000   1.000
+PB003      2   0   0   1.000   1.000   1.000
+PB004      1   0   0   1.000   1.000   1.000
+PB005      1   0   0   1.000   1.000   1.000
+PB006      1   0   0   1.000   1.000   1.000
+PB007      1   0   0   1.000   1.000   1.000
+PB008      1   0   0   1.000   1.000   1.000
+MICRO      9   0   0   1.000   1.000   1.000
+MACRO-F1                               1.000
+```
+
 ## Limitations / what I'd do differently
 
 1. **Synthetic ↔ real gap (-40 pp macro-F1).** The 6-note CI gate passes easily; 50 MTSamples notes expose that sparse consults break line-of-therapy and biomarker extraction. I'd expand real gold labeling before trusting production metrics.
