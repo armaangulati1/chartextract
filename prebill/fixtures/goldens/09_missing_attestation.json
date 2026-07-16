@@ -1,0 +1,4 @@
+{
+  "fixture_id": "09_missing_attestation",
+  "expected_check_ids": ["PB007"]
+}

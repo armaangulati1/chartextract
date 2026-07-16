@@ -1,0 +1,24 @@
+{
+  "fixture_id": "05_service_before_diagnosis",
+  "description": "Date of service precedes documented diagnosis date, and line_of_therapy is second-line with no regimen. Planted PB003 (two internal conflicts). Biopsy has its supporting primary_site, so PB001 does not fire.",
+  "extraction": {
+    "extract": {
+      "primary_site": "lung",
+      "histology": "squamous cell carcinoma",
+      "stage": "III",
+      "biomarkers": [{"name": "EGFR", "status": "positive"}],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2024-06-15",
+      "treatment_regimen": []
+    }
+  },
+  "claim": {
+    "claim_id": "05_service_before_diagnosis",
+    "procedure_codes": ["PROC-BX"],
+    "diagnosis_codes": ["DX-MALIG-LUNG"],
+    "date_of_service": "2024-06-01",
+    "rendering_provider": "E. Novak",
+    "attestation_present": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "fixture_id": "07_systemic_benign_dx",
+  "description": "Systemic-therapy administration billed against a benign diagnosis only. Planted PB005 (diagnosis-procedure inconsistency). Regimen is documented so PB001 does not fire.",
+  "extraction": {
+    "extract": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "I",
+      "biomarkers": [{"name": "PD-L1", "status": "positive"}],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-04-01",
+      "treatment_regimen": ["carboplatin"]
+    }
+  },
+  "claim": {
+    "claim_id": "07_systemic_benign_dx",
+    "procedure_codes": ["PROC-INF"],
+    "diagnosis_codes": ["DX-BENIGN-NODULE"],
+    "date_of_service": "2024-04-10",
+    "rendering_provider": "G. Haddad",
+    "attestation_present": true
+  }
+}

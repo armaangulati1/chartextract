@@ -1,0 +1,24 @@
+{
+  "fixture_id": "04_eval5_thin_doc",
+  "description": "Highest evaluation level billed on a nearly empty extraction. Planted PB002 (missing required elements: stage, date_of_diagnosis) and PB004 (level not supported by documentation richness).",
+  "extraction": {
+    "extract": {
+      "primary_site": "colon",
+      "histology": null,
+      "stage": null,
+      "biomarkers": [],
+      "ecog_performance_status": null,
+      "line_of_therapy": null,
+      "date_of_diagnosis": null,
+      "treatment_regimen": []
+    }
+  },
+  "claim": {
+    "claim_id": "04_eval5_thin_doc",
+    "procedure_codes": ["EVAL-5"],
+    "diagnosis_codes": ["DX-MALIG-COLON"],
+    "date_of_service": "2024-05-01",
+    "rendering_provider": "D. Okafor",
+    "attestation_present": true
+  }
+}

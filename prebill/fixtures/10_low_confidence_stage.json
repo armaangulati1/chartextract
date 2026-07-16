@@ -1,0 +1,29 @@
+{
+  "fixture_id": "10_low_confidence_stage",
+  "description": "Stage is present but was routed to human review by the extractor (low confidence). An evaluation level that leans on stage is billed. Planted PB008 (claim rests on low-confidence extraction).",
+  "extraction": {
+    "extract": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "IIIB",
+      "biomarkers": [{"name": "EGFR", "status": "positive"}],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-02-20",
+      "treatment_regimen": ["osimertinib"]
+    },
+    "fields": {
+      "stage": {"confidence": 0.41, "needs_review": true, "source": "verifier", "evidence": "", "flags": []}
+    },
+    "needs_review": ["stage"],
+    "review_threshold": 0.75
+  },
+  "claim": {
+    "claim_id": "10_low_confidence_stage",
+    "procedure_codes": ["EVAL-4"],
+    "diagnosis_codes": ["DX-MALIG-LUNG"],
+    "date_of_service": "2024-03-01",
+    "rendering_provider": "J. Park",
+    "attestation_present": true
+  }
+}

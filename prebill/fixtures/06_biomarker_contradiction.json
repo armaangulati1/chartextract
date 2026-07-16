@@ -1,0 +1,27 @@
+{
+  "fixture_id": "06_biomarker_contradiction",
+  "description": "Same biomarker documented as both positive and negative. Planted PB003 (contradictory biomarker). Evaluation level and required elements are otherwise supported.",
+  "extraction": {
+    "extract": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "II",
+      "biomarkers": [
+        {"name": "HER2", "status": "positive"},
+        {"name": "HER2", "status": "negative"}
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-03-01",
+      "treatment_regimen": ["trastuzumab"]
+    }
+  },
+  "claim": {
+    "claim_id": "06_biomarker_contradiction",
+    "procedure_codes": ["EVAL-3"],
+    "diagnosis_codes": ["DX-MALIG-BREAST"],
+    "date_of_service": "2024-03-10",
+    "rendering_provider": "F. Romano",
+    "attestation_present": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "fixture_id": "03_molpanel_no_biomarker",
+  "description": "Molecular panel billed but no biomarker result documented. Planted PB001 (code lacks documentation support).",
+  "extraction": {
+    "extract": {
+      "primary_site": "lung",
+      "histology": null,
+      "stage": "IV",
+      "biomarkers": [],
+      "ecog_performance_status": null,
+      "line_of_therapy": null,
+      "date_of_diagnosis": "2024-02-01",
+      "treatment_regimen": []
+    }
+  },
+  "claim": {
+    "claim_id": "03_molpanel_no_biomarker",
+    "procedure_codes": ["MOL-PANEL"],
+    "diagnosis_codes": ["DX-MALIG-LUNG"],
+    "date_of_service": "2024-02-05",
+    "rendering_provider": "C. Diaz",
+    "attestation_present": true
+  }
+}

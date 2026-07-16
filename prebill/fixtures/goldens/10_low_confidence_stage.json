@@ -1,0 +1,4 @@
+{
+  "fixture_id": "10_low_confidence_stage",
+  "expected_check_ids": ["PB008"]
+}

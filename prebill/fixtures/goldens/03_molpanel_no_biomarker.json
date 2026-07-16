@@ -1,0 +1,4 @@
+{
+  "fixture_id": "03_molpanel_no_biomarker",
+  "expected_check_ids": ["PB001"]
+}

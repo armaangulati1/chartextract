@@ -1,0 +1,24 @@
+{
+  "fixture_id": "01_clean_full_eval5",
+  "description": "Fully documented oncology encounter, high-level evaluation billed with matching malignant diagnosis. Expected clean.",
+  "extraction": {
+    "extract": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "IIIA",
+      "biomarkers": [{"name": "EGFR", "status": "positive"}],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-03-15",
+      "treatment_regimen": ["osimertinib"]
+    }
+  },
+  "claim": {
+    "claim_id": "01_clean_full_eval5",
+    "procedure_codes": ["EVAL-5"],
+    "diagnosis_codes": ["DX-MALIG-LUNG"],
+    "date_of_service": "2024-04-01",
+    "rendering_provider": "A. Smith",
+    "attestation_present": true
+  }
+}

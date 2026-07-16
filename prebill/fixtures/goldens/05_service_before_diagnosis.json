@@ -1,0 +1,4 @@
+{
+  "fixture_id": "05_service_before_diagnosis",
+  "expected_check_ids": ["PB003"]
+}

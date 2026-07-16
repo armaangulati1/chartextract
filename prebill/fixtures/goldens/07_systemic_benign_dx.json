@@ -1,0 +1,4 @@
+{
+  "fixture_id": "07_systemic_benign_dx",
+  "expected_check_ids": ["PB005"]
+}

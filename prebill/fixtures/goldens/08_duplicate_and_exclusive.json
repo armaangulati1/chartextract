@@ -1,0 +1,4 @@
+{
+  "fixture_id": "08_duplicate_and_exclusive",
+  "expected_check_ids": ["PB006"]
+}

@@ -1,0 +1,4 @@
+{
+  "fixture_id": "06_biomarker_contradiction",
+  "expected_check_ids": ["PB003"]
+}

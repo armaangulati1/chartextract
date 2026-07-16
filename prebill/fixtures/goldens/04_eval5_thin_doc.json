@@ -1,0 +1,4 @@
+{
+  "fixture_id": "04_eval5_thin_doc",
+  "expected_check_ids": ["PB002", "PB004"]
+}

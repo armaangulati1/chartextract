@@ -1,0 +1,24 @@
+{
+  "fixture_id": "08_duplicate_and_exclusive",
+  "description": "One evaluation level billed twice plus a second mutually-exclusive level on the same encounter. Planted PB006 (duplicate and overlapping codes). Documentation is otherwise complete.",
+  "extraction": {
+    "extract": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "IIIA",
+      "biomarkers": [{"name": "EGFR", "status": "positive"}],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-03-15",
+      "treatment_regimen": ["osimertinib"]
+    }
+  },
+  "claim": {
+    "claim_id": "08_duplicate_and_exclusive",
+    "procedure_codes": ["EVAL-4", "EVAL-4", "EVAL-5"],
+    "diagnosis_codes": ["DX-MALIG-LUNG"],
+    "date_of_service": "2024-05-20",
+    "rendering_provider": "H. Ibrahim",
+    "attestation_present": true
+  }
+}

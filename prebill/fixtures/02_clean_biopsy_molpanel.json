@@ -1,0 +1,24 @@
+{
+  "fixture_id": "02_clean_biopsy_molpanel",
+  "description": "Biopsy plus molecular panel on a malignant breast diagnosis, with primary site and biomarkers documented. Expected clean.",
+  "extraction": {
+    "extract": {
+      "primary_site": "breast",
+      "histology": "ductal carcinoma",
+      "stage": "IIA",
+      "biomarkers": [{"name": "HER2", "status": "positive"}],
+      "ecog_performance_status": 0,
+      "line_of_therapy": null,
+      "date_of_diagnosis": "2024-01-10",
+      "treatment_regimen": []
+    }
+  },
+  "claim": {
+    "claim_id": "02_clean_biopsy_molpanel",
+    "procedure_codes": ["PROC-BX", "MOL-PANEL"],
+    "diagnosis_codes": ["DX-MALIG-BREAST"],
+    "date_of_service": "2024-01-12",
+    "rendering_provider": "B. Lee",
+    "attestation_present": true
+  }
+}
