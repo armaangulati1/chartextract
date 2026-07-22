@@ -128,6 +128,12 @@ Registry state after the run: `v0001` (pipeline_verifier_mini, macro-F1 0.9476) 
 production; `v0002` (single_pass_mini, macro-F1 0.7845) registered. `compare v0002 v0001` shows
 a macro-F1 delta of **+0.1631** on the same dataset hash.
 
+The registered metric for `v0001` (0.9476) and the trigger's re-eval metric (0.946970) differ
+slightly because they are not the same computation: the registered 0.9476 was loaded from the
+demo metrics file passed to `registry.py register` at registration time, whereas 0.946970 is the
+value the retrain trigger computed live on the `ci_gold` set over cached predictions. The small
+gap is expected and reflects the two distinct sources, not a regression.
+
 ## Files
 
 | file | role |
@@ -139,4 +145,10 @@ a macro-F1 delta of **+0.1631** on the same dataset hash.
 | `data/mlops/baseline_synthetic.json` | stored baseline profile |
 | `data/mlops/drift_report.json` | latest drift report |
 | `data/mlops/evidence/` | raw run output backing every number above |
+| `data/mlops/evidence/pytest_transcript.txt` | recorded pytest run: the three mlops test files (21 passed) and the full suite (64 passed) |
 | `test_registry.py`, `test_drift.py`, `test_retrain.py` | tests for all three stages |
+
+All three stages are covered by tests. The recorded transcript in
+`data/mlops/evidence/pytest_transcript.txt` shows the mlops subset
+(`test_registry.py test_drift.py test_retrain.py`) at **21 passed** and the full repository
+suite at **64 passed**.

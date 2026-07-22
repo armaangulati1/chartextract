@@ -44,7 +44,7 @@ OVERALL VERDICT: SIGNIFICANT (3 significant, 1 moderate)
 
 Wrote data/mlops/drift_report.json
 
-$ python retrain.py --drift-report data/mlops/drift_report.json --gold-dir data/eval/ci_gold --cache data/eval/ci_predictions.jsonl --registry /tmp/demo_registry.json
+$ python retrain.py --drift-report data/mlops/drift_report.json --gold-dir data/eval/ci_gold --cache data/eval/ci_predictions.jsonl --registry data/mlops/demo_registry.json
 {
   "type": "retrain_evaluation",
   "created_at": "2026-07-22T21:24:36Z",

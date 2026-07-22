@@ -12,7 +12,7 @@
         "prompt_config": "default"
       },
       "dataset": {
-        "dir": "/Users/agulati/Documents/ChartExtractor/data/eval/ci_gold",
+        "dir": "data/eval/ci_gold",
         "hash": "cb8ccb672e66dd4b00f4441a3485c4ef91723ed1b353b9f9497ec97b622983bf",
         "n_examples": 6
       },
@@ -37,7 +37,7 @@
           "created_at": "2026-07-22T21:24:48Z",
           "drift_verdict": "significant",
           "triggered": true,
-          "drift_report": "/Users/agulati/Documents/ChartExtractor/data/mlops/drift_report.json",
+          "drift_report": "data/mlops/drift_report.json",
           "reeval": {
             "n_examples": 6,
             "macro_f1": 0.946969696969697,
@@ -86,7 +86,7 @@
         "prompt_config": "default"
       },
       "dataset": {
-        "dir": "/Users/agulati/Documents/ChartExtractor/data/eval/ci_gold",
+        "dir": "data/eval/ci_gold",
         "hash": "cb8ccb672e66dd4b00f4441a3485c4ef91723ed1b353b9f9497ec97b622983bf",
         "n_examples": 6
       },
