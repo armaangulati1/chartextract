@@ -1,0 +1,126 @@
+{
+  "created_at": "evidence-run",
+  "baseline_n": 200,
+  "current_n": 89,
+  "fields": [
+    {
+      "field": "primary_site",
+      "signal": "categorical_distribution",
+      "method": "psi",
+      "score": 4.195301,
+      "verdict": "significant"
+    },
+    {
+      "field": "histology",
+      "signal": "categorical_distribution",
+      "method": "psi",
+      "score": 2.8645,
+      "verdict": "significant"
+    },
+    {
+      "field": "stage",
+      "signal": "categorical_distribution",
+      "method": "psi",
+      "score": 0.170033,
+      "verdict": "moderate"
+    },
+    {
+      "field": "ecog_performance_status",
+      "signal": "categorical_distribution",
+      "method": "psi",
+      "score": 0.024003,
+      "verdict": "stable"
+    },
+    {
+      "field": "line_of_therapy",
+      "signal": "categorical_distribution",
+      "method": "psi",
+      "score": 0.012683,
+      "verdict": "stable"
+    },
+    {
+      "field": "primary_site_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.0,
+      "verdict": "stable"
+    },
+    {
+      "field": "histology_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.0,
+      "verdict": "stable"
+    },
+    {
+      "field": "stage_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.0,
+      "verdict": "stable"
+    },
+    {
+      "field": "ecog_performance_status_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.008739,
+      "verdict": "stable"
+    },
+    {
+      "field": "line_of_therapy_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.0,
+      "verdict": "stable"
+    },
+    {
+      "field": "date_of_diagnosis_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.003395,
+      "verdict": "stable"
+    },
+    {
+      "field": "biomarkers_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.016352,
+      "verdict": "stable"
+    },
+    {
+      "field": "treatment_regimen_presence",
+      "signal": "presence_rate",
+      "method": "psi",
+      "score": 0.0,
+      "verdict": "stable"
+    },
+    {
+      "field": "n_biomarkers",
+      "signal": "continuous",
+      "method": "ks",
+      "score": 0.030056,
+      "p_value": 1.0,
+      "verdict": "stable"
+    },
+    {
+      "field": "n_regimen",
+      "signal": "continuous",
+      "method": "ks",
+      "score": 0.24691,
+      "p_value": 0.000846,
+      "verdict": "significant"
+    },
+    {
+      "field": "confidence",
+      "signal": "continuous",
+      "method": "ks",
+      "score": null,
+      "p_value": null,
+      "verdict": "n/a",
+      "note": "no data in one or both batches"
+    }
+  ],
+  "verdict": "significant",
+  "n_significant": 3,
+  "n_moderate": 1
+}

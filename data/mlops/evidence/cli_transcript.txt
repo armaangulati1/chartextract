@@ -1,0 +1,91 @@
+$ python registry.py list
+version  status        macro_f1  label                      dataset
+------------------------------------------------------------------------------
+v0001    production      0.9476  pipeline_verifier_mini     cb8ccb672e66
+v0002    registered      0.7845  single_pass_mini           cb8ccb672e66
+
+$ python registry.py compare v0002 v0001
+Compare v0002 -> v0001 (same dataset: True)
+  macro_f1 delta: +0.1631
+  micro_f1 delta: +0.1298
+  per-field delta:
+    biomarkers               +0.0947
+    date_of_diagnosis        +0.1000
+    ecog_performance_status  +0.1000
+    histology                +0.1000
+    line_of_therapy          +0.1000
+    primary_site             +0.0833
+    stage                    +0.1000
+    treatment_regimen        +0.0800
+
+$ python drift.py --baseline data/synthetic --current data/mlops/evidence/current_drift.json --out data/mlops/drift_report.json
+
+Drift report  baseline_n=200  current_n=89
+field                        method     score      verdict
+------------------------------------------------------------
+primary_site                 psi       4.1953  significant
+histology                    psi       2.8645  significant
+stage                        psi       0.1700     moderate
+ecog_performance_status      psi       0.0240       stable
+line_of_therapy              psi       0.0127       stable
+primary_site_presence        psi       0.0000       stable
+histology_presence           psi       0.0000       stable
+stage_presence               psi       0.0000       stable
+ecog_performance_status_presence psi       0.0087       stable
+line_of_therapy_presence     psi       0.0000       stable
+date_of_diagnosis_presence   psi       0.0034       stable
+biomarkers_presence          psi       0.0164       stable
+treatment_regimen_presence   psi       0.0000       stable
+n_biomarkers                 ks        0.0301       stable
+n_regimen                    ks        0.2469  significant
+confidence                   ks           n/a          n/a
+
+OVERALL VERDICT: SIGNIFICANT (3 significant, 1 moderate)
+
+Wrote data/mlops/drift_report.json
+
+$ python retrain.py --drift-report data/mlops/drift_report.json --gold-dir data/eval/ci_gold --cache data/eval/ci_predictions.jsonl --registry /tmp/demo_registry.json
+{
+  "type": "retrain_evaluation",
+  "created_at": "2026-07-22T21:24:36Z",
+  "drift_verdict": "significant",
+  "triggered": true,
+  "drift_report": "data/mlops/drift_report.json",
+  "reeval": {
+    "n_examples": 6,
+    "macro_f1": 0.946969696969697,
+    "metrics": {
+      "macro_f1": 0.946969696969697,
+      "micro_f1": 0.9557522123893805,
+      "per_field": {
+        "primary_site": 1.0,
+        "histology": 1.0,
+        "stage": 0.6666666666666666,
+        "ecog_performance_status": 0.9090909090909091,
+        "line_of_therapy": 1.0,
+        "date_of_diagnosis": 1.0,
+        "biomarkers": 1.0,
+        "treatment_regimen": 1.0
+      }
+    }
+  },
+  "recommendation": "retrain_recommended",
+  "proposal": {
+    "proposed_action": "prompt_or_model_version_bump",
+    "rationale": "Input/output distribution drift crossed threshold; re-evaluate and revise the extraction prompt (or model) for the drifted fields, then register a new version. This system has no trainable weights, so no gradient retraining is proposed.",
+    "drifted_fields": [
+      "primary_site",
+      "histology",
+      "stage",
+      "n_regimen"
+    ],
+    "current_prompt_config": "default",
+    "current_model": "gpt-4o-mini",
+    "suggested_next_prompt_config": "default+drift-2026-07-22",
+    "reeval_macro_f1": 0.94697,
+    "baseline_macro_f1": 0.9475877192982457
+  },
+  "written_to_version": "v0001"
+}
+
+RETRAIN RECOMMENDED -> decision written to v0001

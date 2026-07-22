@@ -1,0 +1,67 @@
+[stage 1] baseline profile built from 200 synthetic gold records
+          baseline primary_site distribution: {'prostate': 17, 'lung': 46, 'breast': 43, 'ovary': 10, 'colorectal': 31, 'head and neck': 9, 'kidney': 14, 'pancreas': 17, 'melanoma': 13}
+[stage 2] stable current = 60 random records; drift current = 89 records filtered to lung+breast
+
+[stage 3a] STABLE current batch drift report:
+  -> verdict=moderate
+
+[stage 3b] DRIFTED current batch drift report:
+  -> verdict=significant
+
+=== stable report table ===
+
+Drift report  baseline_n=200  current_n=60
+field                        method     score      verdict
+------------------------------------------------------------
+primary_site                 psi       0.1272     moderate
+histology                    psi       0.2444     moderate
+stage                        psi       0.1011     moderate
+ecog_performance_status      psi       0.0610       stable
+line_of_therapy              psi       0.0508       stable
+primary_site_presence        psi       0.0000       stable
+histology_presence           psi       0.0000       stable
+stage_presence               psi       0.0000       stable
+ecog_performance_status_presence psi       0.0042       stable
+line_of_therapy_presence     psi       0.0000       stable
+date_of_diagnosis_presence   psi       0.0090       stable
+biomarkers_presence          psi       0.0356       stable
+treatment_regimen_presence   psi       0.0000       stable
+n_biomarkers                 ks        0.0417       stable
+n_regimen                    ks        0.0417       stable
+confidence                   ks           n/a          n/a
+
+OVERALL VERDICT: MODERATE (0 significant, 3 moderate)
+
+
+=== drift report table ===
+
+Drift report  baseline_n=200  current_n=89
+field                        method     score      verdict
+------------------------------------------------------------
+primary_site                 psi       4.1953  significant
+histology                    psi       2.8645  significant
+stage                        psi       0.1700     moderate
+ecog_performance_status      psi       0.0240       stable
+line_of_therapy              psi       0.0127       stable
+primary_site_presence        psi       0.0000       stable
+histology_presence           psi       0.0000       stable
+stage_presence               psi       0.0000       stable
+ecog_performance_status_presence psi       0.0087       stable
+line_of_therapy_presence     psi       0.0000       stable
+date_of_diagnosis_presence   psi       0.0034       stable
+biomarkers_presence          psi       0.0164       stable
+treatment_regimen_presence   psi       0.0000       stable
+n_biomarkers                 ks        0.0301       stable
+n_regimen                    ks        0.2469  significant
+confidence                   ks           n/a          n/a
+
+OVERALL VERDICT: SIGNIFICANT (3 significant, 1 moderate)
+
+
+[stage 4] registered 2 versions; promoted v0001 to production
+          compare v0002->v0001 macro_f1 delta: +0.1631
+
+[stage 5a] trigger on STABLE report: triggered=False note=drift below trigger threshold; no re-eval run
+[stage 5b] trigger on DRIFT report: triggered=True recommendation=retrain_recommended written_to=v0001
+           re-eval macro_f1 (cached, no LLM) = 0.946970 on 6 examples
+           proposal drifted_fields = ['primary_site', 'histology', 'stage', 'n_regimen']

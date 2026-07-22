@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "versions": [
+    {
+      "version": "v0001",
+      "label": "pipeline_verifier_mini",
+      "created_at": "2026-07-22T21:24:48Z",
+      "model_config": {
+        "model": "gpt-4o-mini",
+        "mode": "pipeline",
+        "use_verifier": true,
+        "prompt_config": "default"
+      },
+      "dataset": {
+        "dir": "/Users/agulati/Documents/ChartExtractor/data/eval/ci_gold",
+        "hash": "cb8ccb672e66dd4b00f4441a3485c4ef91723ed1b353b9f9497ec97b622983bf",
+        "n_examples": 6
+      },
+      "metrics": {
+        "macro_f1": 0.9475877192982457,
+        "micro_f1": 0.9298245614035087,
+        "per_field": {
+          "primary_site": 0.8333333333333334,
+          "histology": 1.0,
+          "stage": 1.0,
+          "ecog_performance_status": 1.0,
+          "line_of_therapy": 1.0,
+          "date_of_diagnosis": 1.0,
+          "biomarkers": 0.9473684210526316,
+          "treatment_regimen": 0.8
+        }
+      },
+      "status": "production",
+      "decisions": [
+        {
+          "type": "retrain_evaluation",
+          "created_at": "2026-07-22T21:24:48Z",
+          "drift_verdict": "significant",
+          "triggered": true,
+          "drift_report": "/Users/agulati/Documents/ChartExtractor/data/mlops/drift_report.json",
+          "reeval": {
+            "n_examples": 6,
+            "macro_f1": 0.946969696969697,
+            "metrics": {
+              "macro_f1": 0.946969696969697,
+              "micro_f1": 0.9557522123893805,
+              "per_field": {
+                "primary_site": 1.0,
+                "histology": 1.0,
+                "stage": 0.6666666666666666,
+                "ecog_performance_status": 0.9090909090909091,
+                "line_of_therapy": 1.0,
+                "date_of_diagnosis": 1.0,
+                "biomarkers": 1.0,
+                "treatment_regimen": 1.0
+              }
+            }
+          },
+          "recommendation": "retrain_recommended",
+          "proposal": {
+            "proposed_action": "prompt_or_model_version_bump",
+            "rationale": "Input/output distribution drift crossed threshold; re-evaluate and revise the extraction prompt (or model) for the drifted fields, then register a new version. This system has no trainable weights, so no gradient retraining is proposed.",
+            "drifted_fields": [
+              "primary_site",
+              "histology",
+              "stage",
+              "n_regimen"
+            ],
+            "current_prompt_config": "default",
+            "current_model": "gpt-4o-mini",
+            "suggested_next_prompt_config": "default+drift-2026-07-22",
+            "reeval_macro_f1": 0.94697,
+            "baseline_macro_f1": 0.9475877192982457
+          }
+        }
+      ]
+    },
+    {
+      "version": "v0002",
+      "label": "single_pass_mini",
+      "created_at": "2026-07-22T21:24:48Z",
+      "model_config": {
+        "model": "gpt-4o-mini",
+        "mode": "single_pass",
+        "use_verifier": false,
+        "prompt_config": "default"
+      },
+      "dataset": {
+        "dir": "/Users/agulati/Documents/ChartExtractor/data/eval/ci_gold",
+        "hash": "cb8ccb672e66dd4b00f4441a3485c4ef91723ed1b353b9f9497ec97b622983bf",
+        "n_examples": 6
+      },
+      "metrics": {
+        "macro_f1": 0.7845,
+        "micro_f1": 0.8,
+        "per_field": {
+          "primary_site": 0.75,
+          "histology": 0.9,
+          "stage": 0.9,
+          "ecog_performance_status": 0.9,
+          "line_of_therapy": 0.9,
+          "date_of_diagnosis": 0.9,
+          "biomarkers": 0.8526315789473685,
+          "treatment_regimen": 0.7200000000000001
+        }
+      },
+      "status": "registered",
+      "decisions": []
+    }
+  ],
+  "production": "v0001"
+}

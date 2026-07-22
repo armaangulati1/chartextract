@@ -1,0 +1,1454 @@
+[
+  {
+    "note": "The patient presented for follow-up regarding their head and neck malignancy, diagnosed on August 9, 2021. The histology indicates a diagnosis of squamous cell carcinoma, currently staged at IIB, reflecting local invasion yet without distant metastasis. Notably, the patient maintains an ECOG performance status of 0, implying they are fully active and capable of carrying on all pre-disease activities without restriction.\n\nIn terms of treatment history, the patient has undergone the second line of therapy, which included a regimen of cetuximab, carboplatin, and paclitaxel. These agents were selected based on the aggressive nature of the tumor and patient tolerance during prior therapies.\n\nBiomolecular evaluation showed PD-L1 positivity, suggesting a potential therapeutic target and indicative of possible response to immunotherapy, although testing for HPV status remains inconclusive at this time. The unexplained HPV status may require re-evaluation as it could impact future management options.\n\nThe patient has a reported history of well-controlled hypertension, managed with lifestyle modifications. Family history reveals a significant incidence of non-melanoma skin cancers, but no first-degree relatives have experienced head and neck malignancies. Recent laboratory results indicated normal blood counts, and renal function was within the normal range, suggesting good organ function to support ongoing therapy.\n\nPlans for monitoring will include periodic imaging and imaging for disease progression assessment. Follow-up is scheduled for six weeks to assess reaction to treatment and side effects, and we will continue to explore any emerging clinical trial options that may benefit the patient.\u201d}  Obsolete Assistant  to=RenderedNote  ## Output is in the format specified by the user  {",
+    "gold": {
+      "primary_site": "head and neck",
+      "histology": "squamous cell carcinoma",
+      "stage": "IIB",
+      "biomarkers": [
+        {
+          "name": "PD-L1",
+          "status": "positive"
+        },
+        {
+          "name": "HPV",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2021-08-09",
+      "treatment_regimen": [
+        "cetuximab",
+        "carboplatin",
+        "paclitaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 54-year-old female, presented for her follow-up appointment after being diagnosed with breast cancer on January 5, 2022. Her primary tumor was classified as invasive lobular carcinoma, confirmed through excisional biopsy and subsequent pathology review. Radiographic assessments indicated the disease has progressed to stage IIIB, necessitating further intervention.\n\nAt the last visit, the patient\u2019s ECOG performance status was noted to be 0, indicating she is fully active and able to carry out all pre-disease activities without restriction. However, with exhaustive treatments thus far, she is now on her second line of therapy, currently receiving capecitabine as part of her regimen.\n\nBiomarker testing results revealed that the tumor is estrogen receptor (ER) negative. The HER2 status remains unknown at this time, which may guide future therapeutic options after further evaluation.\n\nIn the context of her cancer journey, patient history is significant for recurrent episodes of hypertension and a prior laparoscopic cholecystectomy performed in 2019 due to symptomatic gallstones. Notably, her family history includes a mother who is a breast cancer survivor diagnosed at age 62, emphasizing the potential hereditary component of her current diagnosis.\n\nAs this patient is being monitored closely, regular follow-ups are essential to evaluate the effectiveness of capecitabine and to discuss potential enrollment in clinical trials concerning HER2 targeting therapies, contingent on future test results. We will continue to provide comprehensive supportive care, addressing any signs of treatment side effects, as the plan for her oncology care evolves.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive lobular carcinoma",
+      "stage": "IIIB",
+      "biomarkers": [
+        {
+          "name": "ER",
+          "status": "negative"
+        },
+        {
+          "name": "HER2",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2022-01-05",
+      "treatment_regimen": [
+        "capecitabine"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 65-year-old male with a significant medical history of hypertension and type 2 diabetes, presenting for his follow-up oncology visit. He was diagnosed with clear cell renal cell carcinoma (ccRCC) of the kidney on July 12, 2021. Initial imaging revealed a localized tumor, classified as stage IA. However, despite initial treatment, his disease has shown progression, leading to a third line of therapy.\n\nCurrently, he is undergoing treatment with pembrolizumab and axitinib, which he began approximately six months ago. The patient tolerates these medications fairly well, although he reports occasional fatigue that restricts him from activities such as jogging. His ECOG performance status is rated at 2, indicating he is able to walk and do light work, but is unable to perform strenuous activities. \n\nGenetic testing was performed, with the VHL gene status returning negative, which correlates with his current treatment plan. Other routine labs revealed benign findings, including normal liver function tests and a complete blood count within normal limits. Family history is notable for a sibling with prostate cancer, but otherwise, no significant hereditary cancer syndromes are identified. \n\nThe patient is also receiving routine monitoring for his comorbid conditions, including periodic checks of his fasting glucose and blood pressure. He mentioned he is compliant with follow-up appointments and has scheduled his next visit in three months, at which time we will reassess both his renal function and overall response to the current regimen.",
+    "gold": {
+      "primary_site": "kidney",
+      "histology": "clear cell renal cell carcinoma",
+      "stage": "IA",
+      "biomarkers": [
+        {
+          "name": "VHL",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2021-07-12",
+      "treatment_regimen": [
+        "pembrolizumab",
+        "axitinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a middle-aged female with a history of hypertension and hyperlipidemia, was evaluated in the oncology clinic on September 14, 2024, following her diagnosis of breast cancer established on September 7, 2024. The primary site is noted to be the left breast, and histopathological analysis reveals HER2-positive carcinoma. \n\nBased on clinical evaluation, the disease is staged as IA, indicating an early stage with local confinement. Biomarker testing demonstrates a positive Ki-67, suggesting active proliferation of tumor cells, and a positive progesterone receptor (PR) status, which is promising for prognosis and treatment response. However, the HER2 status remains unknown at this time, warranting further investigation or reassessment to guide targeted therapy.\n\nThe patient\u2019s ECOG performance status is rated at 3; she exhibits significant limitations in daily activities and is confined to bed most of the time, reflecting a need for palliative management considerations. A detailed review of her treatment history indicates that she has already undergone two lines of therapy prior to the initiation of capecitabine, which is her current treatment regimen.\n\nNotably, the patient has had prior surgeries including a hysterectomy for benign fibroids and a cholecystectomy several years ago, with family history suggesting breast cancer in her maternal grandmother, which could underscore the genetic predisposition. Routine laboratory workup showed stable, benign results apart from the oncological concerns, with liver function tests within normal limits. Given her current condition and the status of her disease, further discussions about supportive care and oncology consultations will be essential in subsequent visits.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "HER2-positive carcinoma",
+      "stage": "IA",
+      "biomarkers": [
+        {
+          "name": "Ki-67",
+          "status": "positive"
+        },
+        {
+          "name": "PR",
+          "status": "positive"
+        },
+        {
+          "name": "HER2",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 3,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2024-09-07",
+      "treatment_regimen": [
+        "capecitabine"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 67-year-old female with a known history of hypertension and diabetes who presents for follow-up after being diagnosed with kidney cancer. She received her diagnosis of stage IA papillary renal cell carcinoma on February 19, 2024. At the current clinic visit, her performance status has been categorized as ECOG 3, indicating increased assistance is required in activities of daily living.  \n\nSince diagnosis, she has commenced her first line of therapy, which includes nivolumab combined with cabozantinib. Reports indicate she has tolerated the regimen reasonably well, with no major adverse reactions noted thus far, although she requires close monitoring due to her performance status.  \n\nRecent tumor biomarker analysis showed both VHL and PD-L1 status to be negative, which is essential for understanding her disease trajectory and therapeutic response. The unremarkable results in the context of treatment and clinical status will guide the further management of her case. \n\nAdditionally, her past medical history is significant for a cholecystectomy performed two years ago for gallstones, and she has a family history of breast cancer in her sister, which might indicate a broader genetic predisposition within the family. Laboratory tests continue to demonstrate stable creatinine levels despite her chronic kidney disease, and her blood pressure remains controlled on lisinopril therapy. \n\nThe plan includes continuing with the current treatment regimen while closely monitoring her performance status and managing her comorbidities effectively. Further imaging will be scheduled in the coming months to assess the therapeutic effectiveness and disease progression.",
+    "gold": {
+      "primary_site": "kidney",
+      "histology": "papillary renal cell carcinoma",
+      "stage": "IA",
+      "biomarkers": [
+        {
+          "name": "VHL",
+          "status": "negative"
+        },
+        {
+          "name": "PD-L1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 3,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-02-19",
+      "treatment_regimen": [
+        "nivolumab",
+        "cabozantinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 52-year-old female, presented for follow-up regarding her breast cancer treatment. She was diagnosed with invasive ductal carcinoma on April 11, 2026, now staged at IIIB. Current performance status is rated as ECOG 0, indicating she is fully active with no restrictions on activity.  \n\nBiopsy results reveal that the primary site of malignancy is the breast, and significant biomarker evaluations show the tumor to be estrogen receptor (ER) negative, while Ki-67 is positive, indicating a proliferation index that warrants close monitoring.  \n\nThe patient is currently in the second line of therapy and is receiving sacituzumab govitecan, following an initial regimen that included neoadjuvant treatment. She has tolerated her treatment well thus far with manageable side effects; however, she continues to experience moderate fatigue, consistent with her therapy plan. \n\nThe patient\u2019s past medical history includes well-controlled hypertension and a history of hypothyroidism, managed with levothyroxine. She reports no significant family history of breast cancer but does mention her mother had a history of ovarian cysts, though they were noted as benign. \n\nLabs were reviewed, with a CBC showing slight anemia, likely secondary to chemotherapy, but liver and renal function tests remain within normal limits. At this visit, we discuss the patient's overall health and maintain regular surveillance for potential complications associated with both her cancer and treatment, while also revising her supportive care plan.\n\nFuture visits will involve assessments of symptomatology and adjustments to her treatment regimen as necessary, particularly in light of her current high Ki-67 marker, which suggests a more aggressive disease profile. Next oncology visit is scheduled in 4 weeks to evaluate response to current therapy.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IIIB",
+      "biomarkers": [
+        {
+          "name": "ER",
+          "status": "negative"
+        },
+        {
+          "name": "Ki-67",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2026-04-11",
+      "treatment_regimen": [
+        "sacituzumab govitecan"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 64-year-old male with a notable history of hypertension and hyperlipidemia, presenting for follow-up after being diagnosed with stage IV clear cell renal cell carcinoma on November 15, 2022. He has been on a treatment regimen consisting of pembrolizumab and axitinib, initiated after confirming the primary tumor site in the left kidney. The patient\u2019s current ECOG performance status is rated at 2, indicating he is somewhat active, but experiences significant limitations in strenuous activities.\n\nRecent imaging studies showed progressive disease with multiple metastases noted in the lungs and bones, and despite his current treatment, he reports increased fatigue and occasional shortness of breath, which he attributes to both his cancer and a history of seasonal allergies. \n\nLaboratory results from last week indicated stable electrolytes and normal renal function, with a creatinine level of 1.2 mg/dL and no signs of acute kidney injury. Notably, biomarker testing revealed negative results for VHL, while PD-L1 status returned as equivocal, leaving some uncertainty regarding the potential benefit of immunotherapy.\n\nThe patient\u2019s family history includes a mother who was treated for breast cancer and a brother with a history of prostate cancer, which raises some concerns about hereditary cancer predisposition. Additionally, he underwent a cholecystectomy five years ago and has no significant surgical history beyond this. \n\nWe discussed the importance of regular follow-up and potential clinical trial opportunities should his disease progress further. The patient is agreeable to continue with the current therapy while managing his symptoms conservatively and will return in four weeks for a re-evaluation.",
+    "gold": {
+      "primary_site": "kidney",
+      "histology": "clear cell renal cell carcinoma",
+      "stage": "IV",
+      "biomarkers": [
+        {
+          "name": "VHL",
+          "status": "negative"
+        },
+        {
+          "name": "PD-L1",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2022-11-15",
+      "treatment_regimen": [
+        "pembrolizumab",
+        "axitinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 63-year-old male, initially presented to our clinic in June 2018 with persistent cough and weight loss. After further evaluation, he was diagnosed with stage IIIA lung squamous cell carcinoma on June 22, 2018. A comprehensive workup revealed that he is ECOG performance status 1, indicating he is restricted in strenuous activity but otherwise functional. \n\nHis treatment regimen commenced with a combination of durvalumab, etoposide, and carboplatin as the first line of therapy. Upon assessment, biomarker testing indicated negative for EGFR mutation and negative for ALK rearrangements. However, PD-L1 expression was found to be positive, which suggests a potential benefit from immunotherapy options given the tumor's immunogenic profile. \n\nThe patient has a history of hypertension and hyperlipidemia, managed with lisinopril and atorvastatin, respectively. No prior surgeries for lung disease were recorded, but he underwent an appendectomy in 2005 and has a family history of lung cancer in his father. \n\nThroughout the treatment, the patient has tolerated the regimen reasonably well, experiencing mild nausea and fatigue but no severe adverse effects reported. Subsequent imaging will be necessary to assess the treatment response and determine any further management strategies. Further follow-ups have been scheduled to closely monitor his condition and any potential development of new symptoms.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "squamous cell carcinoma",
+      "stage": "IIIA",
+      "biomarkers": [
+        {
+          "name": "EGFR",
+          "status": "negative"
+        },
+        {
+          "name": "PD-L1",
+          "status": "positive"
+        },
+        {
+          "name": "ALK",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2018-06-22",
+      "treatment_regimen": [
+        "durvalumab",
+        "etoposide",
+        "carboplatin"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 54-year-old female with a history of acral lentiginous melanoma diagnosed on April 30, 2022, presents today for follow-up evaluation. At initial diagnosis, the melanoma was staged as IIIB, indicating a more advanced disease with concerning local and regional involvement. The most current ECOG performance status is 0, representing no restrictions on activity. \n\nOncologic workup revealed a positive NRAS mutation, which has significant implications for targeted therapy. The patient is currently on the second line of therapy, receiving a combination regimen of dabrafenib and trametinib, which she has tolerated reasonably well, experiencing manageable side effects including mild fatigue and some rash, consistent with the medications. \n\nPast medical history includes hypertension, well-controlled on lisinopril, and a benign fibroid condition which has not required surgical intervention. She underwent a hysterectomy at age 45 but there have been no recurrence or complications related to that procedure. Notably, there are no significant familial predispositions to malignancies reported, although a sister was treated for basal cell carcinoma in her 60s.\n\nLaboratory results from her recent check-up show normal liver function tests and a stable complete blood count. The patient has been compliant with regular skin checks and is advised on sun protective measures to mitigate the risk of further skin lesions. \n\nConsidering this patient's ongoing treatment and the importance of close monitoring for progression or side effects, we will schedule her for follow-up appointments every 3 months, along with imaging to evaluate response to current therapy. The next session will focus on any emerging symptoms, reassessing her overall health status, and discussing potential clinical trial options as they become available.",
+    "gold": {
+      "primary_site": "melanoma",
+      "histology": "acral lentiginous melanoma",
+      "stage": "IIIB",
+      "biomarkers": [
+        {
+          "name": "NRAS",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2022-04-30",
+      "treatment_regimen": [
+        "dabrafenib",
+        "trametinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 68-year-old male with a diagnosis of pancreatic ductal adenocarcinoma, confirmed on biopsy, initially diagnosed on January 27, 2023. At presentation, he was evaluated and classified with stage IVB disease, indicating extensive metastatic spread. Current ECOG performance status is recorded as 2, reflecting that the patient is able to walk, but limited in strenuous activity due to ongoing symptoms associated with the malignancy. \n\nLaboratory investigations show a significant elevation in CA 19-9 levels, which is positive and aligns with the aggressive nature of the disease. Genetic testing results revealed that BRCA2 is positive while the status of BRCA1 remains equivocal, necessitating further interpretation in light of potential treatment options. \n\nThe patient has undergone two lines of prior therapy, with the current regimen consisting of the combination of gemcitabine and nab-paclitaxel, administered in an outpatient setting. This is his third line of therapy as we aim to manage disease burden while considering his performance status and symptomatology. \n\nClinical history includes benign prostatic hyperplasia and hypertension, well-controlled on medication. Family history is significant for breast cancer in a sister and colon cancer in a parent, warranting ongoing surveillance for additional malignancies. The patient has no significant allergies, with prior surgical history including a laparoscopic cholecystectomy approximately ten years ago. Regular follow-ups and imaging studies are recommended to monitor treatment response and progression of the disease.",
+    "gold": {
+      "primary_site": "pancreas",
+      "histology": "pancreatic ductal adenocarcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "BRCA1",
+          "status": "equivocal"
+        },
+        {
+          "name": "CA 19-9",
+          "status": "positive"
+        },
+        {
+          "name": "BRCA2",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2023-01-27",
+      "treatment_regimen": [
+        "gemcitabine",
+        "nab-paclitaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 62-year-old male with a diagnosis of stage IV squamous cell carcinoma originating from the head and neck region. The initial diagnosis was made on February 16, 2026, following a biopsy that confirmed the histological nature of the tumor. The patient's past medical history is significant for hypertension and mild COPD. He reports a 15-pack-year smoking history but quit over a decade ago. Family history is notable for hypertension in both parents but no history of malignancies.\n\nCurrently, the patient presents with an ECOG performance status of 1, indicating he is restricted in strenuous activity but can carry out light work. He is currently undergoing his second line of therapy with nivolumab, an immune checkpoint inhibitor. Evaluation of biomarkers revealed that he is positive for Epstein-Barr virus (EBV), while PD-L1 expression status was found to be negative. The clinical team is monitoring for any potential adverse effects related to the treatment, particularly immune-mediated responses.\n\nDuring the last visit, there was a discussion about dietary modifications to enhance overall health during treatment. The patient has been advised to follow up closely every four weeks, considering his treatment regimen and the implications of his advanced disease. Routine labs, including CBC and metabolic panel, showed no alarming findings aside from mild proteinuria, which is most likely benign given his normal kidney function.\n\nPlans were made for imaging studies to assess response to nivolumab, and referrals to supportive services for palliative care will be established to address symptom management as the disease progresses. Close observation of any new symptoms is recommended, such as changes in swallowing or increased fatigue. Next visit is scheduled in a month for follow-up and re-evaluation of treatment efficacy.",
+    "gold": {
+      "primary_site": "head and neck",
+      "histology": "squamous cell carcinoma",
+      "stage": "IV",
+      "biomarkers": [
+        {
+          "name": "EBV",
+          "status": "positive"
+        },
+        {
+          "name": "PD-L1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2026-02-16",
+      "treatment_regimen": [
+        "nivolumab"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 62-year-old male with a history of pancreatitis and mild hyperlipidemia, presents for follow-up regarding his treatment for pancreatic ductal adenocarcinoma diagnosed on November 2, 2023. Imaging studies have indicated that the primary tumor site is the pancreas, with findings consistent with stage IIIB disease. The patient has maintained an ECOG performance status of 0, indicating he is fully active without restriction.\n\nDuring this visit, we reviewed the results of biomarker testing. Notably, the patient is positive for BRCA2 mutations, which may inform his treatment decisions moving forward. Additionally, CA 19-9 levels are elevated, supporting the tumor's active status.\n\nCurrently, the patient is on the second line of therapy with olaparib, which has been well-tolerated thus far. He reports experiencing minimal side effects, primarily intermittent mild fatigue. His previous treatments included systemic chemotherapy, which led to a slight reduction in tumor size observed during his last imaging.\n\nFamily history is significant for breast cancer in his sister and colorectal cancer in his father, raising concerns around hereditary cancer syndromes. The patient has never undergone surgeries other than cholecystectomy several years ago for gallbladder stones, and there are no notable surgical interventions related to his current diagnosis. \n\nRecent lab work revealed stable liver function tests and a normal complete blood count, but with a persistent elevation in CA 19-9. Given the patient's positive response to olaparib and the positive BRCA2 status, we will continue with this regimen while monitoring his CA 19-9 levels closely in future appointments. Also discussed were potential clinical trials that might be appropriate, emphasizing maintaining a multidisciplinary approach as we navigate his care.",
+    "gold": {
+      "primary_site": "pancreas",
+      "histology": "pancreatic ductal adenocarcinoma",
+      "stage": "IIIB",
+      "biomarkers": [
+        {
+          "name": "BRCA2",
+          "status": "positive"
+        },
+        {
+          "name": "CA 19-9",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2023-11-02",
+      "treatment_regimen": [
+        "olaparib"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 55-year-old female with a diagnosis of invasive ductal carcinoma of the breast, confirmed on biopsies taken during prior evaluations. The initial diagnosis was made on May 17, 2022. Currently, the disease is staged at IVB, indicating advanced progression. Notably, the patient maintains an ECOG performance status of 0, reflecting her ability to carry out all normal activities without restriction.\n\nIn our latest assessments, the tumor demonstrates a positive status for estrogen receptors (ER+), which may influence therapeutic strategies moving forward. The patient is currently on her third line of therapy, having undergone extensive treatment options previously. Currently, she is receiving a combination regimen that includes trastuzumab, pertuzumab, and docetaxel. \n\nOf interest, she was previously treated with neoadjuvant chemotherapy, which included multiple agents; however, metabolism in response to those interventions was challenging. Past medical history includes hypertension and intermittent asthma, which are being managed with standard medications. The family history is significant for a maternal aunt who had breast cancer, though no other malignancies are reported.\n\nLab results this past week were unremarkable, showing normal CBC and CMP, which is favorable given her current treatment regimen. The patient tolerates her current medications well, with manageable side effects such as mild fatigue and occasional gastrointestinal upset.\n\nFuture plans include further imaging studies to evaluate therapeutic response and a multidisciplinary review to consider any potential enrollment in clinical trials, given her current disease status and treatment history. Further follow-up in 6 weeks is scheduled to monitor her progress closely.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "ER",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2022-05-17",
+      "treatment_regimen": [
+        "trastuzumab",
+        "pertuzumab",
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient presented for follow-up on October 2, 2023, for her ongoing management of breast cancer. She was diagnosed with invasive ductal carcinoma on May 4, 2022, and is currently staged at IIB. During her evaluation, she was noted to have an ECOG performance status of 2, indicating she is somewhat limited in her activities but is still able to carry out light work.  \n\nThe treatment regimen has included palbociclib and letrozole, following the initial therapies which included surgery and adjuvant radiotherapy. She is currently on her second line of therapy, as she experienced disease progression after her initial treatment. At this time, HER2 status is negative, which may explain her current treatment choice. It should also be noted that the Ki-67 index is unknown; hence, we cannot categorize the proliferation rate that may impact further therapeutic decisions.\n\nShe denies any significant new symptoms, though she does report some fatigue, which could be attributed to her regimen. The patient also has a history of hypertension, which is well-controlled with lisinopril. There is no evidence of metastasis on recent imaging, and her labs show normal liver function, with only mild anemia noted from previous tests. Furthermore, her family history is significant for breast cancer in her mother, diagnosed at age 52, but no other relevant malignancies were noted.\n\nWe will continue to monitor her closely, discuss the implications of her Ki-67 status at the next visit, and consider additional options should she not respond favorably to the current agents.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IIB",
+      "biomarkers": [
+        {
+          "name": "Ki-67",
+          "status": "unknown"
+        },
+        {
+          "name": "HER2",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2022-05-04",
+      "treatment_regimen": [
+        "palbociclib",
+        "letrozole"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 67-year-old male with a recent diagnosis of stage IVB colorectal adenocarcinoma, presenting with significant symptoms consistent with advanced disease. Upon examination, his ECOG performance status is recorded as 2, indicating he is capable of self-care but experiences considerable limitations in physical activity. \n\nThe initial treatment regimen includes FOLFIRI in combination with cetuximab, which is aligned with the second line of therapy given the aggressive nature of his cancer. \n\nRecent biomarker analysis has yielded notable results: KRAS status was found to be equivocal, while HER2 is negative, and microsatellite instability markers indicate a negative status as well. These genetic findings may guide further treatment decisions, particularly with regards to targeted therapies.\n\nThe patient's past medical history includes hypertension and hyperlipidemia, which are being managed effectively. There are no significant benign lab anomalies outside of baseline liver function tests that were well within normal limits. Family history reveals a sibling with colorectal cancer diagnosed in their early 60s, which further emphasizes the need for careful monitoring and possible genetic counseling.\n\nAs we proceed with the second line of therapy, the patient's support system is well established, and he has expressed understanding of the treatment plan. Continuous assessment of treatment response and side effects will be critical in the upcoming follow-up visit. Attention will also be paid to enhance his performance status and manage any symptom burden related to his illness.",
+    "gold": {
+      "primary_site": "colorectal",
+      "histology": "adenocarcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "KRAS",
+          "status": "equivocal"
+        },
+        {
+          "name": "HER2",
+          "status": "negative"
+        },
+        {
+          "name": "MSI",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": null,
+      "treatment_regimen": [
+        "FOLFIRI",
+        "cetuximab"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 64-year-old male with a primary site of squamous cell carcinoma located in the head and neck region. He was diagnosed on August 5, 2023, at which time the disease was classified as stage I. The patient presents with an ECOG performance status of 2, indicating he is unable to perform strenuous activities but is still ambulatory and capable of self-care. \n\nUpon review of his biomarkers, both EBV and HPV statuses were found to be equivocal, while PD-L1 expression was noted to be negative. This finding may influence further treatment decisions. As part of the first line of therapy, the patient has been started on nivolumab, which he began on August 15, 2023. He tolerated the initial infusion well without any significant adverse effects reported.\n\nThe patient has a history of hypertension and hyperlipidemia, which are currently managed with medication. There are no pertinent findings in his prior medical history that indicate other significant comorbidities impacting his treatment plan. Additionally, a thorough family history was taken, revealing no significant history of head and neck cancers, though his father had a history of lung cancer.\n\nHe denies any new symptoms since starting treatment; however, he does report occasional mild fatigue, which he attributes to the chemotherapy regimen. A follow-up appointment has been scheduled in four weeks to monitor response to nivolumab and assess any side effects. Overall, the management plan remains focused on careful monitoring and potential imaging after the initial cycles to evaluate treatment response.",
+    "gold": {
+      "primary_site": "head and neck",
+      "histology": "squamous cell carcinoma",
+      "stage": "I",
+      "biomarkers": [
+        {
+          "name": "EBV",
+          "status": "equivocal"
+        },
+        {
+          "name": "HPV",
+          "status": "equivocal"
+        },
+        {
+          "name": "PD-L1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2023-08-05",
+      "treatment_regimen": [
+        "nivolumab"
+      ]
+    }
+  },
+  {
+    "note": "The patient presented to the oncology clinic for their initial treatment evaluation following a recent diagnosis of lung adenocarcinoma. Upon review of their clinical status, the ECOG performance status was assessed at 0, indicating the patient is completely asymptomatic in terms of their cancer-related symptoms and is able to carry out all normal activities without restriction.\n\nThe primary site of the malignancy has been confirmed as the lung, specifically histologically categorized as adenocarcinoma. Based on imaging and staging results, the current classification is stage IIA, which indicates a localized disease with a significant yet manageable tumor burden, allowing for immediate intervention.\n\nIn consultation, we discussed the first-line treatment regimen which comprises pembrolizumab in combination with carboplatin and pemetrexed. This three-drug combination was selected due to its synergistic potential and the current recommendations for initial therapy in stage II lung adenocarcinoma. The patient's biomarkers were noted to be unremarkable at this time, which we will monitor closely throughout the treatment course.\n\nAdditionally, the patient has no significant history of other comorbidities impacting their treatment, although there is a family history of hypertension and diabetes that should be acknowledged as part of their broader health context. The patient had undergone a routine appendectomy in their 20s with no complications reported. \n\nFurther follow-up appointments have been scheduled to monitor treatment response, and I have provided the patient with educational material regarding potential side effects of their therapy. Regular imaging and lab work will also be performed to assess the effectiveness of the treatment plan.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "IIA",
+      "biomarkers": [],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": null,
+      "treatment_regimen": [
+        "pembrolizumab",
+        "carboplatin",
+        "pemetrexed"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 54-year-old female with a diagnosis of invasive ductal carcinoma of the breast, confirmed on November 5, 2019. Currently, she is categorized as stage IIIC, indicating significant lymphatic involvement. Her treatment history has progressed through three prior lines of therapy, now under a fourth line consisting of palbociclib and letrozole. Despite the complexities of her case, she maintains an ECOG performance status of 1, indicating that she is only restricted in strenuous activity.\n\nRegarding biomarker status, the HER2 results came back negative, suggesting a non-amplified profile, while the estrogen receptor (ER) status remains unknown. The Ki-67 index is also reported as negative, which may reflect lower proliferation activity, though further context is needed given the patient's extensive disease characteristics.\n\nIn addition to her oncological history, the patient has a notable medical history of hypertension, which is well-controlled, and a former excision of a benign thyroid nodule. Family history is significant for breast cancer with her maternal aunt diagnosed at age 62. \n\nReview of systems reveals no acute complaints; however, the patient does report occasional fatigue, which may be related to her therapeutic regimen. She is adhering to her medication schedule and has been attending routine follow-ups. Next appointment will include a thorough review of her response to the current treatment and potential adjustments based on symptomatology and subsequent imaging results.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IIIC",
+      "biomarkers": [
+        {
+          "name": "ER",
+          "status": "unknown"
+        },
+        {
+          "name": "HER2",
+          "status": "negative"
+        },
+        {
+          "name": "Ki-67",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 4,
+      "date_of_diagnosis": "2019-11-05",
+      "treatment_regimen": [
+        "palbociclib",
+        "letrozole"
+      ]
+    }
+  },
+  {
+    "note": "The patient presented to the oncology clinic with a diagnosis of head and neck squamous cell carcinoma, currently staged at III. On evaluation, the ECOG performance status was noted to be 2, indicating that the patient is unable to carry out any work activities but can still manage self-care. Interestingly, the histological analysis demonstrated equivocal results for HPV status, while EBV was detected positively. Additionally, PD-L1 was found to be positive, which may influence treatment considerations moving forward.\n\nThis visit marks the continuation of the second line of therapy, where the patient has been receiving nivolumab. Previous treatment history includes local resection of the tumor, but not much else of significance stands out in the patient's surgical history.\n\nThe patient also carries a history of chronic hypertension and managed diabetes, which are well-controlled under current medication regimens\u2014hypertension medication seems effective with stable blood pressure at last check-up. Family history reveals no significant genetic predispositions, but note that there is a remote family history of lung cancer in a distant relative.\n\nLab results from last week showed benign electrolyte levels and kidney function within normal limits, providing a reassuring backdrop for the ongoing immunotherapy. The patient expresses some concern regarding side effects from treatment, which we will continue to monitor carefully. Overall, we are focusing on managing the cancer aggressively while ensuring quality of life as much as possible.",
+    "gold": {
+      "primary_site": "head and neck",
+      "histology": "squamous cell carcinoma",
+      "stage": "III",
+      "biomarkers": [
+        {
+          "name": "HPV",
+          "status": "equivocal"
+        },
+        {
+          "name": "EBV",
+          "status": "positive"
+        },
+        {
+          "name": "PD-L1",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": null,
+      "treatment_regimen": [
+        "nivolumab"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a female with a diagnosis of invasive ductal carcinoma of the breast, confirmed on January 26, 2021. Upon presentation, she was classified as having stage IVA disease. Relevant biomarker analysis revealed HER2 negative status, while Ki-67 was reported positive. The patient\u2019s ECOG performance status is 1, indicating she is restricted in strenuous activity but capable of self-care.\n\nShe is currently on her first line of therapy with sacituzumab govitecan, following a careful assessment of her treatment options. The patient's overall health is somewhat stable, though she continues to experience mild fatigue which is common with her current regimen. \n\nIn her medical history, she has a known history of hypothyroidism, for which she is receiving treatment, and there are no reported allergic reactions to medications. Surgical history includes a lumpectomy performed in 2020 for a benign breast lesion, which was uneventful.\n\nFamily history is notable for a maternal aunt who had breast cancer at age 60 and a father with a history of prostate cancer at 67. There are no other significant hereditary cancer syndromes noted within the family lineage.\n\nDuring the most recent follow-up visit, routine labs were performed. Lipid panel and liver function tests were within normal limits, providing reassurance regarding her metabolic state during treatment. Her white blood cell count remains stable, which is favorable considering the ongoing therapy.\n\nThe plan is to continue monitoring her response to sacituzumab govitecan with regular imaging and follow-ups every three months, ensuring to evaluate her performance status and quality of life as we navigate her treatment course.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IVA",
+      "biomarkers": [
+        {
+          "name": "HER2",
+          "status": "negative"
+        },
+        {
+          "name": "Ki-67",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2021-01-26",
+      "treatment_regimen": [
+        "sacituzumab govitecan"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a middle-aged individual, was diagnosed with lung cancer, specifically squamous cell carcinoma, on January 3, 2026. Notably, the disease is currently staged as I, indicating localized disease without distant metastasis. This patient has been undergoing treatment and is currently on their second line of therapy, which includes a regimen of durvalumab, etoposide, and carboplatin.\n\nDuring the diagnostic workup, some genetic profiling was conducted, which revealed an equivoque status for the ROS1 biomarker. This finding necessitates further evaluation, as it may influence future therapeutic decisions.\n\nDespite their cancer diagnosis, it is worth noting that the patient has a well-controlled history of hypertension and experiences occasional seasonal allergies, which do not complicate treatment plans. Furthermore, they have a family history notable for colorectal cancer in a first-degree relative.\n\nThe patient has maintained good performance status overall; however, specific ECOG performance status was not documented at this visit. They remain active in daily activities with some limitations but continue to engage in most normal routines.\n\nRegular follow-up is planned to monitor the response to therapy and reassess the equivoque status of the ROS1 biomarker. Labs reveal stable renal function and normal liver enzymes, with no significant abnormalities reported.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "squamous cell carcinoma",
+      "stage": "I",
+      "biomarkers": [
+        {
+          "name": "ROS1",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": null,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2026-01-03",
+      "treatment_regimen": [
+        "durvalumab",
+        "etoposide",
+        "carboplatin"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 62-year-old female with a diagnosis of high-grade serous carcinoma of the ovary, initially diagnosed on May 30, 2021. She presents today for follow-up regarding her response to treatment and overall performance status. During her last visit, she reported mild fatigue but remained ECOG 1, indicating that her ability to perform daily activities is somewhat restricted, particularly with strenuous exertion.\n\nCurrently, she is undergoing her third line of therapy, which includes bevacizumab and olaparib. Previous lines included a combination of carboplatin and paclitaxel, after which she experienced disease progression necessitating the current regimen. The patient has not yet developed any significant adverse effects attributed to the new therapy, although she does report occasional mild nausea that she manages with over-the-counter medications.\n\nBiomarker analysis performed previously revealed a negative BRCA1 status, which has influenced the treatment decisions. Family history is notable for breast cancer in her mother and a history of colon cancer in her paternal aunt. No other significant familial genetic syndromes have been documented, and she currently denies any gastrointestinal symptoms or changes in weight that could indicate complications.\n\nAt this time, her lab results from recent testing showed stable liver function, and her hemoglobin levels remained within normal limits, thus supporting her ongoing treatment's safety profile. She continues to receive supportive care and is compliant with her follow-up appointments.\n\nPlans moving forward include continued monitoring of her response to the current therapy regimen. A repeat imaging study is scheduled in two months, with the consideration of potential modifications based on results. The patient and her family have been counseled regarding disease progression signs to watch for, and they expressed understanding and commitment to the treatment plan.",
+    "gold": {
+      "primary_site": "ovary",
+      "histology": "high-grade serous carcinoma",
+      "stage": "III",
+      "biomarkers": [
+        {
+          "name": "BRCA1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2021-05-30",
+      "treatment_regimen": [
+        "bevacizumab",
+        "olaparib"
+      ]
+    }
+  },
+  {
+    "note": "Patient presents for follow-up care related to lung adenocarcinoma, diagnosed on 02/27/2025. Current performance status is ECOG 2, indicating the patient is able to walk more than 50 meters but is limited in strenuous activity. The tumor was classified as stage I and has shown positive biomarkers for PD-L1, while BRAF testing returned negative results.\n\nPatient has already undergone one line of therapy and is currently receiving a second line regimen which includes durvalumab, etoposide, and carboplatin, reflecting a targeted approach given the PD-L1 positivity. \n\nIn addition to the oncology history, it is noteworthy that the patient has a history of hypertension, managed with lisinopril. Prior surgeries include an appendectomy performed in 2010 without complication. There is a family history of breast cancer; the patient's mother was diagnosed in her 50s, but there are no known genetic mutations identified in the family. \n\nRoutine lab results earlier this month were largely unremarkable, with the exception of mild transaminitis values that have stabilized since previous evaluations. The patient reports some fatigue and nausea, but these remain manageable with current antiemetics. \n\nMonitoring for any potential adverse effects of treatment, as well as ongoing evaluation of biomarkers, will be crucial in guiding further management. Next oncology visit is scheduled for one month from today, with a re-evaluation of imaging studies planned at that time.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "I",
+      "biomarkers": [
+        {
+          "name": "PD-L1",
+          "status": "positive"
+        },
+        {
+          "name": "BRAF",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2025-02-27",
+      "treatment_regimen": [
+        "durvalumab",
+        "etoposide",
+        "carboplatin"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 52-year-old female with a past medical history notable for hypertension and controlled type 2 diabetes, presents for follow-up regarding her breast cancer treatment. Following her diagnosis of invasive lobular carcinoma on April 23, 2021, classified as stage IA, she began her first line of therapy which includes trastuzumab, pertuzumab, and docetaxel. \n\nCurrent examination reveals no signs of recurrence, and she is maintaining an ECOG performance status of 0, indicating she is fully active and able to carry on all pre-disease activities without restrictions.\n\nPertinent lab results in recent panels demonstrate that her estrogen receptor (ER) status is positive, which aligns well with her current hormonal therapy considerations. The patient expresses some concerns regarding side effects from the chemotherapy regimen, particularly fatigue and mild alopecia, but she is managing well overall.\n\nFamily history is significant for breast cancer in her maternal aunt, but there is no known history of hereditary cancer syndromes within her family. She has undergone a bilateral mammogram recently, which showed no abnormal findings. Notably, she underwent an appendectomy in 2015, which is unrelated to her current oncological concerns.\n\nThe plan involves continuing her current treatment regimen with regular bi-weekly infusions of the targeted agents. We will reassess her treatment tolerance and adjust therapies if necessary. Next step includes scheduling follow-up imaging in three months to monitor treatment response, alongside routine blood work to assess her hematologic status.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive lobular carcinoma",
+      "stage": "IA",
+      "biomarkers": [
+        {
+          "name": "ER",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2021-04-23",
+      "treatment_regimen": [
+        "trastuzumab",
+        "pertuzumab",
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 54-year-old female with a diagnosis of invasive lobular carcinoma of the breast, established on February 3, 2026, following mammography and subsequent biopsy. At presentation, the tumor was classified as stage IIB, indicating a moderate degree of disease spread. The tumor was tested for biomarkers, revealing negative results for both Ki-67 and HER2, which could influence prognosis and treatment decisions.\n\nThis patient is currently receiving her second line of therapy, which involves capecitabine as the selected regimen. There are no indications of ECOG performance status impairments reported, suggesting she remains functional and is tolerating her treatment well, although she does sometimes experience mild fatigue. Notably, she has a past medical history significant for hypertension, which is well-managed with medication, and a family history of thyroid disease but no known breast cancer in her family.\n\nRegular follow-ups are being scheduled to monitor her response to treatment, manage any potential side effects, and assess for any need for additional support. The patient has expressed understanding of her diagnosis and is engaged in her treatment plan. Next steps will include routine imaging and labs to evaluate the progression of her response to capecitabine.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive lobular carcinoma",
+      "stage": "IIB",
+      "biomarkers": [
+        {
+          "name": "Ki-67",
+          "status": "negative"
+        },
+        {
+          "name": "HER2",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": null,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2026-02-03",
+      "treatment_regimen": [
+        "capecitabine"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 54-year-old female with a past medical history significant for hypertension and hyperlipidemia, presented to the oncology clinic for follow-up regarding her diagnosis of breast cancer. She was initially diagnosed with invasive ductal carcinoma, stage IIB, on May 20, 2019. The tumor was noted to be HER2 negative, and she has been treated with a first-line therapy regimen consisting of palbociclib and letrozole.\n\nUpon evaluation, the patient is currently displaying an ECOG performance status of 2, indicating she has some restriction in strenuous activity but is still ambulatory and capable of self-care. Notably, she reports that she experiences fatigue while managing daily activities, which may be associated with her current treatment regimen. \n\nThe patient denies any recent weight loss but complains of occasional joint aches, likely attributable to the letrozole. In addition, she has a family history of breast cancer in her mother, who was diagnosed at the age of 62, raising concerns about genetic predisposition. The patient has no history of smoking, and her previous surgical history includes a right-sided lumpectomy followed by radiation therapy post-diagnosis.\n\nOn routine blood work, her CBC was benign with no signs of anemia or leukopenia, and liver function tests were within normal limits. She has been compliant with her medication and has recently engaged with support groups, which she finds beneficial for coping with her diagnosis.\n\nFuture considerations entail discussing potential adjuvant therapies, particularly considering she remains HER2 negative. A follow-up appointment has been scheduled in three months, at which point we will reassess her performance status and any side effects associated with her ongoing therapy.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IIB",
+      "biomarkers": [
+        {
+          "name": "HER2",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2019-05-20",
+      "treatment_regimen": [
+        "palbociclib",
+        "letrozole"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 68-year-old female with a notable smoking history, presents for follow-up regarding her lung adenocarcinoma. She was diagnosed on February 19, 2020, and her case has been classified as stage IIIC. At this visit, she rates her ECOG performance status as 3, indicating she is significantly limited in self-care and requires assistance for daily activities.\n\nIn reviewing her treatment history, she has undergone two previous lines of therapy, receiving both pembrolizumab and a combination of carboplatin with pemetrexed. Unfortunately, despite initial responses, her disease continues to progress.\n\nRecent biomarker testing revealed that the KRAS and ROS1 mutations are negative, while the ALK rearrangement is positive. This result supports the potential for consideration of ALK-inhibitor therapies moving forward. Family history is notable for a maternal history of breast cancer, which raises concerns warranted further investigation. \n\nThere was a mention of mild hypertension being managed through medication, and she has a history of well-controlled diabetes, with the most recent HbA1c at 6.5%. It is essential to continue monitoring her comorbidities closely in the context of her ongoing oncology treatment.\n\nGiven her current performance status and prior line of therapies, we will discuss the options available, including clinical trials for ALK inhibitors, at our next multidisciplinary team meeting. The patient is advised to maintain a close log of symptoms and side effects related to her previous regimens while fostering a supportive care environment at home.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "IIIC",
+      "biomarkers": [
+        {
+          "name": "KRAS",
+          "status": "negative"
+        },
+        {
+          "name": "ROS1",
+          "status": "negative"
+        },
+        {
+          "name": "ALK",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 3,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2020-02-19",
+      "treatment_regimen": [
+        "pembrolizumab",
+        "carboplatin",
+        "pemetrexed"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 64-year-old male with a complex medical history including type 2 diabetes and hyperlipidemia, presents to the oncology clinic for a follow-up evaluation following a recent diagnosis of pancreatic ductal adenocarcinoma dated September 19, 2023. For context, the patient is currently classified as stage IIIB, with an ECOG performance status of 3, indicating he is unable to carry out any self-care and is completely limited in self-sufficiency.\n\nUpon review of the treatment course, the patient has undergone two lines of therapy, currently receiving FOLFIRINOX as part of the second-line regimen aimed at managing disease progression. Despite the aggressive nature of the therapy, the patient has reported significant fatigue and decreased ability to engage in usual activities; however, he denies any new symptoms of jaundice or significant pain, which had previously prompted urgent intervention.\n\nFurther evaluation of biomarkers showed negative BRCA1 status, leading to considerations for additional genetic counseling or trials that might be available, given the patient's presentation and family history of cancer\u2014his sister had breast cancer diagnosed in her 50s. Laboratory results demonstrate mildly elevated liver enzymes but normal bilirubin levels, reinforcing the need for vigilant follow-up.\n\nThe patient's past surgical history includes laparoscopic cholecystectomy performed ten years ago, and he has undergone several routine endoscopies for gastrointestinal reflux disease. Regular monitoring of his comorbid conditions, particularly his diabetic management, will continue to be crucial as he navigates the complexities of his oncology treatment. \n\nIn summary, the oncological focus remains on managing the advanced pancreatic cancer through the current therapy while addressing ancillary issues arising from his comorbidities and maintaining quality of life. A multidisciplinary team meeting is suggested to discuss further treatment pathways, including clinical trial options.",
+    "gold": {
+      "primary_site": "pancreas",
+      "histology": "pancreatic ductal adenocarcinoma",
+      "stage": "IIIB",
+      "biomarkers": [
+        {
+          "name": "BRCA1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 3,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2023-09-19",
+      "treatment_regimen": [
+        "FOLFIRINOX"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 52-year-old female with a past medical history notable for mild hypertension and osteoarthritis, presented for a follow-up visit related to her breast cancer management. She was diagnosed with invasive ductal carcinoma (IDC) of the left breast on April 26, 2019, classified as stage IB. On initial workup, her Ki-67 proliferation index was positive, indicating a high level of tumor activity which has been a consideration in her treatment plan. \n\nCurrently, she is receiving her first line of therapy with capecitabine, which she tolerates reasonably well, although she reports some mild gastrointestinal upset, likely secondary to the medication. Her performance status is noted to be ECOG 1, as she experiences some restrictions in strenuous activities; however, she remains active in her daily routines and attends social functions regularly.\n\nFamily history includes a maternal aunt with breast cancer diagnosed at age 60, but no other significant oncological histories noted. Additionally, routine labs including her CBC and metabolic panel were within normal ranges during the last check, with no signs of acute distress. The patient also underwent a cholecystectomy several years ago for gallstones, which is not related to her cancer diagnosis but noted for completeness.\n\nWe will continue monitoring her response to the capecitabine regimen closely, and the plan is to reassess radiologically after three cycles to evaluate the treatment efficacy. Patient education focused on signs of potential side effects was provided, and she is encouraged to continue her structured exercise program with adaptations for her current status.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IB",
+      "biomarkers": [
+        {
+          "name": "Ki-67",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2019-04-26",
+      "treatment_regimen": [
+        "capecitabine"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 58-year-old male with a history of acral lentiginous melanoma, diagnosed on June 2, 2019. Initial staging revealed a stage IA melanoma. At the time of diagnosis, the tumor's histological analysis was consistent with the acral lentiginous variant, which is less common in Caucasian populations, particularly noted on the plantar aspect of the foot. The patient presents today for follow-up on his treatment regimen, where he has been on pembrolizumab, the first line of therapy in his case.\n\nOn review of biomarkers, we found that NRAS is positive, suggesting potential avenues for future targeted therapies, whereas PD-L1 status is negative, which may indicate the need for close monitoring given his current regimen. The ECOG performance status is currently at 2, indicating that the patient is not fully functional and restricted in strenuous activity but can manage daily life with assistance.\n\nThe patient continues to report some fatigue, likely related to pembrolizumab administration, but denies significant pain or other systemic symptoms. No significant prior surgeries pertaining to the melanoma were recorded, although he did undergo a routine appendectomy and cholecystectomy in the past without complications. Family history is notable for a grandmother who had breast cancer and an aunt with colorectal cancer, raising some concerns about hereditary syndromes; however, no genetic testing has been performed to date.\n\nLabs from the most recent visit showed unremarkable results: normal liver enzymes, creatinine, and a slightly elevated LDL cholesterol level, which was addressed in a previous consultation.\n\nIn summary, the patient is currently on an appropriate treatment pathway for his melanoma, and we will continue to monitor his progress closely while considering a multidisciplinary approach should his ECOG status decline further. The next appointment is scheduled for 8 weeks from now, with instructions to report any significant changes in condition before then.",
+    "gold": {
+      "primary_site": "melanoma",
+      "histology": "acral lentiginous melanoma",
+      "stage": "IA",
+      "biomarkers": [
+        {
+          "name": "NRAS",
+          "status": "positive"
+        },
+        {
+          "name": "PD-L1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2019-06-02",
+      "treatment_regimen": [
+        "pembrolizumab"
+      ]
+    }
+  },
+  {
+    "note": "The patient was diagnosed with stage IIA colorectal adenocarcinoma on May 31, 2020. They initially presented with symptoms that led to a colonoscopy revealing a tumor, which was confirmed to be adenocarcinoma through biopsy. Since diagnosis, the patient has been undergoing treatment and is currently on the second line of therapy, receiving regorafenib, which is being closely monitored for efficacy and tolerability.\n\nNoteworthy are the biomarker assessments, which show positive results for multiple markers, indicating a complex tumor biology: the patient has positive microsatellite instability (MSI), positive HER2 status, and positive NRAS mutations. These biomarkers have implications for treatment decisions and may guide future therapeutic strategies, particularly with regard to targeted therapies.\n\nCurrently, the patient's ECOG performance status is 3, indicating significant limitation in ambulation, as they are largely confined to bed but can sit up and participate in some activities of daily living with assistance. They have a history of hypertension and managed type 2 diabetes, but these comorbidities are stable with current medications.\n\nThe most recent laboratory tests, including CBC and metabolic panel, were within normal limits with no signs of acute stress or complications, although slight elevations in liver enzymes were noted. Family history reveals a pattern of colorectal cancers, with a paternal cousin diagnosed at an early age, raising concerns for potential hereditary syndromes.\n\nThe patient is actively engaged in their treatment plan and has been referred to genetic counseling for further evaluation of hereditary risk factors. Follow-up appointments are scheduled every three weeks to assess the response to the current regimen and make any necessary adjustments.",
+    "gold": {
+      "primary_site": "colorectal",
+      "histology": "adenocarcinoma",
+      "stage": "IIA",
+      "biomarkers": [
+        {
+          "name": "MSI",
+          "status": "positive"
+        },
+        {
+          "name": "HER2",
+          "status": "positive"
+        },
+        {
+          "name": "NRAS",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 3,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2020-05-31",
+      "treatment_regimen": [
+        "regorafenib"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 65-year-old male with a recent diagnosis of lung adenocarcinoma made on February 17, 2024. His cancer is classified as stage I, which indicates early localization without evident metastasis. The patient is currently undergoing his first line of therapy with crizotinib, a targeted agent pertinent to specific molecular alterations.\n\nDuring the evaluation, we explored biomarker status; the ALK test came back negative, indicating no involvement of the ALK gene rearrangement typically targeted by ALK inhibitors. The KRAS status was found to be equivocal, warranting further investigation in future assessments, as KRAS mutations can influence treatment responses and prognosis. \n\nThe patient's ECOG performance status is noted as 3, which classifies him as being capable of only limited self-care; he is confined to bed or chair for more than half of the day and cannot carry out any work activities due to fatigue related to both the malignancy and its treatment effects.\n\nMedical history is significant for hypertension and type 2 diabetes, both of which are well-managed but must be monitored closely due to their potential impact on treatment tolerance. The family history is notable for lung cancer in a paternal uncle and colorectal cancer in his mother, which highlights possible hereditary carcinogenic factors.\n\nBaseline labs have shown normal renal and liver function, and previous imaging studies revealed no signs of metastatic disease, which is encouraging. Given the patient\u2019s current therapeutic regimen and performance status, close follow-up is essential to monitor treatment response and manage any emerging side effects.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "I",
+      "biomarkers": [
+        {
+          "name": "ALK",
+          "status": "negative"
+        },
+        {
+          "name": "KRAS",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": 3,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-02-17",
+      "treatment_regimen": [
+        "crizotinib"
+      ]
+    }
+  },
+  {
+    "note": "Patient is a 65-year-old male with a diagnosis of squamous cell carcinoma of the lung, confirmed on biopsy performed on February 8, 2026, presenting with stage IIA disease. The patient has an ECOG performance status of 2, indicating that he is capable of all self-care but is unable to carry out any work activities due to fatigue and respiratory symptoms. He has a current line of therapy at the third stage, which includes the administration of pembrolizumab combined with carboplatin and pemetrexed.\n\nUpon evaluation, PD-L1 expression was found to be equivocal, suggesting that the tumor may have a variable response to immunotherapy, while EGFR testing has returned positive, which could guide targeted treatment options going forward. This information will need to be auspiciously weighed against the necessity for systemic therapy given his performance status and prior treatment responses.\n\nAdditionally, the patient's medical history is notable for hypertension and hyperlipidemia, which are currently managed with lisinopril and atorvastatin, respectively. There have been no significant adverse effects noted from his current treatment regimen thus far.\n\nSocial history reveals a 30 pack-year smoking history; however, he has been tobacco-free for the last five years. The patient has a family history of lung cancer in his mother, diagnosed at the age of 70, but no other malignancies reported in immediate family members.\n\nCurrent labs indicate stable kidney function with routine serum creatinine levels; liver function tests are within normal limits. Considering patient\u2019s current line of treatment and any additional therapeutic interventions, follow-up appointments have been scheduled every three weeks to monitor response to therapy and reassess overall clinical condition.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "squamous cell carcinoma",
+      "stage": "IIA",
+      "biomarkers": [
+        {
+          "name": "PD-L1",
+          "status": "equivocal"
+        },
+        {
+          "name": "EGFR",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2026-02-08",
+      "treatment_regimen": [
+        "pembrolizumab",
+        "carboplatin",
+        "pemetrexed"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 67-year-old male with a history of prostate cancer diagnosed on January 8, 2025, presenting for follow-up. He was previously treated with surgical resection and has undergone radiation therapy. Notably, he has been on his third line of therapy, currently receiving enzalutamide, with a reasonable response observed, especially considering the aggressive nature of neuroendocrine carcinoma.\n\nAt this visit, performance status was assessed as ECOG 1, suggesting he is restricted in strenuous activity, but he is otherwise active and manages daily activities with some assistance. Laboratory results demonstrate a negative PSA level, which is somewhat atypical for neuroendocrine variants given their potential escape from standard androgen suppression.\n\nBiomarker analysis indicated no available information on AR-V7 status, which could add complexity to his treatment course. Previous treatments and current therapeutic approaches reveal a challenge with the progression of disease, coinciding with the established stage of IIIA, indicating significant local and possibly regional spread.\n\nIn the context of his comorbidities, he has a past medical history significant for hypertension and controlled type II diabetes. There are no recent heart issues noted, and all routine labs for electrolytes and liver function remain within normal limits. Family history is notable for prostate cancer in his father and maternal uncle, which raises concerns for potential genetic predispositions, though genetic testing has not been performed thus far.\n\nThe patient's overall prognosis remains guarded due to the aggressive nature of neuroendocrine tumors evidenced by imaging studies showing lymphadenopathy. Plans for continued surveillance and progression management with regular imaging and lab tests were discussed during today's encounter, emphasizing the importance of monitoring for any new symptoms or changes in his condition.",
+    "gold": {
+      "primary_site": "prostate",
+      "histology": "neuroendocrine carcinoma",
+      "stage": "IIIA",
+      "biomarkers": [
+        {
+          "name": "PSA",
+          "status": "negative"
+        },
+        {
+          "name": "AR-V7",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2025-01-08",
+      "treatment_regimen": [
+        "enzalutamide"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 62-year-old female with a significant past medical history that includes hypertension and hyperlipidemia, presents for follow-up regarding her breast cancer management. She was diagnosed with invasive lobular carcinoma on May 2, 2026, at stage IVA. Imaging studies revealed extensive lymphatic involvement, and the tumor is primarily located in the right breast.\n\nDuring the assessment, her current ECOG performance status is rated as 2, indicating she is able to walk and care for herself but is restricted in strenuous activity. Previous lines of therapy have included aromatase inhibitors during the adjuvant setting, followed by a regimen that included doxorubicin and cyclophosphamide. Currently, she is on her third line of treatment, which features a combination of trastuzumab, pertuzumab, and docetaxel, with the most recent infusion completed two weeks ago.\n\nBiomarker analysis shows an equivocal result for estrogen receptor (ER), while progesterone receptor (PR) status is positive, suggesting that we may consider hormone therapy options as part of her future treatment plan. The patient expresses some concern regarding the side effects of her current chemotherapy regimen, particularly the gastrointestinal issues she has been experiencing.\n\nHer family history is significant for breast cancer in her sister and ovarian cancer in her maternal aunt, which adds complexity to her case given the potential hereditary factors. Labs show benign results with normal serum electrolytes and no evidence of liver dysfunction; however, we will continue to monitor her complete blood counts due to the myelosuppressive effects of her ongoing treatments. \n\nOverall, discussion of potential clinical trials and alternative therapeutic strategies will be scheduled for the next oncology appointment, where we aim to reassess her performance status and response to the current treatment regimen.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive lobular carcinoma",
+      "stage": "IVA",
+      "biomarkers": [
+        {
+          "name": "ER",
+          "status": "equivocal"
+        },
+        {
+          "name": "PR",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2026-05-02",
+      "treatment_regimen": [
+        "trastuzumab",
+        "pertuzumab",
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a male with a diagnosis of neuroendocrine carcinoma of the prostate, confirmed on biopsy performed on October 1, 2025. He is currently classified as stage IIIC due to lymph node involvement. The patient's clinical presentation and imaging studies indicate advanced disease; his ECOG performance status is rated at 1, suggesting he is capable of light activity but restricted in strenuous tasks, reflecting a relatively preserved functional status amid the advancing cancer. \n\nAt this time, the patient has undergone the third line of therapy, currently receiving docetaxel as part of his treatment regimen. Despite this aggressive approach, laboratory evaluation shows the PSA level to be equivocal, necessitating ongoing monitoring to assess treatment response and disease progression.\n\nNotably, the patient has a past medical history significant for hypertension and type 2 diabetes, both of which are being managed with medication. He recently underwent surgery for a benign prostate enlargement five years prior and has no significant family history of cancer aside from a familial pattern of cardiovascular disease. \n\nIt is essential to continue close surveillance and consider next steps based on the patient's response to docetaxel and any emerging symptoms. Multidisciplinary discussions may be warranted to address potential clinical trials or additional therapies, given the advanced nature of his cancer and current state of treatment.",
+    "gold": {
+      "primary_site": "prostate",
+      "histology": "neuroendocrine carcinoma",
+      "stage": "IIIC",
+      "biomarkers": [
+        {
+          "name": "PSA",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2025-10-01",
+      "treatment_regimen": [
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 62-year-old female with a notable history of hypertension and type 2 diabetes, presenting for follow-up evaluation. She was diagnosed with breast cancer on February 15, 2019, specifically invasive lobular carcinoma of stage III, following a mammogram that revealed an irregular mass in the upper outer quadrant of the left breast. Her ECOG performance status is currently at 2, indicating she is able to walk but experiences limitation due to fatigue.\n\nHistological analysis shows the tumor is positive for estrogen receptors (ER positive), progesterone receptors (PR positive), and demonstrates a high Ki-67 proliferation index, indicating active cellular division. Treatment commenced with capecitabine as the first line of therapy, which she tolerated reasonably well, although she reported mild nausea and some fatigue.\n\nThe family history is significant for breast cancer in her sister, but there is no other notable oncological history in the family. Recent lab work including routine CBC and electrolyte panels revealed benign findings, with no signs of acute distress.  \n\nDuring this visit, we will assess her response to the current regimen, considering her reports of persistent malaise that impacts her daily activities. I will also review her symptomatology in detail, particularly any changes in her breast pain or new onset of symptomatic lymphadenopathy. The need for possible imaging to evaluate treatment efficacy will be discussed, monitoring for any metastasis.\n\nAdditionally, I recommend discussing lifestyle modifications to help manage her comorbidities and improve overall health during treatment. Overall, the focus remains on managing her breast cancer while monitoring for any complications related to her diabetes and hypertension.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive lobular carcinoma",
+      "stage": "III",
+      "biomarkers": [
+        {
+          "name": "PR",
+          "status": "positive"
+        },
+        {
+          "name": "Ki-67",
+          "status": "positive"
+        },
+        {
+          "name": "ER",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2019-02-15",
+      "treatment_regimen": [
+        "capecitabine"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 58-year-old female with a primary diagnosis of invasive lobular carcinoma of the breast, initially diagnosed on December 29, 2022. On evaluation, she presents with stage III disease, reflecting significant local advancement. The oncology team noted that the patient's ECOG performance status is 1, indicating some limitations in strenuous activity, but she remains fully ambulatory and independent in her activities of daily living.\n\nLaboratory results show positive HER2 expression, which has guided our treatment approach. This patient has now completed three lines of therapy, initiating with a regimen that included docetaxel in combination with pertuzumab and trastuzumab\u2014indicating her receipt of targeted therapy due to the HER2 positivity.\n\nShe is currently on her fourth line of therapy, with discussions ongoing about potential clinical trial options for further management, considering that standard therapies have had limited long-term effectiveness at this stage. The patient's medical history is notable for hypertension, managed with lisinopril, and hyperlipidemia, for which she takes atorvastatin. No previous malignancies have been reported. \n\nFamily history includes a mother with breast cancer diagnosed at age 65 and a sister previously treated for uterine cancer. Current imaging studies will be reviewed next week to assess response to the current regimen. She expresses concerns about her treatment side effects, including fatigue and nausea, which we are addressing with supportive care measures. Intermittent counseling regarding lifestyle modifications and the importance of follow-up appointments is also ongoing.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive lobular carcinoma",
+      "stage": "III",
+      "biomarkers": [
+        {
+          "name": "HER2",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 4,
+      "date_of_diagnosis": "2022-12-29",
+      "treatment_regimen": [
+        "trastuzumab",
+        "pertuzumab",
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 56-year-old female with a confirmed diagnosis of high-grade serous carcinoma of the ovary, established on August 17, 2021. Currently, she is staged at IIIC, reflecting significant disease burden with peritoneal carcinomatosis and a notable ascitic component. On assessment, the patient presents with an ECOG performance status of 1, indicating she is able to conduct light daily activities but experiences some restrictions with strenuous efforts.\n\nIn her treatment history, this marks her second line of therapy, and she is currently receiving mirvetuximab soravtansine, which has been well-tolerated thus far. Prior to this regimen, she underwent chemotherapy consisting of carboplatin and paclitaxel. Family history is significant for breast cancer in her sister, although genetic testing for BRCA mutations has shown an unknown status regarding BRCA2. \n\nNo apparent acute comorbidities were noted during this visit, though the patient has a history of hypertension which is managed with lisinopril. Routine laboratory results were largely benign\u2014her complete blood count shows mild anemia, but liver and renal function panels are within normal limits. Follow-up imaging studies are scheduled to evaluate response to the current treatment, and the patient is encouraged to maintain a healthy lifestyle, including a balanced diet, as she continues her therapy.\n\nNext appointment is set for six weeks from today, at which time imaging results will be discussed and treatment adjustments will be made as necessary.",
+    "gold": {
+      "primary_site": "ovary",
+      "histology": "high-grade serous carcinoma",
+      "stage": "IIIC",
+      "biomarkers": [
+        {
+          "name": "BRCA2",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2021-08-17",
+      "treatment_regimen": [
+        "mirvetuximab soravtansine"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a previously healthy individual with no significant past medical history, presented to the clinic for follow-up after recent diagnosis of cutaneous melanoma on September 4, 2023. Initial workup revealed the primary site to be the right lower extremity, with a histological diagnosis of cutaneous melanoma. Staging assessment classified the disease as stage IIIA. \n\nThe patient exhibits a performance status of ECOG 1, demonstrating some restriction in strenuous activity but remaining largely independent in daily living activities. As part of the first line of therapy, the patient has commenced treatment with nivolumab and ipilimumab, which are being well tolerated at this time. \n\nGenetic testing results indicate that the BRAF mutation status is negative, guiding our therapeutic approach away from targeted BRAF inhibitors. Notably, the patient denies any significant family history of melanoma or other malignancies. \n\nPast surgical history includes an appendectomy in childhood and no prior oncologic interventions. Recent laboratory results show no abnormalities aside from mild elevation in cholesterol, which is being monitored. The patient remains vigilant about sun protection and has been educated on signs of potential recurrence. \n\nFollow-up imaging and bloodwork are scheduled in three months to monitor treatment response and manage any side effects. We will continue to evaluate the patient\u2019s condition closely, considering the importance of psychosocial support alongside ongoing treatment.",
+    "gold": {
+      "primary_site": "melanoma",
+      "histology": "cutaneous melanoma",
+      "stage": "IIIA",
+      "biomarkers": [
+        {
+          "name": "BRAF",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2023-09-04",
+      "treatment_regimen": [
+        "nivolumab",
+        "ipilimumab"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 58-year-old female with a history of hypertension and hyperlipidemia, presents for follow-up of her pancreatic ductal adenocarcinoma, which was diagnosed on July 26, 2018. During her initial evaluation, imaging studies confirmed the primary site of the tumor in the pancreas. Staging revealed the cancer to be classified as stage IIB. \n\nNotably, genetic testing was performed, and the results indicated a positive status for the BRCA2 mutation, which may have implications for both treatment and familial screening.\n\nCurrently, the patient's ECOG performance status is rated at 2, indicating she is limited in her daily activities but not completely bedbound. This is consistent with her reported symptomatology, which includes intermittent abdominal discomfort and some fatigue, but she remains active in light household tasks.\n\nAt this time, she is on her first line of therapy with olaparib, which is a maintenance treatment aimed at targeting the identified genetic mutation. Tolerance to the regimen has been good, with no significant adverse effects noted thus far. The patient remains compliant with her appointments and has been advised on the importance of monitoring for evolving symptoms and potential side effects of her treatment.\n\nFamily history is significant for breast cancer in her sister and colorectal cancer in her father, underscoring the relevance of her BRCA2 findings. Previous surgical history is notable for a laparoscopic cholecystectomy performed 5 years ago, and she has no known drug allergies. \n\nOn the laboratory front, her most recent CBC showed mild anemia, but liver enzymes and bilirubin levels remained within normal limits, and other benign labs were unremarkable. The patient is encouraged to maintain routine follow-ups every 3 months, involving both imaging and clinical assessment, to monitor tumor progression or response to therapy.",
+    "gold": {
+      "primary_site": "pancreas",
+      "histology": "pancreatic ductal adenocarcinoma",
+      "stage": "IIB",
+      "biomarkers": [
+        {
+          "name": "BRCA2",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2018-07-26",
+      "treatment_regimen": [
+        "olaparib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 62-year-old male with a significant smoking history and prior diagnosis of chronic obstructive pulmonary disease (COPD), presented for a follow-up visit today. He was diagnosed with stage IIIB adenocarcinoma of the lung on May 1, 2024, following a biopsy that indicated a positive ALK biomarker status. His performance status is currently evaluated as ECOG 0, showing no limitations in daily activities. \n\nAt initial diagnosis, he was classified under line of therapy 2, having completed a prior regimen successfully. Currently, he is on crizotinib, which appears to have a favorable tolerability profile for him so far, with no significant adverse side effects reported.\n\nDuring this visit, the patient expressed some concern about an ongoing cough, which he has attributed to his history of asthma, but denies any hemoptysis or new skin lesions. His recent imaging demonstrated stable disease without evidence of progression, which is reassuring. Family history includes a sibling with cardiovascular disease; however, no family history of malignancy was established. Routine lab work showed normal liver function and slightly elevated cholesterol levels, which is consistent with his recent dietary habits but is being managed non-pharmacologically.\n\nHe continues to be engaged with pulmonary rehabilitation and reports adherence to his medication regimen. We will proceed with continued monitoring of his pulmonary function and oncological treatment response. Next steps include scheduling a follow-up CT scan in three months and assessing the current treatment regimen's effectiveness. Patient education materials regarding smoking cessation and support resources have been provided. \n\nOverall, the patient's current trajectory in management of his lung adenocarcinoma remains positive, and we will maintain close clinical oversight as we progress with the planned oncological care.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "IIIB",
+      "biomarkers": [
+        {
+          "name": "ALK",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2024-05-01",
+      "treatment_regimen": [
+        "crizotinib"
+      ]
+    }
+  },
+  {
+    "note": "Patient is a [AGE]-year-old [GENDER] with a diagnosis of lung squamous cell carcinoma, first identified on November 21, 2023. The tumor is classified as stage IIB, indicating a local extent of disease that includes nodal involvement. During the latest assessment, the patient's ECOG performance status is rated at 2, indicating they are ambulating but require some assistance with daily activities.\n\nBiomarker testing revealed an ALK-positive result, crucial for therapeutic decision-making. Although the status of BRAF remains unknown, ROS1 has been ruled out as negative, suggesting that targeted therapies directed at these markers may not be appropriate at this time. Therefore, the current treatment regimen includes durvalumab, an immune checkpoint inhibitor, used in combination with etoposide and carboplatin, to enhance systemic disease control during the second line of therapy.\n\nThe patient has a history of hypertension and hyperlipidemia but denies any recent pulmonary complications; lung function remains stable according to recent spirometry results. Notably, there are no indications of other malignancies in family history, although a cousin has a history of breast cancer. Ongoing monitoring of liver function tests due to etoposide administration shows no significant abnormalities at this time, with all values within normal limits.\n\nFollow-up is planned post course completion of the current regimen, and tumor response will be monitored via imaging studies every 8 weeks. The patient is encouraged to report any new symptoms, particularly those related to increased shortness of breath or unexpected weight loss that may indicate disease progression.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "squamous cell carcinoma",
+      "stage": "IIB",
+      "biomarkers": [
+        {
+          "name": "BRAF",
+          "status": "unknown"
+        },
+        {
+          "name": "ROS1",
+          "status": "negative"
+        },
+        {
+          "name": "ALK",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2023-11-21",
+      "treatment_regimen": [
+        "durvalumab",
+        "etoposide",
+        "carboplatin"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 68-year-old male with a diagnosis of pancreatic ductal adenocarcinoma, stage IIIA, confirmed on January 23, 2021. He presents today for a follow-up visit regarding his progression under current treatment. Notable for the patient's ECOG performance status of 2, he is feeling somewhat fatigued and experiences occasional discomfort but remains capable of self-care and limited activities.\n\nSince his diagnosis, the patient has received multiple lines of therapy, currently at the third line, and has been on the FOLFIRINOX regimen. There have been no significant adverse effects aside from mild nausea, which he has been managing with ondansetron. The patient\u2019s last CA 19-9 levels are unavailable, and further testing is required to evaluate this marker for adjusting treatment strategies.\n\nNoteworthy is the patient's biomarker status; the BRCA2 gene is positive while the BRCA1 status remains equivocal, necessitating further exploration into targeted therapies or genetic counseling for potential familial implications. His family history reveals a background of prostate cancer in his father, which might have some relevance, given the hereditary ties of BRCA mutations.\n\nIn the past medical history, the patient has hypertension managed with lisinopril and hyperlipidemia treated with atorvastatin. Moreover, he underwent laparoscopic cholecystectomy in the past, which is unrelated to his current malignancy.\n\nA comprehensive assessment is required to discuss potential next steps, especially focused on the implications of his BRCA status and possibilities of clinical trials. Our plan includes arranging for repeat imaging in 6 weeks and reassessment of CA 19-9 values. The patient was advised to maintain a healthy diet and stay hydrated, which may help alleviate some side effects from the chemotherapy.",
+    "gold": {
+      "primary_site": "pancreas",
+      "histology": "pancreatic ductal adenocarcinoma",
+      "stage": "IIIA",
+      "biomarkers": [
+        {
+          "name": "BRCA1",
+          "status": "equivocal"
+        },
+        {
+          "name": "BRCA2",
+          "status": "positive"
+        },
+        {
+          "name": "CA 19-9",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2021-01-23",
+      "treatment_regimen": [
+        "FOLFIRINOX"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 62-year-old female with a significant past medical history including hypertension and hyperlipidemia, was diagnosed with stage IVB colorectal cancer with mucinous adenocarcinoma histology on February 26, 2025. She is currently classified with an ECOG performance status of 1, indicating she is restricted in strenuous activity but is otherwise able to carry out light work or activities of daily living independently.\n\nIn evaluating her disease, we noted the presence of KRAS mutation status as equivocal, which may have implications for treatment decisions moving forward. She is currently undergoing her first line of therapy, which consists of the FOLFOX regimen. The patient's treatment began two weeks ago, and she reports tolerating the regimen well so far, with manageable side effects, predominantly mild fatigue and some gastrointestinal upset.\n\nFamily history is significant for colorectal cancer in her sister, who was diagnosed at a similar age, raising concern for potential hereditary syndromes. Additionally, she underwent a cholecystectomy five years ago with no complications. Recent lab tests, including routine blood work, show normal liver enzymes and no signs of anemia, which is encouraging in light of her current chemotherapy treatment.\n\nThe patient's follow-up appointments will focus on monitoring her response to FOLFOX, as well as symptom management to improve her quality of life during this course of therapy. We will consider genomic profiling to further evaluate her KRAS status and discuss potential targeted therapies based on that assessment as she progresses in her treatment.",
+    "gold": {
+      "primary_site": "colorectal",
+      "histology": "mucinous adenocarcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "KRAS",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2025-02-26",
+      "treatment_regimen": [
+        "FOLFOX"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 58-year-old male with a diagnosis of clear cell renal cell carcinoma, confirmed on June 22, 2021. At the time of diagnosis, the tumor was classified as stage IIA. The patient presents today for follow-up after completing a third line of therapy, which included a combination of nivolumab and cabozantinib. Notably, he is currently maintaining an ECOG performance status of 0, indicating he is fully active and able to carry out all daily activities without restriction.\n\nDuring his treatment course, laboratory evaluations have focused on pertinent biomarkers. The VHL gene mutation status returned positive, while the PD-L1 expression remains unknown at this time, which may have implications for future therapeutic decisions. \n\nHe has a history of hypertension and hyperlipidemia but has maintained good control of both conditions with lifestyle modifications and medications. Noteworthy, he underwent a laparoscopic cholecystectomy for gallbladder stones approximately 5 years ago, which was uncomplicated. \n\nFamily history reveals a paternal uncle who passed from prostate cancer, but otherwise, there are no significant cancer alerts in his immediate family. His most recent imaging studies revealed no new metastases and no evidence of progression of his renal mass, supporting the effectiveness of the current therapeutic strategy.\n\nAssessment findings today show the patient tolerates the current regimen well, reports minimal side effects\u2014mainly mild fatigue and transient nausea\u2014and continues to engage actively in regular exercise. We will continue to monitor for any changes in his health status, including a repeat imaging study scheduled in three months to evaluate tumor response and the potential need for additional therapeutic options. \n\nCareful attention will be given to PD-L1 status in future evaluations to guide any immunotherapy adjustments. The plan is to continue current treatment, monitor biomarkers closely, and maintain routine follow-ups.",
+    "gold": {
+      "primary_site": "kidney",
+      "histology": "clear cell renal cell carcinoma",
+      "stage": "IIA",
+      "biomarkers": [
+        {
+          "name": "VHL",
+          "status": "positive"
+        },
+        {
+          "name": "PD-L1",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2021-06-22",
+      "treatment_regimen": [
+        "nivolumab",
+        "cabozantinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a female with a primary breast tumor, was diagnosed with invasive ductal carcinoma on November 13, 2018. Since her diagnosis, she has been categorized as stage IVB, indicating a significant metastatic burden. Her current ECOG performance status is 0, reflecting that she is fully active and able to carry on all pre-disease activities without restriction. \n\nIn terms of biomarker analysis, her tumor is estrogen receptor (ER) positive, expressing this receptor potentially allowing for targeted endocrine therapy options. However, the progesterone receptor (PR) status remains unknown at this time, which will need to be monitored as additional testing may be warranted. Notably, the HER2 status is positive, suggesting that her cancer cells have higher levels of the human epidermal growth factor receptor 2 (HER2), making her a candidate for targeted therapies against this pathway.\n\nThe current line of therapy being administered is the first line, which includes a regimen combining trastuzumab, pertuzumab, and docetaxel. This combination intends to effectively combat HER2 positive disease while also addressing the invasive ductal carcinoma's aggressive nature. \n\nThe patient has a history of mild hypertension managed by diet and lifestyle modifications and has previously undergone a laparoscopic cholecystectomy. There is no significant family history of breast cancer reported, although breast cancer is noted in distant relatives. Routine lab work reveals benign findings aside from CA 15-3 levels indicating the need for ongoing surveillance of her disease status. \n\nIn summary, we will continue to monitor her response to the current therapy closely and assess the need for further intervention as appropriate, keeping all multidisciplinary options open as part of her ongoing care.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive ductal carcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "ER",
+          "status": "positive"
+        },
+        {
+          "name": "PR",
+          "status": "unknown"
+        },
+        {
+          "name": "HER2",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2018-11-13",
+      "treatment_regimen": [
+        "trastuzumab",
+        "pertuzumab",
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a middle-aged individual with a diagnosis of pancreatic ductal adenocarcinoma, confirmed on February 7, 2019. Currently, the disease is staged at IIIB. The patient has undergone three previous lines of therapy prior to the current regimen, which includes olaparib. Notably, current ECOG performance status stands at 1, indicating that the patient is restricted in strenuous activities but fully capable of performing light housework and other sedentary tasks.\n\nRecent molecular profiling revealed that both BRCA1 and BRCA2 genes are negative, which has implications for the response to certain targeted therapies. The pancreatic mass remains symptomatic despite ongoing treatment, and imaging at the last follow-up indicated local invasion, corroborating the advanced stage of the disease. Additionally, the patient has a prior history of hypertension and hyperlipidemia, for which they are on medication. There is a family history of breast cancer in a second-degree relative but no other significant oncological history.\n\nLaboratory results show stable benign findings with no indication of acute issues at this time. Despite the aggressive nature of pancreatic cancer, the patient remains optimistic as they continue with the current line of therapy, and we are monitoring their condition closely, assessing for both side effects and efficacy of the treatment.",
+    "gold": {
+      "primary_site": "pancreas",
+      "histology": "pancreatic ductal adenocarcinoma",
+      "stage": "IIIB",
+      "biomarkers": [
+        {
+          "name": "BRCA1",
+          "status": "negative"
+        },
+        {
+          "name": "BRCA2",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 4,
+      "date_of_diagnosis": "2019-02-07",
+      "treatment_regimen": [
+        "olaparib"
+      ]
+    }
+  },
+  {
+    "note": "The patient presented for follow-up evaluation of lung adenocarcinoma originally diagnosed in October 2019. Currently classified as stage IVA, the tumor has exhibited significant progression over the past few months. The most recent imaging studies revealed extensive metastatic involvement, indicating the need for aggressive management. The patient is currently on their third line of therapy, receiving osimertinib, which they began following the previous regimens washed out. \n\nA review of biomarker status shows the presence of the ALK rearrangement, which may have influenced treatment decisions. Despite initial responses to therapy, the patient's ECOG performance status is assessed at 2, indicating that they are capable of all self-care but are unable to carry out any work or active life, being restricted in terms of strenuous activity.\n\nIn addition to the oncological considerations, the patient has a past medical history of mild hypertension, managed with lifestyle modifications; however, there are no recent cardiovascular complications. They have also reported occasional asthma, for which they use albuterol as needed. Family history is significant for lung cancer in a first-degree relative, potentially speaking to a genetic predisposition. \n\nLaboratory results remain stable, with benign findings in metabolic panels, although a low-grade anemia has been noted, which warrants monitoring but appears not to be contributing significantly to the patient\u2019s overall condition at this time. Continuous follow-ups will be critical for assessing treatment response and potential transition to experimental therapies in light of the tumor's aggressive characteristics.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "IVA",
+      "biomarkers": [
+        {
+          "name": "ALK",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2019-10-18",
+      "treatment_regimen": [
+        "osimertinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 62-year-old male with a significant smoking history, presented to our oncology clinic for evaluation following a diagnosis of small cell carcinoma of the lung, confirmed on biopsy dated September 21, 2019. His ECOG performance status is currently rated at 1, indicating some restriction in strenuous activity, but he maintains a largely active lifestyle.\n\nThe tumor is classified as stage II based on the initial workup. On the biomarker panel, KRAS and ALK mutations were noted to be positive, whereas PD-L1 expression was found to be negative. These results guide our treatment decisions, especially considering his previous therapies. \n\nThe patient has undergone two lines of therapy; notably, he is currently on crizotinib, following a regimen of upfront chemotherapy. His treatment response has been monitored closely, and while he has experienced some manageable side effects, including mild fatigue and transient nausea, his overall condition remains stable. \n\nIn addition to his malignancy, the patient has a history of hyperlipidemia and managed hypertension, which are currently well controlled on medication. His family history is unremarkable with no significant hereditary cancer syndromes reported. Additionally, he underwent a cholecystectomy approximately five years ago without complications.\n\nThe next steps include regular imaging to monitor the disease progression and a multi-disciplinary review in four weeks to assess the effectiveness of the current treatment regimen. Despite the challenges posed by his malignancy, the patient remains optimistic and engaged in his care plan.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "small cell carcinoma",
+      "stage": "II",
+      "biomarkers": [
+        {
+          "name": "KRAS",
+          "status": "positive"
+        },
+        {
+          "name": "ALK",
+          "status": "positive"
+        },
+        {
+          "name": "PD-L1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2019-09-21",
+      "treatment_regimen": [
+        "crizotinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 62-year-old male with a history of long-term tobacco use and chronic obstructive pulmonary disease (COPD). He presented to the oncology clinic with a confirmed diagnosis of small cell carcinoma of the lung, staged IIB, as per the recent imaging studies and biopsy results collected on October 6, 2024. His ECOG performance status is assessed at grade 1, indicating he is restricted in strenuous activity but remains ambulatory.\n\nUpon evaluation, the patient has received the first line of therapy, which includes durvalumab in conjunction with etoposide and carboplatin. His treatment began just recently and he has tolerated the regimen well without significant adverse effects so far. \n\nIn terms of biomarkers, PD-L1 and ROS1 status were both found to be equivocal; these findings warrant continued monitoring and may influence subsequent therapeutic decisions based on the evolving clinical picture. \n\nThe patient\u2019s family history includes a father who had lung cancer, but no known hereditary syndromes. Notably, his medical history also includes managed hypertension and hyperlipidemia. Pre-treatment laboratory tests returned with unremarkable results for complete blood count (CBC) and basic metabolic panel, with liver and renal functions within normal limits. \n\nHe denies any significant weight loss but reports mild dyspnea on exertion, an exacerbation likely related to his underlying respiratory condition. Supportive care measures were discussed, including smoking cessation programs and nutritional support, as he is motivated to optimize his health during treatment.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "small cell carcinoma",
+      "stage": "IIB",
+      "biomarkers": [
+        {
+          "name": "PD-L1",
+          "status": "equivocal"
+        },
+        {
+          "name": "ROS1",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2024-10-06",
+      "treatment_regimen": [
+        "durvalumab",
+        "etoposide",
+        "carboplatin"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 62-year-old male with a history of hyperlipidemia, presented for follow-up regarding his lung adenocarcinoma. He was diagnosed on July 25, 2020, and currently classified as stage III. On initial assessment, the patient\u2019s performance status is ECOG 0, indicating he is fully active and can carry on all pre-disease activities without restriction. \n\nAt this time, he is receiving his first line of therapy, which includes crizotinib. This targeted agent is appropriate given the histological subtype of his cancer. However, the results of biomarker testing reveal some uncertainties. The status of the ROS1 gene alteration is unknown, while KRAS testing returned equivocal results. These findings necessitate further evaluation and possibly a reassessment of treatment options in the near future, especially as we monitor for any disease progression.\n\nDuring the visit, the patient reported no new respiratory symptoms, though he mentioned a longstanding history of seasonal allergies that occasionally complicate his clinical picture. Notably, he is a non-smoker with a family history significant for lung cancer in a distant relative, although no direct connection to his case has been established. \n\nPrevious medical history includes a laparoscopic cholecystectomy performed in 2015 with no complications. Routine labs performed today were unremarkable, reinforcing the stable nature of his condition. Follow-up appointments will continue to assess both his response to therapy and any additional symptomatic measures that may arise as treatment progresses.",
+    "gold": {
+      "primary_site": "lung",
+      "histology": "adenocarcinoma",
+      "stage": "III",
+      "biomarkers": [
+        {
+          "name": "ROS1",
+          "status": "unknown"
+        },
+        {
+          "name": "KRAS",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2020-07-25",
+      "treatment_regimen": [
+        "crizotinib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 54-year-old female with a known history of HER2-positive carcinoma of the breast diagnosed on September 13, 2018, presents for follow-up. She has been treated successfully for HER2-positive breast cancer, but currently has a diagnosis of stage IVB disease. At this visit, her ECOG performance status is 1, indicating she remains restricted in strenuous activity, though she is generally functioning well.\n\nHer latest assessment shows that she is on her third line of therapy, currently receiving sacituzumab govitecan, which she has tolerated with an acceptable side effect profile. Notably, her progesterone receptor status is positive, while her Ki-67 proliferation index is negative, suggesting a lower proliferative rate of her tumor, which may have treatment implications.\n\nShe has a past medical history of hypertension, managed with lisinopril, and a family history of breast cancer in her mother, which she reports has impacted her treatment decisions. There have been no recent surgeries or interventions since the last oncology visit.\n\nOn examination, there are no new symptoms reported, and her labs reflect stable renal function and electrolyte levels, with a benign complete blood count and normal liver function tests. She continues to follow up with her primary care physician for management of her diabetes type 2, which is well-controlled on metformin. \n\nOverall, the plan includes continuing the current treatment regimen, with imaging scheduled in 8 weeks to monitor disease status, as well as a referral for genetic counseling given her family history of malignancy.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "HER2-positive carcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "PR",
+          "status": "positive"
+        },
+        {
+          "name": "Ki-67",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 3,
+      "date_of_diagnosis": "2018-09-13",
+      "treatment_regimen": [
+        "sacituzumab govitecan"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 58-year-old with a diagnosis of colorectal cancer stemming from an initial diagnosis on August 10, 2018. Histological examination revealed mucinous adenocarcinoma, categorized as stage IB, with no evidences of distant metastasis. At the time of evaluation, the patient presents with an ECOG performance status of 0, indicating they are fully active and able to carry on all pre-disease activities without restriction.\n\nIt is noteworthy that the patient has not undergone any prior oncology treatments, as this is their first line of therapy. The current treatment regimen includes the administration of capecitabine, an oral chemotherapy agent, and bevacizumab, a monoclonal antibody that targets vascular endothelial growth factor (VEGF) to inhibit tumor neovascularization. \n\nIn the past medical history, the patient has a significant history of hypertension controlled with medication, but no other major comorbidities have been reported. Labs from last month indicated stable renal function and normoglycemia, with liver function tests within normal limits. The patient's family history is notable for hypertension and type 2 diabetes mellitus in both parents, but no immediate family members have been affected by colorectal cancer.\n\nRegular follow-ups are scheduled with imaging studies to monitor treatment response and any potential adverse effects. The first imaging evaluation is planned in three months, and we will continue to assess the overall performance status as treatment progresses. Patient education on potential side effects and the importance of adherence to therapy has been discussed during the visit.",
+    "gold": {
+      "primary_site": "colorectal",
+      "histology": "mucinous adenocarcinoma",
+      "stage": "IB",
+      "biomarkers": [],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2018-08-10",
+      "treatment_regimen": [
+        "bevacizumab",
+        "capecitabine"
+      ]
+    }
+  },
+  {
+    "note": "Patient is a 67-year-old male with a history of benign prostatic hyperplasia and hyperlipidemia, presenting for follow-up of prostate adenocarcinoma diagnosed on November 16, 2019. He was initially staged as IIA following a biopsy that revealed prostate adenocarcinoma. Currently, he is in his first line of therapy, having been started on enzalutamide, which he has tolerated well to date.\n\nUpon examination, he exhibits an ECOG performance status of 2, indicating that he is capable of self-care but cannot carry out work activities. He reports some difficulty with strenuous activities, but overall he remains relatively functional. The patient has experienced no significant side effects from treatment, though he does mention mild fatigue.\n\nBiochemical markers were evaluated, with a PSA level reported as positive, raising concerns regarding disease progression. Additionally, AR-V7 biomarker status returned equivocal, complicating prognostic considerations and treatment planning. The patient has been educated on the implications of these findings, particularly in relation to treatment resistance.\n\nHe denies any new constitutional symptoms such as weight loss, fever, or night sweats. A review of systems is otherwise non-contributory, with no urinary obstruction or bone pain reported. Notably, he has a family history of prostate cancer in a first-degree relative, which potentially raises his risk profile.\n\nPast medical history includes a cholecystectomy performed 15 years ago, and current medications include statins for his hyperlipidemia. He has been compliant with follow-up appointments and is actively engaged in ongoing management discussions. Further monitoring and possible adjustments to his treatment regimen will be guided by future PSA levels and side effect assessments. \n\nNext appointment is scheduled in 3 months for re-evaluation and further imaging if clinically indicated.",
+    "gold": {
+      "primary_site": "prostate",
+      "histology": "adenocarcinoma",
+      "stage": "IIA",
+      "biomarkers": [
+        {
+          "name": "AR-V7",
+          "status": "equivocal"
+        },
+        {
+          "name": "PSA",
+          "status": "positive"
+        }
+      ],
+      "ecog_performance_status": 2,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2019-11-16",
+      "treatment_regimen": [
+        "enzalutamide"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a female diagnosed with invasive lobular carcinoma of the breast on October 18, 2019. Upon clinical examination and histopathological evaluation, the tumor has been classified as stage II. The patient's ECOG performance status is recorded as 1, indicating she has some restrictions in strenuous activities but is generally capable of self-care.\n\nIn terms of treatment, the patient is currently on her first line of therapy, which consists of capecitabine. The tumor markers were assessed, revealing HER2 status to be negative, suggesting a lower likelihood of aggressive disease progression associated with HER2 positivity.\n\nThe patient's medical history is notable for hypertension and hyperlipidemia, but these conditions have been stable with current management. Family history is significant for breast cancer in a distant relative and no other hereditary cancers noted. The patient had a cholecystectomy in 2008 but reported no complications from that surgery.\n\nLaboratory results from the recent tests showed normal ranges for electrolyte panels and liver function tests, continuing to support her current treatment regimen. Overall, the patient appears to be tolerating capecitabine well without significant adverse effects reported at this time. We will continue to monitor her progress closely and plan for routine imaging and follow-up appointments as necessary to assess the response to therapy.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "invasive lobular carcinoma",
+      "stage": "II",
+      "biomarkers": [
+        {
+          "name": "HER2",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": "2019-10-18",
+      "treatment_regimen": [
+        "capecitabine"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 58-year-old female with a known history of HER2-positive carcinoma of the breast, diagnosed on October 7, 2022. Currently, the disease has progressed to stage IVB. Since diagnosis, she has undergone extensive treatment and is currently on her fourth line of therapy, which includes a regimen of trastuzumab, pertuzumab, and docetaxel. \n\nDespite the advanced stage, the patient maintains an ECOG performance status of 0, indicating she is fully active and able to carry out all pre-disease activities without restriction. \n\nNotably, the status of progesterone receptors remains undetermined at this time, contributing to the complexity of her treatment planning. Additionally, the patient has no significant past medical history other than her breast cancer, although she was previously treated for hypertension which is well-controlled on lisinopril.\n\nFamily history is notable for breast cancer in her maternal aunt and colon cancer in her father. Recent lab results show benign elevations in liver function tests, likely attributable to the current chemotherapy regimen; however, no other abnormalities detected. Following her latest imaging, there is evidence of further metastatic progression, compelling the oncology team to consider possible clinical trial options. In terms of psychosocial aspects, the patient continues to receive support from a psychologist to help cope with the anxiety related to her ongoing treatment and prognosis.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "HER2-positive carcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "PR",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 4,
+      "date_of_diagnosis": "2022-10-07",
+      "treatment_regimen": [
+        "trastuzumab",
+        "pertuzumab",
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient presents for follow-up regarding their recent diagnosis of colorectal cancer. Histopathology confirms the presence of a mucinous adenocarcinoma. Notably, the tumor is classified as stage I, which suggests a favorable prognosis and early intervention opportunities. The patient is currently on the first line of therapy with regorafenib, and we will continue to monitor their response closely.\n\nDuring the evaluation of biomarkers, the BRAF status returned negative, which can be associated with a better response to treatment. However, the NRAS results were equivocal, and the KRAS status remains unknown at this point. These biomarkers are crucial for tailoring future management strategies, particularly if there is a need to consider additional therapies beyond the current regimen.\n\nThe ECOG performance status has not been formally assessed as this visit is primarily focused on treatment initiation and response surveillance. Patient-reported outcomes will be necessary to gauge any impact on their daily activities, especially regarding tolerance to regorafenib.\n\nAdditionally, the patient has a history of mild hypertension, well-controlled on Lisinopril, and previously underwent laparoscopic cholecystectomy five years ago with no complications. There is no significant family history of colorectal cancer, though the patient's paternal uncle had a past medical history of prostate cancer.\n\nRoutine labs will be repeated at the next scheduled visit to monitor any potential side effects from the treatment, and imaging to assess disease progression will be planned in the forthcoming months.",
+    "gold": {
+      "primary_site": "colorectal",
+      "histology": "mucinous adenocarcinoma",
+      "stage": "I",
+      "biomarkers": [
+        {
+          "name": "BRAF",
+          "status": "negative"
+        },
+        {
+          "name": "NRAS",
+          "status": "equivocal"
+        },
+        {
+          "name": "KRAS",
+          "status": "unknown"
+        }
+      ],
+      "ecog_performance_status": null,
+      "line_of_therapy": 1,
+      "date_of_diagnosis": null,
+      "treatment_regimen": [
+        "regorafenib"
+      ]
+    }
+  },
+  {
+    "note": "The patient, a 58-year-old female with a significant family history of breast cancer (mother diagnosed at age 62), presents for follow-up regarding her breast cancer. She was diagnosed on October 22, 2023, with stage IVB HER2-positive carcinoma, confirmed through pathology. Notably, her HER2 status is negative, and her PR status is classified as equivocal, necessitating a review of her treatment options.\n\nDuring this visit, the patient reports no new symptoms and maintains an ECOG performance status of 0, indicating she is fully active and functioning without restrictions. She has completed her second line of therapy, which included trastuzumab, pertuzumab, and docetaxel. While she initially tolerated the regimen well, she experienced mild alopecia and fatigue but has managed these side effects effectively, and they are not impacting her daily activities significantly.\n\nThe patient\u2019s past medical history is remarkable for hypertension and a previous appendectomy in 2020 without complications. Recent labs show benign renal function, normal electrolytes, and stable blood counts. Additionally, her routine mammography was performed six months ago, revealing no new lesions in her breast tissue, consistent with her ongoing treatment response.\n\nFamily history reveals no known hereditary syndromes apart from her mother's early breast cancer. The plan is to continue monitoring the patient closely, with follow-up imaging and lab work scheduled in three months to assess for any progression or emergent side effects from the ongoing therapy. We also discussed supportive care options should she encounter additional treatment-related challenges moving forward.",
+    "gold": {
+      "primary_site": "breast",
+      "histology": "HER2-positive carcinoma",
+      "stage": "IVB",
+      "biomarkers": [
+        {
+          "name": "HER2",
+          "status": "negative"
+        },
+        {
+          "name": "PR",
+          "status": "equivocal"
+        }
+      ],
+      "ecog_performance_status": 0,
+      "line_of_therapy": 2,
+      "date_of_diagnosis": "2023-10-22",
+      "treatment_regimen": [
+        "trastuzumab",
+        "pertuzumab",
+        "docetaxel"
+      ]
+    }
+  },
+  {
+    "note": "The patient is a 58-year-old male with a known history of clear cell renal cell carcinoma (ccRCC) diagnosed on April 15, 2023. He presents today for follow-up assessment after undergoing his fourth line of therapy. Currently, he is on a regimen that includes nivolumab and cabozantinib, which he has tolerated reasonably well, although he reports some mild fatigue and intermittent nausea. \n\nReview of systems shows no significant weight loss, though he admits to some difficulty in performing strenuous activities, aligning with an ECOG performance status of 1. Family history is notable for hypertension in both parents and a brother who passed away from prostate cancer at age 65, but no direct history of kidney cancer.\n\nLab work demonstrates stable renal function but shows a trivial elevation in liver enzymes, which can be attributed to his ongoing treatment regimen; previous tests were normal. Additionally, imaging studies from last month indicate no new metastatic lesions, maintaining stage IIIC classification of his disease. \n\nPathological biomarkers reveal that the VHL gene status is positive, whereas PD-L1 expression is negative, possibly influencing future therapeutic considerations. Despite the challenges of managing this aggressive renal carcinoma, the patient remains engaged in his care and is actively participating in decision-making regarding further treatment options.\n\nOverall, the patient is coping well with the treatment effects and has been advised to continue regular monitoring of his symptoms and follow up in 4 weeks for reassessment of therapy efficacy and any potential side effects. All other comorbidities, including mild asthma and managed dyslipidemia, remain stable at this time.",
+    "gold": {
+      "primary_site": "kidney",
+      "histology": "clear cell renal cell carcinoma",
+      "stage": "IIIC",
+      "biomarkers": [
+        {
+          "name": "VHL",
+          "status": "positive"
+        },
+        {
+          "name": "PD-L1",
+          "status": "negative"
+        }
+      ],
+      "ecog_performance_status": 1,
+      "line_of_therapy": 4,
+      "date_of_diagnosis": "2023-04-15",
+      "treatment_regimen": [
+        "nivolumab",
+        "cabozantinib"
+      ]
+    }
+  }
+]
